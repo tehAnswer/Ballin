@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  age: 1
+  height_cm: 9.99
+  height_formatted: MyString
+  weight_lb: 1
+  weight_kg: 9.99
+  position: MyString
+  number: 1
+  birthplace: MyString
+  birthdate: 2014-10-08
+
+two:
+  name: MyString
+  age: 1
+  height_cm: 9.99
+  height_formatted: MyString
+  weight_lb: 1
+  weight_kg: 9.99
+  position: MyString
+  number: 1
+  birthplace: MyString
+  birthdate: 2014-10-08

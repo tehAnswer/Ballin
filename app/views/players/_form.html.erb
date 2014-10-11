@@ -1,0 +1,57 @@
+<%= form_for(@player) do |f| %>
+  <% if @player.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@player.errors.count, "error") %> prohibited this player from being saved:</h2>
+
+      <ul>
+      <% @player.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :age %><br>
+    <%= f.number_field :age %>
+  </div>
+  <div class="field">
+    <%= f.label :height_cm %><br>
+    <%= f.text_field :height_cm %>
+  </div>
+  <div class="field">
+    <%= f.label :height_formatted %><br>
+    <%= f.text_field :height_formatted %>
+  </div>
+  <div class="field">
+    <%= f.label :weight_lb %><br>
+    <%= f.number_field :weight_lb %>
+  </div>
+  <div class="field">
+    <%= f.label :weight_kg %><br>
+    <%= f.text_field :weight_kg %>
+  </div>
+  <div class="field">
+    <%= f.label :position %><br>
+    <%= f.text_field :position %>
+  </div>
+  <div class="field">
+    <%= f.label :number %><br>
+    <%= f.number_field :number %>
+  </div>
+  <div class="field">
+    <%= f.label :birthplace %><br>
+    <%= f.text_field :birthplace %>
+  </div>
+  <div class="field">
+    <%= f.label :birthdate %><br>
+    <%= f.date_select :birthdate %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

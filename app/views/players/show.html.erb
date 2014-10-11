@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @player.name %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @player.age %>
+</p>
+
+<p>
+  <strong>Height cm:</strong>
+  <%= @player.height_cm %>
+</p>
+
+<p>
+  <strong>Height formatted:</strong>
+  <%= @player.height_formatted %>
+</p>
+
+<p>
+  <strong>Weight lb:</strong>
+  <%= @player.weight_lb %>
+</p>
+
+<p>
+  <strong>Weight kg:</strong>
+  <%= @player.weight_kg %>
+</p>
+
+<p>
+  <strong>Position:</strong>
+  <%= @player.position %>
+</p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @player.number %>
+</p>
+
+<p>
+  <strong>Birthplace:</strong>
+  <%= @player.birthplace %>
+</p>
+
+<p>
+  <strong>Birthdate:</strong>
+  <%= @player.birthdate %>
+</p>
+
+<%= link_to 'Edit', edit_player_path(@player) %> |
+<%= link_to 'Back', players_path %>
