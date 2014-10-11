@@ -15,7 +15,7 @@ class Player
   property :updated_at
   property :created_at
 
-  validates :position, inclusion: POSITIONS
+  #validates :position, inclusion: POSITIONS
   validates :name, :height_cm, :height_formatted,
     :height_cm, :birthdate, :birthplace, presence: true
 
