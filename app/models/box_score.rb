@@ -1,7 +1,7 @@
 class BoxScore 
   include Neo4j::ActiveNode
 
-  property :play_time, type: String, default: '00:00'
+  property :minutes, type: Integer
   property :points, type: Integer, default: 0
   property :assists, type: Integer, default: 0
   property :steals, type: Integer, default: 0
@@ -16,9 +16,11 @@ class BoxScore
   property :lsm, type: Integer, default: 0
   property :turnovers, type: Integer, default: 0
   property :final_score, type: Float, default: 0
+  property :is_started, type: Boolean
+  property :faults, type: Integer
 
-  validates :play_time, :points, :assists, :steals, :defr, :ofr, :blocks,
-    :fta, :ftm, :msa, :msm, :lsa, :lsm, :final_score, presence: true
+  validates :minutes, :points, :assists, :steals, :defr, :ofr, :blocks,
+    :fta, :ftm, :msa, :msm, :lsa, :lsm, :final_score, :is_started, :faults, presence: true
   validates :fta, numericality: { greater_than_or_equal_to: :ftm  }
   validates :msa, numericality: { greater_than_or_equal_to: :msm }
   validates :lsa, numericality: { greater_than_or_equal_to: :lsm }
@@ -31,6 +33,13 @@ class BoxScore
  
   def points_made
     ftm + 2 * msm + 3 * lsm
+  end
+
+  def self.points_calculator
+    bonus = points + 1.25 * assists + 1.25 * defr + 1.5 * ofr 
+      + 2.5 * steals + 2 * blocks
+    penalty = (fta - ftm)/10 + (msa - msm)/5 + (lsa - lsm)/3 + 3 * turnovers
+    (bonus - penalty).round(2)
   end
 
 
