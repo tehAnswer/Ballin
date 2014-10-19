@@ -3420,3 +3420,1075 @@ Storage files: (filename : modification date - size)
 2014-10-12 15:00:08.377+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 576ms [total block time: 30553.852s]
 2014-10-12 15:39:01.095+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 1191750ms [total block time: 31745.602s]
 2014-10-12 15:44:02.010+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 203983ms [total block time: 31949.584s]
+2014-10-12 15:54:00.049+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 123067ms [total block time: 32072.652s]
+2014-10-12 16:09:55.003+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 37096ms [total block time: 32109.748s]
+2014-10-12 16:13:57.043+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 8782ms [total block time: 32118.53s]
+2014-10-12 16:54:33.719+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 338ms [total block time: 32118.867s]
+2014-10-12 16:55:01.011+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 21941ms [total block time: 32140.809s]
+2014-10-12 17:00:56.071+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 554ms [total block time: 32141.363s]
+2014-10-12 17:01:11.078+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 9251ms [total block time: 32150.613s]
+2014-10-12 17:10:17.077+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 230649ms [total block time: 32381.264s]
+2014-10-12 17:21:59.269+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 357ms [total block time: 32381.62s]
+2014-10-12 17:22:27.008+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 22185ms [total block time: 32403.805s]
+2014-10-12 17:26:41.150+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 621ms [total block time: 32404.426s]
+2014-10-12 17:30:32.013+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 226827ms [total block time: 32631.252s]
+2014-10-12 17:44:04.433+0000 ERROR [o.n.k.i.t.TxManager]: Commit failed, status=STATUS_COMMITING, errorCode=103
+javax.transaction.xa.XAException: null
+	at org.neo4j.kernel.impl.nioneo.xa.IntegrityValidator.validateNodeRecord(IntegrityValidator.java:54) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.nioneo.xa.NeoStoreTransaction.doPrepare(NeoStoreTransaction.java:403) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.xaframework.XaTransaction.prepare(XaTransaction.java:307) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.xaframework.XaResourceManager.commitWriteTx(XaResourceManager.java:554) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.xaframework.XaResourceManager.commit(XaResourceManager.java:499) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.xaframework.XaResourceHelpImpl.commit(XaResourceHelpImpl.java:64) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.TransactionImpl.doCommit(TransactionImpl.java:548) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.TxManager.commit(TxManager.java:448) [neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.TxManager.commit(TxManager.java:385) [neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.server.rest.transactional.TransitionalTxManagementKernelTransaction.commit(TransitionalTxManagementKernelTransaction.java:84) [neo4j-server-2.0.2.jar:2.0.2]
+	at org.neo4j.server.rest.transactional.TransactionHandle.commit(TransactionHandle.java:193) [neo4j-server-2.0.2.jar:2.0.2]
+	at org.neo4j.server.rest.transactional.TransactionHandle.commit(TransactionHandle.java:107) [neo4j-server-2.0.2.jar:2.0.2]
+	at org.neo4j.server.rest.web.TransactionalService$2.write(TransactionalService.java:192) [neo4j-server-2.0.2.jar:2.0.2]
+	at com.sun.jersey.core.impl.provider.entity.StreamingOutputProvider.writeTo(StreamingOutputProvider.java:71) [jersey-core-1.9.jar:1.9]
+	at com.sun.jersey.core.impl.provider.entity.StreamingOutputProvider.writeTo(StreamingOutputProvider.java:57) [jersey-core-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.ContainerResponse.write(ContainerResponse.java:306) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1437) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1349) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1339) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:416) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:537) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:699) [jersey-server-1.9.jar:1.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848) [javax.servlet-3.0.0.v201112011016.jar:na]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:698) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1506) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.neo4j.server.rest.security.SecurityFilter.doFilter(SecurityFilter.java:112) [neo4j-server-2.0.2.jar:2.0.2]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1477) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:211) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1096) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:432) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:175) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1030) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:136) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.HandlerList.handle(HandlerList.java:52) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.Server.handle(Server.java:445) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:268) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:229) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.run(AbstractConnection.java:358) [jetty-io-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:601) [jetty-util-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:532) [jetty-util-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_67]
+Caused by: org.neo4j.graphdb.ConstraintViolationException: Node record Node[1100,used=false,rel=961,prop=5110,labels=Inline(0x0:[]),light] still has relationships
+	... 43 common frames omitted
+2014-10-12 17:44:04.454+0000 ERROR [o.n.k.i.t.TxManager]: TM error tx commit
+javax.transaction.HeuristicRollbackException: Failed to commit transaction Transaction(21357, owner:"qtp595468871-713")[STATUS_NO_TRANSACTION,Resources=1], transaction rolled back ---> javax.transaction.xa.XAException
+	at org.neo4j.kernel.impl.transaction.TxManager.commit(TxManager.java:556) [neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.TxManager.commit(TxManager.java:385) [neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.server.rest.transactional.TransitionalTxManagementKernelTransaction.commit(TransitionalTxManagementKernelTransaction.java:84) [neo4j-server-2.0.2.jar:2.0.2]
+	at org.neo4j.server.rest.transactional.TransactionHandle.commit(TransactionHandle.java:193) [neo4j-server-2.0.2.jar:2.0.2]
+	at org.neo4j.server.rest.transactional.TransactionHandle.commit(TransactionHandle.java:107) [neo4j-server-2.0.2.jar:2.0.2]
+	at org.neo4j.server.rest.web.TransactionalService$2.write(TransactionalService.java:192) [neo4j-server-2.0.2.jar:2.0.2]
+	at com.sun.jersey.core.impl.provider.entity.StreamingOutputProvider.writeTo(StreamingOutputProvider.java:71) [jersey-core-1.9.jar:1.9]
+	at com.sun.jersey.core.impl.provider.entity.StreamingOutputProvider.writeTo(StreamingOutputProvider.java:57) [jersey-core-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.ContainerResponse.write(ContainerResponse.java:306) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1437) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1349) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1339) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:416) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:537) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:699) [jersey-server-1.9.jar:1.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848) [javax.servlet-3.0.0.v201112011016.jar:na]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:698) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1506) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.neo4j.server.rest.security.SecurityFilter.doFilter(SecurityFilter.java:112) [neo4j-server-2.0.2.jar:2.0.2]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1477) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:211) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1096) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:432) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:175) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1030) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:136) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.HandlerList.handle(HandlerList.java:52) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.Server.handle(Server.java:445) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:268) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:229) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.run(AbstractConnection.java:358) [jetty-io-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:601) [jetty-util-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:532) [jetty-util-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_67]
+Caused by: javax.transaction.xa.XAException: null
+	at org.neo4j.kernel.impl.nioneo.xa.IntegrityValidator.validateNodeRecord(IntegrityValidator.java:54) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.nioneo.xa.NeoStoreTransaction.doPrepare(NeoStoreTransaction.java:403) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.xaframework.XaTransaction.prepare(XaTransaction.java:307) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.xaframework.XaResourceManager.commitWriteTx(XaResourceManager.java:554) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.xaframework.XaResourceManager.commit(XaResourceManager.java:499) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.xaframework.XaResourceHelpImpl.commit(XaResourceHelpImpl.java:64) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.TransactionImpl.doCommit(TransactionImpl.java:548) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.TxManager.commit(TxManager.java:448) [neo4j-kernel-2.0.2.jar:2.0.2]
+	... 35 common frames omitted
+Caused by: org.neo4j.graphdb.ConstraintViolationException: Node record Node[1100,used=false,rel=961,prop=5110,labels=Inline(0x0:[]),light] still has relationships
+	... 43 common frames omitted
+2014-10-12 17:44:04.455+0000 ERROR [o.n.s.r.t.TransactionFacade]: Failed to commit transaction.
+java.lang.RuntimeException: javax.transaction.HeuristicRollbackException: Failed to commit transaction Transaction(21357, owner:"qtp595468871-713")[STATUS_NO_TRANSACTION,Resources=1], transaction rolled back ---> javax.transaction.xa.XAException
+	at org.neo4j.server.rest.transactional.TransitionalTxManagementKernelTransaction.commit(TransitionalTxManagementKernelTransaction.java:88) ~[neo4j-server-2.0.2.jar:2.0.2]
+	at org.neo4j.server.rest.transactional.TransactionHandle.commit(TransactionHandle.java:193) [neo4j-server-2.0.2.jar:2.0.2]
+	at org.neo4j.server.rest.transactional.TransactionHandle.commit(TransactionHandle.java:107) [neo4j-server-2.0.2.jar:2.0.2]
+	at org.neo4j.server.rest.web.TransactionalService$2.write(TransactionalService.java:192) [neo4j-server-2.0.2.jar:2.0.2]
+	at com.sun.jersey.core.impl.provider.entity.StreamingOutputProvider.writeTo(StreamingOutputProvider.java:71) [jersey-core-1.9.jar:1.9]
+	at com.sun.jersey.core.impl.provider.entity.StreamingOutputProvider.writeTo(StreamingOutputProvider.java:57) [jersey-core-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.ContainerResponse.write(ContainerResponse.java:306) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1437) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1349) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1339) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:416) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:537) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:699) [jersey-server-1.9.jar:1.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848) [javax.servlet-3.0.0.v201112011016.jar:na]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:698) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1506) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.neo4j.server.rest.security.SecurityFilter.doFilter(SecurityFilter.java:112) [neo4j-server-2.0.2.jar:2.0.2]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1477) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:211) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1096) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:432) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:175) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1030) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:136) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.HandlerList.handle(HandlerList.java:52) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.Server.handle(Server.java:445) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:268) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:229) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.run(AbstractConnection.java:358) [jetty-io-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:601) [jetty-util-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:532) [jetty-util-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_67]
+Caused by: javax.transaction.HeuristicRollbackException: Failed to commit transaction Transaction(21357, owner:"qtp595468871-713")[STATUS_NO_TRANSACTION,Resources=1], transaction rolled back ---> javax.transaction.xa.XAException
+	at org.neo4j.kernel.impl.transaction.TxManager.commit(TxManager.java:556) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.TxManager.commit(TxManager.java:385) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.server.rest.transactional.TransitionalTxManagementKernelTransaction.commit(TransitionalTxManagementKernelTransaction.java:84) ~[neo4j-server-2.0.2.jar:2.0.2]
+	... 33 common frames omitted
+Caused by: javax.transaction.xa.XAException: null
+	at org.neo4j.kernel.impl.nioneo.xa.IntegrityValidator.validateNodeRecord(IntegrityValidator.java:54) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.nioneo.xa.NeoStoreTransaction.doPrepare(NeoStoreTransaction.java:403) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.xaframework.XaTransaction.prepare(XaTransaction.java:307) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.xaframework.XaResourceManager.commitWriteTx(XaResourceManager.java:554) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.xaframework.XaResourceManager.commit(XaResourceManager.java:499) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.xaframework.XaResourceHelpImpl.commit(XaResourceHelpImpl.java:64) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.TransactionImpl.doCommit(TransactionImpl.java:548) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.TxManager.commit(TxManager.java:448) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	... 35 common frames omitted
+Caused by: org.neo4j.graphdb.ConstraintViolationException: Node record Node[1100,used=false,rel=961,prop=5110,labels=Inline(0x0:[]),light] still has relationships
+	... 43 common frames omitted
+2014-10-12 18:19:25.752+0000 ERROR [o.n.k.i.t.TxManager]: Commit failed, status=STATUS_COMMITING, errorCode=103
+javax.transaction.xa.XAException: null
+	at org.neo4j.kernel.impl.nioneo.xa.IntegrityValidator.validateNodeRecord(IntegrityValidator.java:54) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.nioneo.xa.NeoStoreTransaction.doPrepare(NeoStoreTransaction.java:403) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.xaframework.XaTransaction.prepare(XaTransaction.java:307) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.xaframework.XaResourceManager.commitWriteTx(XaResourceManager.java:554) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.xaframework.XaResourceManager.commit(XaResourceManager.java:499) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.xaframework.XaResourceHelpImpl.commit(XaResourceHelpImpl.java:64) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.TransactionImpl.doCommit(TransactionImpl.java:548) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.TxManager.commit(TxManager.java:448) [neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.TxManager.commit(TxManager.java:385) [neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.server.rest.transactional.TransitionalTxManagementKernelTransaction.commit(TransitionalTxManagementKernelTransaction.java:84) [neo4j-server-2.0.2.jar:2.0.2]
+	at org.neo4j.server.rest.transactional.TransactionHandle.commit(TransactionHandle.java:193) [neo4j-server-2.0.2.jar:2.0.2]
+	at org.neo4j.server.rest.transactional.TransactionHandle.commit(TransactionHandle.java:107) [neo4j-server-2.0.2.jar:2.0.2]
+	at org.neo4j.server.rest.web.TransactionalService$2.write(TransactionalService.java:192) [neo4j-server-2.0.2.jar:2.0.2]
+	at com.sun.jersey.core.impl.provider.entity.StreamingOutputProvider.writeTo(StreamingOutputProvider.java:71) [jersey-core-1.9.jar:1.9]
+	at com.sun.jersey.core.impl.provider.entity.StreamingOutputProvider.writeTo(StreamingOutputProvider.java:57) [jersey-core-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.ContainerResponse.write(ContainerResponse.java:306) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1437) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1349) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1339) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:416) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:537) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:699) [jersey-server-1.9.jar:1.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848) [javax.servlet-3.0.0.v201112011016.jar:na]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:698) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1506) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.neo4j.server.rest.security.SecurityFilter.doFilter(SecurityFilter.java:112) [neo4j-server-2.0.2.jar:2.0.2]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1477) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:211) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1096) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:432) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:175) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1030) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:136) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.HandlerList.handle(HandlerList.java:52) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.Server.handle(Server.java:445) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:268) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:229) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.run(AbstractConnection.java:358) [jetty-io-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:601) [jetty-util-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:532) [jetty-util-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_67]
+Caused by: org.neo4j.graphdb.ConstraintViolationException: Node record Node[2200,used=false,rel=3408,prop=11,labels=Inline(0x0:[]),light] still has relationships
+	... 43 common frames omitted
+2014-10-12 18:19:25.759+0000 ERROR [o.n.k.i.t.TxManager]: TM error tx commit
+javax.transaction.HeuristicRollbackException: Failed to commit transaction Transaction(28691, owner:"qtp595468871-866")[STATUS_NO_TRANSACTION,Resources=1], transaction rolled back ---> javax.transaction.xa.XAException
+	at org.neo4j.kernel.impl.transaction.TxManager.commit(TxManager.java:556) [neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.TxManager.commit(TxManager.java:385) [neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.server.rest.transactional.TransitionalTxManagementKernelTransaction.commit(TransitionalTxManagementKernelTransaction.java:84) [neo4j-server-2.0.2.jar:2.0.2]
+	at org.neo4j.server.rest.transactional.TransactionHandle.commit(TransactionHandle.java:193) [neo4j-server-2.0.2.jar:2.0.2]
+	at org.neo4j.server.rest.transactional.TransactionHandle.commit(TransactionHandle.java:107) [neo4j-server-2.0.2.jar:2.0.2]
+	at org.neo4j.server.rest.web.TransactionalService$2.write(TransactionalService.java:192) [neo4j-server-2.0.2.jar:2.0.2]
+	at com.sun.jersey.core.impl.provider.entity.StreamingOutputProvider.writeTo(StreamingOutputProvider.java:71) [jersey-core-1.9.jar:1.9]
+	at com.sun.jersey.core.impl.provider.entity.StreamingOutputProvider.writeTo(StreamingOutputProvider.java:57) [jersey-core-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.ContainerResponse.write(ContainerResponse.java:306) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1437) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1349) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1339) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:416) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:537) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:699) [jersey-server-1.9.jar:1.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848) [javax.servlet-3.0.0.v201112011016.jar:na]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:698) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1506) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.neo4j.server.rest.security.SecurityFilter.doFilter(SecurityFilter.java:112) [neo4j-server-2.0.2.jar:2.0.2]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1477) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:211) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1096) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:432) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:175) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1030) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:136) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.HandlerList.handle(HandlerList.java:52) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.Server.handle(Server.java:445) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:268) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:229) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.run(AbstractConnection.java:358) [jetty-io-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:601) [jetty-util-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:532) [jetty-util-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_67]
+Caused by: javax.transaction.xa.XAException: null
+	at org.neo4j.kernel.impl.nioneo.xa.IntegrityValidator.validateNodeRecord(IntegrityValidator.java:54) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.nioneo.xa.NeoStoreTransaction.doPrepare(NeoStoreTransaction.java:403) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.xaframework.XaTransaction.prepare(XaTransaction.java:307) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.xaframework.XaResourceManager.commitWriteTx(XaResourceManager.java:554) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.xaframework.XaResourceManager.commit(XaResourceManager.java:499) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.xaframework.XaResourceHelpImpl.commit(XaResourceHelpImpl.java:64) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.TransactionImpl.doCommit(TransactionImpl.java:548) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.TxManager.commit(TxManager.java:448) [neo4j-kernel-2.0.2.jar:2.0.2]
+	... 35 common frames omitted
+Caused by: org.neo4j.graphdb.ConstraintViolationException: Node record Node[2200,used=false,rel=3408,prop=11,labels=Inline(0x0:[]),light] still has relationships
+	... 43 common frames omitted
+2014-10-12 18:19:25.760+0000 ERROR [o.n.s.r.t.TransactionFacade]: Failed to commit transaction.
+java.lang.RuntimeException: javax.transaction.HeuristicRollbackException: Failed to commit transaction Transaction(28691, owner:"qtp595468871-866")[STATUS_NO_TRANSACTION,Resources=1], transaction rolled back ---> javax.transaction.xa.XAException
+	at org.neo4j.server.rest.transactional.TransitionalTxManagementKernelTransaction.commit(TransitionalTxManagementKernelTransaction.java:88) ~[neo4j-server-2.0.2.jar:2.0.2]
+	at org.neo4j.server.rest.transactional.TransactionHandle.commit(TransactionHandle.java:193) [neo4j-server-2.0.2.jar:2.0.2]
+	at org.neo4j.server.rest.transactional.TransactionHandle.commit(TransactionHandle.java:107) [neo4j-server-2.0.2.jar:2.0.2]
+	at org.neo4j.server.rest.web.TransactionalService$2.write(TransactionalService.java:192) [neo4j-server-2.0.2.jar:2.0.2]
+	at com.sun.jersey.core.impl.provider.entity.StreamingOutputProvider.writeTo(StreamingOutputProvider.java:71) [jersey-core-1.9.jar:1.9]
+	at com.sun.jersey.core.impl.provider.entity.StreamingOutputProvider.writeTo(StreamingOutputProvider.java:57) [jersey-core-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.ContainerResponse.write(ContainerResponse.java:306) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1437) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1349) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1339) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:416) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:537) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:699) [jersey-server-1.9.jar:1.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848) [javax.servlet-3.0.0.v201112011016.jar:na]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:698) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1506) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.neo4j.server.rest.security.SecurityFilter.doFilter(SecurityFilter.java:112) [neo4j-server-2.0.2.jar:2.0.2]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1477) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:211) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1096) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:432) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:175) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1030) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:136) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.HandlerList.handle(HandlerList.java:52) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.Server.handle(Server.java:445) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:268) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:229) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.run(AbstractConnection.java:358) [jetty-io-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:601) [jetty-util-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:532) [jetty-util-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_67]
+Caused by: javax.transaction.HeuristicRollbackException: Failed to commit transaction Transaction(28691, owner:"qtp595468871-866")[STATUS_NO_TRANSACTION,Resources=1], transaction rolled back ---> javax.transaction.xa.XAException
+	at org.neo4j.kernel.impl.transaction.TxManager.commit(TxManager.java:556) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.TxManager.commit(TxManager.java:385) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.server.rest.transactional.TransitionalTxManagementKernelTransaction.commit(TransitionalTxManagementKernelTransaction.java:84) ~[neo4j-server-2.0.2.jar:2.0.2]
+	... 33 common frames omitted
+Caused by: javax.transaction.xa.XAException: null
+	at org.neo4j.kernel.impl.nioneo.xa.IntegrityValidator.validateNodeRecord(IntegrityValidator.java:54) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.nioneo.xa.NeoStoreTransaction.doPrepare(NeoStoreTransaction.java:403) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.xaframework.XaTransaction.prepare(XaTransaction.java:307) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.xaframework.XaResourceManager.commitWriteTx(XaResourceManager.java:554) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.xaframework.XaResourceManager.commit(XaResourceManager.java:499) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.xaframework.XaResourceHelpImpl.commit(XaResourceHelpImpl.java:64) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.TransactionImpl.doCommit(TransactionImpl.java:548) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.TxManager.commit(TxManager.java:448) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	... 35 common frames omitted
+Caused by: org.neo4j.graphdb.ConstraintViolationException: Node record Node[2200,used=false,rel=3408,prop=11,labels=Inline(0x0:[]),light] still has relationships
+	... 43 common frames omitted
+2014-10-12 18:33:37.174+0000 ERROR [o.n.k.i.t.TxManager]: Commit failed, status=STATUS_COMMITING, errorCode=103
+javax.transaction.xa.XAException: null
+	at org.neo4j.kernel.impl.nioneo.xa.IntegrityValidator.validateNodeRecord(IntegrityValidator.java:54) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.nioneo.xa.NeoStoreTransaction.doPrepare(NeoStoreTransaction.java:403) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.xaframework.XaTransaction.prepare(XaTransaction.java:307) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.xaframework.XaResourceManager.commitWriteTx(XaResourceManager.java:554) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.xaframework.XaResourceManager.commit(XaResourceManager.java:499) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.xaframework.XaResourceHelpImpl.commit(XaResourceHelpImpl.java:64) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.TransactionImpl.doCommit(TransactionImpl.java:548) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.TxManager.commit(TxManager.java:448) [neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.TxManager.commit(TxManager.java:385) [neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.server.rest.transactional.TransitionalTxManagementKernelTransaction.commit(TransitionalTxManagementKernelTransaction.java:84) [neo4j-server-2.0.2.jar:2.0.2]
+	at org.neo4j.server.rest.transactional.TransactionHandle.commit(TransactionHandle.java:193) [neo4j-server-2.0.2.jar:2.0.2]
+	at org.neo4j.server.rest.transactional.TransactionHandle.commit(TransactionHandle.java:107) [neo4j-server-2.0.2.jar:2.0.2]
+	at org.neo4j.server.rest.web.TransactionalService$2.write(TransactionalService.java:192) [neo4j-server-2.0.2.jar:2.0.2]
+	at com.sun.jersey.core.impl.provider.entity.StreamingOutputProvider.writeTo(StreamingOutputProvider.java:71) [jersey-core-1.9.jar:1.9]
+	at com.sun.jersey.core.impl.provider.entity.StreamingOutputProvider.writeTo(StreamingOutputProvider.java:57) [jersey-core-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.ContainerResponse.write(ContainerResponse.java:306) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1437) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1349) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1339) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:416) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:537) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:699) [jersey-server-1.9.jar:1.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848) [javax.servlet-3.0.0.v201112011016.jar:na]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:698) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1506) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.neo4j.server.rest.security.SecurityFilter.doFilter(SecurityFilter.java:112) [neo4j-server-2.0.2.jar:2.0.2]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1477) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:211) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1096) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:432) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:175) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1030) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:136) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.HandlerList.handle(HandlerList.java:52) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.Server.handle(Server.java:445) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:268) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:229) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.run(AbstractConnection.java:358) [jetty-io-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:601) [jetty-util-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:532) [jetty-util-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_67]
+Caused by: org.neo4j.graphdb.ConstraintViolationException: Node record Node[3629,used=false,rel=4837,prop=2584,labels=Inline(0x0:[]),light] still has relationships
+	... 43 common frames omitted
+2014-10-12 18:33:37.184+0000 ERROR [o.n.k.i.t.TxManager]: TM error tx commit
+javax.transaction.HeuristicRollbackException: Failed to commit transaction Transaction(32348, owner:"qtp595468871-958")[STATUS_NO_TRANSACTION,Resources=1], transaction rolled back ---> javax.transaction.xa.XAException
+	at org.neo4j.kernel.impl.transaction.TxManager.commit(TxManager.java:556) [neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.TxManager.commit(TxManager.java:385) [neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.server.rest.transactional.TransitionalTxManagementKernelTransaction.commit(TransitionalTxManagementKernelTransaction.java:84) [neo4j-server-2.0.2.jar:2.0.2]
+	at org.neo4j.server.rest.transactional.TransactionHandle.commit(TransactionHandle.java:193) [neo4j-server-2.0.2.jar:2.0.2]
+	at org.neo4j.server.rest.transactional.TransactionHandle.commit(TransactionHandle.java:107) [neo4j-server-2.0.2.jar:2.0.2]
+	at org.neo4j.server.rest.web.TransactionalService$2.write(TransactionalService.java:192) [neo4j-server-2.0.2.jar:2.0.2]
+	at com.sun.jersey.core.impl.provider.entity.StreamingOutputProvider.writeTo(StreamingOutputProvider.java:71) [jersey-core-1.9.jar:1.9]
+	at com.sun.jersey.core.impl.provider.entity.StreamingOutputProvider.writeTo(StreamingOutputProvider.java:57) [jersey-core-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.ContainerResponse.write(ContainerResponse.java:306) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1437) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1349) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1339) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:416) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:537) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:699) [jersey-server-1.9.jar:1.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848) [javax.servlet-3.0.0.v201112011016.jar:na]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:698) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1506) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.neo4j.server.rest.security.SecurityFilter.doFilter(SecurityFilter.java:112) [neo4j-server-2.0.2.jar:2.0.2]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1477) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:211) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1096) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:432) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:175) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1030) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:136) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.HandlerList.handle(HandlerList.java:52) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.Server.handle(Server.java:445) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:268) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:229) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.run(AbstractConnection.java:358) [jetty-io-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:601) [jetty-util-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:532) [jetty-util-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_67]
+Caused by: javax.transaction.xa.XAException: null
+	at org.neo4j.kernel.impl.nioneo.xa.IntegrityValidator.validateNodeRecord(IntegrityValidator.java:54) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.nioneo.xa.NeoStoreTransaction.doPrepare(NeoStoreTransaction.java:403) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.xaframework.XaTransaction.prepare(XaTransaction.java:307) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.xaframework.XaResourceManager.commitWriteTx(XaResourceManager.java:554) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.xaframework.XaResourceManager.commit(XaResourceManager.java:499) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.xaframework.XaResourceHelpImpl.commit(XaResourceHelpImpl.java:64) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.TransactionImpl.doCommit(TransactionImpl.java:548) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.TxManager.commit(TxManager.java:448) [neo4j-kernel-2.0.2.jar:2.0.2]
+	... 35 common frames omitted
+Caused by: org.neo4j.graphdb.ConstraintViolationException: Node record Node[3629,used=false,rel=4837,prop=2584,labels=Inline(0x0:[]),light] still has relationships
+	... 43 common frames omitted
+2014-10-12 18:33:37.186+0000 ERROR [o.n.s.r.t.TransactionFacade]: Failed to commit transaction.
+java.lang.RuntimeException: javax.transaction.HeuristicRollbackException: Failed to commit transaction Transaction(32348, owner:"qtp595468871-958")[STATUS_NO_TRANSACTION,Resources=1], transaction rolled back ---> javax.transaction.xa.XAException
+	at org.neo4j.server.rest.transactional.TransitionalTxManagementKernelTransaction.commit(TransitionalTxManagementKernelTransaction.java:88) ~[neo4j-server-2.0.2.jar:2.0.2]
+	at org.neo4j.server.rest.transactional.TransactionHandle.commit(TransactionHandle.java:193) [neo4j-server-2.0.2.jar:2.0.2]
+	at org.neo4j.server.rest.transactional.TransactionHandle.commit(TransactionHandle.java:107) [neo4j-server-2.0.2.jar:2.0.2]
+	at org.neo4j.server.rest.web.TransactionalService$2.write(TransactionalService.java:192) [neo4j-server-2.0.2.jar:2.0.2]
+	at com.sun.jersey.core.impl.provider.entity.StreamingOutputProvider.writeTo(StreamingOutputProvider.java:71) [jersey-core-1.9.jar:1.9]
+	at com.sun.jersey.core.impl.provider.entity.StreamingOutputProvider.writeTo(StreamingOutputProvider.java:57) [jersey-core-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.ContainerResponse.write(ContainerResponse.java:306) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1437) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1349) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1339) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:416) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:537) [jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:699) [jersey-server-1.9.jar:1.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848) [javax.servlet-3.0.0.v201112011016.jar:na]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:698) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1506) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.neo4j.server.rest.security.SecurityFilter.doFilter(SecurityFilter.java:112) [neo4j-server-2.0.2.jar:2.0.2]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1477) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:211) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1096) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:432) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:175) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1030) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:136) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.HandlerList.handle(HandlerList.java:52) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.Server.handle(Server.java:445) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:268) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:229) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.run(AbstractConnection.java:358) [jetty-io-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:601) [jetty-util-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:532) [jetty-util-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_67]
+Caused by: javax.transaction.HeuristicRollbackException: Failed to commit transaction Transaction(32348, owner:"qtp595468871-958")[STATUS_NO_TRANSACTION,Resources=1], transaction rolled back ---> javax.transaction.xa.XAException
+	at org.neo4j.kernel.impl.transaction.TxManager.commit(TxManager.java:556) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.TxManager.commit(TxManager.java:385) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.server.rest.transactional.TransitionalTxManagementKernelTransaction.commit(TransitionalTxManagementKernelTransaction.java:84) ~[neo4j-server-2.0.2.jar:2.0.2]
+	... 33 common frames omitted
+Caused by: javax.transaction.xa.XAException: null
+	at org.neo4j.kernel.impl.nioneo.xa.IntegrityValidator.validateNodeRecord(IntegrityValidator.java:54) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.nioneo.xa.NeoStoreTransaction.doPrepare(NeoStoreTransaction.java:403) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.xaframework.XaTransaction.prepare(XaTransaction.java:307) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.xaframework.XaResourceManager.commitWriteTx(XaResourceManager.java:554) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.xaframework.XaResourceManager.commit(XaResourceManager.java:499) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.xaframework.XaResourceHelpImpl.commit(XaResourceHelpImpl.java:64) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.TransactionImpl.doCommit(TransactionImpl.java:548) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	at org.neo4j.kernel.impl.transaction.TxManager.commit(TxManager.java:448) ~[neo4j-kernel-2.0.2.jar:2.0.2]
+	... 35 common frames omitted
+Caused by: org.neo4j.graphdb.ConstraintViolationException: Node record Node[3629,used=false,rel=4837,prop=2584,labels=Inline(0x0:[]),light] still has relationships
+	... 43 common frames omitted
+2014-10-12 18:49:29.060+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 775093ms [total block time: 33406.348s]
+2014-10-12 18:57:56.520+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 213ms [total block time: 33406.56s]
+2014-10-12 18:58:44.015+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 41935ms [total block time: 33448.492s]
+2014-10-13 01:44:24.016+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 10799394ms [total block time: 44247.887s]
+2014-10-13 12:53:01.354+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 40114383ms [total block time: 84362.27s]
+2014-10-13 12:53:53.293+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 780ms [total block time: 84363.05s]
+2014-10-13 12:58:37.866+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 187ms [total block time: 84363.24s]
+2014-10-13 13:06:28.061+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 464237ms [total block time: 84827.47s]
+2014-10-13 13:11:43.528+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 356ms [total block time: 84827.83s]
+2014-10-13 15:03:46.079+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 2808481ms [total block time: 87636.31s]
+2014-10-13 15:20:46.028+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 57630ms [total block time: 87693.945s]
+2014-10-13 15:23:08.196+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 315ms [total block time: 87694.26s]
+2014-10-13 15:40:36.034+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 1044477ms [total block time: 88738.734s]
+2014-10-13 15:48:47.085+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 319466ms [total block time: 89058.2s]
+2014-10-13 15:53:27.158+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 549ms [total block time: 89058.75s]
+2014-10-13 16:46:11.579+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 3158565ms [total block time: 92217.31s]
+2014-10-13 16:49:31.067+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 55451ms [total block time: 92272.766s]
+2014-10-13 17:47:44.089+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 3044719ms [total block time: 95317.484s]
+2014-10-13 18:46:50.066+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 2708852ms [total block time: 98026.336s]
+2014-10-13 20:52:44.002+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 1794498ms [total block time: 99820.83s]
+2014-10-13 21:53:29.002+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 3596789ms [total block time: 103417.625s]
+2014-10-13 21:53:31.435+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 616ms [total block time: 103418.24s]
+2014-10-13 22:41:16.061+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 2816932ms [total block time: 106235.17s]
+2014-10-13 22:48:41.003+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 395851ms [total block time: 106631.02s]
+2014-10-13 22:48:43.323+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 504ms [total block time: 106631.53s]
+2014-10-13 22:48:55.018+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 8150ms [total block time: 106639.68s]
+2014-10-14 03:42:39.031+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 10799279ms [total block time: 117438.95s]
+2014-10-14 11:32:04.385+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 28163109ms [total block time: 145602.06s]
+2014-10-14 14:34:33.578+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 10799516ms [total block time: 156401.58s]
+2014-10-14 15:57:53.210+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 4997869ms [total block time: 161399.45s]
+2014-10-14 15:57:53.451+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 120ms [total block time: 161399.56s]
+2014-10-14 20:40:50.061+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 10797695ms [total block time: 172197.27s]
+2014-10-14 20:43:03.116+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 130882ms [total block time: 172328.14s]
+2014-10-14 23:46:21.041+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 10799662ms [total block time: 183127.81s]
+2014-10-15 11:41:12.181+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 42888851ms [total block time: 226016.66s]
+2014-10-15 11:41:12.786+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 108ms [total block time: 226016.77s]
+2014-10-15 12:33:36.056+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 1854512ms [total block time: 227871.28s]
+2014-10-15 12:34:09.422+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 323ms [total block time: 227871.6s]
+2014-10-15 15:34:11.075+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 10797816ms [total block time: 238669.42s]
+2014-10-15 17:30:53.336+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 6998860ms [total block time: 245668.27s]
+2014-10-15 17:30:53.725+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 249ms [total block time: 245668.53s]
+2014-10-15 17:48:47.063+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 3238ms [total block time: 245671.77s]
+2014-10-15 17:54:16.029+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 280865ms [total block time: 245952.62s]
+2014-10-15 18:09:28.010+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 130882ms [total block time: 246083.52s]
+2014-10-15 18:17:16.831+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 1033ms [total block time: 246084.55s]
+2014-10-15 18:53:00.021+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 2139360ms [total block time: 248223.9s]
+2014-10-15 18:54:39.409+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 424ms [total block time: 248224.34s]
+2014-10-15 21:11:11.032+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 3421684ms [total block time: 251646.02s]
+2014-10-15 21:16:27.292+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 466ms [total block time: 251646.48s]
+2014-10-15 21:31:17.017+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 445821ms [total block time: 252092.3s]
+2014-10-16 00:23:50.070+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 10349722ms [total block time: 262442.03s]
+2014-10-16 11:12:11.175+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 38878091ms [total block time: 301320.12s]
+2014-10-16 11:15:55.041+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 729ms [total block time: 301320.84s]
+2014-10-16 11:24:08.099+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 489704ms [total block time: 301810.56s]
+2014-10-16 11:40:26.044+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 642809ms [total block time: 302453.34s]
+2014-10-16 12:52:38.055+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 1800169ms [total block time: 304253.53s]
+2014-10-16 15:32:37.092+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 9064063ms [total block time: 313317.6s]
+2014-10-16 15:34:17.069+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 4404ms [total block time: 313321.97s]
+2014-10-16 17:44:53.217+0000 INFO  [o.n.s.CommunityBootstrapper]: Neo4j Server shutdown initiated by request
+2014-10-16 17:44:53.264+0000 INFO  [o.n.s.CommunityNeoServer]: Successfully shutdown Neo4j Server.
+2014-10-16 17:44:53.264+0000 INFO  [o.n.k.EmbeddedGraphDatabase]: Shutdown started
+2014-10-16 17:44:53.265+0000 INFO  [o.n.k.EmbeddedGraphDatabase]: Database is now unavailable
+2014-10-16 17:44:53.266+0000 INFO  [o.n.k.EmbeddedGraphDatabase]: GC Monitor stopped. 
+2014-10-16 17:44:53.273+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: Closed log data/graph.db/index/lucene.log
+2014-10-16 17:44:53.275+0000 INFO  [o.n.k.i.t.TxManager]: TM shutting down
+2014-10-16 17:44:53.335+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: Closed log data/graph.db/nioneo_logical.log
+2014-10-16 17:44:53.342+0000 INFO  [o.n.k.i.n.s.StoreFactory]: data/graph.db/neostore.relationshiptypestore.db.names hit=0 miss=14 switches=0 ooe=0
+2014-10-16 17:44:53.343+0000 INFO  [o.n.k.i.n.s.StoreFactory]: data/graph.db/neostore.relationshiptypestore.db hit=0 miss=7 switches=0 ooe=0
+2014-10-16 17:44:53.344+0000 INFO  [o.n.k.i.n.s.StoreFactory]: data/graph.db/neostore.labeltokenstore.db.names hit=0 miss=8 switches=0 ooe=0
+2014-10-16 17:44:53.345+0000 INFO  [o.n.k.i.n.s.StoreFactory]: data/graph.db/neostore.labeltokenstore.db hit=0 miss=4 switches=0 ooe=0
+2014-10-16 17:44:53.346+0000 INFO  [o.n.k.i.n.s.StoreFactory]: data/graph.db/neostore.propertystore.db.strings hit=1399 miss=0 switches=0 ooe=0
+2014-10-16 17:44:53.349+0000 INFO  [o.n.k.i.n.s.StoreFactory]: data/graph.db/neostore.propertystore.db.index.keys hit=0 miss=85 switches=0 ooe=0
+2014-10-16 17:44:53.350+0000 INFO  [o.n.k.i.n.s.StoreFactory]: data/graph.db/neostore.propertystore.db.index hit=0 miss=43 switches=0 ooe=0
+2014-10-16 17:44:53.351+0000 INFO  [o.n.k.i.n.s.StoreFactory]: data/graph.db/neostore.propertystore.db.arrays hit=0 miss=0 switches=0 ooe=0
+2014-10-16 17:44:53.352+0000 INFO  [o.n.k.i.n.s.StoreFactory]: data/graph.db/neostore.propertystore.db hit=129396 miss=0 switches=0 ooe=0
+2014-10-16 17:44:53.355+0000 INFO  [o.n.k.i.n.s.StoreFactory]: data/graph.db/neostore.relationshipstore.db hit=39838 miss=0 switches=0 ooe=0
+2014-10-16 17:44:53.357+0000 INFO  [o.n.k.i.n.s.StoreFactory]: data/graph.db/neostore.nodestore.db.labels hit=0 miss=0 switches=0 ooe=0
+2014-10-16 17:44:53.359+0000 INFO  [o.n.k.i.n.s.StoreFactory]: data/graph.db/neostore.nodestore.db hit=43194 miss=0 switches=0 ooe=0
+2014-10-16 17:44:53.361+0000 INFO  [o.n.k.i.n.s.StoreFactory]: data/graph.db/neostore.schemastore.db hit=0 miss=32 switches=0 ooe=0
+2014-10-16 17:44:53.363+0000 INFO  [o.n.k.i.n.s.StoreFactory]: data/graph.db/neostore hit=0 miss=8262 switches=0 ooe=0
+2014-10-16 17:44:53.364+0000 INFO  [o.n.k.i.n.x.NeoStoreXaDataSource]: NeoStore closed
+2014-10-16 17:44:53.364+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STOPPING diagnostics START ---
+2014-10-16 17:44:53.364+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STOPPING diagnostics END ---
+2014-10-17 13:49:13.729+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- INITIALIZED diagnostics START ---
+2014-10-17 13:49:13.731+0000 INFO  [o.n.k.i.DiagnosticsManager]: Neo4j Kernel properties:
+2014-10-17 13:49:13.737+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.propertystore.db.mapped_memory=643M
+2014-10-17 13:49:13.738+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.nodestore.db.mapped_memory=178M
+2014-10-17 13:49:13.738+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.propertystore.db.strings.mapped_memory=546M
+2014-10-17 13:49:13.738+0000 INFO  [o.n.k.i.DiagnosticsManager]: neo4j.ext.udc.source=server
+2014-10-17 13:49:13.738+0000 INFO  [o.n.k.i.DiagnosticsManager]: store_dir=data/graph.db
+2014-10-17 13:49:13.738+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.relationshipstore.db.mapped_memory=787M
+2014-10-17 13:49:13.738+0000 INFO  [o.n.k.i.DiagnosticsManager]: keep_logical_logs=true
+2014-10-17 13:49:13.738+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.propertystore.db.arrays.mapped_memory=619M
+2014-10-17 13:49:13.738+0000 INFO  [o.n.k.i.DiagnosticsManager]: remote_shell_enabled=true
+2014-10-17 13:49:13.738+0000 INFO  [o.n.k.i.DiagnosticsManager]: ephemeral=false
+2014-10-17 13:49:13.739+0000 INFO  [o.n.k.i.DiagnosticsManager]: Diagnostics providers:
+2014-10-17 13:49:13.739+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.kernel.configuration.Config
+2014-10-17 13:49:13.739+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.kernel.info.DiagnosticsManager
+2014-10-17 13:49:13.739+0000 INFO  [o.n.k.i.DiagnosticsManager]: SYSTEM_MEMORY
+2014-10-17 13:49:13.739+0000 INFO  [o.n.k.i.DiagnosticsManager]: JAVA_MEMORY
+2014-10-17 13:49:13.739+0000 INFO  [o.n.k.i.DiagnosticsManager]: OPERATING_SYSTEM
+2014-10-17 13:49:13.739+0000 INFO  [o.n.k.i.DiagnosticsManager]: JAVA_VIRTUAL_MACHINE
+2014-10-17 13:49:13.739+0000 INFO  [o.n.k.i.DiagnosticsManager]: CLASSPATH
+2014-10-17 13:49:13.739+0000 INFO  [o.n.k.i.DiagnosticsManager]: LIBRARY_PATH
+2014-10-17 13:49:13.739+0000 INFO  [o.n.k.i.DiagnosticsManager]: SYSTEM_PROPERTIES
+2014-10-17 13:49:13.739+0000 INFO  [o.n.k.i.DiagnosticsManager]: NETWORK
+2014-10-17 13:49:13.740+0000 INFO  [o.n.k.i.DiagnosticsManager]: System memory information:
+2014-10-17 13:49:13.745+0000 INFO  [o.n.k.i.DiagnosticsManager]: Total Physical memory: 8,00 GB
+2014-10-17 13:49:13.746+0000 INFO  [o.n.k.i.DiagnosticsManager]: Free Physical memory: 5,04 GB
+2014-10-17 13:49:13.746+0000 INFO  [o.n.k.i.DiagnosticsManager]: Committed virtual memory: 4,60 GB
+2014-10-17 13:49:13.746+0000 INFO  [o.n.k.i.DiagnosticsManager]: Total swap space: 1,00 GB
+2014-10-17 13:49:13.747+0000 INFO  [o.n.k.i.DiagnosticsManager]: Free swap space: 1,00 GB
+2014-10-17 13:49:13.747+0000 INFO  [o.n.k.i.DiagnosticsManager]: JVM memory information:
+2014-10-17 13:49:13.747+0000 INFO  [o.n.k.i.DiagnosticsManager]: Free  memory: 104,81 MB
+2014-10-17 13:49:13.747+0000 INFO  [o.n.k.i.DiagnosticsManager]: Total memory: 123,75 MB
+2014-10-17 13:49:13.748+0000 INFO  [o.n.k.i.DiagnosticsManager]: Max   memory: 1,97 GB
+2014-10-17 13:49:13.754+0000 INFO  [o.n.k.i.DiagnosticsManager]: Garbage Collector: ParNew: [Par Eden Space, Par Survivor Space]
+2014-10-17 13:49:13.754+0000 INFO  [o.n.k.i.DiagnosticsManager]: Garbage Collector: ConcurrentMarkSweep: [Par Eden Space, Par Survivor Space, CMS Old Gen, CMS Perm Gen]
+2014-10-17 13:49:13.756+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: Code Cache (Non-heap memory): committed=2,44 MB, used=709,00 kB, max=48,00 MB, threshold=0,00 B
+2014-10-17 13:49:13.756+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: Par Eden Space (Heap memory): committed=34,13 MB, used=14,58 MB, max=266,25 MB, threshold=?
+2014-10-17 13:49:13.757+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: Par Survivor Space (Heap memory): committed=4,25 MB, used=4,25 MB, max=33,25 MB, threshold=?
+2014-10-17 13:49:13.757+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: CMS Old Gen (Heap memory): committed=85,38 MB, used=799,07 kB, max=1,68 GB, threshold=0,00 B
+2014-10-17 13:49:13.758+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: CMS Perm Gen (Non-heap memory): committed=20,75 MB, used=12,58 MB, max=82,00 MB, threshold=0,00 B
+2014-10-17 13:49:13.758+0000 INFO  [o.n.k.i.DiagnosticsManager]: Operating system information:
+2014-10-17 13:49:13.758+0000 INFO  [o.n.k.i.DiagnosticsManager]: Operating System: Mac OS X; version: 10.9.5; arch: x86_64; cpus: 4
+2014-10-17 13:49:13.759+0000 INFO  [o.n.k.i.DiagnosticsManager]: Max number of file descriptors: 10240
+2014-10-17 13:49:13.759+0000 INFO  [o.n.k.i.DiagnosticsManager]: Number of open file descriptors: 84
+2014-10-17 13:49:13.759+0000 INFO  [o.n.k.i.DiagnosticsManager]: Process id: 676@CheeseWagstaff.local
+2014-10-17 13:49:13.760+0000 INFO  [o.n.k.i.DiagnosticsManager]: Byte order: LITTLE_ENDIAN
+2014-10-17 13:49:13.760+0000 INFO  [o.n.k.i.DiagnosticsManager]: Local timezone: Europe/Madrid
+2014-10-17 13:49:13.760+0000 INFO  [o.n.k.i.DiagnosticsManager]: JVM information:
+2014-10-17 13:49:13.760+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Name: Java HotSpot(TM) 64-Bit Server VM
+2014-10-17 13:49:13.760+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Vendor: Oracle Corporation
+2014-10-17 13:49:13.760+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Version: 24.65-b04
+2014-10-17 13:49:13.760+0000 INFO  [o.n.k.i.DiagnosticsManager]: JIT compiler: HotSpot 64-Bit Tiered Compilers
+2014-10-17 13:49:13.761+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Arguments: [-XX:+DisableExplicitGC, -Dorg.neo4j.server.properties=conf/neo4j-server.properties, -Djava.util.logging.config.file=conf/logging.properties, -Dlog4j.configuration=file:conf/log4j.properties, -XX:+UseConcMarkSweepGC, -XX:+CMSClassUnloadingEnabled, -Dneo4j.home=/Users/Sergio/Desktop/BallinAPI/db/neo4j/development, -Dneo4j.instance=/Users/Sergio/Desktop/BallinAPI/db/neo4j/development, -Dfile.encoding=UTF-8]
+2014-10-17 13:49:13.761+0000 INFO  [o.n.k.i.DiagnosticsManager]: Java classpath:
+2014-10-17 13:49:13.763+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/lib/org.apache.servicemix.bundles.jline-0.9.94_1.jar
+2014-10-17 13:49:13.763+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/dns_sd.jar
+2014-10-17 13:49:13.763+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/jre/lib/ext/sunec.jar
+2014-10-17 13:49:13.763+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/asm-3.1.jar
+2014-10-17 13:49:13.763+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/jetty-xml-9.0.5.v20130815.jar
+2014-10-17 13:49:13.763+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/MRJToolkit.jar
+2014-10-17 13:49:13.763+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/lib/parboiled-scala_2.10-1.1.6.jar
+2014-10-17 13:49:13.763+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/logback-core-1.0.9.jar
+2014-10-17 13:49:13.763+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/commons-configuration-1.6.jar
+2014-10-17 13:49:13.763+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/vecmath.jar
+2014-10-17 13:49:13.763+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/libmlib_jai.jnilib
+2014-10-17 13:49:13.763+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/lib/neo4j-graph-matching-2.0.2.jar
+2014-10-17 13:49:13.763+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/jetty-io-9.0.5.v20130815.jar
+2014-10-17 13:49:13.763+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/jre/lib/ext/dnsns.jar
+2014-10-17 13:49:13.763+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/lib/neo4j-udc-2.0.2.jar
+2014-10-17 13:49:13.763+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/commons-beanutils-core-1.8.0.jar
+2014-10-17 13:49:13.763+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/commons-beanutils-1.8.0.jar
+2014-10-17 13:49:13.763+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/commons-io-1.4.jar
+2014-10-17 13:49:13.764+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/lib/neo4j-lucene-index-2.0.2.jar
+2014-10-17 13:49:13.764+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/lib/neo4j-cypher-compiler-2.0-2.0.2.jar
+2014-10-17 13:49:13.764+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/jackson-core-asl-1.9.7.jar
+2014-10-17 13:49:13.764+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar
+2014-10-17 13:49:13.764+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/commons-lang-2.4.jar
+2014-10-17 13:49:13.764+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/jetty-util-9.0.5.v20130815.jar
+2014-10-17 13:49:13.764+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/libJ3D.jnilib
+2014-10-17 13:49:13.764+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/jetty-webapp-9.0.5.v20130815.jar
+2014-10-17 13:49:13.764+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/mlibwrapper_jai.jar
+2014-10-17 13:49:13.764+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/rhino-1.7R4.jar
+2014-10-17 13:49:13.764+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/jre/lib/jce.jar
+2014-10-17 13:49:13.764+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/bcprov-jdk16-140.jar
+2014-10-17 13:49:13.764+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/lib/neo4j-kernel-2.0.2.jar
+2014-10-17 13:49:13.764+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/lib/lucene-core-3.6.2.jar
+2014-10-17 13:49:13.764+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/QTJava.zip
+2014-10-17 13:49:13.764+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/jcl-over-slf4j-1.6.1.jar
+2014-10-17 13:49:13.764+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/lib/neo4j-cypher-2.0.2.jar
+2014-10-17 13:49:13.764+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/jre/lib/rt.jar
+2014-10-17 13:49:13.764+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/lib/scala-library-2.10.3.jar
+2014-10-17 13:49:13.764+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/lib/neo4j-cypher-compiler-1.9-2.0.2.jar
+2014-10-17 13:49:13.764+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/slf4j-api-1.6.2.jar
+2014-10-17 13:49:13.764+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/libJ3DAudio.jnilib
+2014-10-17 13:49:13.764+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/libAppleScriptEngine.jnilib
+2014-10-17 13:49:13.764+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/jackson-jaxrs-1.9.7.jar
+2014-10-17 13:49:13.764+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/j3daudio.jar
+2014-10-17 13:49:13.764+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/conf/
+2014-10-17 13:49:13.764+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/libJ3DUtils.jnilib
+2014-10-17 13:49:13.764+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/jsr311-api-1.1.2.r612.jar
+2014-10-17 13:49:13.764+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/logback-classic-1.0.9.jar
+2014-10-17 13:49:13.764+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/libQTJNative.jnilib
+2014-10-17 13:49:13.764+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/j3dcore.jar
+2014-10-17 13:49:13.764+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/usr/lib/java/libjdns_sd.jnilib
+2014-10-17 13:49:13.765+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/javax.servlet-3.0.0.v201112011016.jar
+2014-10-17 13:49:13.765+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/mimepull-1.6.jar
+2014-10-17 13:49:13.765+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/neo4j-server-2.0.2.jar
+2014-10-17 13:49:13.765+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/jetty-security-9.0.5.v20130815.jar
+2014-10-17 13:49:13.765+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/commons-digester-1.8.1.jar
+2014-10-17 13:49:13.765+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/lib/neo4j-shell-2.0.2.jar
+2014-10-17 13:49:13.765+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/j3dutils.jar
+2014-10-17 13:49:13.765+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/commons-collections-3.2.1.jar
+2014-10-17 13:49:13.765+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/jackson-mapper-asl-1.9.7.jar
+2014-10-17 13:49:13.765+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/jai_core.jar
+2014-10-17 13:49:13.765+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/jetty-server-9.0.5.v20130815.jar
+2014-10-17 13:49:13.765+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/jersey-server-1.9.jar
+2014-10-17 13:49:13.765+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/jre/lib/jsse.jar
+2014-10-17 13:49:13.765+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/jai_codec.jar
+2014-10-17 13:49:13.765+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/rrd4j-2.0.7.jar
+2014-10-17 13:49:13.765+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/jre/lib/ext/zipfs.jar
+2014-10-17 13:49:13.765+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/jetty-servlet-9.0.5.v20130815.jar
+2014-10-17 13:49:13.765+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/jre/lib/charsets.jar
+2014-10-17 13:49:13.765+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/lib/geronimo-jta_1.1_spec-1.1.1.jar
+2014-10-17 13:49:13.765+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/jre/lib/resources.jar
+2014-10-17 13:49:13.765+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/logback-access-1.0.9.jar
+2014-10-17 13:49:13.765+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/lib/parboiled-core-1.1.6.jar
+2014-10-17 13:49:13.765+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/jre/lib/ext/localedata.jar
+2014-10-17 13:49:13.765+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/neo4j-browser-2.0.2.jar
+2014-10-17 13:49:13.765+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/commons-logging-1.1.1.jar
+2014-10-17 13:49:13.765+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/jre/lib/sunrsasign.jar
+2014-10-17 13:49:13.765+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/lib/neo4j-jmx-2.0.2.jar
+2014-10-17 13:49:13.765+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/jre/classes
+2014-10-17 13:49:13.765+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/jersey-multipart-1.9.jar
+2014-10-17 13:49:13.765+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/neo4j-server-2.0.2-static-web.jar
+2014-10-17 13:49:13.765+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/lib/concurrentlinkedhashmap-lru-1.3.1.jar
+2014-10-17 13:49:13.766+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/lib/neo4j-graph-algo-2.0.2.jar
+2014-10-17 13:49:13.766+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/jersey-core-1.9.jar
+2014-10-17 13:49:13.766+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/jetty-http-9.0.5.v20130815.jar
+2014-10-17 13:49:13.766+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/AppleScriptEngine.jar
+2014-10-17 13:49:13.766+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/lib/server-api-2.0.2.jar
+2014-10-17 13:49:13.766+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/lib/neo4j-cypher-commons-2.0.2.jar
+2014-10-17 13:49:13.766+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/jre/lib/jfr.jar
+2014-10-17 13:49:13.766+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/opencsv-2.0.jar
+2014-10-17 13:49:13.766+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/janino-2.6.1.jar
+2014-10-17 13:49:13.766+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar
+2014-10-17 13:49:13.766+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/commons-compiler-2.6.1.jar
+2014-10-17 13:49:13.766+0000 INFO  [o.n.k.i.DiagnosticsManager]: Library path:
+2014-10-17 13:49:13.766+0000 INFO  [o.n.k.i.DiagnosticsManager]: /Users/Sergio/Library/Java/Extensions
+2014-10-17 13:49:13.766+0000 INFO  [o.n.k.i.DiagnosticsManager]: /Library/Java/Extensions
+2014-10-17 13:49:13.766+0000 INFO  [o.n.k.i.DiagnosticsManager]: /Network/Library/Java/Extensions
+2014-10-17 13:49:13.766+0000 INFO  [o.n.k.i.DiagnosticsManager]: /System/Library/Java/Extensions
+2014-10-17 13:49:13.766+0000 INFO  [o.n.k.i.DiagnosticsManager]: /usr/lib/java
+2014-10-17 13:49:13.766+0000 INFO  [o.n.k.i.DiagnosticsManager]: /Users/Sergio/Desktop/BallinAPI/db/neo4j/development
+2014-10-17 13:49:13.766+0000 INFO  [o.n.k.i.DiagnosticsManager]: System.properties:
+2014-10-17 13:49:13.767+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/jre/lib
+2014-10-17 13:49:13.767+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.properties = conf/neo4j-server.properties
+2014-10-17 13:49:13.767+0000 INFO  [o.n.k.i.DiagnosticsManager]: gopherProxySet = false
+2014-10-17 13:49:13.767+0000 INFO  [o.n.k.i.DiagnosticsManager]: path.separator = :
+2014-10-17 13:49:13.767+0000 INFO  [o.n.k.i.DiagnosticsManager]: file.encoding.pkg = sun.io
+2014-10-17 13:49:13.767+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.country = ES
+2014-10-17 13:49:13.767+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.java.launcher = SUN_STANDARD
+2014-10-17 13:49:13.767+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.os.patch.level = unknown
+2014-10-17 13:49:13.767+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.dir = /Users/Sergio/Desktop/BallinAPI/db/neo4j/development
+2014-10-17 13:49:13.767+0000 INFO  [o.n.k.i.DiagnosticsManager]: log4j.configuration = file:conf/log4j.properties
+2014-10-17 13:49:13.767+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.jnu.encoding = UTF-8
+2014-10-17 13:49:13.767+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+2014-10-17 13:49:13.767+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.home = /Users/Sergio
+2014-10-17 13:49:13.767+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.timezone = Europe/Madrid
+2014-10-17 13:49:13.767+0000 INFO  [o.n.k.i.DiagnosticsManager]: file.encoding = UTF-8
+2014-10-17 13:49:13.767+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.name = Sergio
+2014-10-17 13:49:13.767+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.java.command = org.neo4j.server.Bootstrapper
+2014-10-17 13:49:13.767+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.arch.data.model = 64
+2014-10-17 13:49:13.767+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.language = es
+2014-10-17 13:49:13.768+0000 INFO  [o.n.k.i.DiagnosticsManager]: awt.toolkit = sun.lwawt.macosx.LWCToolkit
+2014-10-17 13:49:13.768+0000 INFO  [o.n.k.i.DiagnosticsManager]: file.separator = /
+2014-10-17 13:49:13.768+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.io.unicode.encoding = UnicodeBig
+2014-10-17 13:49:13.768+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.cpu.endian = little
+2014-10-17 13:49:13.768+0000 INFO  [o.n.k.i.DiagnosticsManager]: neo4j.instance = /Users/Sergio/Desktop/BallinAPI/db/neo4j/development
+2014-10-17 13:49:13.768+0000 INFO  [o.n.k.i.DiagnosticsManager]: neo4j.home = /Users/Sergio/Desktop/BallinAPI/db/neo4j/development
+2014-10-17 13:49:13.768+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.cpu.isalist = 
+2014-10-17 13:49:13.768+0000 INFO  [o.n.k.i.DiagnosticsManager]: Network information:
+2014-10-17 13:49:13.771+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface lo0:
+2014-10-17 13:49:13.772+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:0:0:0:1%1
+2014-10-17 13:49:13.772+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 0:0:0:0:0:0:0:1
+2014-10-17 13:49:13.772+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 127.0.0.1
+2014-10-17 13:49:13.772+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- INITIALIZED diagnostics END ---
+2014-10-17 13:49:13.982+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [data/graph.db/neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=304b)
+2014-10-17 13:49:13.985+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [data/graph.db/neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=35b)
+2014-10-17 13:49:13.986+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [data/graph.db/neostore.labeltokenstore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=190b)
+2014-10-17 13:49:13.987+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [data/graph.db/neostore.labeltokenstore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=20b)
+2014-10-17 13:49:13.988+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [data/graph.db/neostore.propertystore.db.strings] brickCount=0 brickSize=572416b mappedMem=572522496b (storeSize=154752b)
+2014-10-17 13:49:13.989+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [data/graph.db/neostore.propertystore.db.index.keys] brickCount=0 brickSize=0b mappedMem=0b (storeSize=1672b)
+2014-10-17 13:49:13.990+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [data/graph.db/neostore.propertystore.db.index] brickCount=0 brickSize=0b mappedMem=0b (storeSize=387b)
+2014-10-17 13:49:13.992+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [data/graph.db/neostore.propertystore.db.arrays] brickCount=0 brickSize=648960b mappedMem=649068544b (storeSize=128b)
+2014-10-17 13:49:14.000+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [data/graph.db/neostore.propertystore.db] brickCount=0 brickSize=674204b mappedMem=674234368b (storeSize=577485b)
+2014-10-17 13:49:14.005+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [data/graph.db/neostore.relationshipstore.db] brickCount=0 brickSize=825198b mappedMem=825229312b (storeSize=187605b)
+2014-10-17 13:49:14.006+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [data/graph.db/neostore.nodestore.db.labels] brickCount=0 brickSize=0b mappedMem=0b (storeSize=68b)
+2014-10-17 13:49:14.010+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [data/graph.db/neostore.nodestore.db] brickCount=0 brickSize=186634b mappedMem=186646528b (storeSize=54558b)
+2014-10-17 13:49:14.012+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [data/graph.db/neostore.schemastore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=576b)
+2014-10-17 13:49:14.013+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [data/graph.db/neostore] brickCount=0 brickSize=0b mappedMem=0b (storeSize=63b)
+2014-10-17 13:49:14.322+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[0](property[0]) is ONLINE
+2014-10-17 13:49:14.375+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[1](property[0]) is ONLINE
+2014-10-17 13:49:14.394+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[2](property[0]) is ONLINE
+2014-10-17 13:49:14.420+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[3](property[0]) is ONLINE
+2014-10-17 13:49:14.428+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: Opened logical log [data/graph.db/nioneo_logical.log.1] version=5, lastTxId=10884 (clean)
+2014-10-17 13:49:14.483+0000 INFO  [o.n.k.i.t.TxManager]: TM opening log: data/graph.db/tm_tx_log.2
+2014-10-17 13:49:14.507+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[0](property[0]) is ONLINE
+2014-10-17 13:49:14.507+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[1](property[0]) is ONLINE
+2014-10-17 13:49:14.508+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[2](property[0]) is ONLINE
+2014-10-17 13:49:14.509+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[3](property[0]) is ONLINE
+2014-10-17 13:49:14.510+0000 INFO  [o.n.k.i.t.KernelHealth]: Kernel health set to OK
+2014-10-17 13:49:14.690+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: Opened logical log [data/graph.db/index/lucene.log.1] version=5, lastTxId=1 (clean)
+2014-10-17 13:49:14.695+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2014-10-17 13:49:14.695+0000 INFO  [o.n.k.i.DiagnosticsManager]: Graph Database: org.neo4j.kernel.EmbeddedGraphDatabase StoreId[time:1412713834912, id:8508636841629548285, store version: 13843131341501958]
+2014-10-17 13:49:14.695+0000 INFO  [o.n.k.i.DiagnosticsManager]: Kernel version: Neo4j - Graph Database Kernel (neo4j-kernel), version: 2.0.2
+2014-10-17 13:49:14.696+0000 INFO  [o.n.k.i.DiagnosticsManager]: Neo4j component versions:
+2014-10-17 13:49:14.702+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Lucene Index (neo4j-lucene-index), version: 2.0.2; revision: 2.0.2:2.0-maint:1007/47f4314f1f50098884c1c1f4e1c3b79d5ce46db1
+2014-10-17 13:49:14.702+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - JMX support (neo4j-jmx), version: 2.0.2; revision: 2.0.2:2.0-maint:1007/47f4314f1f50098884c1c1f4e1c3b79d5ce46db1
+2014-10-17 13:49:14.702+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Graph Matching (neo4j-graph-matching), version: 2.0.2; revision: 2.0.2:2.0-maint:1007/47f4314f1f50098884c1c1f4e1c3b79d5ce46db1
+2014-10-17 13:49:14.702+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j Server API (server-api), version: 2.0.2; revision: 2.0.2:2.0-maint:1007/47f4314f1f50098884c1c1f4e1c3b79d5ce46db1
+2014-10-17 13:49:14.702+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Graph Database Kernel (neo4j-kernel), version: 2.0.2; revision: 2.0.2:2.0-maint:1007/47f4314f1f50098884c1c1f4e1c3b79d5ce46db1
+2014-10-17 13:49:14.702+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher (neo4j-cypher), version: 2.0.2; revision: 2.0.2:2.0-maint:1007/47f4314f1f50098884c1c1f4e1c3b79d5ce46db1
+2014-10-17 13:49:14.702+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j Server (neo4j-server), version: 2.0.2; revision: 2.0.2:2.0-maint:1007/47f4314f1f50098884c1c1f4e1c3b79d5ce46db1
+2014-10-17 13:49:14.702+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Graph Algorithms (neo4j-graph-algo), version: 2.0.2; revision: 2.0.2:2.0-maint:1007/47f4314f1f50098884c1c1f4e1c3b79d5ce46db1
+2014-10-17 13:49:14.702+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher Compiler 2.0 (neo4j-cypher-compiler-2.0), version: 2.0.2; revision: 2.0.2:2.0-maint:1007/47f4314f1f50098884c1c1f4e1c3b79d5ce46db1
+2014-10-17 13:49:14.702+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Generic shell (neo4j-shell), version: 2.0.2; revision: 2.0.2:2.0-maint:1007/47f4314f1f50098884c1c1f4e1c3b79d5ce46db1
+2014-10-17 13:49:14.702+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher Compiler 1.9 (neo4j-cypher-compiler-1.9), version: 2.0.2; revision: 2.0.2:2.0-maint:1007/47f4314f1f50098884c1c1f4e1c3b79d5ce46db1
+2014-10-17 13:49:14.702+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neo4j-udc, version: 2.0.2; revision: 2.0.2:2.0-maint:1007/47f4314f1f50098884c1c1f4e1c3b79d5ce46db1
+2014-10-17 13:49:14.702+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher Commons (neo4j-cypher-commons), version: 2.0.2; revision: 2.0.2:2.0-maint:1007/47f4314f1f50098884c1c1f4e1c3b79d5ce46db1
+2014-10-17 13:49:14.703+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2014-10-17 13:49:14.705+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2014-10-17 13:49:14.706+0000 INFO  [o.n.k.i.DiagnosticsManager]: Store versions:
+2014-10-17 13:49:14.706+0000 INFO  [o.n.k.i.DiagnosticsManager]: Store versions:
+2014-10-17 13:49:14.706+0000 INFO  [o.n.k.i.DiagnosticsManager]:   NeoStore v0.A.1
+2014-10-17 13:49:14.706+0000 INFO  [o.n.k.i.DiagnosticsManager]:   SchemaStore v0.A.1
+2014-10-17 13:49:14.706+0000 INFO  [o.n.k.i.DiagnosticsManager]:   NodeStore v0.A.1
+2014-10-17 13:49:14.706+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipStore v0.A.1
+2014-10-17 13:49:14.706+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipTypeStore v0.A.1
+2014-10-17 13:49:14.706+0000 INFO  [o.n.k.i.DiagnosticsManager]:   LabelTokenStore v0.A.1
+2014-10-17 13:49:14.706+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyStore v0.A.1
+2014-10-17 13:49:14.706+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyIndexStore v0.A.1
+2014-10-17 13:49:14.706+0000 INFO  [o.n.k.i.DiagnosticsManager]:   StringPropertyStore v0.A.1
+2014-10-17 13:49:14.706+0000 INFO  [o.n.k.i.DiagnosticsManager]:   ArrayPropertyStore v0.A.1
+2014-10-17 13:49:14.706+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2014-10-17 13:49:14.706+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2014-10-17 13:49:14.706+0000 INFO  [o.n.k.i.DiagnosticsManager]: Id usage:
+2014-10-17 13:49:14.706+0000 INFO  [o.n.k.i.DiagnosticsManager]: Id usage:
+2014-10-17 13:49:14.707+0000 INFO  [o.n.k.i.DiagnosticsManager]:   SchemaStore: used=9 high=8
+2014-10-17 13:49:14.707+0000 INFO  [o.n.k.i.DiagnosticsManager]:   NodeStore: used=2835 high=3896
+2014-10-17 13:49:14.707+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipStore: used=4035 high=5684
+2014-10-17 13:49:14.707+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipTypeStore: used=7 high=6
+2014-10-17 13:49:14.707+0000 INFO  [o.n.k.i.DiagnosticsManager]:   LabelTokenStore: used=4 high=3
+2014-10-17 13:49:14.707+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyStore: used=14085 high=14084
+2014-10-17 13:49:14.708+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyIndexStore: used=43 high=42
+2014-10-17 13:49:14.708+0000 INFO  [o.n.k.i.DiagnosticsManager]:   StringPropertyStore: used=1209 high=1208
+2014-10-17 13:49:14.708+0000 INFO  [o.n.k.i.DiagnosticsManager]:   ArrayPropertyStore: used=1 high=0
+2014-10-17 13:49:14.708+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2014-10-17 13:49:14.708+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS START ---
+2014-10-17 13:49:14.708+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS END ---
+2014-10-17 13:49:14.708+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2014-10-17 13:49:14.709+0000 INFO  [o.n.k.i.DiagnosticsManager]: Disk space on partition (Total / Free / Free %): 120473067520 / 52732768256 / 43
+Storage files: (filename : modification date - size)
+2014-10-17 13:49:14.709+0000 INFO  [o.n.k.i.DiagnosticsManager]:   .DS_Store: 2014-10-12T02:40:22+0200 - 15,00 kB
+2014-10-17 13:49:14.709+0000 INFO  [o.n.k.i.DiagnosticsManager]:   active_tx_log: 2014-10-16T14:20:06+0200 - 11,00 B
+2014-10-17 13:49:14.709+0000 INFO  [o.n.k.i.DiagnosticsManager]:   index:
+2014-10-17 13:49:14.710+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene-store.db: 2014-10-16T19:44:53+0200 - 40,00 B
+2014-10-17 13:49:14.710+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.1: 2014-10-17T15:49:14+0200 - 16,00 B
+2014-10-17 13:49:14.710+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.active: 2014-10-17T15:49:14+0200 - 4,00 B
+2014-10-17 13:49:14.710+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v0: 2014-10-07T22:51:57+0200 - 16,00 B
+2014-10-17 13:49:14.711+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v1: 2014-10-09T19:47:47+0200 - 16,00 B
+2014-10-17 13:49:14.711+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v2: 2014-10-10T18:21:04+0200 - 16,00 B
+2014-10-17 13:49:14.711+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v3: 2014-10-12T02:28:55+0200 - 16,00 B
+2014-10-17 13:49:14.712+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v4: 2014-10-16T19:44:53+0200 - 16,00 B
+2014-10-17 13:49:14.712+0000 INFO  [o.n.k.i.DiagnosticsManager]:   - Total: 2014-10-17T15:49:14+0200 - 140,00 B
+2014-10-17 13:49:14.712+0000 INFO  [o.n.k.i.DiagnosticsManager]:   lock: 2014-10-17T15:49:14+0200 - 0,00 B
+2014-10-17 13:49:14.713+0000 INFO  [o.n.k.i.DiagnosticsManager]:   messages.log: 2014-10-17T15:49:14+0200 - 537,89 kB
+2014-10-17 13:49:14.713+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore: 2014-10-17T15:49:14+0200 - 63,00 B
+2014-10-17 13:49:14.714+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.id: 2014-10-17T15:49:14+0200 - 9,00 B
+2014-10-17 13:49:14.714+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db: 2014-10-17T15:49:13+0200 - 20,00 B
+2014-10-17 13:49:14.715+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db.id: 2014-10-17T15:49:13+0200 - 9,00 B
+2014-10-17 13:49:14.715+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db.names: 2014-10-17T15:49:13+0200 - 190,00 B
+2014-10-17 13:49:14.716+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db.names.id: 2014-10-17T15:49:13+0200 - 9,00 B
+2014-10-17 13:49:14.716+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db: 2014-10-17T15:49:14+0200 - 53,28 kB
+2014-10-17 13:49:14.716+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db.id: 2014-10-17T15:49:14+0200 - 16,31 kB
+2014-10-17 13:49:14.716+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db.labels: 2014-10-17T15:49:14+0200 - 68,00 B
+2014-10-17 13:49:14.716+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db.labels.id: 2014-10-17T15:49:14+0200 - 9,00 B
+2014-10-17 13:49:14.717+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db: 2014-10-17T15:49:13+0200 - 563,95 kB
+2014-10-17 13:49:14.717+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.arrays: 2014-10-17T15:49:13+0200 - 128,00 B
+2014-10-17 13:49:14.717+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.arrays.id: 2014-10-17T15:49:13+0200 - 9,00 B
+2014-10-17 13:49:14.717+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.id: 2014-10-17T15:49:13+0200 - 23,72 kB
+2014-10-17 13:49:14.718+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index: 2014-10-17T15:49:13+0200 - 387,00 B
+2014-10-17 13:49:14.718+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index.id: 2014-10-17T15:49:13+0200 - 9,00 B
+2014-10-17 13:49:14.718+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index.keys: 2014-10-17T15:49:13+0200 - 1,63 kB
+2014-10-17 13:49:14.718+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index.keys.id: 2014-10-17T15:49:13+0200 - 9,00 B
+2014-10-17 13:49:14.719+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.strings: 2014-10-17T15:49:13+0200 - 151,13 kB
+2014-10-17 13:49:14.719+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.strings.id: 2014-10-17T15:49:13+0200 - 73,00 B
+2014-10-17 13:49:14.719+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipstore.db: 2014-10-17T15:49:14+0200 - 183,21 kB
+2014-10-17 13:49:14.719+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipstore.db.id: 2014-10-17T15:49:14+0200 - 20,90 kB
+2014-10-17 13:49:14.720+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db: 2014-10-17T15:49:13+0200 - 35,00 B
+2014-10-17 13:49:14.720+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db.id: 2014-10-17T15:49:13+0200 - 9,00 B
+2014-10-17 13:49:14.720+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db.names: 2014-10-17T15:49:13+0200 - 304,00 B
+2014-10-17 13:49:14.720+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db.names.id: 2014-10-17T15:49:13+0200 - 9,00 B
+2014-10-17 13:49:14.720+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.schemastore.db: 2014-10-17T15:49:14+0200 - 576,00 B
+2014-10-17 13:49:14.721+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.schemastore.db.id: 2014-10-17T15:49:14+0200 - 9,00 B
+2014-10-17 13:49:14.721+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.1: 2014-10-17T15:49:14+0200 - 16,00 B
+2014-10-17 13:49:14.721+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.active: 2014-10-17T15:49:14+0200 - 4,00 B
+2014-10-17 13:49:14.721+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v0: 2014-10-07T22:51:57+0200 - 16,00 B
+2014-10-17 13:49:14.722+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v1: 2014-10-09T19:47:47+0200 - 4,27 kB
+2014-10-17 13:49:14.722+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v2: 2014-10-10T18:21:04+0200 - 170,57 kB
+2014-10-17 13:49:14.722+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v3: 2014-10-12T02:28:55+0200 - 1,62 MB
+2014-10-17 13:49:14.722+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v4: 2014-10-16T19:44:53+0200 - 5,89 MB
+2014-10-17 13:49:14.722+0000 INFO  [o.n.k.i.DiagnosticsManager]:   schema:
+2014-10-17 13:49:14.723+0000 INFO  [o.n.k.i.DiagnosticsManager]:     .DS_Store: 2014-10-12T02:40:22+0200 - 6,00 kB
+2014-10-17 13:49:14.723+0000 INFO  [o.n.k.i.DiagnosticsManager]:     index:
+2014-10-17 13:49:14.723+0000 INFO  [o.n.k.i.DiagnosticsManager]:       .DS_Store: 2014-10-12T02:40:22+0200 - 6,00 kB
+2014-10-17 13:49:14.723+0000 INFO  [o.n.k.i.DiagnosticsManager]:       lucene:
+2014-10-17 13:49:14.723+0000 INFO  [o.n.k.i.DiagnosticsManager]:         .DS_Store: 2014-10-12T02:40:22+0200 - 6,00 kB
+2014-10-17 13:49:14.723+0000 INFO  [o.n.k.i.DiagnosticsManager]:         1:
+2014-10-17 13:49:14.724+0000 INFO  [o.n.k.i.DiagnosticsManager]:           .DS_Store: 2014-10-12T02:40:22+0200 - 6,00 kB
+2014-10-17 13:49:14.724+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2e5.fdt: 2014-10-16T14:21:07+0200 - 4,30 kB
+2014-10-17 13:49:14.724+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2e5.fdx: 2014-10-16T14:21:07+0200 - 4,30 kB
+2014-10-17 13:49:14.724+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2e5.fnm: 2014-10-16T14:21:07+0200 - 18,00 B
+2014-10-17 13:49:14.725+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2e5.frq: 2014-10-16T14:21:07+0200 - 1,90 kB
+2014-10-17 13:49:14.725+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2e5.tii: 2014-10-16T14:21:07+0200 - 2,04 kB
+2014-10-17 13:49:14.725+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2e5.tis: 2014-10-16T14:21:07+0200 - 25,52 kB
+2014-10-17 13:49:14.725+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2e6.cfs: 2014-10-16T14:21:09+0200 - 256,00 B
+2014-10-17 13:49:14.726+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2014-10-08T12:49:30+0200 - 16,00 kB
+2014-10-17 13:49:14.726+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2014-10-16T19:44:53+0200 - 20,00 B
+2014-10-17 13:49:14.726+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_5: 2014-10-16T19:44:53+0200 - 510,00 B
+2014-10-17 13:49:14.726+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2014-10-17T15:49:14+0200 - 0,00 B
+2014-10-17 13:49:14.727+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2014-10-17T15:49:14+0200 - 60,85 kB
+2014-10-17 13:49:14.727+0000 INFO  [o.n.k.i.DiagnosticsManager]:         3:
+2014-10-17 13:49:14.727+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _4c.fdt: 2014-10-11T22:54:00+0200 - 200,00 B
+2014-10-17 13:49:14.727+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _4c.fdx: 2014-10-11T22:54:00+0200 - 228,00 B
+2014-10-17 13:49:14.727+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _4c.fnm: 2014-10-11T22:54:00+0200 - 18,00 B
+2014-10-17 13:49:14.728+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _4c.frq: 2014-10-11T22:54:00+0200 - 56,00 B
+2014-10-17 13:49:14.728+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _4c.tii: 2014-10-11T22:54:00+0200 - 99,00 B
+2014-10-17 13:49:14.728+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _4c.tis: 2014-10-11T22:54:00+0200 - 1,35 kB
+2014-10-17 13:49:14.728+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _4d.cfs: 2014-10-11T22:54:00+0200 - 254,00 B
+2014-10-17 13:49:14.729+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _4e.cfs: 2014-10-11T22:54:00+0200 - 254,00 B
+2014-10-17 13:49:14.729+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2014-10-10T13:27:01+0200 - 16,00 kB
+2014-10-17 13:49:14.729+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2014-10-12T02:28:55+0200 - 20,00 B
+2014-10-17 13:49:14.730+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_3: 2014-10-12T02:28:55+0200 - 720,00 B
+2014-10-17 13:49:14.730+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2014-10-17T15:49:14+0200 - 0,00 B
+2014-10-17 13:49:14.730+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2014-10-17T15:49:14+0200 - 19,16 kB
+2014-10-17 13:49:14.730+0000 INFO  [o.n.k.i.DiagnosticsManager]:         5:
+2014-10-17 13:49:14.731+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _12z.fdt: 2014-10-12T17:01:16+0200 - 9,22 kB
+2014-10-17 13:49:14.731+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _12z.fdx: 2014-10-12T17:01:16+0200 - 9,57 kB
+2014-10-17 13:49:14.731+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _12z.fnm: 2014-10-12T17:01:16+0200 - 18,00 B
+2014-10-17 13:49:14.732+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _12z.frq: 2014-10-12T17:01:16+0200 - 4,54 kB
+2014-10-17 13:49:14.732+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _12z.tii: 2014-10-12T17:01:16+0200 - 4,47 kB
+2014-10-17 13:49:14.733+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _12z.tis: 2014-10-12T17:01:16+0200 - 56,33 kB
+2014-10-17 13:49:14.733+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _130.cfs: 2014-10-12T17:01:16+0200 - 256,00 B
+2014-10-17 13:49:14.733+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _131.cfs: 2014-10-12T17:01:16+0200 - 256,00 B
+2014-10-17 13:49:14.734+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _132.cfs: 2014-10-12T17:01:16+0200 - 256,00 B
+2014-10-17 13:49:14.734+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _133.cfs: 2014-10-12T17:01:17+0200 - 256,00 B
+2014-10-17 13:49:14.734+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _134.cfs: 2014-10-12T17:01:17+0200 - 255,00 B
+2014-10-17 13:49:14.735+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2014-10-10T13:27:01+0200 - 16,00 kB
+2014-10-17 13:49:14.735+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2014-10-16T19:44:53+0200 - 20,00 B
+2014-10-17 13:49:14.735+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_4: 2014-10-16T19:44:53+0200 - 1,33 kB
+2014-10-17 13:49:14.735+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2014-10-17T15:49:14+0200 - 0,00 B
+2014-10-17 13:49:14.735+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2014-10-17T15:49:14+0200 - 102,75 kB
+2014-10-17 13:49:14.736+0000 INFO  [o.n.k.i.DiagnosticsManager]:         7:
+2014-10-17 13:49:14.736+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2014-10-10T13:27:01+0200 - 16,00 kB
+2014-10-17 13:49:14.736+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2014-10-12T02:28:55+0200 - 20,00 B
+2014-10-17 13:49:14.736+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_3: 2014-10-12T02:28:55+0200 - 46,00 B
+2014-10-17 13:49:14.737+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2014-10-17T15:49:14+0200 - 0,00 B
+2014-10-17 13:49:14.737+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2014-10-17T15:49:14+0200 - 16,06 kB
+2014-10-17 13:49:14.737+0000 INFO  [o.n.k.i.DiagnosticsManager]:       - Total: 2014-10-12T02:40:22+0200 - 204,82 kB
+2014-10-17 13:49:14.737+0000 INFO  [o.n.k.i.DiagnosticsManager]:     - Total: 2014-10-12T02:40:22+0200 - 210,82 kB
+2014-10-17 13:49:14.737+0000 INFO  [o.n.k.i.DiagnosticsManager]:     label:
+2014-10-17 13:49:14.737+0000 INFO  [o.n.k.i.DiagnosticsManager]:       lucene:
+2014-10-17 13:49:14.738+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _37f.fdt: 2014-10-12T20:23:20+0200 - 700,00 B
+2014-10-17 13:49:14.738+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _37f.fdx: 2014-10-12T20:23:20+0200 - 460,00 B
+2014-10-17 13:49:14.738+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _37f.fnm: 2014-10-12T20:23:20+0200 - 32,00 B
+2014-10-17 13:49:14.738+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _37f.frq: 2014-10-12T20:23:20+0200 - 124,00 B
+2014-10-17 13:49:14.738+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _37f.tii: 2014-10-12T20:23:20+0200 - 72,00 B
+2014-10-17 13:49:14.739+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _37f.tis: 2014-10-12T20:23:20+0200 - 448,00 B
+2014-10-17 13:49:14.739+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _37f_1.del: 2014-10-16T19:44:53+0200 - 38,00 B
+2014-10-17 13:49:14.739+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _38a.cfs: 2014-10-12T20:24:05+0200 - 239,00 B
+2014-10-17 13:49:14.739+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _39u.cfs: 2014-10-12T21:20:06+0200 - 270,00 B
+2014-10-17 13:49:14.740+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _3at.cfs: 2014-10-12T21:24:38+0200 - 269,00 B
+2014-10-17 13:49:14.740+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _3b0.cfs: 2014-10-12T21:24:49+0200 - 239,00 B
+2014-10-17 13:49:14.740+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _3bw.cfs: 2014-10-16T14:17:39+0200 - 239,00 B
+2014-10-17 13:49:14.740+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _3cl.cfs: 2014-10-16T14:21:09+0200 - 239,00 B
+2014-10-17 13:49:14.740+0000 INFO  [o.n.k.i.DiagnosticsManager]:         segments.gen: 2014-10-16T19:44:53+0200 - 20,00 B
+2014-10-17 13:49:14.741+0000 INFO  [o.n.k.i.DiagnosticsManager]:         segments_5: 2014-10-16T19:44:53+0200 - 1,52 kB
+2014-10-17 13:49:14.741+0000 INFO  [o.n.k.i.DiagnosticsManager]:         write.lock: 2014-10-17T15:49:14+0200 - 0,00 B
+2014-10-17 13:49:14.741+0000 INFO  [o.n.k.i.DiagnosticsManager]:       - Total: 2014-10-17T15:49:14+0200 - 4,83 kB
+2014-10-17 13:49:14.741+0000 INFO  [o.n.k.i.DiagnosticsManager]:     - Total: 2014-10-07T22:30:35+0200 - 4,83 kB
+2014-10-17 13:49:14.742+0000 INFO  [o.n.k.i.DiagnosticsManager]:   - Total: 2014-10-12T02:40:22+0200 - 221,66 kB
+2014-10-17 13:49:14.742+0000 INFO  [o.n.k.i.DiagnosticsManager]:   store_lock: 2014-10-07T22:30:34+0200 - 0,00 B
+2014-10-17 13:49:14.742+0000 INFO  [o.n.k.i.DiagnosticsManager]:   tm_tx_log.1: 2014-10-16T14:20:06+0200 - 32,59 kB
+2014-10-17 13:49:14.742+0000 INFO  [o.n.k.i.DiagnosticsManager]:   tm_tx_log.2: 2014-10-17T15:49:14+0200 - 0,00 B
+2014-10-17 13:49:14.742+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
+2014-10-17 13:49:14.778+0000 INFO  [o.n.k.EmbeddedGraphDatabase]: GC Monitor started. 
+2014-10-17 13:49:14.790+0000 INFO  [o.n.k.EmbeddedGraphDatabase]: Database is now ready
+2014-10-17 13:49:14.790+0000 INFO  [o.n.s.d.CommunityDatabase]: Successfully started database
+2014-10-17 13:49:14.791+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- SERVER STARTED START ---
+2014-10-17 13:49:15.269+0000 INFO  [o.n.s.CommunityNeoServer]: Starting HTTP on port :7474 with 40 threads available
+2014-10-17 13:49:15.610+0000 INFO  [o.n.s.CommunityNeoServer]: Enabling HTTPS on port :7473
+2014-10-17 13:49:15.693+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for org.neo4j.server.configuration.Configurator START ---
+2014-10-17 13:49:15.695+0000 INFO  [o.n.k.i.DiagnosticsManager]: Server configuration:
+2014-10-17 13:49:15.695+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.database.location = data/graph.db
+2014-10-17 13:49:15.695+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webserver.port = 7474
+2014-10-17 13:49:15.695+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webserver.https.enabled = true
+2014-10-17 13:49:15.695+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webserver.https.port = 7473
+2014-10-17 13:49:15.695+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webserver.https.cert.location = conf/ssl/snakeoil.cert
+2014-10-17 13:49:15.696+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webserver.https.key.location = conf/ssl/snakeoil.key
+2014-10-17 13:49:15.696+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webserver.https.keystore.location = data/keystore
+2014-10-17 13:49:15.696+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webadmin.rrdb.location = data/rrd
+2014-10-17 13:49:15.696+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.db.tuning.properties = conf/neo4j.properties
+2014-10-17 13:49:15.696+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.manage.console_engines = shell
+2014-10-17 13:49:15.696+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.http.log.enabled = false
+2014-10-17 13:49:15.696+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.http.log.config = conf/neo4j-http-logging.xml
+2014-10-17 13:49:15.696+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webadmin.management.uri = /db/manage/
+2014-10-17 13:49:15.696+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webadmin.data.uri = /db/data/
+2014-10-17 13:49:15.696+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for org.neo4j.server.configuration.Configurator END ---
+2014-10-17 13:49:15.701+0000 INFO  [o.n.s.m.DiscoveryModule]: Mounted discovery module at [/]
+2014-10-17 13:49:15.710+0000 INFO  [o.n.s.m.RESTApiModule]: Mounted REST API at [/db/data/]
+2014-10-17 13:49:15.713+0000 INFO  [o.n.s.m.ManagementApiModule]: Mounted management API at [/db/manage/]
+2014-10-17 13:49:15.713+0000 INFO  [o.n.s.m.WebAdminModule]: Mounted webadmin at [/webadmin]
+2014-10-17 13:49:15.713+0000 INFO  [o.n.s.m.Neo4jBrowserModule]: Mounted Neo4j Browser at [/browser]
+2014-10-17 13:49:15.802+0000 INFO  [o.n.s.w.Jetty9WebServer]: Mounting static content at [/webadmin] from [webadmin-html]
+2014-10-17 13:49:15.869+0000 INFO  [o.n.s.w.Jetty9WebServer]: Mounting static content at [/browser] from [browser]
+2014-10-17 13:49:17.443+0000 INFO  [o.n.s.CommunityNeoServer]: Remote interface ready and available at [http://localhost:7474/]
+2014-10-17 13:49:17.444+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- SERVER STARTED END ---
+2014-10-17 13:57:43.527+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population started: [:FantasticTeam(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-17 13:57:43.573+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population completed. Index is now online: [:FantasticTeam(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-17 14:08:28.621+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population started: [:Division(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-17 14:08:28.644+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population completed. Index is now online: [:Division(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-17 15:26:49.062+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 411023ms [total block time: 411.023s]
+2014-10-17 19:12:21.026+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 10799485ms [total block time: 11210.508s]
+2014-10-17 23:07:46.748+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 14109191ms [total block time: 25319.7s]
+2014-10-17 23:08:07.118+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 445ms [total block time: 25320.145s]
+2014-10-17 23:39:11.089+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 121854ms [total block time: 25441.998s]
+2014-10-17 23:47:49.868+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 1012ms [total block time: 25443.01s]
+2014-10-17 23:48:04.056+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 8836ms [total block time: 25451.846s]
+2014-10-18 03:07:13.043+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 10799610ms [total block time: 36251.457s]
+2014-10-18 09:18:18.399+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 22262644ms [total block time: 58514.1s]
+2014-10-18 10:31:55.063+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 3262324ms [total block time: 61776.426s]
+2014-10-18 10:44:01.219+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 672ms [total block time: 61777.098s]
+2014-10-18 11:01:39.067+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 1053406ms [total block time: 62830.504s]
+2014-10-18 11:15:38.033+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 307397ms [total block time: 63137.9s]
+2014-10-18 11:55:12.050+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 2370692ms [total block time: 65508.594s]
+2014-10-18 12:17:14.042+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 405092ms [total block time: 65913.69s]
+2014-10-18 14:34:18.021+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 3777627ms [total block time: 69691.31s]
+2014-10-18 14:40:42.053+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 237826ms [total block time: 69929.13s]
+2014-10-18 15:38:16.049+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 791403ms [total block time: 70720.54s]
+2014-10-18 17:17:56.044+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 1668333ms [total block time: 72388.875s]
+2014-10-18 17:17:59.265+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 1478ms [total block time: 72390.35s]
+2014-10-18 17:18:16.003+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 10764ms [total block time: 72401.11s]
+2014-10-18 17:59:04.044+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 2284114ms [total block time: 74685.234s]
+2014-10-18 18:17:32.990+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 946ms [total block time: 74686.18s]
+2014-10-18 18:18:13.059+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 35829ms [total block time: 74722.0s]
+2014-10-18 18:36:36.824+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 804ms [total block time: 74722.805s]
+2014-10-18 19:08:35.055+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 1912770ms [total block time: 76635.58s]
+2014-10-18 19:12:15.626+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 186ms [total block time: 76635.76s]
+2014-10-18 19:46:18.019+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 2036538ms [total block time: 78672.305s]
+2014-10-18 19:46:59.909+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 659ms [total block time: 78672.96s]
+2014-10-18 22:07:46.039+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 8440675ms [total block time: 87113.63s]
+2014-10-18 22:08:23.640+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 550ms [total block time: 87114.19s]
+2014-10-19 01:08:27.039+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 10798446ms [total block time: 97912.63s]
+2014-10-19 08:43:38.523+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 27308838ms [total block time: 125221.47s]
+2014-10-19 10:31:22.015+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 3997519ms [total block time: 129218.99s]
+2014-10-19 11:12:30.096+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 75765ms [total block time: 129294.75s]
+2014-10-19 11:40:24.039+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 417402ms [total block time: 129712.15s]
+2014-10-19 12:09:53.195+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 955ms [total block time: 129713.11s]
+2014-10-19 12:13:50.005+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 231456ms [total block time: 129944.57s]
+2014-10-19 13:09:25.126+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population started: [:Rotation(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 13:09:25.146+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population completed. Index is now online: [:Rotation(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 13:19:22.056+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 219631ms [total block time: 130164.2s]
+2014-10-19 14:07:54.326+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population started: [:League(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:07:54.352+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population completed. Index is now online: [:League(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:07:54.364+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population started: [:Conference(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:07:54.383+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population completed. Index is now online: [:Conference(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:10:46.915+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population started: [:League(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:10:46.925+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population completed. Index is now online: [:League(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:10:46.933+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population started: [:Conference(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:10:46.938+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population completed. Index is now online: [:Conference(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:13:44.656+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population started: [:League(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:13:44.673+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population completed. Index is now online: [:League(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:13:44.709+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population started: [:Conference(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:13:44.725+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population completed. Index is now online: [:Conference(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:16:43.146+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population started: [:League(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:16:43.152+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population completed. Index is now online: [:League(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:16:43.295+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population started: [:Conference(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:16:43.315+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population completed. Index is now online: [:Conference(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:16:43.431+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population started: [:Contract(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:16:43.455+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population completed. Index is now online: [:Contract(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:18:15.206+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population started: [:League(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:18:15.223+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population completed. Index is now online: [:League(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:18:15.257+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population started: [:Conference(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:18:15.279+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population completed. Index is now online: [:Conference(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:18:15.377+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population started: [:Contract(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:18:15.394+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population completed. Index is now online: [:Contract(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:20:12.538+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population started: [:League(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:20:12.543+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population completed. Index is now online: [:League(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:20:12.552+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population started: [:Conference(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:20:12.557+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population completed. Index is now online: [:Conference(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:20:12.579+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population started: [:Contract(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:20:12.583+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population completed. Index is now online: [:Contract(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:26:21.294+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population started: [:League(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:26:21.300+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population completed. Index is now online: [:League(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:26:21.307+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population started: [:Conference(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:26:21.311+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population completed. Index is now online: [:Conference(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:26:21.330+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population started: [:Contract(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:26:21.334+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population completed. Index is now online: [:Contract(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:30:01.132+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population started: [:League(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:30:01.141+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population completed. Index is now online: [:League(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:30:01.148+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population started: [:Conference(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:30:01.153+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population completed. Index is now online: [:Conference(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:30:01.171+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population started: [:Contract(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:30:01.175+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population completed. Index is now online: [:Contract(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:38:49.039+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 28751ms [total block time: 130192.945s]
+2014-10-19 14:46:03.212+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population started: [:League(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:46:03.217+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population completed. Index is now online: [:League(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:46:03.226+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population started: [:Conference(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:46:03.230+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population completed. Index is now online: [:Conference(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:46:03.249+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population started: [:Contract(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 14:46:03.253+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population completed. Index is now online: [:Contract(uuid) [provider: {key=lucene, version=1.0}]]
+2014-10-19 17:12:27.019+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 3593311ms [total block time: 133786.25s]
+2014-10-19 17:12:29.002+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 408ms [total block time: 133786.66s]
+2014-10-19 17:59:16.033+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 2759005ms [total block time: 136545.66s]
+2014-10-19 17:59:19.720+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 1162ms [total block time: 136546.83s]
+2014-10-19 18:12:24.083+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 29167ms [total block time: 136576.0s]
+2014-10-19 18:12:26.835+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 744ms [total block time: 136576.75s]

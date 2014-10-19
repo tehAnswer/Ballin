@@ -11,7 +11,7 @@ class Player
   property :position, type: String
   property :number, type: String, default: '-'
   property :birthplace, type: String
-  property :birthdate, type: Date
+  property :birthdate, type: String
   property :updated_at
   property :created_at
 
@@ -20,7 +20,7 @@ class Player
     :height_cm, :birthdate, :birthplace, presence: true
 
   has_one :out, :real_team, model_class: NbaTeam
-  # has_many :in, :fanstastic_teams, model_class: FantasticTeam
   has_many :in, :boxscores, model_class: BoxScore, origin: :player
+  has_many :out, :contracts, model_class: Contract
 
 end

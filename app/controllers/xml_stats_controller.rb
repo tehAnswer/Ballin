@@ -6,7 +6,7 @@ class XmlStatsController
   base_uri 'erikberg.com'
 
   def fetch_games(date)
-    date_formatted = date.strftime('%Y%m%d')
+    date_formatted = date.to_datetime.strftime('%Y%m%d')
     response = perform_query("/events.json?date=#{date_formatted}&sport=nba")['event']
     response.each do |event|
       game = Game.create!({
@@ -37,7 +37,7 @@ class XmlStatsController
     response = perform_query("/nba/roster/#{team.team_id}.json")['players']
     response.each do |slot|
       player = find_or_create(slot)
-      team.players << player
+      player.real_team = team
     end
   end
 
@@ -64,7 +64,7 @@ class XmlStatsController
     games.each do |game|
       return unless game.start_date_time.to_date.past?
       game.status = 'completed' 
-      boxscores = fetch_boxscores(game.game_id)
+      boxscores = fetch_boxscores(game)
       game.away_boxscores << boxscores[:away]
       game.home_boxscores <<  boxscores[:home]
       game.away_score = boxscores[:away_score]
@@ -72,26 +72,30 @@ class XmlStatsController
     end
   end
 
-  def fetch_boxscores(id)
+  def fetch_boxscores(game)
     stadistics = Hash.new
-    response = perform_query("/nba/boxscore/#{id}.json")
+    response = perform_query("/nba/boxscore/#{game.game_id}.json")
     stadistics[:away_score] = response['away_score'].sum
     stadistics[:home_score] = response['home_score'].sum
     stadistics[:away_boxscores] = []
     stadistics[:home_boxscores] = []
+    away_team = Game.away_team
+    home_team = Game.home_team
 
-    response['away_stats'].each do |stat| 
-      stadistics[:away_boxscores] << create_boxscore(stat)
+    response['away_stats'].each do |stat|
+      player = away_team.players.where (name: stat['display_name']) 
+      stadistics[:away_boxscores] << create_boxscore(stat, player)
     end
 
     response['home_stats'].each do |stat| 
-      stadistics[:home_boxscores] << create_boxscore(stat)
+      player = home_team.players.where (name: stat['display_name']) 
+      stadistics[:home_boxscores] << create_boxscore(stat, player)
     end
 
     stadistics
   end
 
-  def create_boxscore(stat)
+  def create_boxscore(stat, player)
     boxscore = BoxScore.create!({
         minutes: stat['minutes'],
         points: stat['points'],
@@ -111,16 +115,13 @@ class XmlStatsController
         faults: stat['personal_faults'],
         final_score: BoxScore.points_calculator
         })
-      player = Player.find_by(display_name: stat['display_name'], 
-        position: stat['position'])
       player.boxscores << boxscore
-
       boxscore
   end
 
   def find_or_create(params)
     Player.find_by(name: params['display_name'], 
-      birthdate: params['birthdate']) ||
+      birthplace: params['birthplace']) ||
     Player.create!({
         name: params['display_name'],
         height_cm: params['height_cm'],
@@ -138,7 +139,6 @@ class XmlStatsController
     response = get(path)
     return response if response.code < 400
     sleep 5
-    puts response
     perform_query(path)
   end
 
