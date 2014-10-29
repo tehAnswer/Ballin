@@ -2,8 +2,8 @@ class Contract
   include Neo4j::ActiveNode
   property :salary, type: Integer
 
-  has_one :in, :league, model_class: League, origin: :contracts
-  has_one :in, :team, model_class: FantasticTeam, origin: :contracts
-  has_one :in, :player, model_class: Player, origin: :contracts
+  has_one :out, :league, model_class: League
+  has_one :out, :team, model_class: FantasticTeam
+  has_one :out, :player, model_class: Player
 
 end

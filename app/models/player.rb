@@ -21,6 +21,6 @@ class Player
 
   has_one :out, :real_team, model_class: NbaTeam
   has_many :in, :boxscores, model_class: BoxScore, origin: :player
-  has_many :out, :contracts, model_class: Contract
+  has_many :in, :contracts, model_class: Contract, origin: :player
 
 end

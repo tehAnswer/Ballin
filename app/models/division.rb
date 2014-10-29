@@ -12,7 +12,7 @@ class Division
    origin: :division_one || :division_two || :division_three
 
   def standings
-    teams.order(:score)
+    teams.sort_by(:score)
   end
 
   def teams

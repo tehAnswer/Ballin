@@ -5,6 +5,7 @@ class XmlStatsController
   include HTTParty
   base_uri 'erikberg.com'
 
+
   def fetch_games(date)
     date_formatted = date.to_datetime.strftime('%Y%m%d')
     response = perform_query("/events.json?date=#{date_formatted}&sport=nba")['event']
@@ -75,20 +76,20 @@ class XmlStatsController
   def fetch_boxscores(game)
     stadistics = Hash.new
     response = perform_query("/nba/boxscore/#{game.game_id}.json")
-    stadistics[:away_score] = response['away_score'].sum
-    stadistics[:home_score] = response['home_score'].sum
+    stadistics[:away_score] = response['away_score'].to_a.sum
+    stadistics[:home_score] = response['home_score'].to_a.sum
     stadistics[:away_boxscores] = []
     stadistics[:home_boxscores] = []
     away_team = Game.away_team
     home_team = Game.home_team
 
     response['away_stats'].each do |stat|
-      player = away_team.players.where (name: stat['display_name']) 
+      player = away_team.players.where(name: stat['display_name']) 
       stadistics[:away_boxscores] << create_boxscore(stat, player)
     end
 
     response['home_stats'].each do |stat| 
-      player = home_team.players.where (name: stat['display_name']) 
+      player = home_team.players.where(name: stat['display_name']) 
       stadistics[:home_boxscores] << create_boxscore(stat, player)
     end
 
