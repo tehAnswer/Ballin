@@ -3,7 +3,7 @@ require 'logger'
 
 class XmlStatsController
   include HTTParty
-  base_uri 'erikberg.com'
+  base_uri 'https://www.erikberg.com'
 
 
   def fetch_games(date)
@@ -60,36 +60,37 @@ class XmlStatsController
   end
 
   def get_boxscores(day)
-    date = day.strftime('%Y%m%d')
-    games = Game.on_date(date)
+    games = Game.on_date(day)
     games.each do |game|
       return unless game.start_date_time.to_date.past?
+      next if game.boxscores.count > 0
       game.status = 'completed' 
       boxscores = fetch_boxscores(game)
-      game.away_boxscores << boxscores[:away]
-      game.home_boxscores <<  boxscores[:home]
+      game.away_boxscores << boxscores[:away_boxscores]
+      game.home_boxscores <<  boxscores[:home_boxscores]
       game.away_score = boxscores[:away_score]
       game.home_score = boxscores[:home_score]
+      game.save
     end
   end
 
   def fetch_boxscores(game)
     stadistics = Hash.new
     response = perform_query("/nba/boxscore/#{game.game_id}.json")
-    stadistics[:away_score] = response['away_score'].to_a.sum
-    stadistics[:home_score] = response['home_score'].to_a.sum
+    stadistics[:away_score] = response['away_totals']['points']
+    stadistics[:home_score] = response['home_totals']['points']
     stadistics[:away_boxscores] = []
     stadistics[:home_boxscores] = []
     away_team = Game.away_team
     home_team = Game.home_team
 
     response['away_stats'].each do |stat|
-      player = away_team.players.where(name: stat['display_name']) 
+      player = away_team.players.find_by(name: stat['display_name'])
       stadistics[:away_boxscores] << create_boxscore(stat, player)
     end
 
     response['home_stats'].each do |stat| 
-      player = home_team.players.where(name: stat['display_name']) 
+      player = home_team.players.find_by(name: stat['display_name']) 
       stadistics[:home_boxscores] << create_boxscore(stat, player)
     end
 
@@ -106,17 +107,18 @@ class XmlStatsController
         blocks: stat['blocks'],
         ftm: stat['free_throws_made'],
         fta: stat['free_throws_attempted'],
-        msa: stat['field_goals_attempted'],
-        msm: stat['field_goals_made'],
+        fga: stat['field_goals_attempted'],
+        fgm: stat['field_goals_made'],
         lsa: stat['three_point_field_goals_attempted'],
         lsm: stat['three_point_field_goals_made'],
         defr: stat['defensive_rebounds'],
         ofr: stat['offensive_rebounds'],
-        is_started: stat['is_started'],
-        faults: stat['personal_faults'],
-        final_score: BoxScore.points_calculator
+        is_starter: stat['is_starter'],
+        faults: stat['personal_fouls']
         })
-      player.boxscores << boxscore
+      puts "#{boxscore} #{player}"
+      boxscore.player = player
+      #player.boxscores << boxscore
       boxscore
   end
 
@@ -138,7 +140,7 @@ class XmlStatsController
 
   def perform_query(path)
     response = get(path)
-    return response if response.code < 400
+    return response if response.code == 200
     sleep 5
     perform_query(path)
   end

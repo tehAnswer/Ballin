@@ -11,7 +11,13 @@ class League
   validates :name, uniqueness: true
 
   def free_players
-    Player.all - contracts.map { |c| c.player }
+    Player.all - players
   end
+
+  def players
+    contracts.map { |c| c.player }
+  end
+
+  
 
 end

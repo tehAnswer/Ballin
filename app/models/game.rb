@@ -22,8 +22,12 @@ class Game
     on_date 1.day.ago.strftime('%Y%m%d')
   end
 
-  def self.on_date(date)
-    Game.where(date_formatted: date)
+  def self.on_date(day)
+    Game.where(date_formatted: day.strftime('%Y%m%d'))
+  end
+
+  def boxscores
+    away_boxscores.to_a + home_boxscores.to_a
   end
 
 
