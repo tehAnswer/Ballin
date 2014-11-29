@@ -514,3 +514,38 @@
 07:44:07.826 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@3ab19451{HTTP/1.1}{localhost:7474}
 07:44:08.341 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@50e2c284{SSL-HTTP/1.1}{localhost:7473}
 2014-11-03 06:44:08.342+0000 INFO  [API] Remote interface ready and available at [http://localhost:7474/]
+2014-11-19 23:09:28.946+0000 INFO  [API] Neo4j Server shutdown initiated by request
+00:09:28.972 [Thread-18] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@3ab19451{HTTP/1.1}{localhost:7474}
+00:09:28.974 [Thread-18] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@50e2c284{SSL-HTTP/1.1}{localhost:7473}
+00:09:28.976 [Thread-18] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@3f7cd159{/,null,UNAVAILABLE}
+00:09:28.979 [Thread-18] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.w.WebAppContext@4803bd43{/browser,jar:file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/neo4j-browser-2.0.2.jar!/browser,UNAVAILABLE}
+00:09:28.979 [Thread-18] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@3a210faa{/db/data,null,UNAVAILABLE}
+00:09:28.979 [Thread-18] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@2a8392b5{/db/manage,null,UNAVAILABLE}
+00:09:28.981 [Thread-18] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.w.WebAppContext@643114f{/webadmin,jar:file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/neo4j-server-2.0.2-static-web.jar!/webadmin-html,UNAVAILABLE}
+00:09:28.981 [Thread-18] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.h.MovedContextHandler@476cc9e5{/,null,UNAVAILABLE}
+2014-11-19 23:09:28.989+0000 INFO  [API] Successfully shutdown Neo4j Server.
+13:39:26.860 [main] INFO  org.neo4j.server.CommunityNeoServer - Setting startup timeout to: 120000ms based on -1
+2014-11-20 12:39:28.456+0000 INFO  [API] Successfully started database
+2014-11-20 12:39:28.771+0000 INFO  [API] Starting HTTP on port :7474 with 40 threads available
+2014-11-20 12:39:29.021+0000 INFO  [API] Enabling HTTPS on port :7473
+2014-11-20 12:39:29.120+0000 INFO  [API] Mounted discovery module at [/]
+2014-11-20 12:39:29.130+0000 INFO  [API] Mounted REST API at [/db/data/]
+2014-11-20 12:39:29.134+0000 INFO  [API] Mounted management API at [/db/manage/]
+2014-11-20 12:39:29.134+0000 INFO  [API] Mounted webadmin at [/webadmin]
+2014-11-20 12:39:29.134+0000 INFO  [API] Mounted Neo4j Browser at [/browser]
+2014-11-20 12:39:29.216+0000 INFO  [API] Mounting static content at [/webadmin] from [webadmin-html]
+2014-11-20 12:39:29.275+0000 INFO  [API] Mounting static content at [/browser] from [browser]
+13:39:29.276 [main] WARN  o.e.j.server.handler.ContextHandler - o.e.j.s.ServletContextHandler@4891120c{/,null,null} contextPath ends with /
+13:39:29.276 [main] WARN  o.e.j.server.handler.ContextHandler - Empty contextPath
+13:39:29.279 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.0.5.v20130815
+13:39:29.315 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.h.MovedContextHandler@2f7f30a0{/,null,AVAILABLE}
+13:39:29.396 [main] INFO  o.e.j.w.StandardDescriptorProcessor - NO JSP Support for /webadmin, did not find org.apache.jasper.servlet.JspServlet
+13:39:29.408 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.w.WebAppContext@6dff3519{/webadmin,jar:file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/neo4j-server-2.0.2-static-web.jar!/webadmin-html,AVAILABLE}
+13:39:29.854 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7cea67a2{/db/manage,null,AVAILABLE}
+13:39:30.047 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1665ecd9{/db/data,null,AVAILABLE}
+13:39:30.064 [main] INFO  o.e.j.w.StandardDescriptorProcessor - NO JSP Support for /browser, did not find org.apache.jasper.servlet.JspServlet
+13:39:30.065 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.w.WebAppContext@1d85e52e{/browser,jar:file:/Users/Sergio/Desktop/BallinAPI/db/neo4j/development/system/lib/neo4j-browser-2.0.2.jar!/browser,AVAILABLE}
+13:39:30.142 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@4891120c{/,null,AVAILABLE}
+13:39:30.175 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@1efdda90{HTTP/1.1}{localhost:7474}
+13:39:30.548 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@1c0d3eb6{SSL-HTTP/1.1}{localhost:7473}
+2014-11-20 12:39:30.549+0000 INFO  [API] Remote interface ready and available at [http://localhost:7474/]

@@ -15,5 +15,13 @@ class FantasticTeam
   
   has_one :out, :rotation, model_class: Rotation
   has_one :in, :user, model_class: User, origin: :team
+
+  def conference
+    division.conference
+  end
+
+  def league
+    conference.league
+  end
   
 end

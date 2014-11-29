@@ -118,7 +118,6 @@ class XmlStatsController
         })
       puts "#{boxscore} #{player}"
       boxscore.player = player
-      #player.boxscores << boxscore
       boxscore
   end
 
@@ -141,6 +140,7 @@ class XmlStatsController
   def perform_query(path)
     response = get(path)
     return response if response.code == 200
+    puts "#{path}: #{response.code}"
     sleep 5
     perform_query(path)
   end

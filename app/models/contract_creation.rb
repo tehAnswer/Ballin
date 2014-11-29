@@ -8,6 +8,7 @@ class ContractCreation
       raise "#{player.name} has already a contract @ #{league.name} league." if league.players.include?(player)
       contract.player = player
       contract.league = league
+      return contract
     rescue StandardError => e
       tx.failure
       puts e

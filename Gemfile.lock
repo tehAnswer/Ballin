@@ -100,8 +100,11 @@ GEM
       os
       zip
     net-http-persistent (2.9.4)
+    oj (2.11.1)
     orm_adapter (0.5.0)
     os (0.9.6)
+    rabl (0.10.1)
+      activesupport (>= 2.3.14)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -168,6 +171,8 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   neo4j (~> 3.0.0)
+  oj
+  rabl
   rails (= 4.1.6)
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)

@@ -15,6 +15,7 @@ require "rails/test_unit/railtie"
 Bundler.require(*Rails.groups)
 
 module BallinAPI
+    ITEMS_PER_PAGE = 50
   class Application < Rails::Application
     
     config.generators do |g|

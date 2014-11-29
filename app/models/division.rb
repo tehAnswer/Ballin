@@ -16,6 +16,13 @@ class Division
   end
 
   def teams
-    [team_one, team_two, team_three, team_four]
+    [team_one, team_two, team_three, team_four, team_five]
+  end
+
+  def first_slot_free
+    teams_array = teams
+    return false unless teams_array.any? { |x| x.nil? }
+    number = teams_array.index(nil) + 1
+    #return "team_#{number.humanize}".to_sym
   end
 end
