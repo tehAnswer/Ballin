@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  play_time: MyString
+  points: 1
+  assists: 1
+  steals: 1
+  defr: 1
+  ofr: 1
+  blocks: 1
+  fta: 1
+  ftm: 1
+  msa: 1
+  msm: 1
+  lsa: 1
+  lsm: 1
+  final_score: 9.99
+
+two:
+  play_time: MyString
+  points: 1
+  assists: 1
+  steals: 1
+  defr: 1
+  ofr: 1
+  blocks: 1
+  fta: 1
+  ftm: 1
+  msa: 1
+  msm: 1
+  lsa: 1
+  lsm: 1
+  final_score: 9.99

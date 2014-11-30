@@ -1,0 +1,1233 @@
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+------------------------------------------------
+PlayersControllerTest: test_should_create_player
+------------------------------------------------
+-------------------------------------------------
+PlayersControllerTest: test_should_destroy_player
+-------------------------------------------------
+-------------------------------------------
+PlayersControllerTest: test_should_get_edit
+-------------------------------------------
+--------------------------------------------
+PlayersControllerTest: test_should_get_index
+--------------------------------------------
+------------------------------------------
+PlayersControllerTest: test_should_get_new
+------------------------------------------
+----------------------------------------------
+PlayersControllerTest: test_should_show_player
+----------------------------------------------
+------------------------------------------------
+PlayersControllerTest: test_should_update_player
+------------------------------------------------
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m33ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m4ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m38ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m12ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76ers"}
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76ers"}
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m2ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m2ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m2ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m37ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"los-angeles-lakers"}
+ [36mCYPHER[0m [33m4ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"los-angeles-lakers"}
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"los-angeles-lakers"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"los-angeles-lakers"}
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m2ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"los-angeles-lakers"}
+ [36mCYPHER[0m [33m13ms[0m MATCH (n:`NbaTeam`) WHERE n.name = {n_name} RETURN n LIMIT 1 | {:n_name=>"Philadelphia 76ers"}
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m2ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m2ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"los-angeles-lakers"}
+ [36mCYPHER[0m [33m4ms[0m MATCH (n:`NbaTeam`) WHERE n.name = {n_name} RETURN n LIMIT 1 | {:n_name=>"Philadelphia 76ers"}
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m2ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m2ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"los-angeles-lakers"}
+ [36mCYPHER[0m [33m10ms[0m MATCH (result:`Game`) WHERE result.game_id = {result_game_id} RETURN result | {:result_game_id=>"1"}
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m2ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"los-angeles-lakers"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`Game`) WHERE result.game_id = {result_game_id} RETURN result | {:result_game_id=>"thefinals"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`NbaTeam`) WHERE n.name = {n_name} RETURN n LIMIT 1 | {:n_name=>"Philadelphia 76ers"}
+ [36mCYPHER[0m [33m28ms[0m MATCH (game44:`Game`), (n:`NbaTeam`), game44-[r:`#away_team`]->(n:`NbaTeam`) WHERE ID(game44) = 44 DELETE r
+ [36mCYPHER[0m [33m18ms[0m START start = node(44), end = node(42) CREATE start-[rel0:`#away_team`]->end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`NbaTeam`) WHERE n.name = {n_name} RETURN n LIMIT 1 | {:n_name=>"Los Angeles Lakers"}
+ [36mCYPHER[0m [33m16ms[0m MATCH (game44:`Game`), (n:`NbaTeam`), game44-[r:`#home_team`]->(n:`NbaTeam`) WHERE ID(game44) = 44 DELETE r
+ [36mCYPHER[0m [33m9ms[0m START start = node(44), end = node(43) CREATE start-[rel0:`#home_team`]->end
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+--------------------------------
+BoxScoreTest: test_coherent_data
+--------------------------------
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"los-angeles-lakers"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`Game`) WHERE result.game_id = {result_game_id} RETURN result | {:result_game_id=>"thefinals"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`NbaTeam`) WHERE n.name = {n_name} RETURN n LIMIT 1 | {:n_name=>"Philadelphia 76ers"}
+ [36mCYPHER[0m [33m15ms[0m MATCH (game50:`Game`), (n:`NbaTeam`), game50-[r:`#away_team`]->(n:`NbaTeam`) WHERE ID(game50) = 50 DELETE r
+ [36mCYPHER[0m [33m7ms[0m START start = node(50), end = node(45) CREATE start-[rel0:`#away_team`]->end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`NbaTeam`) WHERE n.name = {n_name} RETURN n LIMIT 1 | {:n_name=>"Los Angeles Lakers"}
+ [36mCYPHER[0m [33m15ms[0m MATCH (game50:`Game`), (n:`NbaTeam`), game50-[r:`#home_team`]->(n:`NbaTeam`) WHERE ID(game50) = 50 DELETE r
+ [36mCYPHER[0m [33m7ms[0m START start = node(50), end = node(49) CREATE start-[rel0:`#home_team`]->end
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+--------------------------------
+BoxScoreTest: test_coherent_data
+--------------------------------
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+--------------------------------
+BoxScoreTest: test_coherent_data
+--------------------------------
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m39ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m2ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"los-angeles-lakers"}
+ [36mCYPHER[0m [33m2ms[0m MATCH (result:`Game`) WHERE result.game_id = {result_game_id} RETURN result | {:result_game_id=>"thefinals"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`NbaTeam`) WHERE n.name = {n_name} RETURN n LIMIT 1 | {:n_name=>"Philadelphia 76ers"}
+ [36mCYPHER[0m [33m15ms[0m MATCH (game55:`Game`), (n:`NbaTeam`), game55-[r:`#away_team`]->(n:`NbaTeam`) WHERE ID(game55) = 55 DELETE r
+ [36mCYPHER[0m [33m7ms[0m START start = node(55), end = node(53) CREATE start-[rel0:`#away_team`]->end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`NbaTeam`) WHERE n.name = {n_name} RETURN n LIMIT 1 | {:n_name=>"Los Angeles Lakers"}
+ [36mCYPHER[0m [33m15ms[0m MATCH (game55:`Game`), (n:`NbaTeam`), game55-[r:`#home_team`]->(n:`NbaTeam`) WHERE ID(game55) = 55 DELETE r
+ [36mCYPHER[0m [33m7ms[0m START start = node(55), end = node(54) CREATE start-[rel0:`#home_team`]->end
+--------------------------------
+BoxScoreTest: test_coherent_data
+--------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+--------------------------------
+BoxScoreTest: test_coherent_data
+--------------------------------
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m38ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+--------------------------------
+BoxScoreTest: test_coherent_data
+--------------------------------
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m39ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+--------------------------------
+BoxScoreTest: test_coherent_data
+--------------------------------
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m37ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+---------------------------
+GameTest: test_missing_data
+---------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+--------------------------------
+BoxScoreTest: test_coherent_data
+--------------------------------
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m4ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+--------------------------------
+BoxScoreTest: test_coherent_data
+--------------------------------
+--------------------------------
+BoxScoreTest: test_coherent_data
+--------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+---------------------------
+GameTest: test_missing_data
+---------------------------
+--------------------------------
+BoxScoreTest: test_coherent_data
+--------------------------------
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+--------------------------------
+BoxScoreTest: test_coherent_data
+--------------------------------
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m2ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"los-angeles-lakers"}
+ [36mCYPHER[0m [33m2ms[0m MATCH (result:`Game`) WHERE result.game_id = {result_game_id} RETURN result | {:result_game_id=>"thefinals"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`NbaTeam`) WHERE n.name = {n_name} RETURN n LIMIT 1 | {:n_name=>"Philadelphia 76ers"}
+ [36mCYPHER[0m [33m53ms[0m MATCH (game70:`Game`), (n:`NbaTeam`), game70-[r:`#away_team`]->(n:`NbaTeam`) WHERE ID(game70) = 70 DELETE r
+ [36mCYPHER[0m [33m7ms[0m START start = node(70), end = node(68) CREATE start-[rel0:`#away_team`]->end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`NbaTeam`) WHERE n.name = {n_name} RETURN n LIMIT 1 | {:n_name=>"Los Angeles Lakers"}
+ [36mCYPHER[0m [33m15ms[0m MATCH (game70:`Game`), (n:`NbaTeam`), game70-[r:`#home_team`]->(n:`NbaTeam`) WHERE ID(game70) = 70 DELETE r
+ [36mCYPHER[0m [33m7ms[0m START start = node(70), end = node(69) CREATE start-[rel0:`#home_team`]->end
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+--------------------------------
+BoxScoreTest: test_coherent_data
+--------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+--------------------------------
+BoxScoreTest: test_coherent_data
+--------------------------------
+----------------------------------
+BoxScoreTest: test_incoherent_data
+----------------------------------
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m4ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+--------------------------------
+BoxScoreTest: test_coherent_data
+--------------------------------
+----------------------------------
+BoxScoreTest: test_incoherent_data
+----------------------------------
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m2ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m37ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+--------------------------------
+BoxScoreTest: test_coherent_data
+--------------------------------
+----------------------------------
+BoxScoreTest: test_incoherent_data
+----------------------------------
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"los-angeles-lakers"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`Game`) WHERE result.game_id = {result_game_id} RETURN result | {:result_game_id=>"thefinals"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`NbaTeam`) WHERE n.name = {n_name} RETURN n LIMIT 1 | {:n_name=>"Philadelphia 76ers"}
+ [36mCYPHER[0m [33m14ms[0m MATCH (game86:`Game`), (n:`NbaTeam`), game86-[r:`#away_team`]->(n:`NbaTeam`) WHERE ID(game86) = 86 DELETE r
+ [36mCYPHER[0m [33m6ms[0m START start = node(86), end = node(81) CREATE start-[rel0:`#away_team`]->end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`NbaTeam`) WHERE n.name = {n_name} RETURN n LIMIT 1 | {:n_name=>"Los Angeles Lakers"}
+ [36mCYPHER[0m [33m14ms[0m MATCH (game86:`Game`), (n:`NbaTeam`), game86-[r:`#home_team`]->(n:`NbaTeam`) WHERE ID(game86) = 86 DELETE r
+ [36mCYPHER[0m [33m6ms[0m START start = node(86), end = node(85) CREATE start-[rel0:`#home_team`]->end
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m2ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m2ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m39ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"los-angeles-lakers"}
+ [36mCYPHER[0m [33m2ms[0m MATCH (result:`Game`) WHERE result.game_id = {result_game_id} RETURN result | {:result_game_id=>"thefinals"}
+ [36mCYPHER[0m [33m4ms[0m MATCH (n:`NbaTeam`) WHERE n.name = {n_name} RETURN n LIMIT 1 | {:n_name=>"Philadelphia 76ers"}
+ [36mCYPHER[0m [33m14ms[0m MATCH (game90:`Game`), (n:`NbaTeam`), game90-[r:`#away_team`]->(n:`NbaTeam`) WHERE ID(game90) = 90 DELETE r
+ [36mCYPHER[0m [33m6ms[0m START start = node(90), end = node(87) CREATE start-[rel0:`#away_team`]->end
+ [36mCYPHER[0m [33m4ms[0m MATCH (n:`NbaTeam`) WHERE n.name = {n_name} RETURN n LIMIT 1 | {:n_name=>"Los Angeles Lakers"}
+ [36mCYPHER[0m [33m15ms[0m MATCH (game90:`Game`), (n:`NbaTeam`), game90-[r:`#home_team`]->(n:`NbaTeam`) WHERE ID(game90) = 90 DELETE r
+ [36mCYPHER[0m [33m6ms[0m START start = node(90), end = node(89) CREATE start-[rel0:`#home_team`]->end
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+--------------------------------
+BoxScoreTest: test_coherent_data
+--------------------------------
+----------------------------------
+BoxScoreTest: test_incoherent_data
+----------------------------------
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"los-angeles-lakers"}
+ [36mCYPHER[0m [33m2ms[0m MATCH (result:`Game`) WHERE result.game_id = {result_game_id} RETURN result | {:result_game_id=>"thefinals"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`NbaTeam`) WHERE n.name = {n_name} RETURN n LIMIT 1 | {:n_name=>"Philadelphia 76ers"}
+ [36mCYPHER[0m [33m16ms[0m MATCH (game96:`Game`), (n:`NbaTeam`), game96-[r:`#away_team`]->(n:`NbaTeam`) WHERE ID(game96) = 96 DELETE r
+ [36mCYPHER[0m [33m37ms[0m START start = node(96), end = node(94) CREATE start-[rel0:`#away_team`]->end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`NbaTeam`) WHERE n.name = {n_name} RETURN n LIMIT 1 | {:n_name=>"Los Angeles Lakers"}
+ [36mCYPHER[0m [33m13ms[0m MATCH (game96:`Game`), (n:`NbaTeam`), game96-[r:`#home_team`]->(n:`NbaTeam`) WHERE ID(game96) = 96 DELETE r
+ [36mCYPHER[0m [33m6ms[0m START start = node(96), end = node(95) CREATE start-[rel0:`#home_team`]->end
+--------------------------------
+BoxScoreTest: test_coherent_data
+--------------------------------
+----------------------------------
+BoxScoreTest: test_incoherent_data
+----------------------------------
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+--------------------------------
+BoxScoreTest: test_coherent_data
+--------------------------------
+----------------------------------
+BoxScoreTest: test_incoherent_data
+----------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m69ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m9ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+-----------------------------------
+PlayerTest: test_missing_attributes
+-----------------------------------
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m14ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+ [36mCYPHER[0m [33m4ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"los-angeles-lakers"}
+ [36mCYPHER[0m [33m17ms[0m MATCH (result:`Game`) WHERE result.game_id = {result_game_id} RETURN result | {:result_game_id=>"thefinals"}
+ [36mCYPHER[0m [33m17ms[0m MATCH (n:`NbaTeam`) WHERE n.name = {n_name} RETURN n LIMIT 1 | {:n_name=>"Philadelphia 76ers"}
+ [36mCYPHER[0m [33m49ms[0m MATCH (game6:`Game`), (n:`NbaTeam`), game6-[r:`#away_team`]->(n:`NbaTeam`) WHERE ID(game6) = 6 DELETE r
+ [36mCYPHER[0m [33m18ms[0m START start = node(6), end = node(2) CREATE start-[rel0:`#away_team`]->end
+ [36mCYPHER[0m [33m4ms[0m MATCH (n:`NbaTeam`) WHERE n.name = {n_name} RETURN n LIMIT 1 | {:n_name=>"Los Angeles Lakers"}
+ [36mCYPHER[0m [33m21ms[0m MATCH (game6:`Game`), (n:`NbaTeam`), game6-[r:`#home_team`]->(n:`NbaTeam`) WHERE ID(game6) = 6 DELETE r
+ [36mCYPHER[0m [33m8ms[0m START start = node(6), end = node(5) CREATE start-[rel0:`#home_team`]->end
+---------------------------------------------
+NbaRealSubgraphTest: test_example_of_subgraph
+---------------------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"los-angeles-lakers"}
+ [36mCYPHER[0m [33m6ms[0m MATCH (result:`Game`) WHERE result.game_id = {result_game_id} RETURN result | {:result_game_id=>"abc"}
+ [36mCYPHER[0m [33m18ms[0m MATCH (boxscore12:`BoxScore`), (n:`Player`), boxscore12-[r]->(n:`Player`) WHERE ID(boxscore12) = 12 DELETE r
+ [36mCYPHER[0m [33m9ms[0m START start = node(12), end = node(9) CREATE start-[rel0:`#player`]->end
+---------------------------------------------
+NbaRealSubgraphTest: test_example_of_subgraph
+---------------------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"los-angeles-lakers"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`Game`) WHERE result.game_id = {result_game_id} RETURN result | {:result_game_id=>"abc"}
+ [36mCYPHER[0m [33m16ms[0m MATCH (boxscore19:`BoxScore`), (n:`Player`), boxscore19-[r]->(n:`Player`) WHERE ID(boxscore19) = 19 DELETE r
+ [36mCYPHER[0m [33m9ms[0m START start = node(19), end = node(16) CREATE start-[rel0:`#player`]->end
+ [36mCYPHER[0m [33m25ms[0m START start = node(18), end = node(19) CREATE start-[rel0]->end
+---------------------------------------------
+NbaRealSubgraphTest: test_example_of_subgraph
+---------------------------------------------
+ [36mCYPHER[0m [33m4ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"los-angeles-lakers"}
+ [36mCYPHER[0m [33m4ms[0m MATCH (result:`Game`) WHERE result.game_id = {result_game_id} RETURN result | {:result_game_id=>"abc"}
+ [36mCYPHER[0m [33m16ms[0m MATCH (boxscore26:`BoxScore`), (n:`Player`), boxscore26-[r]->(n:`Player`) WHERE ID(boxscore26) = 26 DELETE r
+ [36mCYPHER[0m [33m7ms[0m START start = node(26), end = node(23) CREATE start-[rel0:`#player`]->end
+ [36mCYPHER[0m [33m15ms[0m MATCH (boxscore27:`BoxScore`), (n:`Player`), boxscore27-[r]->(n:`Player`) WHERE ID(boxscore27) = 27 DELETE r
+ [36mCYPHER[0m [33m7ms[0m START start = node(27), end = node(24) CREATE start-[rel0:`#player`]->end
+ [36mCYPHER[0m [33m11ms[0m START start = node(25), end = node(26) CREATE start-[rel0]->end
+---------------------------------------------
+NbaRealSubgraphTest: test_example_of_subgraph
+---------------------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"los-angeles-lakers"}
+ [36mCYPHER[0m [33m4ms[0m MATCH (result:`Game`) WHERE result.game_id = {result_game_id} RETURN result | {:result_game_id=>"abc"}
+ [36mCYPHER[0m [33m15ms[0m MATCH (boxscore33:`BoxScore`), (n:`Player`), boxscore33-[r]->(n:`Player`) WHERE ID(boxscore33) = 33 DELETE r
+ [36mCYPHER[0m [33m7ms[0m START start = node(33), end = node(30) CREATE start-[rel0:`#player`]->end
+ [36mCYPHER[0m [33m14ms[0m MATCH (boxscore34:`BoxScore`), (n:`Player`), boxscore34-[r]->(n:`Player`) WHERE ID(boxscore34) = 34 DELETE r
+ [36mCYPHER[0m [33m7ms[0m START start = node(34), end = node(31) CREATE start-[rel0:`#player`]->end
+ [36mCYPHER[0m [33m14ms[0m MATCH (boxscore33:`BoxScore`), (n:`Game`), boxscore33<-[r]-(n:`Game`) WHERE ID(boxscore33) = 33 DELETE r
+ [36mCYPHER[0m [33m7ms[0m START start = node(33), end = node(32) CREATE start<-[rel0:`#game`]-end
+ [36mCYPHER[0m [33m15ms[0m MATCH (boxscore34:`BoxScore`), (n:`Game`), boxscore34<-[r]-(n:`Game`) WHERE ID(boxscore34) = 34 DELETE r
+ [36mCYPHER[0m [33m7ms[0m START start = node(34), end = node(32) CREATE start<-[rel0:`#game`]-end
+---------------------------------------------
+NbaRealSubgraphTest: test_example_of_subgraph
+---------------------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"los-angeles-lakers"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`Game`) WHERE result.game_id = {result_game_id} RETURN result | {:result_game_id=>"abc"}
+ [36mCYPHER[0m [33m14ms[0m MATCH (boxscore40:`BoxScore`), (n:`Player`), boxscore40-[r]->(n:`Player`) WHERE ID(boxscore40) = 40 DELETE r
+ [36mCYPHER[0m [33m7ms[0m START start = node(40), end = node(37) CREATE start-[rel0:`#player`]->end
+ [36mCYPHER[0m [33m13ms[0m MATCH (boxscore41:`BoxScore`), (n:`Player`), boxscore41-[r]->(n:`Player`) WHERE ID(boxscore41) = 41 DELETE r
+ [36mCYPHER[0m [33m7ms[0m START start = node(41), end = node(38) CREATE start-[rel0:`#player`]->end
+ [36mCYPHER[0m [33m18ms[0m MATCH (boxscore40:`BoxScore`), (n:`Game`), boxscore40-[r]->(n:`Game`) WHERE ID(boxscore40) = 40 DELETE r
+ [36mCYPHER[0m [33m6ms[0m START start = node(40), end = node(39) CREATE start-[rel0:`#game`]->end
+ [36mCYPHER[0m [33m13ms[0m MATCH (boxscore41:`BoxScore`), (n:`Game`), boxscore41-[r]->(n:`Game`) WHERE ID(boxscore41) = 41 DELETE r
+ [36mCYPHER[0m [33m8ms[0m START start = node(41), end = node(39) CREATE start-[rel0:`#game`]->end
+ [36mCYPHER[0m [33m14ms[0m MATCH (game39:`Game`), (n:`NbaTeam`), game39-[r:`#away_team`]->(n:`NbaTeam`) WHERE ID(game39) = 39 DELETE r
+ [36mCYPHER[0m [33m7ms[0m START start = node(39), end = node(36) CREATE start-[rel0:`#away_team`]->end
+ [36mCYPHER[0m [33m13ms[0m MATCH (game39:`Game`), (n:`NbaTeam`), game39-[r:`#home_team`]->(n:`NbaTeam`) WHERE ID(game39) = 39 DELETE r
+ [36mCYPHER[0m [33m7ms[0m START start = node(39), end = node(35) CREATE start-[rel0:`#home_team`]->end
+---------------------------------------------
+NbaRealSubgraphTest: test_example_of_subgraph
+---------------------------------------------
+ [36mCYPHER[0m [33m7ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+ [36mCYPHER[0m [33m4ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"los-angeles-lakers"}
+---------------------------------------------
+NbaRealSubgraphTest: test_example_of_subgraph
+---------------------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+ [36mCYPHER[0m [33m4ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"los-angeles-lakers"}
+---------------------------------------------
+NbaRealSubgraphTest: test_example_of_subgraph
+---------------------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"los-angeles-lakers"}
+ [36mCYPHER[0m [33m7ms[0m START start = node(48), end = node(53) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m7ms[0m START start = node(51), end = node(52) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`Game`) WHERE result.game_id = {result_game_id} RETURN result | {:result_game_id=>"abc"}
+ [36mCYPHER[0m [33m13ms[0m MATCH (boxscore55:`BoxScore`), (n:`Player`), boxscore55-[r]->(n:`Player`) WHERE ID(boxscore55) = 55 DELETE r
+ [36mCYPHER[0m [33m7ms[0m START start = node(55), end = node(52) CREATE start-[rel0:`#player`]->end
+ [36mCYPHER[0m [33m12ms[0m MATCH (boxscore56:`BoxScore`), (n:`Player`), boxscore56-[r]->(n:`Player`) WHERE ID(boxscore56) = 56 DELETE r
+ [36mCYPHER[0m [33m7ms[0m START start = node(56), end = node(53) CREATE start-[rel0:`#player`]->end
+ [36mCYPHER[0m [33m13ms[0m MATCH (boxscore55:`BoxScore`), (n:`Game`), boxscore55-[r]->(n:`Game`) WHERE ID(boxscore55) = 55 DELETE r
+ [36mCYPHER[0m [33m6ms[0m START start = node(55), end = node(54) CREATE start-[rel0:`#game`]->end
+ [36mCYPHER[0m [33m13ms[0m MATCH (boxscore56:`BoxScore`), (n:`Game`), boxscore56-[r]->(n:`Game`) WHERE ID(boxscore56) = 56 DELETE r
+ [36mCYPHER[0m [33m7ms[0m START start = node(56), end = node(54) CREATE start-[rel0:`#game`]->end
+ [36mCYPHER[0m [33m12ms[0m MATCH (game54:`Game`), (n:`NbaTeam`), game54-[r:`#away_team`]->(n:`NbaTeam`) WHERE ID(game54) = 54 DELETE r
+ [36mCYPHER[0m [33m6ms[0m START start = node(54), end = node(51) CREATE start-[rel0:`#away_team`]->end
+ [36mCYPHER[0m [33m13ms[0m MATCH (game54:`Game`), (n:`NbaTeam`), game54-[r:`#home_team`]->(n:`NbaTeam`) WHERE ID(game54) = 54 DELETE r
+ [36mCYPHER[0m [33m6ms[0m START start = node(54), end = node(48) CREATE start-[rel0:`#home_team`]->end
+---------------------------------------------
+NbaRealSubgraphTest: test_example_of_subgraph
+---------------------------------------------
+ [36mCYPHER[0m [33m2ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"los-angeles-lakers"}
+ [36mCYPHER[0m [33m12ms[0m MATCH (player59:`Player`), (n:`NbaTeam`), player59-[r:`#real_team`]->(n:`NbaTeam`) WHERE ID(player59) = 59 DELETE r
+ [36mCYPHER[0m [33m6ms[0m START start = node(59), end = node(58) CREATE start-[rel0:`#real_team`]->end
+ [36mCYPHER[0m [33m12ms[0m MATCH (player60:`Player`), (n:`NbaTeam`), player60-[r:`#real_team`]->(n:`NbaTeam`) WHERE ID(player60) = 60 DELETE r
+ [36mCYPHER[0m [33m6ms[0m START start = node(60), end = node(57) CREATE start-[rel0:`#real_team`]->end
+ [36mCYPHER[0m [33m2ms[0m MATCH (result:`Game`) WHERE result.game_id = {result_game_id} RETURN result | {:result_game_id=>"abc"}
+ [36mCYPHER[0m [33m13ms[0m MATCH (boxscore62:`BoxScore`), (n:`Player`), boxscore62-[r]->(n:`Player`) WHERE ID(boxscore62) = 62 DELETE r
+ [36mCYPHER[0m [33m6ms[0m START start = node(62), end = node(59) CREATE start-[rel0:`#player`]->end
+ [36mCYPHER[0m [33m12ms[0m MATCH (boxscore63:`BoxScore`), (n:`Player`), boxscore63-[r]->(n:`Player`) WHERE ID(boxscore63) = 63 DELETE r
+ [36mCYPHER[0m [33m6ms[0m START start = node(63), end = node(60) CREATE start-[rel0:`#player`]->end
+ [36mCYPHER[0m [33m11ms[0m MATCH (boxscore62:`BoxScore`), (n:`Game`), boxscore62-[r]->(n:`Game`) WHERE ID(boxscore62) = 62 DELETE r
+ [36mCYPHER[0m [33m6ms[0m START start = node(62), end = node(61) CREATE start-[rel0:`#game`]->end
+ [36mCYPHER[0m [33m12ms[0m MATCH (boxscore63:`BoxScore`), (n:`Game`), boxscore63-[r]->(n:`Game`) WHERE ID(boxscore63) = 63 DELETE r
+ [36mCYPHER[0m [33m6ms[0m START start = node(63), end = node(61) CREATE start-[rel0:`#game`]->end
+ [36mCYPHER[0m [33m13ms[0m MATCH (game61:`Game`), (n:`NbaTeam`), game61-[r:`#away_team`]->(n:`NbaTeam`) WHERE ID(game61) = 61 DELETE r
+ [36mCYPHER[0m [33m6ms[0m START start = node(61), end = node(58) CREATE start-[rel0:`#away_team`]->end
+ [36mCYPHER[0m [33m12ms[0m MATCH (game61:`Game`), (n:`NbaTeam`), game61-[r:`#home_team`]->(n:`NbaTeam`) WHERE ID(game61) = 61 DELETE r
+ [36mCYPHER[0m [33m6ms[0m START start = node(61), end = node(57) CREATE start-[rel0:`#home_team`]->end
+---------------------------------------------
+NbaRealSubgraphTest: test_example_of_subgraph
+---------------------------------------------
+ [36mCYPHER[0m [33m2ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"los-angeles-lakers"}
+ [36mCYPHER[0m [33m17ms[0m MATCH (player66:`Player`), (n:`NbaTeam`), player66-[r:`#real_team`]->(n:`NbaTeam`) WHERE ID(player66) = 66 DELETE r
+ [36mCYPHER[0m [33m10ms[0m START start = node(66), end = node(65) CREATE start-[rel0:`#real_team`]->end
+ [36mCYPHER[0m [33m12ms[0m MATCH (player67:`Player`), (n:`NbaTeam`), player67-[r:`#real_team`]->(n:`NbaTeam`) WHERE ID(player67) = 67 DELETE r
+ [36mCYPHER[0m [33m6ms[0m START start = node(67), end = node(64) CREATE start-[rel0:`#real_team`]->end
+ [36mCYPHER[0m [33m2ms[0m MATCH (result:`Game`) WHERE result.game_id = {result_game_id} RETURN result | {:result_game_id=>"abc"}
+ [36mCYPHER[0m [33m12ms[0m MATCH (boxscore69:`BoxScore`), (n:`Player`), boxscore69-[r]->(n:`Player`) WHERE ID(boxscore69) = 69 DELETE r
+ [36mCYPHER[0m [33m6ms[0m START start = node(69), end = node(66) CREATE start-[rel0:`#player`]->end
+ [36mCYPHER[0m [33m11ms[0m MATCH (boxscore70:`BoxScore`), (n:`Player`), boxscore70-[r]->(n:`Player`) WHERE ID(boxscore70) = 70 DELETE r
+ [36mCYPHER[0m [33m12ms[0m START start = node(70), end = node(67) CREATE start-[rel0:`#player`]->end
+ [36mCYPHER[0m [33m11ms[0m MATCH (boxscore69:`BoxScore`), (n:`Game`), boxscore69-[r]->(n:`Game`) WHERE ID(boxscore69) = 69 DELETE r
+ [36mCYPHER[0m [33m6ms[0m START start = node(69), end = node(68) CREATE start-[rel0:`#game`]->end
+ [36mCYPHER[0m [33m13ms[0m MATCH (boxscore70:`BoxScore`), (n:`Game`), boxscore70-[r]->(n:`Game`) WHERE ID(boxscore70) = 70 DELETE r
+ [36mCYPHER[0m [33m6ms[0m START start = node(70), end = node(68) CREATE start-[rel0:`#game`]->end
+ [36mCYPHER[0m [33m11ms[0m MATCH (game68:`Game`), (n:`NbaTeam`), game68-[r:`#away_team`]->(n:`NbaTeam`) WHERE ID(game68) = 68 DELETE r
+ [36mCYPHER[0m [33m6ms[0m START start = node(68), end = node(65) CREATE start-[rel0:`#away_team`]->end
+ [36mCYPHER[0m [33m11ms[0m MATCH (game68:`Game`), (n:`NbaTeam`), game68-[r:`#home_team`]->(n:`NbaTeam`) WHERE ID(game68) = 68 DELETE r
+ [36mCYPHER[0m [33m6ms[0m START start = node(68), end = node(64) CREATE start-[rel0:`#home_team`]->end
+---------------------------------------------
+NbaRealSubgraphTest: test_example_of_subgraph
+---------------------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"los-angeles-lakers"}
+ [36mCYPHER[0m [33m11ms[0m MATCH (player73:`Player`), (n:`NbaTeam`), player73-[r:`#real_team`]->(n:`NbaTeam`) WHERE ID(player73) = 73 DELETE r
+ [36mCYPHER[0m [33m6ms[0m START start = node(73), end = node(72) CREATE start-[rel0:`#real_team`]->end
+ [36mCYPHER[0m [33m14ms[0m MATCH (player74:`Player`), (n:`NbaTeam`), player74-[r:`#real_team`]->(n:`NbaTeam`) WHERE ID(player74) = 74 DELETE r
+ [36mCYPHER[0m [33m6ms[0m START start = node(74), end = node(71) CREATE start-[rel0:`#real_team`]->end
+ [36mCYPHER[0m [33m2ms[0m MATCH (result:`Game`) WHERE result.game_id = {result_game_id} RETURN result | {:result_game_id=>"abc"}
+ [36mCYPHER[0m [33m11ms[0m MATCH (boxscore76:`BoxScore`), (n:`Player`), boxscore76-[r]->(n:`Player`) WHERE ID(boxscore76) = 76 DELETE r
+ [36mCYPHER[0m [33m8ms[0m START start = node(76), end = node(73) CREATE start-[rel0:`#player`]->end
+ [36mCYPHER[0m [33m11ms[0m MATCH (boxscore77:`BoxScore`), (n:`Player`), boxscore77-[r]->(n:`Player`) WHERE ID(boxscore77) = 77 DELETE r
+ [36mCYPHER[0m [33m6ms[0m START start = node(77), end = node(74) CREATE start-[rel0:`#player`]->end
+ [36mCYPHER[0m [33m11ms[0m MATCH (boxscore76:`BoxScore`), (n:`Game`), boxscore76-[r]->(n:`Game`) WHERE ID(boxscore76) = 76 DELETE r
+ [36mCYPHER[0m [33m6ms[0m START start = node(76), end = node(75) CREATE start-[rel0:`#game`]->end
+ [36mCYPHER[0m [33m12ms[0m MATCH (boxscore77:`BoxScore`), (n:`Game`), boxscore77-[r]->(n:`Game`) WHERE ID(boxscore77) = 77 DELETE r
+ [36mCYPHER[0m [33m6ms[0m START start = node(77), end = node(75) CREATE start-[rel0:`#game`]->end
+ [36mCYPHER[0m [33m11ms[0m MATCH (game75:`Game`), (n:`NbaTeam`), game75-[r:`#away_team`]->(n:`NbaTeam`) WHERE ID(game75) = 75 DELETE r
+ [36mCYPHER[0m [33m6ms[0m START start = node(75), end = node(72) CREATE start-[rel0:`#away_team`]->end
+ [36mCYPHER[0m [33m11ms[0m MATCH (game75:`Game`), (n:`NbaTeam`), game75-[r:`#home_team`]->(n:`NbaTeam`) WHERE ID(game75) = 75 DELETE r
+ [36mCYPHER[0m [33m6ms[0m START start = node(75), end = node(71) CREATE start-[rel0:`#home_team`]->end
+ [36mGame#home_boxscores[0m [33m24ms[0m MATCH (game75:`Game`), (result:`BoxScore`), game75<-[rel0]-(result:`BoxScore`) WHERE ID(game75) = 75 RETURN count(result) AS count
+---------------------------------------------
+NbaRealSubgraphTest: test_example_of_subgraph
+---------------------------------------------
+ [36mCYPHER[0m [33m4ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+---------------------------------------------
+NbaRealSubgraphTest: test_example_of_subgraph
+---------------------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"los-angeles-lakers"}
+ [36mCYPHER[0m [33m16ms[0m MATCH (player81:`Player`), (n:`NbaTeam`), player81-[r:`#real_team`]->(n:`NbaTeam`) WHERE ID(player81) = 81 DELETE r
+ [36mCYPHER[0m [33m47ms[0m START start = node(81), end = node(79) CREATE start-[rel0:`#real_team`]->end
+ [36mCYPHER[0m [33m10ms[0m MATCH (player85:`Player`), (n:`NbaTeam`), player85-[r:`#real_team`]->(n:`NbaTeam`) WHERE ID(player85) = 85 DELETE r
+ [36mCYPHER[0m [33m6ms[0m START start = node(85), end = node(78) CREATE start-[rel0:`#real_team`]->end
+ [36mCYPHER[0m [33m2ms[0m MATCH (result:`Game`) WHERE result.game_id = {result_game_id} RETURN result | {:result_game_id=>"abc"}
+ [36mCYPHER[0m [33m11ms[0m MATCH (boxscore80:`BoxScore`), (n:`Player`), boxscore80-[r]->(n:`Player`) WHERE ID(boxscore80) = 80 DELETE r
+ [36mCYPHER[0m [33m6ms[0m START start = node(80), end = node(81) CREATE start-[rel0:`#player`]->end
+ [36mCYPHER[0m [33m13ms[0m MATCH (boxscore82:`BoxScore`), (n:`Player`), boxscore82-[r]->(n:`Player`) WHERE ID(boxscore82) = 82 DELETE r
+ [36mCYPHER[0m [33m10ms[0m START start = node(82), end = node(85) CREATE start-[rel0:`#player`]->end
+---------------------------------------------
+NbaRealSubgraphTest: test_example_of_subgraph
+---------------------------------------------
+ [36mCYPHER[0m [33m2ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"los-angeles-lakers"}
+ [36mCYPHER[0m [33m11ms[0m MATCH (player87:`Player`), (n:`NbaTeam`), player87-[r:`#real_team`]->(n:`NbaTeam`) WHERE ID(player87) = 87 DELETE r
+ [36mCYPHER[0m [33m6ms[0m START start = node(87), end = node(84) CREATE start-[rel0:`#real_team`]->end
+ [36mCYPHER[0m [33m11ms[0m MATCH (player89:`Player`), (n:`NbaTeam`), player89-[r:`#real_team`]->(n:`NbaTeam`) WHERE ID(player89) = 89 DELETE r
+ [36mCYPHER[0m [33m6ms[0m START start = node(89), end = node(83) CREATE start-[rel0:`#real_team`]->end
+ [36mCYPHER[0m [33m2ms[0m MATCH (result:`Game`) WHERE result.game_id = {result_game_id} RETURN result | {:result_game_id=>"abc"}
+ [36mCYPHER[0m [33m13ms[0m MATCH (boxscore88:`BoxScore`), (n:`Player`), boxscore88-[r]->(n:`Player`) WHERE ID(boxscore88) = 88 DELETE r
+ [36mCYPHER[0m [33m14ms[0m START start = node(88), end = node(87) CREATE start-[rel0:`#player`]->end
+ [36mCYPHER[0m [33m12ms[0m MATCH (boxscore91:`BoxScore`), (n:`Player`), boxscore91-[r]->(n:`Player`) WHERE ID(boxscore91) = 91 DELETE r
+ [36mCYPHER[0m [33m6ms[0m START start = node(91), end = node(89) CREATE start-[rel0:`#player`]->end
+ [36mCYPHER[0m [33m6ms[0m START start = node(90), end = node(88) CREATE start-[rel0:`#away_boxscores`]->end
+ [36mCYPHER[0m [33m6ms[0m START start = node(90), end = node(91) CREATE start-[rel0:`#home_boxscores`]->end
+ [36mCYPHER[0m [33m11ms[0m MATCH (game90:`Game`), (n:`NbaTeam`), game90-[r:`#away_team`]->(n:`NbaTeam`) WHERE ID(game90) = 90 DELETE r
+ [36mCYPHER[0m [33m5ms[0m START start = node(90), end = node(84) CREATE start-[rel0:`#away_team`]->end
+ [36mCYPHER[0m [33m11ms[0m MATCH (game90:`Game`), (n:`NbaTeam`), game90-[r:`#home_team`]->(n:`NbaTeam`) WHERE ID(game90) = 90 DELETE r
+ [36mCYPHER[0m [33m7ms[0m START start = node(90), end = node(83) CREATE start-[rel0:`#home_team`]->end
+ [36mGame#home_boxscores[0m [33m11ms[0m MATCH (game90:`Game`), (result:`BoxScore`), game90-[rel0:`#home_boxscores`]->(result:`BoxScore`) WHERE ID(game90) = 90 RETURN count(result) AS count
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m2ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"los-angeles-lakers"}
+ [36mCYPHER[0m [33m2ms[0m MATCH (result:`Game`) WHERE result.game_id = {result_game_id} RETURN result | {:result_game_id=>"thefinals"}
+ [36mCYPHER[0m [33m7ms[0m MATCH (n:`NbaTeam`) WHERE n.name = {n_name} RETURN n LIMIT 1 | {:n_name=>"Philadelphia 76ers"}
+ [36mCYPHER[0m [33m10ms[0m MATCH (game94:`Game`), (n:`NbaTeam`), game94-[r:`#away_team`]->(n:`NbaTeam`) WHERE ID(game94) = 94 DELETE r
+ [36mCYPHER[0m [33m39ms[0m START start = node(94), end = node(92) CREATE start-[rel0:`#away_team`]->end
+ [36mCYPHER[0m [33m4ms[0m MATCH (n:`NbaTeam`) WHERE n.name = {n_name} RETURN n LIMIT 1 | {:n_name=>"Los Angeles Lakers"}
+ [36mCYPHER[0m [33m10ms[0m MATCH (game94:`Game`), (n:`NbaTeam`), game94-[r:`#home_team`]->(n:`NbaTeam`) WHERE ID(game94) = 94 DELETE r
+ [36mCYPHER[0m [33m5ms[0m START start = node(94), end = node(93) CREATE start-[rel0:`#home_team`]->end
+------------------------------------
+PlayerTest: test_coherent_attributes
+------------------------------------
+-------------------------------------
+PlayerTest: test_save_an_empty_player
+-------------------------------------
+--------------------------------
+BoxScoreTest: test_coherent_data
+--------------------------------
+----------------------------------
+BoxScoreTest: test_incoherent_data
+----------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m4ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+------------------------------------
+PlayerTest: test_coherent_attributes
+------------------------------------
+-------------------------------------
+PlayerTest: test_save_an_empty_player
+-------------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m4ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+--------------------------------
+BoxScoreTest: test_coherent_data
+--------------------------------
+----------------------------------
+BoxScoreTest: test_incoherent_data
+----------------------------------
+------------------------------------
+PlayerTest: test_coherent_attributes
+------------------------------------
+-------------------------------------
+PlayerTest: test_save_an_empty_player
+-------------------------------------
+--------------------------------
+BoxScoreTest: test_coherent_data
+--------------------------------
+----------------------------------
+BoxScoreTest: test_incoherent_data
+----------------------------------
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m2ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"los-angeles-lakers"}
+ [36mCYPHER[0m [33m2ms[0m MATCH (result:`Game`) WHERE result.game_id = {result_game_id} RETURN result | {:result_game_id=>"thefinals"}
+ [36mCYPHER[0m [33m4ms[0m MATCH (n:`NbaTeam`) WHERE n.name = {n_name} RETURN n LIMIT 1 | {:n_name=>"Philadelphia 76ers"}
+ [36mCYPHER[0m [33m10ms[0m MATCH (game107:`Game`), (n:`NbaTeam`), game107-[r:`#away_team`]->(n:`NbaTeam`) WHERE ID(game107) = 107 DELETE r
+ [36mCYPHER[0m [33m6ms[0m START start = node(107), end = node(105) CREATE start-[rel0:`#away_team`]->end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`NbaTeam`) WHERE n.name = {n_name} RETURN n LIMIT 1 | {:n_name=>"Los Angeles Lakers"}
+ [36mCYPHER[0m [33m12ms[0m MATCH (game107:`Game`), (n:`NbaTeam`), game107-[r:`#home_team`]->(n:`NbaTeam`) WHERE ID(game107) = 107 DELETE r
+ [36mCYPHER[0m [33m6ms[0m START start = node(107), end = node(106) CREATE start-[rel0:`#home_team`]->end
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+--------------------------------
+BoxScoreTest: test_coherent_data
+--------------------------------
+----------------------------------
+BoxScoreTest: test_incoherent_data
+----------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+------------------------------------
+PlayerTest: test_coherent_attributes
+------------------------------------
+-------------------------------------
+PlayerTest: test_save_an_empty_player
+-------------------------------------
+--------------------------------
+BoxScoreTest: test_coherent_data
+--------------------------------
+----------------------------------
+BoxScoreTest: test_incoherent_data
+----------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m2ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m2ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+------------------------------------
+PlayerTest: test_coherent_attributes
+------------------------------------
+-------------------------------------
+PlayerTest: test_save_an_empty_player
+-------------------------------------
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"los-angeles-lakers"}
+ [36mCYPHER[0m [33m2ms[0m MATCH (result:`Game`) WHERE result.game_id = {result_game_id} RETURN result | {:result_game_id=>"thefinals"}
+--------------------------------
+BoxScoreTest: test_coherent_data
+--------------------------------
+----------------------------------
+BoxScoreTest: test_incoherent_data
+----------------------------------
+------------------------------------
+PlayerTest: test_coherent_attributes
+------------------------------------
+-------------------------------------
+PlayerTest: test_save_an_empty_player
+-------------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+------------------------------------
+PlayerTest: test_coherent_attributes
+------------------------------------
+-------------------------------------
+PlayerTest: test_save_an_empty_player
+-------------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+--------------------------------
+BoxScoreTest: test_coherent_data
+--------------------------------
+----------------------------------
+BoxScoreTest: test_incoherent_data
+----------------------------------
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+--------------------------------
+BoxScoreTest: test_coherent_data
+--------------------------------
+----------------------------------
+BoxScoreTest: test_incoherent_data
+----------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m36ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+------------------------------------
+PlayerTest: test_coherent_attributes
+------------------------------------
+-------------------------------------
+PlayerTest: test_save_an_empty_player
+-------------------------------------
+------------------------------------
+PlayerTest: test_coherent_attributes
+------------------------------------
+-------------------------------------
+PlayerTest: test_save_an_empty_player
+-------------------------------------
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+--------------------------------
+BoxScoreTest: test_coherent_data
+--------------------------------
+----------------------------------
+BoxScoreTest: test_incoherent_data
+----------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+--------------------------------
+BoxScoreTest: test_coherent_data
+--------------------------------
+----------------------------------
+BoxScoreTest: test_incoherent_data
+----------------------------------
+------------------------------------
+PlayerTest: test_coherent_attributes
+------------------------------------
+-------------------------------------
+PlayerTest: test_save_an_empty_player
+-------------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+--------------------------------
+BoxScoreTest: test_coherent_data
+--------------------------------
+----------------------------------
+BoxScoreTest: test_incoherent_data
+----------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m9ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+------------------------------------
+PlayerTest: test_coherent_attributes
+------------------------------------
+-------------------------------------
+PlayerTest: test_save_an_empty_player
+-------------------------------------
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m4ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+------------------------------------
+PlayerTest: test_coherent_attributes
+------------------------------------
+-------------------------------------
+PlayerTest: test_save_an_empty_player
+-------------------------------------
+--------------------------------
+BoxScoreTest: test_coherent_data
+--------------------------------
+----------------------------------
+BoxScoreTest: test_incoherent_data
+----------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+------------------------------------
+PlayerTest: test_coherent_attributes
+------------------------------------
+-------------------------------------
+PlayerTest: test_save_an_empty_player
+-------------------------------------
+--------------------------------
+BoxScoreTest: test_coherent_data
+--------------------------------
+----------------------------------
+BoxScoreTest: test_incoherent_data
+----------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m2ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m2ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m2ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"los-angeles-lakers"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`Game`) WHERE result.game_id = {result_game_id} RETURN result | {:result_game_id=>"thefinals-4712-01-01"}
+--------------------------------
+BoxScoreTest: test_coherent_data
+--------------------------------
+----------------------------------
+BoxScoreTest: test_incoherent_data
+----------------------------------
+------------------------------------
+PlayerTest: test_coherent_attributes
+------------------------------------
+-------------------------------------
+PlayerTest: test_save_an_empty_player
+-------------------------------------
+------------------------------------
+PlayerTest: test_coherent_attributes
+------------------------------------
+-------------------------------------
+PlayerTest: test_save_an_empty_player
+-------------------------------------
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m4ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadephia-76-ers"}
+--------------------------------
+BoxScoreTest: test_coherent_data
+--------------------------------
+----------------------------------
+BoxScoreTest: test_incoherent_data
+----------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+--------------------------------
+BoxScoreTest: test_coherent_data
+--------------------------------
+----------------------------------
+BoxScoreTest: test_incoherent_data
+----------------------------------
+------------------------------
+NbaTeamTest: test_missing_data
+------------------------------
+ [36mCYPHER[0m [33m2ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m2ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"76ers"}
+------------------------------------
+PlayerTest: test_coherent_attributes
+------------------------------------
+-------------------------------------
+PlayerTest: test_save_an_empty_player
+-------------------------------------
+---------------------------
+GameTest: test_missing_data
+---------------------------
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`Game`) WHERE result.game_id = {result_game_id} RETURN result | {:result_game_id=>"thefinals-4712-01-01"}

@@ -1,0 +1,721 @@
+
+
+Started GET "/players" for 127.0.0.1 at 2014-10-08 12:49:29 +0200
+Processing by PlayersController#index as HTML
+ [36mCYPHER[0m [33m386ms[0m MATCH (n:`Player`) RETURN n
+  Rendered players/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 2326ms (Views: 999.0ms)
+
+
+Started GET "/assets/players.css?body=1" for 127.0.0.1 at 2014-10-08 12:49:31 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 12:49:31 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-08 12:49:31 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 12:49:31 +0200
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2014-10-08 12:49:31 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 12:49:31 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 12:49:31 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 12:49:31 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 13:00:07 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Library/Ruby/Gems/2.0.0/gems/railties-4.1.6/lib/rails/templates/rails/welcome/index.html.erb (0.8ms)
+Completed 200 OK in 3ms (Views: 2.4ms)
+ [36mCYPHER[0m [33m7ms[0m MATCH (n:`Game`) RETURN n
+ [36mCYPHER[0m [33m2ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>""}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"atlanta-hawks"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"boston-celtics"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"brooklyn-nets"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"charlotte-hornets"}
+ [36mCYPHER[0m [33m4ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"chicago-bulls"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"cleveland-cavaliers"}
+ [36mCYPHER[0m [33m4ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"dallas-mavericks"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"denver-nuggets"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"detroit-pistons"}
+ [36mCYPHER[0m [33m4ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"golden-state-warriors"}
+ [36mCYPHER[0m [33m4ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"houston-rockets"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"indiana-pacers"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"los-angeles-clippers"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"los-angeles-lakers"}
+ [36mCYPHER[0m [33m4ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"memphis-grizzlies"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"miami-heat"}
+ [36mCYPHER[0m [33m4ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"milwaukee-bucks"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"minnesota-timberwolves"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"new-orleans-pelicans"}
+ [36mCYPHER[0m [33m4ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"new-york-knicks"}
+ [36mCYPHER[0m [33m4ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"oklahoma-city-thunder"}
+ [36mCYPHER[0m [33m4ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"orlando-magic"}
+ [36mCYPHER[0m [33m4ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadelphia-76ers"}
+ [36mCYPHER[0m [33m4ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"phoenix-suns"}
+ [36mCYPHER[0m [33m4ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"portland-trail-blazers"}
+ [36mCYPHER[0m [33m4ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"sacramento-kings"}
+ [36mCYPHER[0m [33m4ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"san-antonio-spurs"}
+ [36mCYPHER[0m [33m4ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"toronto-raptors"}
+ [36mCYPHER[0m [33m4ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"utah-jazz"}
+ [36mCYPHER[0m [33m4ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"washington-wizards"}
+ [36mCYPHER[0m [33m26ms[0m MATCH (n:`NbaTeam`) RETURN n
+ [36mCYPHER[0m [33m24ms[0m MATCH (n:`NbaTeam`) RETURN n
+ [36mCYPHER[0m [33m14ms[0m MATCH (n:`NbaTeam`) RETURN n
+ [36mCYPHER[0m [33m11ms[0m MATCH (n:`NbaTeam`) RETURN n
+ [36mCYPHER[0m [33m20ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Pero Antic", :n_birthdate=>"1982-07-29"}
+ [36mCYPHER[0m [33m12ms[0m MATCH (n:`NbaTeam`) RETURN n
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Pero Antic", :n_birthdate=>"1982-07-29"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(143), end = node(173) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Kent Bazemore", :n_birthdate=>"1989-07-01"}
+ [36mCYPHER[0m [33m11ms[0m MATCH (n:`NbaTeam`) RETURN n
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Pero Antic", :n_birthdate=>"1982-07-29"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(143), end = node(174) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Kent Bazemore", :n_birthdate=>"1989-07-01"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(143), end = node(175) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m2ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Elton Brand", :n_birthdate=>"1979-03-11"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(143), end = node(176) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"DeMarre Carroll", :n_birthdate=>"1986-07-27"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(143), end = node(177) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Jarell Eddie", :n_birthdate=>"1991-10-30"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(143), end = node(178) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Al Horford", :n_birthdate=>"1986-06-03"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(143), end = node(179) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"John Jenkins", :n_birthdate=>"1991-03-06"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(143), end = node(180) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Kyle Korver", :n_birthdate=>"1981-03-17"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(143), end = node(181) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Shelvin Mack", :n_birthdate=>"1990-04-22"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(143), end = node(182) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Paul Millsap", :n_birthdate=>"1985-02-10"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(143), end = node(183) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Mike Muscala", :n_birthdate=>"1991-07-01"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(143), end = node(184) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Adreian Payne", :n_birthdate=>"1991-02-19"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(143), end = node(185) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Dexter Pittman", :n_birthdate=>"1988-03-02"}
+ [36mCYPHER[0m [33m7ms[0m START start = node(143), end = node(186) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m4ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Dennis Schröder", :n_birthdate=>"1993-09-15"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(143), end = node(187) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Mike Scott", :n_birthdate=>"1988-04-16"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(143), end = node(188) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Thabo Sefolosha", :n_birthdate=>"1984-05-02"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(143), end = node(189) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m4ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Jeff Teague", :n_birthdate=>"1988-06-10"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(143), end = node(190) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m4ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Joel Anthony", :n_birthdate=>"1982-08-09"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(144), end = node(191) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m4ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Brandon Bass", :n_birthdate=>"1985-04-30"}
+ [36mCYPHER[0m [33m7ms[0m START start = node(144), end = node(192) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m4ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Avery Bradley", :n_birthdate=>"1990-11-26"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(144), end = node(193) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m4ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Vitor Faverani", :n_birthdate=>"1988-05-05"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(144), end = node(194) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m4ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Jeff Green", :n_birthdate=>"1986-08-08"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(144), end = node(195) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m4ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Erik Murphy", :n_birthdate=>"1990-10-26"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(144), end = node(196) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m4ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Kelly Olynyk", :n_birthdate=>"1991-04-19"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(144), end = node(197) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m4ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Dwight Powell", :n_birthdate=>"1991-07-20"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(144), end = node(198) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m4ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Phil Pressey", :n_birthdate=>"1991-02-17"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(144), end = node(199) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m4ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Rajon Rondo", :n_birthdate=>"1986-02-22"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(144), end = node(200) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m4ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Marcus Smart", :n_birthdate=>"1994-03-06"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(144), end = node(201) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m4ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Jared Sullinger", :n_birthdate=>"1992-03-04"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(144), end = node(202) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m4ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Marcus Thornton", :n_birthdate=>"1987-06-05"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(144), end = node(203) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m4ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Evan Turner", :n_birthdate=>"1988-10-27"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(144), end = node(204) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m4ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Gerald Wallace", :n_birthdate=>"1982-07-23"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(144), end = node(205) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m5ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"James Young", :n_birthdate=>"1995-08-16"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(144), end = node(206) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m5ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Tyler Zeller", :n_birthdate=>"1990-01-17"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(144), end = node(207) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m6ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Alan Anderson", :n_birthdate=>"1982-10-16"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(145), end = node(208) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m5ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Bojan Bogdanović", :n_birthdate=>"1989-04-18"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(145), end = node(209) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m5ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Markel Brown", :n_birthdate=>"1992-01-29"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(145), end = node(210) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m5ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Kevin Garnett", :n_birthdate=>"1976-05-19"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(145), end = node(211) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m5ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Jorge Gutierrez", :n_birthdate=>"1988-12-27"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(145), end = node(212) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m5ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Jarrett Jack", :n_birthdate=>"1983-10-28"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(145), end = node(213) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m5ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Cory Jefferson", :n_birthdate=>"1990-12-26"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(145), end = node(214) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m5ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Joe Johnson", :n_birthdate=>"1981-06-29"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(145), end = node(215) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m5ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Jerome Jordan", :n_birthdate=>"1986-09-29"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(145), end = node(216) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m5ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Sergey Karasev", :n_birthdate=>"1993-10-26"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(145), end = node(217) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m5ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Andrei Kirilenko", :n_birthdate=>"1981-02-18"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(145), end = node(218) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m5ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Brook Lopez", :n_birthdate=>"1988-04-01"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(145), end = node(219) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m5ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Mason Plumlee", :n_birthdate=>"1990-03-05"}
+ [36mCYPHER[0m [33m7ms[0m START start = node(145), end = node(220) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m6ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Willie Reed", :n_birthdate=>"1990-05-16"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(145), end = node(221) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m5ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Marquis Teague", :n_birthdate=>"1993-04-28"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(145), end = node(222) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m5ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Mirza Teletović", :n_birthdate=>"1985-09-17"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(145), end = node(223) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m5ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Deron Williams", :n_birthdate=>"1984-06-26"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(145), end = node(224) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m6ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Bismack Biyombo", :n_birthdate=>"1992-08-28"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(146), end = node(225) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m37ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Justin Cobbs", :n_birthdate=>"1991-03-16"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(146), end = node(226) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m5ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"P.J. Hairston", :n_birthdate=>"1992-12-24"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(146), end = node(227) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m6ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Gerald Henderson", :n_birthdate=>"1987-12-09"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(146), end = node(228) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m6ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Al Jefferson", :n_birthdate=>"1985-01-04"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(146), end = node(229) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m6ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Michael Kidd-Gilchrist", :n_birthdate=>"1993-09-26"}
+ [36mCYPHER[0m [33m7ms[0m START start = node(146), end = node(230) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m6ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Dallas Lauderdale", :n_birthdate=>"1988-09-11"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(146), end = node(231) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m6ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Gary Neal", :n_birthdate=>"1984-11-03"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(146), end = node(232) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m6ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Jannero Pargo", :n_birthdate=>"1979-10-22"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(146), end = node(233) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m6ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Brian Qvale", :n_birthdate=>"1988-11-03"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(146), end = node(234) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m6ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Brian Roberts", :n_birthdate=>"1985-12-03"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(146), end = node(235) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m6ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Lance Stephenson", :n_birthdate=>"1990-09-05"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(146), end = node(236) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m6ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Jeffery Taylor", :n_birthdate=>"1989-05-23"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(146), end = node(237) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m6ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Noah Vonleh", :n_birthdate=>"1995-08-24"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(146), end = node(238) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m6ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Kemba Walker", :n_birthdate=>"1990-05-08"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(146), end = node(239) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m6ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Marvin Williams", :n_birthdate=>"1986-06-19"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(146), end = node(240) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m6ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Cody Zeller", :n_birthdate=>"1992-10-05"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(146), end = node(241) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m7ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Cameron Bairstow", :n_birthdate=>"1990-12-07"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(147), end = node(242) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m6ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Aaron Brooks", :n_birthdate=>"1985-01-14"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(147), end = node(243) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m6ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Jimmy Butler", :n_birthdate=>"1989-09-14"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(147), end = node(244) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m6ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Mike Dunleavy", :n_birthdate=>"1980-09-15"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(147), end = node(245) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m7ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Kim English", :n_birthdate=>"1988-09-24"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(147), end = node(246) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m6ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Pau Gasol", :n_birthdate=>"1980-07-06"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(147), end = node(247) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m5ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Taj Gibson", :n_birthdate=>"1985-06-24"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(147), end = node(248) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m5ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Ben Hansbrough", :n_birthdate=>"1987-12-23"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(147), end = node(249) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m6ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Kirk Hinrich", :n_birthdate=>"1981-01-02"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(147), end = node(250) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m5ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Solomon Jones", :n_birthdate=>"1984-07-16"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(147), end = node(251) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m6ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Doug McDermott", :n_birthdate=>"1992-01-03"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(147), end = node(252) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m6ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Nikola Mirotić", :n_birthdate=>"1991-02-11"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(147), end = node(253) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m6ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Nazr Mohammed", :n_birthdate=>"1977-09-05"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(147), end = node(254) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m6ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"E'Twaun Moore", :n_birthdate=>"1989-02-25"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(147), end = node(255) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m5ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Joakim Noah", :n_birthdate=>"1985-02-25"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(147), end = node(256) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m6ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Derrick Rose", :n_birthdate=>"1988-10-04"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(147), end = node(257) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m5ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Tony Snell", :n_birthdate=>"1991-11-10"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(147), end = node(258) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m7ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Lou Amundson", :n_birthdate=>"1982-12-07"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(148), end = node(259) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m6ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Matthew Dellavedova", :n_birthdate=>"1990-09-08"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(148), end = node(260) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m6ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Shane Edwards", :n_birthdate=>"1987-05-31"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(148), end = node(261) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m6ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Joe Harris", :n_birthdate=>"1991-09-07"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(148), end = node(262) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m7ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Brendan Haywood", :n_birthdate=>"1979-11-11"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(148), end = node(263) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m5ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Kyrie Irving", :n_birthdate=>"1992-03-23"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(148), end = node(264) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m6ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"LeBron James", :n_birthdate=>"1984-12-30"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(148), end = node(265) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m5ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"James Jones", :n_birthdate=>"1980-10-04"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(148), end = node(266) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m5ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Alex Kirk", :n_birthdate=>"1991-11-14"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(148), end = node(267) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m5ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Kevin Love", :n_birthdate=>"1988-09-07"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(148), end = node(268) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m5ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Shawn Marion", :n_birthdate=>"1978-05-07"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(148), end = node(269) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m5ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Mike Miller", :n_birthdate=>"1980-02-19"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(148), end = node(270) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m6ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"A.J. Price", :n_birthdate=>"1986-10-07"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(148), end = node(271) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m5ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Tristan Thompson", :n_birthdate=>"1991-03-13"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(148), end = node(272) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m4ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Anderson Varejao", :n_birthdate=>"1982-09-28"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(148), end = node(273) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m4ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Dion Waiters", :n_birthdate=>"1991-12-10"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(148), end = node(274) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m7ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"atlanta-hawks"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"boston-celtics"}
+ [36mCYPHER[0m [33m2ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"brooklyn-nets"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"charlotte-hornets"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"chicago-bulls"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"cleveland-cavaliers"}
+ [36mCYPHER[0m [33m4ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"dallas-mavericks"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"denver-nuggets"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"detroit-pistons"}
+ [36mCYPHER[0m [33m4ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"golden-state-warriors"}
+ [36mCYPHER[0m [33m4ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"houston-rockets"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"indiana-pacers"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"los-angeles-clippers"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"los-angeles-lakers"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"memphis-grizzlies"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"miami-heat"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"milwaukee-bucks"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"minnesota-timberwolves"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"new-orleans-pelicans"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"new-york-knicks"}
+ [36mCYPHER[0m [33m4ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"oklahoma-city-thunder"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"orlando-magic"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"philadelphia-76ers"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"phoenix-suns"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"portland-trail-blazers"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"sacramento-kings"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"san-antonio-spurs"}
+ [36mCYPHER[0m [33m4ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"toronto-raptors"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"utah-jazz"}
+ [36mCYPHER[0m [33m3ms[0m MATCH (result:`NbaTeam`) WHERE result.team_id = {result_team_id} RETURN result | {:result_team_id=>"washington-wizards"}
+ [36mCYPHER[0m [33m13ms[0m MATCH (n:`NbaTeam`) RETURN n
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Pero Antic", :n_birthdate=>"1982-07-29"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(275), end = node(305) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m2ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Kent Bazemore", :n_birthdate=>"1989-07-01"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(275), end = node(306) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m2ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Elton Brand", :n_birthdate=>"1979-03-11"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(275), end = node(307) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m2ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"DeMarre Carroll", :n_birthdate=>"1986-07-27"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(275), end = node(308) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m2ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Jarell Eddie", :n_birthdate=>"1991-10-30"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(275), end = node(309) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m2ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Al Horford", :n_birthdate=>"1986-06-03"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(275), end = node(310) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"John Jenkins", :n_birthdate=>"1991-03-06"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(275), end = node(311) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m2ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Kyle Korver", :n_birthdate=>"1981-03-17"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(275), end = node(312) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Shelvin Mack", :n_birthdate=>"1990-04-22"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(275), end = node(313) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m2ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Paul Millsap", :n_birthdate=>"1985-02-10"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(275), end = node(314) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m2ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Mike Muscala", :n_birthdate=>"1991-07-01"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(275), end = node(315) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Adreian Payne", :n_birthdate=>"1991-02-19"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(275), end = node(316) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Dexter Pittman", :n_birthdate=>"1988-03-02"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(275), end = node(317) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Dennis Schröder", :n_birthdate=>"1993-09-15"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(275), end = node(318) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Mike Scott", :n_birthdate=>"1988-04-16"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(275), end = node(319) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Thabo Sefolosha", :n_birthdate=>"1984-05-02"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(275), end = node(320) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Jeff Teague", :n_birthdate=>"1988-06-10"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(275), end = node(321) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Joel Anthony", :n_birthdate=>"1982-08-09"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(276), end = node(322) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Brandon Bass", :n_birthdate=>"1985-04-30"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(276), end = node(323) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Avery Bradley", :n_birthdate=>"1990-11-26"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(276), end = node(324) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Vitor Faverani", :n_birthdate=>"1988-05-05"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(276), end = node(325) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Jeff Green", :n_birthdate=>"1986-08-08"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(276), end = node(326) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Erik Murphy", :n_birthdate=>"1990-10-26"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(276), end = node(327) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Kelly Olynyk", :n_birthdate=>"1991-04-19"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(276), end = node(328) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Dwight Powell", :n_birthdate=>"1991-07-20"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(276), end = node(329) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Phil Pressey", :n_birthdate=>"1991-02-17"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(276), end = node(330) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Rajon Rondo", :n_birthdate=>"1986-02-22"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(276), end = node(331) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Marcus Smart", :n_birthdate=>"1994-03-06"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(276), end = node(332) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Jared Sullinger", :n_birthdate=>"1992-03-04"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(276), end = node(333) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Marcus Thornton", :n_birthdate=>"1987-06-05"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(276), end = node(334) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Evan Turner", :n_birthdate=>"1988-10-27"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(276), end = node(335) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m6ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Gerald Wallace", :n_birthdate=>"1982-07-23"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(276), end = node(336) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"James Young", :n_birthdate=>"1995-08-16"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(276), end = node(337) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Tyler Zeller", :n_birthdate=>"1990-01-17"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(276), end = node(338) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Alan Anderson", :n_birthdate=>"1982-10-16"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(277), end = node(339) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Bojan Bogdanović", :n_birthdate=>"1989-04-18"}
+ [36mCYPHER[0m [33m36ms[0m START start = node(277), end = node(340) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Markel Brown", :n_birthdate=>"1992-01-29"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(277), end = node(341) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Kevin Garnett", :n_birthdate=>"1976-05-19"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(277), end = node(342) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Jorge Gutierrez", :n_birthdate=>"1988-12-27"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(277), end = node(343) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Jarrett Jack", :n_birthdate=>"1983-10-28"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(277), end = node(344) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Cory Jefferson", :n_birthdate=>"1990-12-26"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(277), end = node(345) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Joe Johnson", :n_birthdate=>"1981-06-29"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(277), end = node(346) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Jerome Jordan", :n_birthdate=>"1986-09-29"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(277), end = node(347) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Sergey Karasev", :n_birthdate=>"1993-10-26"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(277), end = node(348) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Andrei Kirilenko", :n_birthdate=>"1981-02-18"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(277), end = node(349) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Brook Lopez", :n_birthdate=>"1988-04-01"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(277), end = node(350) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Mason Plumlee", :n_birthdate=>"1990-03-05"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(277), end = node(351) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Willie Reed", :n_birthdate=>"1990-05-16"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(277), end = node(352) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Marquis Teague", :n_birthdate=>"1993-04-28"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(277), end = node(353) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Mirza Teletović", :n_birthdate=>"1985-09-17"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(277), end = node(354) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Deron Williams", :n_birthdate=>"1984-06-26"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(277), end = node(355) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m4ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Bismack Biyombo", :n_birthdate=>"1992-08-28"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(278), end = node(356) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Justin Cobbs", :n_birthdate=>"1991-03-16"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(278), end = node(357) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m7ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"P.J. Hairston", :n_birthdate=>"1992-12-24"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(278), end = node(358) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Gerald Henderson", :n_birthdate=>"1987-12-09"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(278), end = node(359) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Al Jefferson", :n_birthdate=>"1985-01-04"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(278), end = node(360) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Michael Kidd-Gilchrist", :n_birthdate=>"1993-09-26"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(278), end = node(361) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Dallas Lauderdale", :n_birthdate=>"1988-09-11"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(278), end = node(362) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Gary Neal", :n_birthdate=>"1984-11-03"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(278), end = node(363) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m33ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Jannero Pargo", :n_birthdate=>"1979-10-22"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(278), end = node(364) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Brian Qvale", :n_birthdate=>"1988-11-03"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(278), end = node(365) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Brian Roberts", :n_birthdate=>"1985-12-03"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(278), end = node(366) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Lance Stephenson", :n_birthdate=>"1990-09-05"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(278), end = node(367) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Jeffery Taylor", :n_birthdate=>"1989-05-23"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(278), end = node(368) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Noah Vonleh", :n_birthdate=>"1995-08-24"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(278), end = node(369) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Kemba Walker", :n_birthdate=>"1990-05-08"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(278), end = node(370) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Marvin Williams", :n_birthdate=>"1986-06-19"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(278), end = node(371) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Cody Zeller", :n_birthdate=>"1992-10-05"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(278), end = node(372) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m4ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Cameron Bairstow", :n_birthdate=>"1990-12-07"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(279), end = node(373) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Aaron Brooks", :n_birthdate=>"1985-01-14"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(279), end = node(374) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Jimmy Butler", :n_birthdate=>"1989-09-14"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(279), end = node(375) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Mike Dunleavy", :n_birthdate=>"1980-09-15"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(279), end = node(376) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Kim English", :n_birthdate=>"1988-09-24"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(279), end = node(377) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Pau Gasol", :n_birthdate=>"1980-07-06"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(279), end = node(378) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Taj Gibson", :n_birthdate=>"1985-06-24"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(279), end = node(379) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Ben Hansbrough", :n_birthdate=>"1987-12-23"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(279), end = node(380) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Kirk Hinrich", :n_birthdate=>"1981-01-02"}
+ [36mCYPHER[0m [33m4ms[0m START start = node(279), end = node(381) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m2ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Solomon Jones", :n_birthdate=>"1984-07-16"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(279), end = node(382) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Doug McDermott", :n_birthdate=>"1992-01-03"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(279), end = node(383) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Nikola Mirotić", :n_birthdate=>"1991-02-11"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(279), end = node(384) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Nazr Mohammed", :n_birthdate=>"1977-09-05"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(279), end = node(385) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"E'Twaun Moore", :n_birthdate=>"1989-02-25"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(279), end = node(386) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Joakim Noah", :n_birthdate=>"1985-02-25"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(279), end = node(387) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Derrick Rose", :n_birthdate=>"1988-10-04"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(279), end = node(388) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Tony Snell", :n_birthdate=>"1991-11-10"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(279), end = node(389) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m4ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Lou Amundson", :n_birthdate=>"1982-12-07"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(280), end = node(390) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Matthew Dellavedova", :n_birthdate=>"1990-09-08"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(280), end = node(391) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Shane Edwards", :n_birthdate=>"1987-05-31"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(280), end = node(392) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Joe Harris", :n_birthdate=>"1991-09-07"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(280), end = node(393) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Brendan Haywood", :n_birthdate=>"1979-11-11"}
+ [36mCYPHER[0m [33m4ms[0m START start = node(280), end = node(394) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Kyrie Irving", :n_birthdate=>"1992-03-23"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(280), end = node(395) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"LeBron James", :n_birthdate=>"1984-12-30"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(280), end = node(396) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m2ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"James Jones", :n_birthdate=>"1980-10-04"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(280), end = node(397) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Alex Kirk", :n_birthdate=>"1991-11-14"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(280), end = node(398) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Kevin Love", :n_birthdate=>"1988-09-07"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(280), end = node(399) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Shawn Marion", :n_birthdate=>"1978-05-07"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(280), end = node(400) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Mike Miller", :n_birthdate=>"1980-02-19"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(280), end = node(401) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"A.J. Price", :n_birthdate=>"1986-10-07"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(280), end = node(402) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m2ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Tristan Thompson", :n_birthdate=>"1991-03-13"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(280), end = node(403) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Anderson Varejao", :n_birthdate=>"1982-09-28"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(280), end = node(404) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Dion Waiters", :n_birthdate=>"1991-12-10"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(280), end = node(405) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m19ms[0m MATCH (n:`NbaTeam`) RETURN n
+ [36mCYPHER[0m [33m9ms[0m MATCH (n:`NbaTeam`) WHERE n.abbreviation = {n_abbreviation} RETURN n LIMIT 1 | {:n_abbreviation=>"ATL"}
+ [36mCYPHER[0m [33m5ms[0m MATCH (n:`NbaTeam`) WHERE n.abbreviation = {n_abbreviation} RETURN n LIMIT 1 | {:n_abbreviation=>"ATL"}
+ [36mCYPHER[0m [33m9ms[0m MATCH (n:`NbaTeam`) RETURN n
+ [36mCYPHER[0m [33m15ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Pero Antic", :n_birthdate=>"1982-07-29"}
+ [36mCYPHER[0m [33m8ms[0m START start = node(275), end = node(406) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Kent Bazemore", :n_birthdate=>"1989-07-01"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(275), end = node(407) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Elton Brand", :n_birthdate=>"1979-03-11"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(275), end = node(408) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"DeMarre Carroll", :n_birthdate=>"1986-07-27"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(275), end = node(409) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Jarell Eddie", :n_birthdate=>"1991-10-30"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(275), end = node(410) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Al Horford", :n_birthdate=>"1986-06-03"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(275), end = node(411) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m4ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"John Jenkins", :n_birthdate=>"1991-03-06"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(275), end = node(412) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m4ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Kyle Korver", :n_birthdate=>"1981-03-17"}
+ [36mCYPHER[0m [33m37ms[0m START start = node(275), end = node(413) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Shelvin Mack", :n_birthdate=>"1990-04-22"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(275), end = node(414) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Paul Millsap", :n_birthdate=>"1985-02-10"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(275), end = node(415) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m4ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Mike Muscala", :n_birthdate=>"1991-07-01"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(275), end = node(416) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Adreian Payne", :n_birthdate=>"1991-02-19"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(275), end = node(417) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Dexter Pittman", :n_birthdate=>"1988-03-02"}
+ [36mCYPHER[0m [33m21ms[0m START start = node(275), end = node(418) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m4ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Dennis Schröder", :n_birthdate=>"1993-09-15"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(275), end = node(419) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Mike Scott", :n_birthdate=>"1988-04-16"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(275), end = node(420) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Thabo Sefolosha", :n_birthdate=>"1984-05-02"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(275), end = node(421) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m4ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Jeff Teague", :n_birthdate=>"1988-06-10"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(275), end = node(422) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m4ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Joel Anthony", :n_birthdate=>"1982-08-09"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(276), end = node(423) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Brandon Bass", :n_birthdate=>"1985-04-30"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(276), end = node(424) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Avery Bradley", :n_birthdate=>"1990-11-26"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(276), end = node(425) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Vitor Faverani", :n_birthdate=>"1988-05-05"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(276), end = node(426) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Jeff Green", :n_birthdate=>"1986-08-08"}
+ [36mCYPHER[0m [33m8ms[0m START start = node(276), end = node(427) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Erik Murphy", :n_birthdate=>"1990-10-26"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(276), end = node(428) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Kelly Olynyk", :n_birthdate=>"1991-04-19"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(276), end = node(429) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Dwight Powell", :n_birthdate=>"1991-07-20"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(276), end = node(430) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Phil Pressey", :n_birthdate=>"1991-02-17"}
+ [36mCYPHER[0m [33m7ms[0m START start = node(276), end = node(431) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m4ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Rajon Rondo", :n_birthdate=>"1986-02-22"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(276), end = node(432) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Marcus Smart", :n_birthdate=>"1994-03-06"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(276), end = node(433) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Jared Sullinger", :n_birthdate=>"1992-03-04"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(276), end = node(434) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m4ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Marcus Thornton", :n_birthdate=>"1987-06-05"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(276), end = node(435) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Evan Turner", :n_birthdate=>"1988-10-27"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(276), end = node(436) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m36ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Gerald Wallace", :n_birthdate=>"1982-07-23"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(276), end = node(437) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"James Young", :n_birthdate=>"1995-08-16"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(276), end = node(438) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Tyler Zeller", :n_birthdate=>"1990-01-17"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(276), end = node(439) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Alan Anderson", :n_birthdate=>"1982-10-16"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(277), end = node(440) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Bojan Bogdanović", :n_birthdate=>"1989-04-18"}
+ [36mCYPHER[0m [33m4ms[0m START start = node(277), end = node(441) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Markel Brown", :n_birthdate=>"1992-01-29"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(277), end = node(442) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Kevin Garnett", :n_birthdate=>"1976-05-19"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(277), end = node(443) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Jorge Gutierrez", :n_birthdate=>"1988-12-27"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(277), end = node(444) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Jarrett Jack", :n_birthdate=>"1983-10-28"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(277), end = node(445) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Cory Jefferson", :n_birthdate=>"1990-12-26"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(277), end = node(446) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Joe Johnson", :n_birthdate=>"1981-06-29"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(277), end = node(447) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Jerome Jordan", :n_birthdate=>"1986-09-29"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(277), end = node(448) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Sergey Karasev", :n_birthdate=>"1993-10-26"}
+ [36mCYPHER[0m [33m7ms[0m START start = node(277), end = node(449) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m5ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Andrei Kirilenko", :n_birthdate=>"1981-02-18"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(277), end = node(450) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Brook Lopez", :n_birthdate=>"1988-04-01"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(277), end = node(451) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Mason Plumlee", :n_birthdate=>"1990-03-05"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(277), end = node(452) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Willie Reed", :n_birthdate=>"1990-05-16"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(277), end = node(453) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Marquis Teague", :n_birthdate=>"1993-04-28"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(277), end = node(454) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m5ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Mirza Teletović", :n_birthdate=>"1985-09-17"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(277), end = node(455) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Deron Williams", :n_birthdate=>"1984-06-26"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(277), end = node(456) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m4ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Bismack Biyombo", :n_birthdate=>"1992-08-28"}
+ [36mCYPHER[0m [33m8ms[0m START start = node(278), end = node(457) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m4ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Justin Cobbs", :n_birthdate=>"1991-03-16"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(278), end = node(458) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"P.J. Hairston", :n_birthdate=>"1992-12-24"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(278), end = node(459) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Gerald Henderson", :n_birthdate=>"1987-12-09"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(278), end = node(460) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Al Jefferson", :n_birthdate=>"1985-01-04"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(278), end = node(461) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Michael Kidd-Gilchrist", :n_birthdate=>"1993-09-26"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(278), end = node(462) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Dallas Lauderdale", :n_birthdate=>"1988-09-11"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(278), end = node(463) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Gary Neal", :n_birthdate=>"1984-11-03"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(278), end = node(464) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Jannero Pargo", :n_birthdate=>"1979-10-22"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(278), end = node(465) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Brian Qvale", :n_birthdate=>"1988-11-03"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(278), end = node(466) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Brian Roberts", :n_birthdate=>"1985-12-03"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(278), end = node(467) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Lance Stephenson", :n_birthdate=>"1990-09-05"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(278), end = node(468) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Jeffery Taylor", :n_birthdate=>"1989-05-23"}
+ [36mCYPHER[0m [33m4ms[0m START start = node(278), end = node(469) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Noah Vonleh", :n_birthdate=>"1995-08-24"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(278), end = node(470) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Kemba Walker", :n_birthdate=>"1990-05-08"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(278), end = node(471) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Marvin Williams", :n_birthdate=>"1986-06-19"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(278), end = node(472) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Cody Zeller", :n_birthdate=>"1992-10-05"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(278), end = node(473) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Cameron Bairstow", :n_birthdate=>"1990-12-07"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(279), end = node(474) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Aaron Brooks", :n_birthdate=>"1985-01-14"}
+ [36mCYPHER[0m [33m4ms[0m START start = node(279), end = node(475) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Jimmy Butler", :n_birthdate=>"1989-09-14"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(279), end = node(476) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m4ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Mike Dunleavy", :n_birthdate=>"1980-09-15"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(279), end = node(477) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Kim English", :n_birthdate=>"1988-09-24"}
+ [36mCYPHER[0m [33m7ms[0m START start = node(279), end = node(478) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m4ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Pau Gasol", :n_birthdate=>"1980-07-06"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(279), end = node(479) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Taj Gibson", :n_birthdate=>"1985-06-24"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(279), end = node(480) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Ben Hansbrough", :n_birthdate=>"1987-12-23"}
+ [36mCYPHER[0m [33m4ms[0m START start = node(279), end = node(481) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m2ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Kirk Hinrich", :n_birthdate=>"1981-01-02"}
+ [36mCYPHER[0m [33m33ms[0m START start = node(279), end = node(482) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Solomon Jones", :n_birthdate=>"1984-07-16"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(279), end = node(483) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Doug McDermott", :n_birthdate=>"1992-01-03"}
+ [36mCYPHER[0m [33m4ms[0m START start = node(279), end = node(484) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Nikola Mirotić", :n_birthdate=>"1991-02-11"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(279), end = node(485) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Nazr Mohammed", :n_birthdate=>"1977-09-05"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(279), end = node(486) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"E'Twaun Moore", :n_birthdate=>"1989-02-25"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(279), end = node(487) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Joakim Noah", :n_birthdate=>"1985-02-25"}
+ [36mCYPHER[0m [33m4ms[0m START start = node(279), end = node(488) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Derrick Rose", :n_birthdate=>"1988-10-04"}
+ [36mCYPHER[0m [33m4ms[0m START start = node(279), end = node(489) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Tony Snell", :n_birthdate=>"1991-11-10"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(279), end = node(490) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Lou Amundson", :n_birthdate=>"1982-12-07"}
+ [36mCYPHER[0m [33m4ms[0m START start = node(280), end = node(491) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Matthew Dellavedova", :n_birthdate=>"1990-09-08"}
+ [36mCYPHER[0m [33m6ms[0m START start = node(280), end = node(492) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m4ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Shane Edwards", :n_birthdate=>"1987-05-31"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(280), end = node(493) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Joe Harris", :n_birthdate=>"1991-09-07"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(280), end = node(494) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Brendan Haywood", :n_birthdate=>"1979-11-11"}
+ [36mCYPHER[0m [33m4ms[0m START start = node(280), end = node(495) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Kyrie Irving", :n_birthdate=>"1992-03-23"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(280), end = node(496) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"LeBron James", :n_birthdate=>"1984-12-30"}
+ [36mCYPHER[0m [33m4ms[0m START start = node(280), end = node(497) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"James Jones", :n_birthdate=>"1980-10-04"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(280), end = node(498) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Alex Kirk", :n_birthdate=>"1991-11-14"}
+ [36mCYPHER[0m [33m4ms[0m START start = node(280), end = node(499) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Kevin Love", :n_birthdate=>"1988-09-07"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(280), end = node(500) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Shawn Marion", :n_birthdate=>"1978-05-07"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(280), end = node(501) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Mike Miller", :n_birthdate=>"1980-02-19"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(280), end = node(502) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"A.J. Price", :n_birthdate=>"1986-10-07"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(280), end = node(503) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Tristan Thompson", :n_birthdate=>"1991-03-13"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(280), end = node(504) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m3ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Anderson Varejao", :n_birthdate=>"1982-09-28"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(280), end = node(505) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m32ms[0m MATCH (n:`Player`) WHERE n.name = {n_name} AND n.birthdate = {n_birthdate} RETURN n LIMIT 1 | {:n_name=>"Dion Waiters", :n_birthdate=>"1991-12-10"}
+ [36mCYPHER[0m [33m5ms[0m START start = node(280), end = node(506) CREATE start<-[rel0:`#real_team`]-end
+ [36mCYPHER[0m [33m13ms[0m MATCH (n:`NbaTeam`) RETURN n
