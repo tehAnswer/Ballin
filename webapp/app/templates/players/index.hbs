@@ -1,0 +1,12 @@
+<ul>
+  {{#each}}
+    <li>
+      {{#link-to 'player' this}}
+        {{name}},
+        {{birthplace}}
+      {{/link-to}}
+    </li>
+  {{else}}
+    <li>No players found.</li>
+  {{/each}}
+</ul>
