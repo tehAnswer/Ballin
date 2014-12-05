@@ -40,5 +40,4 @@ class Player
 
     Hash[hash.map { |key, value| [key, value.round(2)] }]
   end
-
 end

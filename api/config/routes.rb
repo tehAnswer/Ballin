@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  resources :players, only: :index do
-    resources :boxscores
+  namespace :api do
+    resources :players, only: :index do
+      resources :boxscores
+    end
   end
 
 
