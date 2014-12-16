@@ -2,7 +2,7 @@ class LeagueCreation
 
   def self.create(params)
     league = League.new(params)
-    return nil unless league.save
+    return league unless league.save
     eastern_conference = Conference.create!(name: 'East')
     western_conference = Conference.create!(name: 'West')
 

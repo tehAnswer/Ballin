@@ -9,4 +9,13 @@ class Conference
 
   validates :name, presence: true
 
+
+  def standings_per_division
+    hash = Hash.new
+    hash[division_one.name] = division_one.standings
+    hash[division_two.name] = division_one.standings
+    hash[division_three.name] = division_one.standings
+    return hash
+  end
+
 end

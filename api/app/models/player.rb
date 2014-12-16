@@ -40,4 +40,8 @@ class Player
 
     Hash[hash.map { |key, value| [key, value.round(2)] }]
   end
+
+  def fantastic_teams
+    contracts.collect { |contract| contract.team }
+  end
 end

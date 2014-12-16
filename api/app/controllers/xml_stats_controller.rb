@@ -64,6 +64,13 @@ class XmlStatsController
     games.each do |game|
       return unless game.start_date_time.to_date.past?
       next if game.boxscores.count > 0
+      update_stats_of(game)
+    end
+  end
+
+  def update_stats_of(game)
+    begin
+      tx = Neo4j::Transaction.new
       game.status = 'completed' 
       boxscores = fetch_boxscores(game)
       game.away_boxscores << boxscores[:away_boxscores]
@@ -71,8 +78,15 @@ class XmlStatsController
       game.away_score = boxscores[:away_score]
       game.home_score = boxscores[:home_score]
       game.save
+    rescue StandardError => e
+      puts e
+      tx.failure
+    ensure
+      tx.close
     end
   end
+
+
 
   def fetch_boxscores(game)
     stadistics = Hash.new
@@ -86,12 +100,16 @@ class XmlStatsController
 
     response['away_stats'].each do |stat|
       player = away_team.players.find_by(name: stat['display_name'])
-      stadistics[:away_boxscores] << create_boxscore(stat, player)
+      boxscore = create_boxscore(stat, player)
+      stadistics[:away_boxscores] << boxscore
+      player.fantastic_teams.each { |team| team.score = team.score + boxscore.final_score } 
     end
 
     response['home_stats'].each do |stat| 
-      player = home_team.players.find_by(name: stat['display_name']) 
-      stadistics[:home_boxscores] << create_boxscore(stat, player)
+      player = home_team.players.find_by(name: stat['display_name'])
+      boxscore = create_boxscore(stat, player)
+      stadistics[:home_boxscores] << boxscore
+      player.fantastic_teams.each { |team| team.score = team.score + boxscore.final_score } 
     end
 
     stadistics

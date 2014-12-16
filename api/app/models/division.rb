@@ -12,7 +12,7 @@ class Division
    origin: :division_one || :division_two || :division_three
 
   def standings
-    teams.sort_by(:score)
+    teams.sort_by { |team| team.score unless team.nil? }
   end
 
   def teams
@@ -23,6 +23,6 @@ class Division
     teams_array = teams
     return false unless teams_array.any? { |x| x.nil? }
     number = teams_array.index(nil) + 1
-    #return "team_#{number.humanize}".to_sym
+    return "team_#{number.humanize}".to_sym
   end
 end

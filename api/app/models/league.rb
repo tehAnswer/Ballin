@@ -1,7 +1,6 @@
 class League 
   include Neo4j::ActiveNode
   property :name, type: String
-  property :password, type: String
 
   has_one :out, :eastern_conference, model_class: Conference
   has_one :out, :western_conference, model_class: Conference
@@ -18,6 +17,12 @@ class League
     contracts.map { |c| c.player }
   end
 
-  
+  def western_standings
+    western_conference.standings_per_division
+  end
+
+  def eastern_standings
+    eastern_conference.standings_per_division
+  end
 
 end

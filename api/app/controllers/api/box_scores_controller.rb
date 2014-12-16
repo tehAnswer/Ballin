@@ -3,7 +3,12 @@ class Api::BoxScoresController < ApplicationController
 
   # GET /players/:player_id/boxscores
   def index
-    @boxscores = Player.find_by(neo_id: request[:player_id]).boxscores
+    player = Player.find_by(neo_id: request[:player_id])
+    if player
+      @boxscores = player.boxscores
+    else
+      render json: "There isn't such player.", status_code: 440
+    end 
   end
 
 end
