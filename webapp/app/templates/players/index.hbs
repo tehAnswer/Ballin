@@ -1,14 +1,28 @@
-<ul>
-  {{#each}}
-    <li>
-      {{#link-to 'player' this}}
-        {{name}},
-        {{birthplace}}
-      {{/link-to}}
-    </li>
-  {{else}}
-    <li>No players found.</li>
-  {{/each}}
-  
-  {{page-numbers content=content}}
-</ul>
+<table class="table table-stripped">
+  <thead>
+    <th>NAME</th>
+    <th>POS</th>
+    <th>PTS</th>
+    <th>AST</th>
+    <th>BLK</th>
+    <th>REB</th>
+    <th>STL</th>
+    <th>SCORE</th>
+  </thead>
+  <tbody>
+    {{#each}}
+      <tr>
+        <td> {{#link-to 'player' this}} {{name}} {{/link-to}} </td>
+        <td> {{position}} </td>
+        <td> {{stats.points}} </td>
+        <td> {{stats.assits}} </td>
+        <td> {{stats.blocks}} </td>
+        <td> {{avg_rebounds}} </td>
+        <td> {{stats.steals}} </td>
+        <td> {{stats.final_score}} </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+{{page-numbers content=content}}

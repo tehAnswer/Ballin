@@ -18,4 +18,8 @@ class Conference
     return hash
   end
 
+  def number_of_teams
+    division_one.number_of_teams + division_two.number_of_teams + division_three.number_of_teams
+  end
+
 end

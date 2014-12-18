@@ -12,17 +12,25 @@ class Division
    origin: :division_one || :division_two || :division_three
 
   def standings
-    teams.sort_by { |team| team.score unless team.nil? }
+    teams.sort_by { |team| team.score }
   end
 
-  def teams
+  def teams_with_null_values
     [team_one, team_two, team_three, team_four, team_five]
   end
 
+  def teams
+    teams_with_null_values.select { |team| !team.nil? }
+  end
+
   def first_slot_free
-    teams_array = teams
+    teams_array = teams_with_null_values
     return false unless teams_array.any? { |x| x.nil? }
     number = teams_array.index(nil) + 1
     return "team_#{number.humanize}".to_sym
+  end
+
+  def number_of_teams
+    teams.count { |x| !x.nil? }
   end
 end

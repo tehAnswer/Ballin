@@ -4,7 +4,7 @@ Rails.application.routes.draw do
       resources :box_scores, only: :index
     end
 
-    resources :leagues, only: [:show, :create] do
+    resources :leagues, only: [:index, :show, :create] do
       resources :division do
         resources :fantastic_teams, only: :create
       end

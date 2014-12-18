@@ -23,7 +23,7 @@ class Player
 
 
   def stats
-    return { } if boxscores.count == 0
+    return empty_hash if boxscores.count == 0
     hash = Neo4j::Session.query("MATCH (p:Player)-[:`#boxscores`]->(b:BoxScore) where id(p) = #{neo_id} 
       return sum(b.final_score) as final_score,
       count(b) as games_played,
@@ -44,4 +44,19 @@ class Player
   def fantastic_teams
     contracts.collect { |contract| contract.team }
   end
+  private 
+    def empty_hash
+      {
+        final_score: 0,
+        games_played: 0,
+        points: 0,
+        assits: 0,
+        defr: 0,
+        ofr: 0,
+        steals: 0,
+        blocks: 0,
+        turnovers: 0,
+        faults: 0
+      }
+    end
 end

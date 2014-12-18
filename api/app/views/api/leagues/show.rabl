@@ -1,2 +1,2 @@
-object @player
-extends "api/leagues/league"
+object @league
+extends "leagues/league"

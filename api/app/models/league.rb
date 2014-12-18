@@ -25,4 +25,8 @@ class League
     eastern_conference.standings_per_division
   end
 
+  def number_of_teams
+    eastern_conference.number_of_teams + western_conference.number_of_teams
+  end
+
 end

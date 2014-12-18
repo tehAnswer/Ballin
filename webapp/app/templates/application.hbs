@@ -1,7 +1,39 @@
-<h2 id='title'>Ballin</h2>
+<html lang>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
+    <title>Ballin'</title>
+  </head>
 
-{{link-to 'Home' 'application'}}
-{{link-to 'Players' 'players'}}
+  <body>
 
-{{outlet}}
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          {{#link-to 'application' class='navbar-brand'}}Ballin'{{/link-to}}
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li>{{#link-to 'players'}}Players{{/link-to}}</li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      {{outlet}}
+    </div>
+
+  </body>
+</html>

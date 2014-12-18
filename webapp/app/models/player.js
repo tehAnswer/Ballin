@@ -11,6 +11,9 @@ export default DS.Model.extend({
   position: DS.attr('string'),
   number: DS.attr('string'),
   faults: DS.attr('number'),
-  stats: DS.attr()
+  stats: DS.attr(),
+  avg_rebounds: function() {
+    return (this.get('stats.defr') + this.get('stats.ofr')).toFixed(2);
+  }.property('stats')
   
 });

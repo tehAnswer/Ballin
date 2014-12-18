@@ -1,2 +1,2 @@
-collection @leagues, :root => :players, :object_root => false
+collection @leagues, :root => :leagues, :object_root => false
 extends "api/leagues/league"
