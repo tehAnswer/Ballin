@@ -1,3 +1,3 @@
 object @fantastic_team
 
-attributes :name, :hood, :score, :abbreviation
+attributes :neo_id, :name, :hood, :score, :abbreviation

@@ -1,2 +1,2 @@
 collection @leagues, :root => :leagues, :object_root => false
-extends "api/leagues/league"
+attributes :neo_id, :name, :number_of_teams

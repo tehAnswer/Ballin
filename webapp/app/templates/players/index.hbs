@@ -1,18 +1,20 @@
 <table class="table table-stripped">
   <thead>
-    <th>NAME</th>
-    <th>POS</th>
-    <th>PTS</th>
-    <th>AST</th>
-    <th>BLK</th>
-    <th>REB</th>
-    <th>STL</th>
-    <th>SCORE</th>
+    <tr>
+      <th {{action 'sortBy' 'name'}}> NAME</th>
+      <th {{action 'sortBy' 'position'}}>POS</th>
+      <th {{action 'sortBy' 'stats.points'}}>PTS</th>
+      <th {{action 'sortBy' 'stats.assits'}}>AST</th>
+      <th {{action 'sortBy' 'stats.blocks'}}>BLK</th>
+      <th {{action 'sortBy' 'avg_rebounds'}}>REB</th>
+      <th {{action 'sortBy' 'stats.steal'}}>STL</th>
+      <th {{action 'sortBy' 'stats.final_score'}}>SCORE</th>
+    </tr>
   </thead>
   <tbody>
     {{#each}}
       <tr>
-        <td> {{#link-to 'player' this}} {{name}} {{/link-to}} </td>
+        <td> {{#link-to 'player' this.id}} {{name}} {{/link-to}} </td>
         <td> {{position}} </td>
         <td> {{stats.points}} </td>
         <td> {{stats.assits}} </td>

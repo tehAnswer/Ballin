@@ -12,6 +12,7 @@ class Api::PlayersController < ApplicationController
     response.headers["X-total"] = @players.total_entries.to_s
     response.headers["X-offset"] = @players.offset.to_s
     response.headers["X-limit"] = @players.per_page.to_s
+    response.headers["total_pages"] = (@players.total_entries / BallinAPI::ITEMS_PER_PAGE).ceil.to_s
     #@players = Player.all.drop(page*BallinAPI::ITEMS_PER_PAGE).take(BallinAPI::ITEMS_PER_PAGE
   end
 

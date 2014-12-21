@@ -1,0 +1,30 @@
+<h1>{{name}}</h1>
+
+<div class="row">
+<h2>East</h2>
+   <div class="col-md-4">
+     <table class="table table-stripped">
+       <thead>
+         <tr>
+           <th>NAME</th>
+           <th>SCORE</th>
+         </tr>
+        </thead>
+
+        <tbody>
+          {{#each fantastic_team in eastern_conference.division_one.standings}}
+            <tr>
+              <td> {{#link-to 'league' this}} {{fantastic_team.name}} {{/link-to}} </td>
+              <td> {{fantastic_team.score}} </td>
+            </tr>
+          {{/each}}
+        </tbody>
+      </table>
+   </div>
+</div>
+
+<div class="row">
+<h2>West</h2>
+   <div class="col-md-4">
+   </div>
+</div>

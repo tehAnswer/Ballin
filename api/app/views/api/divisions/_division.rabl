@@ -1,4 +1,4 @@
 object @division
 
-attributes :name, :standings
+attributes :neo_id, :name, :standings
 
