@@ -25,8 +25,16 @@ class XmlStatsController
   end
 
   def get_scheduled_games(start_date, end_date)
+    range_operation(start_date, end_date) { fetch_games(date) }
+  end
+
+  def get_boxscores_since(start_date, end_date=1.day.ago)
+    range_operation(start_date, end_date) { |date| get_boxscores(date.to_datetime) }
+  end
+
+  def range_operation(start_date, end_date)
     range_dates = (start_date.to_date..end_date.to_date)
-    range_dates.each { |date| fetch_games(date) }
+    range_dates.each { |date | yield(date) }
   end
 
   def update_rosters
@@ -79,8 +87,9 @@ class XmlStatsController
       game.home_score = boxscores[:home_score]
       game.save
     rescue StandardError => e
-      puts e
+      Rails.logger.error e.message
       tx.failure
+      return false
     ensure
       tx.close
     end
@@ -95,24 +104,40 @@ class XmlStatsController
     stadistics[:home_score] = response['home_totals']['points']
     stadistics[:away_boxscores] = []
     stadistics[:home_boxscores] = []
-    away_team = Game.away_team
-    home_team = Game.home_team
 
-    response['away_stats'].each do |stat|
-      player = away_team.players.find_by(name: stat['display_name'])
-      boxscore = create_boxscore(stat, player)
-      stadistics[:away_boxscores] << boxscore
-      player.fantastic_teams.each { |team| team.score = team.score + boxscore.final_score } 
-    end
-
-    response['home_stats'].each do |stat| 
-      player = home_team.players.find_by(name: stat['display_name'])
-      boxscore = create_boxscore(stat, player)
-      stadistics[:home_boxscores] << boxscore
-      player.fantastic_teams.each { |team| team.score = team.score + boxscore.final_score } 
-    end
+    create_stadistics_of('away', response, stadistics, game)
+    create_stadistics_of('home', response, stadistics, game)
+    
 
     stadistics
+  end
+
+  def create_stadistics_of (side, response, stadistics, game)
+     response["#{side}_stats"].each do |stat|
+      player = find_player_by_name_for(stat)
+      raise_search_error(stat, game) unless player
+      boxscore = create_boxscore(stat, player)
+      stadistics["#{side}_boxscores".to_sym] << boxscore
+      add_score(player, boxscore) unless player.fantastic_teams.empty?
+    end
+  end
+
+  def find_player_by_name_for(stat)
+    nodeset = Player.as(:p).where(name: stat['display_name'])
+    return nodeset.first if nodeset.count == 1
+    nodeset = nodeset.real_team.where(abbreviation: stat['team_abbreviation']).pluck(:p)
+    return nodeset.first if nodeset.count == 1
+    return false
+  end
+
+  def add_score(player, boxscore)
+    player.fantastic_teams.each do |team| 
+      team.score = team.score + boxscore.final_score
+    end 
+  end
+
+  def raise_search_error(stat, game)
+    raise "Player #{stat['display_name']} don't found for #{game.game_id}"
   end
 
   def create_boxscore(stat, player)
@@ -134,7 +159,6 @@ class XmlStatsController
         is_starter: stat['is_starter'],
         faults: stat['personal_fouls']
         })
-      puts "#{boxscore} #{player}"
       boxscore.player = player
       boxscore
   end

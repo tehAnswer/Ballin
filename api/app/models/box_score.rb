@@ -27,7 +27,7 @@ class BoxScore
   validates :points, numericality: { equal_to: :points_made }
 
   has_one :in, :game, model_class: Game, 
-    origin: :home_boxscores || :away_boxscore
+    origin: :away_boxscores || :home_boxscores
   has_one :in, :player, model_class: Player, origin: :boxscores
 
   before_create do
