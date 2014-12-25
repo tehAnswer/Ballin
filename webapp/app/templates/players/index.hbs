@@ -12,16 +12,16 @@
     </tr>
   </thead>
   <tbody>
-    {{#each}}
+    {{#each player in model}}
       <tr>
-        <td> {{#link-to 'player' this.id}} {{name}} {{/link-to}} </td>
-        <td> {{position}} </td>
-        <td> {{stats.points}} </td>
-        <td> {{stats.assits}} </td>
-        <td> {{stats.blocks}} </td>
-        <td> {{avg_rebounds}} </td>
-        <td> {{stats.steals}} </td>
-        <td> {{stats.final_score}} </td>
+        <td> {{#link-to 'players.show' player.id}} {{player.name}} {{/link-to}} </td>
+        <td> {{player.position}} </td>
+        <td> {{player.stats.points}} </td>
+        <td> {{player.stats.assits}} </td>
+        <td> {{player.stats.blocks}} </td>
+        <td> {{player.avg_rebounds}} </td>
+        <td> {{player.stats.steals}} </td>
+        <td> {{player.stats.final_score}} </td>
       </tr>
     {{/each}}
   </tbody>

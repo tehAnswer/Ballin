@@ -6,10 +6,10 @@
     </tr>
   </thead>
   <tbody>
-    {{#each}}
+    {{#each league in model}}
       <tr>
-        <td> {{#link-to 'league' this}} {{name}} {{/link-to}} </td>
-        <td> {{number_of_teams}} </td>
+        <td> {{#link-to 'leagues.show' league.id}} {{league.name}} {{/link-to}} </td>
+        <td> -1 </td>
       </tr>
     {{/each}}
   </tbody>

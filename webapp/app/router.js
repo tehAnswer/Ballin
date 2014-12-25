@@ -7,11 +7,11 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.resource('players', function() {
-    this.resource('player', { path: '/:player_id' });
+    this.resource('players.show', { path: '/:player_id' });
    });
   this.route('contact');
   this.resource('leagues', function() {
-    this.resource('league', { path: '/:league_id' });
+    this.resource('leagues.show', { path: '/:league_id' });
   });
 });
 

@@ -1,6 +1,8 @@
 class BoxScore 
   include Neo4j::ActiveNode
 
+  
+
   property :minutes, type: Integer, default: 0
   property :points, type: Integer, default: 0
   property :assists, type: Integer, default: 0
@@ -26,8 +28,7 @@ class BoxScore
   validates :lsa, numericality: { greater_than_or_equal_to: :lsm }
   validates :points, numericality: { equal_to: :points_made }
 
-  has_one :in, :game, model_class: Game, 
-    origin: :away_boxscores || :home_boxscores
+  # has_one :in, :game, model_class: Game, origin: :home_boxscores
   has_one :in, :player, model_class: Player, origin: :boxscores
 
   before_create do
@@ -45,6 +46,13 @@ class BoxScore
     penalty = (fta - ftm)/10 + (fga - lsa - fgm)/5 + (lsa - lsm)/3 + 3 * turnovers
     (bonus - penalty).round(2)
   end
+
+  def game
+     rel = rels(type: '#home_boxscores').first || rels(type: '#away_boxscores').first
+     return nil if rel.nil?
+     rel.start_node
+  end
+
 
 
 end
