@@ -1,4 +1,4 @@
-class Bid 
+class Bid
   include Neo4j::ActiveNode
 
   property :salary, type: Integer, default: 500000

@@ -1,4 +1,4 @@
-class Player 
+class Player
   include Neo4j::ActiveNode
 
   property :name, type: String
@@ -19,8 +19,6 @@ class Player
   has_one :out, :real_team, model_class: NbaTeam
   has_many :out, :boxscores, model_class: BoxScore
   has_many :in, :contracts, model_class: Contract, origin: :player
-
-
 
   def stats
     return empty_hash if boxscores.count == 0
@@ -44,6 +42,11 @@ class Player
   def fantastic_teams
     contracts.collect { |contract| contract.team }
   end
+
+  def box_score_ids
+    boxscores.map { |boxscore| boxscore.neo_id }
+  end
+
   private 
     def empty_hash
       {

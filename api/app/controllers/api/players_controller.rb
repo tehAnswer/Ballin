@@ -10,8 +10,11 @@ class Api::PlayersController < ApplicationController
   # GET /players.json
   def index
     @page = request[:page] || 1
-    @players = Player.all.paginate(page: @page, per_page: BallinAPI::ITEMS_PER_PAGE )
-
+    @players = Player.all
+    @meta = paginate(@page, @players)
+    puts @meta
+    @players= @players.paginate(page: @page, per_page: BallinAPI::ITEMS_PER_PAGE )
+    render json: @players
     #@players = Player.all.drop(page*BallinAPI::ITEMS_PER_PAGE).take(BallinAPI::ITEMS_PER_PAGE
   end
 
@@ -19,14 +22,10 @@ class Api::PlayersController < ApplicationController
   def show
   end
 
-  def meta
-    paginate(@page, @players)
-  end
-
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_player
-      @player = Player.find_by(neo_id: params[:id])
+      @player = Player.find_by(id: params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

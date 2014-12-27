@@ -1,8 +1,6 @@
 class BoxScore 
   include Neo4j::ActiveNode
 
-  
-
   property :minutes, type: Integer, default: 0
   property :points, type: Integer, default: 0
   property :assists, type: Integer, default: 0
@@ -51,6 +49,10 @@ class BoxScore
      rel = rels(type: '#home_boxscores').first || rels(type: '#away_boxscores').first
      return nil if rel.nil?
      rel.start_node
+  end
+
+  def player_id
+    player.neo_id
   end
 
 

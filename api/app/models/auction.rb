@@ -1,4 +1,4 @@
-class Auction 
+class Auction
   include Neo4j::ActiveNode
 
   property :end_time, type: DateTime

@@ -20530,3 +20530,1530 @@ Storage files: (filename : modification date - size)
 2014-12-25 13:55:15.842+0000 INFO  [o.n.s.CommunityNeoServer]: Remote interface ready and available at [http://localhost:7474/]
 2014-12-25 13:55:15.842+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- SERVER STARTED END ---
 2014-12-25 14:36:10.761+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 234ms [total block time: 0.234s]
+2014-12-25 22:39:00.345+0000 INFO  [o.n.s.CommunityBootstrapper]: Neo4j Server shutdown initiated by request
+2014-12-25 22:39:00.364+0000 INFO  [o.n.s.CommunityNeoServer]: Successfully shutdown Neo4j Server.
+2014-12-25 22:39:00.364+0000 INFO  [o.n.k.EmbeddedGraphDatabase]: Shutdown started
+2014-12-25 22:39:00.364+0000 INFO  [o.n.k.EmbeddedGraphDatabase]: Database is now unavailable
+2014-12-25 22:39:00.365+0000 INFO  [o.n.k.EmbeddedGraphDatabase]: GC Monitor stopped. 
+2014-12-25 22:39:00.368+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: Closed log data/graph.db/index/lucene.log
+2014-12-25 22:39:00.369+0000 INFO  [o.n.k.i.t.TxManager]: TM shutting down
+2014-12-25 22:39:00.381+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: Closed log data/graph.db/nioneo_logical.log
+2014-12-25 22:39:00.392+0000 INFO  [o.n.k.i.n.s.StoreFactory]: data/graph.db/neostore.relationshiptypestore.db.names hit=0 miss=50 switches=0 ooe=0
+2014-12-25 22:39:00.393+0000 INFO  [o.n.k.i.n.s.StoreFactory]: data/graph.db/neostore.relationshiptypestore.db hit=0 miss=25 switches=0 ooe=0
+2014-12-25 22:39:00.393+0000 INFO  [o.n.k.i.n.s.StoreFactory]: data/graph.db/neostore.labeltokenstore.db.names hit=0 miss=26 switches=0 ooe=0
+2014-12-25 22:39:00.394+0000 INFO  [o.n.k.i.n.s.StoreFactory]: data/graph.db/neostore.labeltokenstore.db hit=0 miss=13 switches=0 ooe=0
+2014-12-25 22:39:00.395+0000 INFO  [o.n.k.i.n.s.StoreFactory]: data/graph.db/neostore.propertystore.db.strings hit=34 miss=0 switches=0 ooe=0
+2014-12-25 22:39:00.395+0000 INFO  [o.n.k.i.n.s.StoreFactory]: data/graph.db/neostore.propertystore.db.index.keys hit=0 miss=128 switches=0 ooe=0
+2014-12-25 22:39:00.396+0000 INFO  [o.n.k.i.n.s.StoreFactory]: data/graph.db/neostore.propertystore.db.index hit=0 miss=64 switches=0 ooe=0
+2014-12-25 22:39:00.396+0000 INFO  [o.n.k.i.n.s.StoreFactory]: data/graph.db/neostore.propertystore.db.arrays hit=0 miss=0 switches=0 ooe=0
+2014-12-25 22:39:00.397+0000 INFO  [o.n.k.i.n.s.StoreFactory]: data/graph.db/neostore.propertystore.db hit=1214 miss=33961 switches=0 ooe=0
+2014-12-25 22:39:00.398+0000 INFO  [o.n.k.i.n.s.StoreFactory]: data/graph.db/neostore.relationshipstore.db hit=9210 miss=7769 switches=0 ooe=0
+2014-12-25 22:39:00.401+0000 INFO  [o.n.k.i.n.s.StoreFactory]: data/graph.db/neostore.nodestore.db.labels hit=0 miss=0 switches=0 ooe=0
+2014-12-25 22:39:00.402+0000 INFO  [o.n.k.i.n.s.StoreFactory]: data/graph.db/neostore.nodestore.db hit=4329 miss=10919 switches=0 ooe=0
+2014-12-25 22:39:00.405+0000 INFO  [o.n.k.i.n.s.StoreFactory]: data/graph.db/neostore.schemastore.db hit=0 miss=146 switches=0 ooe=0
+2014-12-25 22:39:00.406+0000 INFO  [o.n.k.i.n.s.StoreFactory]: data/graph.db/neostore hit=0 miss=893 switches=0 ooe=0
+2014-12-25 22:39:00.406+0000 INFO  [o.n.k.i.n.x.NeoStoreXaDataSource]: NeoStore closed
+2014-12-25 22:39:00.406+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STOPPING diagnostics START ---
+2014-12-25 22:39:00.406+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STOPPING diagnostics END ---
+2014-12-26 12:40:33.357+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- INITIALIZED diagnostics START ---
+2014-12-26 12:40:33.374+0000 INFO  [o.n.k.i.DiagnosticsManager]: Neo4j Kernel properties:
+2014-12-26 12:40:33.380+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.propertystore.db.mapped_memory=823M
+2014-12-26 12:40:33.380+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.nodestore.db.mapped_memory=228M
+2014-12-26 12:40:33.380+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.propertystore.db.strings.mapped_memory=700M
+2014-12-26 12:40:33.380+0000 INFO  [o.n.k.i.DiagnosticsManager]: neo4j.ext.udc.source=server
+2014-12-26 12:40:33.380+0000 INFO  [o.n.k.i.DiagnosticsManager]: store_dir=data/graph.db
+2014-12-26 12:40:33.380+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.relationshipstore.db.mapped_memory=1009M
+2014-12-26 12:40:33.380+0000 INFO  [o.n.k.i.DiagnosticsManager]: keep_logical_logs=true
+2014-12-26 12:40:33.380+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.propertystore.db.arrays.mapped_memory=793M
+2014-12-26 12:40:33.380+0000 INFO  [o.n.k.i.DiagnosticsManager]: remote_shell_enabled=true
+2014-12-26 12:40:33.380+0000 INFO  [o.n.k.i.DiagnosticsManager]: ephemeral=false
+2014-12-26 12:40:33.381+0000 INFO  [o.n.k.i.DiagnosticsManager]: Diagnostics providers:
+2014-12-26 12:40:33.381+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.kernel.configuration.Config
+2014-12-26 12:40:33.381+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.kernel.info.DiagnosticsManager
+2014-12-26 12:40:33.381+0000 INFO  [o.n.k.i.DiagnosticsManager]: SYSTEM_MEMORY
+2014-12-26 12:40:33.381+0000 INFO  [o.n.k.i.DiagnosticsManager]: JAVA_MEMORY
+2014-12-26 12:40:33.381+0000 INFO  [o.n.k.i.DiagnosticsManager]: OPERATING_SYSTEM
+2014-12-26 12:40:33.381+0000 INFO  [o.n.k.i.DiagnosticsManager]: JAVA_VIRTUAL_MACHINE
+2014-12-26 12:40:33.381+0000 INFO  [o.n.k.i.DiagnosticsManager]: CLASSPATH
+2014-12-26 12:40:33.381+0000 INFO  [o.n.k.i.DiagnosticsManager]: LIBRARY_PATH
+2014-12-26 12:40:33.381+0000 INFO  [o.n.k.i.DiagnosticsManager]: SYSTEM_PROPERTIES
+2014-12-26 12:40:33.381+0000 INFO  [o.n.k.i.DiagnosticsManager]: NETWORK
+2014-12-26 12:40:33.382+0000 INFO  [o.n.k.i.DiagnosticsManager]: System memory information:
+2014-12-26 12:40:33.388+0000 INFO  [o.n.k.i.DiagnosticsManager]: Total Physical memory: 8,00 GB
+2014-12-26 12:40:33.388+0000 INFO  [o.n.k.i.DiagnosticsManager]: Free Physical memory: 3,15 GB
+2014-12-26 12:40:33.388+0000 INFO  [o.n.k.i.DiagnosticsManager]: Committed virtual memory: 2,87 GB
+2014-12-26 12:40:33.389+0000 INFO  [o.n.k.i.DiagnosticsManager]: Total swap space: 0,00 B
+2014-12-26 12:40:33.389+0000 INFO  [o.n.k.i.DiagnosticsManager]: Free swap space: 0,00 B
+2014-12-26 12:40:33.389+0000 INFO  [o.n.k.i.DiagnosticsManager]: JVM memory information:
+2014-12-26 12:40:33.389+0000 INFO  [o.n.k.i.DiagnosticsManager]: Free  memory: 6,02 MB
+2014-12-26 12:40:33.390+0000 INFO  [o.n.k.i.DiagnosticsManager]: Total memory: 17,25 MB
+2014-12-26 12:40:33.390+0000 INFO  [o.n.k.i.DiagnosticsManager]: Max   memory: 276,56 MB
+2014-12-26 12:40:33.396+0000 INFO  [o.n.k.i.DiagnosticsManager]: Garbage Collector: ParNew: [Par Eden Space, Par Survivor Space]
+2014-12-26 12:40:33.396+0000 INFO  [o.n.k.i.DiagnosticsManager]: Garbage Collector: ConcurrentMarkSweep: [Par Eden Space, Par Survivor Space, CMS Old Gen, CMS Perm Gen]
+2014-12-26 12:40:33.397+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: Code Cache (Non-heap memory): committed=2,44 MB, used=711,69 kB, max=48,00 MB, threshold=0,00 B
+2014-12-26 12:40:33.400+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: Par Eden Space (Heap memory): committed=4,81 MB, used=4,81 MB, max=75,75 MB, threshold=?
+2014-12-26 12:40:33.400+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: Par Survivor Space (Heap memory): committed=576,00 kB, used=575,98 kB, max=9,44 MB, threshold=?
+2014-12-26 12:40:33.400+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: CMS Old Gen (Heap memory): committed=11,88 MB, used=5,97 MB, max=191,38 MB, threshold=0,00 B
+2014-12-26 12:40:33.401+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: CMS Perm Gen (Non-heap memory): committed=20,75 MB, used=12,88 MB, max=82,00 MB, threshold=0,00 B
+2014-12-26 12:40:33.401+0000 INFO  [o.n.k.i.DiagnosticsManager]: Operating system information:
+2014-12-26 12:40:33.402+0000 INFO  [o.n.k.i.DiagnosticsManager]: Operating System: Mac OS X; version: 10.10.1; arch: x86_64; cpus: 4
+2014-12-26 12:40:33.402+0000 INFO  [o.n.k.i.DiagnosticsManager]: Max number of file descriptors: 10240
+2014-12-26 12:40:33.403+0000 INFO  [o.n.k.i.DiagnosticsManager]: Number of open file descriptors: 83
+2014-12-26 12:40:33.403+0000 INFO  [o.n.k.i.DiagnosticsManager]: Process id: 1621@PropositionJoe.local
+2014-12-26 12:40:33.403+0000 INFO  [o.n.k.i.DiagnosticsManager]: Byte order: LITTLE_ENDIAN
+2014-12-26 12:40:33.403+0000 INFO  [o.n.k.i.DiagnosticsManager]: Local timezone: Europe/Madrid
+2014-12-26 12:40:33.403+0000 INFO  [o.n.k.i.DiagnosticsManager]: JVM information:
+2014-12-26 12:40:33.403+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Name: Java HotSpot(TM) 64-Bit Server VM
+2014-12-26 12:40:33.403+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Vendor: Oracle Corporation
+2014-12-26 12:40:33.403+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Version: 23.6-b04
+2014-12-26 12:40:33.404+0000 INFO  [o.n.k.i.DiagnosticsManager]: JIT compiler: HotSpot 64-Bit Tiered Compilers
+2014-12-26 12:40:33.405+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Arguments: [-XX:+DisableExplicitGC, -Dorg.neo4j.server.properties=conf/neo4j-server.properties, -Djava.util.logging.config.file=conf/logging.properties, -Dlog4j.configuration=file:conf/log4j.properties, -XX:+UseConcMarkSweepGC, -XX:+CMSClassUnloadingEnabled, -Dneo4j.home=/Users/Sergio/GitHub/Ballin/api/db/neo4j/development, -Dneo4j.instance=/Users/Sergio/GitHub/Ballin/api/db/neo4j/development, -Dfile.encoding=UTF-8]
+2014-12-26 12:40:33.405+0000 INFO  [o.n.k.i.DiagnosticsManager]: Java classpath:
+2014-12-26 12:40:33.407+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/dns_sd.jar
+2014-12-26 12:40:33.407+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/jersey-server-1.9.jar
+2014-12-26 12:40:33.407+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/commons-io-1.4.jar
+2014-12-26 12:40:33.407+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/lib/neo4j-jmx-2.0.2.jar
+2014-12-26 12:40:33.407+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/janino-2.6.1.jar
+2014-12-26 12:40:33.407+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/MRJToolkit.jar
+2014-12-26 12:40:33.407+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_11.jdk/Contents/Home/jre/lib/rt.jar
+2014-12-26 12:40:33.407+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/vecmath.jar
+2014-12-26 12:40:33.407+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/libmlib_jai.jnilib
+2014-12-26 12:40:33.407+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/jetty-io-9.0.5.v20130815.jar
+2014-12-26 12:40:33.407+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/neo4j-browser-2.0.2.jar
+2014-12-26 12:40:33.407+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/lib/parboiled-scala_2.10-1.1.6.jar
+2014-12-26 12:40:33.407+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/jsr311-api-1.1.2.r612.jar
+2014-12-26 12:40:33.407+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/lib/parboiled-core-1.1.6.jar
+2014-12-26 12:40:33.407+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/jackson-mapper-asl-1.9.7.jar
+2014-12-26 12:40:33.407+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/lib/neo4j-graph-algo-2.0.2.jar
+2014-12-26 12:40:33.407+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/lib/server-api-2.0.2.jar
+2014-12-26 12:40:33.407+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/lib/neo4j-cypher-commons-2.0.2.jar
+2014-12-26 12:40:33.407+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/lib/neo4j-cypher-compiler-2.0-2.0.2.jar
+2014-12-26 12:40:33.407+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/libJ3D.jnilib
+2014-12-26 12:40:33.407+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/bcprov-jdk16-140.jar
+2014-12-26 12:40:33.407+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/conf/
+2014-12-26 12:40:33.408+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/mimepull-1.6.jar
+2014-12-26 12:40:33.408+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/mlibwrapper_jai.jar
+2014-12-26 12:40:33.408+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/commons-collections-3.2.1.jar
+2014-12-26 12:40:33.408+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/jersey-core-1.9.jar
+2014-12-26 12:40:33.408+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_11.jdk/Contents/Home/jre/classes
+2014-12-26 12:40:33.408+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/jackson-jaxrs-1.9.7.jar
+2014-12-26 12:40:33.408+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/jackson-core-asl-1.9.7.jar
+2014-12-26 12:40:33.408+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_11.jdk/Contents/Home/jre/lib/ext/localedata.jar
+2014-12-26 12:40:33.408+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/logback-core-1.0.9.jar
+2014-12-26 12:40:33.408+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/libJ3DAudio.jnilib
+2014-12-26 12:40:33.408+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/libAppleScriptEngine.jnilib
+2014-12-26 12:40:33.408+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/j3daudio.jar
+2014-12-26 12:40:33.408+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/libJ3DUtils.jnilib
+2014-12-26 12:40:33.408+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/commons-lang-2.4.jar
+2014-12-26 12:40:33.408+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/logback-classic-1.0.9.jar
+2014-12-26 12:40:33.408+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_11.jdk/Contents/Home/jre/lib/ext/dnsns.jar
+2014-12-26 12:40:33.408+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/j3dcore.jar
+2014-12-26 12:40:33.408+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_11.jdk/Contents/Home/jre/lib/resources.jar
+2014-12-26 12:40:33.408+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_11.jdk/Contents/Home/jre/lib/jsse.jar
+2014-12-26 12:40:33.408+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/usr/lib/java/libjdns_sd.jnilib
+2014-12-26 12:40:33.408+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/lib/neo4j-udc-2.0.2.jar
+2014-12-26 12:40:33.408+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_11.jdk/Contents/Home/jre/lib/ext/zipfs.jar
+2014-12-26 12:40:33.408+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_11.jdk/Contents/Home/jre/lib/jfr.jar
+2014-12-26 12:40:33.408+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/slf4j-api-1.6.2.jar
+2014-12-26 12:40:33.408+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/commons-digester-1.8.1.jar
+2014-12-26 12:40:33.408+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/lib/neo4j-graph-matching-2.0.2.jar
+2014-12-26 12:40:33.409+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/j3dutils.jar
+2014-12-26 12:40:33.409+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_11.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar
+2014-12-26 12:40:33.409+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/rhino-1.7R4.jar
+2014-12-26 12:40:33.409+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_11.jdk/Contents/Home/jre/lib/JObjC.jar
+2014-12-26 12:40:33.409+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/logback-access-1.0.9.jar
+2014-12-26 12:40:33.409+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/jai_core.jar
+2014-12-26 12:40:33.409+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/jersey-multipart-1.9.jar
+2014-12-26 12:40:33.409+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/lib/org.apache.servicemix.bundles.jline-0.9.94_1.jar
+2014-12-26 12:40:33.409+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/lib/neo4j-lucene-index-2.0.2.jar
+2014-12-26 12:40:33.409+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/lib/neo4j-cypher-compiler-1.9-2.0.2.jar
+2014-12-26 12:40:33.409+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/jetty-servlet-9.0.5.v20130815.jar
+2014-12-26 12:40:33.409+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/jai_codec.jar
+2014-12-26 12:40:33.409+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_11.jdk/Contents/Home/jre/lib/ext/sunec.jar
+2014-12-26 12:40:33.409+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/lib/lucene-core-3.6.2.jar
+2014-12-26 12:40:33.409+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_11.jdk/Contents/Home/jre/lib/charsets.jar
+2014-12-26 12:40:33.409+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/opencsv-2.0.jar
+2014-12-26 12:40:33.409+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/jetty-server-9.0.5.v20130815.jar
+2014-12-26 12:40:33.409+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/jcl-over-slf4j-1.6.1.jar
+2014-12-26 12:40:33.409+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/javax.servlet-3.0.0.v201112011016.jar
+2014-12-26 12:40:33.409+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/neo4j-server-2.0.2-static-web.jar
+2014-12-26 12:40:33.409+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/asm-3.1.jar
+2014-12-26 12:40:33.409+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/jetty-xml-9.0.5.v20130815.jar
+2014-12-26 12:40:33.409+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/lib/concurrentlinkedhashmap-lru-1.3.1.jar
+2014-12-26 12:40:33.409+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/rrd4j-2.0.7.jar
+2014-12-26 12:40:33.409+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_11.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar
+2014-12-26 12:40:33.409+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/jetty-http-9.0.5.v20130815.jar
+2014-12-26 12:40:33.410+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/lib/scala-library-2.10.3.jar
+2014-12-26 12:40:33.410+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/neo4j-server-2.0.2.jar
+2014-12-26 12:40:33.410+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_11.jdk/Contents/Home/jre/lib/sunrsasign.jar
+2014-12-26 12:40:33.410+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/commons-beanutils-core-1.8.0.jar
+2014-12-26 12:40:33.410+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/jetty-webapp-9.0.5.v20130815.jar
+2014-12-26 12:40:33.410+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/commons-compiler-2.6.1.jar
+2014-12-26 12:40:33.410+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/commons-configuration-1.6.jar
+2014-12-26 12:40:33.410+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/lib/geronimo-jta_1.1_spec-1.1.1.jar
+2014-12-26 12:40:33.410+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/lib/neo4j-kernel-2.0.2.jar
+2014-12-26 12:40:33.410+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/commons-beanutils-1.8.0.jar
+2014-12-26 12:40:33.410+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/lib/neo4j-cypher-2.0.2.jar
+2014-12-26 12:40:33.410+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/AppleScriptEngine.jar
+2014-12-26 12:40:33.410+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_11.jdk/Contents/Home/jre/lib/jce.jar
+2014-12-26 12:40:33.410+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/lib/neo4j-shell-2.0.2.jar
+2014-12-26 12:40:33.410+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/commons-logging-1.1.1.jar
+2014-12-26 12:40:33.410+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/jetty-util-9.0.5.v20130815.jar
+2014-12-26 12:40:33.410+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/jetty-security-9.0.5.v20130815.jar
+2014-12-26 12:40:33.410+0000 INFO  [o.n.k.i.DiagnosticsManager]: Library path:
+2014-12-26 12:40:33.410+0000 INFO  [o.n.k.i.DiagnosticsManager]: /Users/Sergio/Library/Java/Extensions
+2014-12-26 12:40:33.410+0000 INFO  [o.n.k.i.DiagnosticsManager]: /Library/Java/Extensions
+2014-12-26 12:40:33.410+0000 INFO  [o.n.k.i.DiagnosticsManager]: /Network/Library/Java/Extensions
+2014-12-26 12:40:33.411+0000 INFO  [o.n.k.i.DiagnosticsManager]: /System/Library/Java/Extensions
+2014-12-26 12:40:33.411+0000 INFO  [o.n.k.i.DiagnosticsManager]: /usr/lib/java
+2014-12-26 12:40:33.411+0000 INFO  [o.n.k.i.DiagnosticsManager]: /Users/Sergio/GitHub/Ballin/api/db/neo4j/development
+2014-12-26 12:40:33.411+0000 INFO  [o.n.k.i.DiagnosticsManager]: System.properties:
+2014-12-26 12:40:33.411+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk1.7.0_11.jdk/Contents/Home/jre/lib
+2014-12-26 12:40:33.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.properties = conf/neo4j-server.properties
+2014-12-26 12:40:33.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: gopherProxySet = false
+2014-12-26 12:40:33.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: path.separator = :
+2014-12-26 12:40:33.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: file.encoding.pkg = sun.io
+2014-12-26 12:40:33.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.country = ES
+2014-12-26 12:40:33.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.java.launcher = SUN_STANDARD
+2014-12-26 12:40:33.414+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.os.patch.level = unknown
+2014-12-26 12:40:33.414+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.dir = /Users/Sergio/GitHub/Ballin/api/db/neo4j/development
+2014-12-26 12:40:33.414+0000 INFO  [o.n.k.i.DiagnosticsManager]: log4j.configuration = file:conf/log4j.properties
+2014-12-26 12:40:33.414+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.jnu.encoding = UTF-8
+2014-12-26 12:40:33.414+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+2014-12-26 12:40:33.414+0000 INFO  [o.n.k.i.DiagnosticsManager]: http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+2014-12-26 12:40:33.414+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.home = /Users/Sergio
+2014-12-26 12:40:33.414+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.timezone = Europe/Madrid
+2014-12-26 12:40:33.414+0000 INFO  [o.n.k.i.DiagnosticsManager]: file.encoding = UTF-8
+2014-12-26 12:40:33.414+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.name = Sergio
+2014-12-26 12:40:33.414+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.java.command = org.neo4j.server.Bootstrapper
+2014-12-26 12:40:33.414+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.arch.data.model = 64
+2014-12-26 12:40:33.414+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.language = es
+2014-12-26 12:40:33.414+0000 INFO  [o.n.k.i.DiagnosticsManager]: awt.toolkit = sun.lwawt.macosx.LWCToolkit
+2014-12-26 12:40:33.414+0000 INFO  [o.n.k.i.DiagnosticsManager]: file.separator = /
+2014-12-26 12:40:33.414+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.io.unicode.encoding = UnicodeBig
+2014-12-26 12:40:33.414+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.cpu.endian = little
+2014-12-26 12:40:33.414+0000 INFO  [o.n.k.i.DiagnosticsManager]: socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+2014-12-26 12:40:33.414+0000 INFO  [o.n.k.i.DiagnosticsManager]: neo4j.instance = /Users/Sergio/GitHub/Ballin/api/db/neo4j/development
+2014-12-26 12:40:33.414+0000 INFO  [o.n.k.i.DiagnosticsManager]: ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+2014-12-26 12:40:33.414+0000 INFO  [o.n.k.i.DiagnosticsManager]: neo4j.home = /Users/Sergio/GitHub/Ballin/api/db/neo4j/development
+2014-12-26 12:40:33.414+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.cpu.isalist = 
+2014-12-26 12:40:33.414+0000 INFO  [o.n.k.i.DiagnosticsManager]: Network information:
+2014-12-26 12:40:33.417+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface awdl0:
+2014-12-26 12:40:33.418+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:74bb:eff:fe85:ef38%9
+2014-12-26 12:40:33.418+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface en1:
+2014-12-26 12:40:33.418+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:8e2d:aaff:fe48:7eb9%5
+2014-12-26 12:40:33.418+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 192.168.1.102
+2014-12-26 12:40:33.418+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface lo0:
+2014-12-26 12:40:33.418+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:0:0:0:1%1
+2014-12-26 12:40:33.418+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 0:0:0:0:0:0:0:1
+2014-12-26 12:40:33.418+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 127.0.0.1
+2014-12-26 12:40:33.418+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- INITIALIZED diagnostics END ---
+2014-12-26 12:40:33.626+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [data/graph.db/neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=988b)
+2014-12-26 12:40:33.629+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [data/graph.db/neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=125b)
+2014-12-26 12:40:33.630+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [data/graph.db/neostore.labeltokenstore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=532b)
+2014-12-26 12:40:33.631+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [data/graph.db/neostore.labeltokenstore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=65b)
+2014-12-26 12:40:33.632+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [data/graph.db/neostore.propertystore.db.strings] brickCount=1 brickSize=733952b mappedMem=734003200b (storeSize=734080b)
+2014-12-26 12:40:33.633+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [data/graph.db/neostore.propertystore.db.index.keys] brickCount=0 brickSize=0b mappedMem=0b (storeSize=2470b)
+2014-12-26 12:40:33.634+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [data/graph.db/neostore.propertystore.db.index] brickCount=0 brickSize=0b mappedMem=0b (storeSize=576b)
+2014-12-26 12:40:33.635+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [data/graph.db/neostore.propertystore.db.arrays] brickCount=0 brickSize=831488b mappedMem=831520768b (storeSize=128b)
+2014-12-26 12:40:33.638+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [data/graph.db/neostore.propertystore.db] brickCount=4 brickSize=862968b mappedMem=862978048b (storeSize=3691558b)
+2014-12-26 12:40:33.643+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [data/graph.db/neostore.relationshipstore.db] brickCount=1 brickSize=1058013b mappedMem=1058013184b (storeSize=2014122b)
+2014-12-26 12:40:33.644+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [data/graph.db/neostore.nodestore.db.labels] brickCount=0 brickSize=0b mappedMem=0b (storeSize=68b)
+2014-12-26 12:40:33.648+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [data/graph.db/neostore.nodestore.db] brickCount=1 brickSize=239064b mappedMem=239075328b (storeSize=365792b)
+2014-12-26 12:40:33.649+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [data/graph.db/neostore.schemastore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=2688b)
+2014-12-26 12:40:33.651+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [data/graph.db/neostore] brickCount=0 brickSize=0b mappedMem=0b (storeSize=63b)
+2014-12-26 12:40:33.936+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[0](property[0]) is ONLINE
+2014-12-26 12:40:33.957+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[1](property[0]) is ONLINE
+2014-12-26 12:40:33.973+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[2](property[0]) is ONLINE
+2014-12-26 12:40:34.006+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[3](property[0]) is ONLINE
+2014-12-26 12:40:34.024+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[4](property[0]) is ONLINE
+2014-12-26 12:40:34.040+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[5](property[0]) is ONLINE
+2014-12-26 12:40:34.052+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[6](property[0]) is ONLINE
+2014-12-26 12:40:34.057+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[10](property[0]) is ONLINE
+2014-12-26 12:40:34.063+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[10](property[52]) is ONLINE
+2014-12-26 12:40:34.068+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[10](property[53]) is ONLINE
+2014-12-26 12:40:34.073+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[10](property[54]) is ONLINE
+2014-12-26 12:40:34.076+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[10](property[55]) is ONLINE
+2014-12-26 12:40:34.080+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[10](property[57]) is ONLINE
+2014-12-26 12:40:34.085+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[11](property[0]) is ONLINE
+2014-12-26 12:40:34.091+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[10](property[56]) is ONLINE
+2014-12-26 12:40:34.095+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[12](property[0]) is ONLINE
+2014-12-26 12:40:34.101+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[7](property[0]) is ONLINE
+2014-12-26 12:40:34.109+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[8](property[0]) is ONLINE
+2014-12-26 12:40:34.116+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[9](property[0]) is ONLINE
+2014-12-26 12:40:34.123+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: Opened logical log [data/graph.db/nioneo_logical.log.1] version=27, lastTxId=105827 (clean)
+2014-12-26 12:40:34.133+0000 INFO  [o.n.k.i.t.TxManager]: TM opening log: data/graph.db/tm_tx_log.2
+2014-12-26 12:40:34.138+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[0](property[0]) is ONLINE
+2014-12-26 12:40:34.138+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[1](property[0]) is ONLINE
+2014-12-26 12:40:34.138+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[8](property[0]) is ONLINE
+2014-12-26 12:40:34.138+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[2](property[0]) is ONLINE
+2014-12-26 12:40:34.139+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[7](property[0]) is ONLINE
+2014-12-26 12:40:34.139+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[3](property[0]) is ONLINE
+2014-12-26 12:40:34.139+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[4](property[0]) is ONLINE
+2014-12-26 12:40:34.139+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[9](property[0]) is ONLINE
+2014-12-26 12:40:34.140+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[5](property[0]) is ONLINE
+2014-12-26 12:40:34.140+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[6](property[0]) is ONLINE
+2014-12-26 12:40:34.140+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[10](property[0]) is ONLINE
+2014-12-26 12:40:34.140+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[10](property[52]) is ONLINE
+2014-12-26 12:40:34.141+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[10](property[54]) is ONLINE
+2014-12-26 12:40:34.141+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[10](property[53]) is ONLINE
+2014-12-26 12:40:34.141+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[10](property[57]) is ONLINE
+2014-12-26 12:40:34.141+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[10](property[55]) is ONLINE
+2014-12-26 12:40:34.142+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[10](property[56]) is ONLINE
+2014-12-26 12:40:34.142+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[11](property[0]) is ONLINE
+2014-12-26 12:40:34.142+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[12](property[0]) is ONLINE
+2014-12-26 12:40:34.142+0000 INFO  [o.n.k.i.t.KernelHealth]: Kernel health set to OK
+2014-12-26 12:40:34.300+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: Opened logical log [data/graph.db/index/lucene.log.1] version=25, lastTxId=1 (clean)
+2014-12-26 12:40:34.303+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2014-12-26 12:40:34.303+0000 INFO  [o.n.k.i.DiagnosticsManager]: Graph Database: org.neo4j.kernel.EmbeddedGraphDatabase StoreId[time:1412713834912, id:8508636841629548285, store version: 13843131341501958]
+2014-12-26 12:40:34.304+0000 INFO  [o.n.k.i.DiagnosticsManager]: Kernel version: Neo4j - Graph Database Kernel (neo4j-kernel), version: 2.0.2
+2014-12-26 12:40:34.304+0000 INFO  [o.n.k.i.DiagnosticsManager]: Neo4j component versions:
+2014-12-26 12:40:34.309+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Lucene Index (neo4j-lucene-index), version: 2.0.2; revision: 2.0.2:2.0-maint:1007/47f4314f1f50098884c1c1f4e1c3b79d5ce46db1
+2014-12-26 12:40:34.309+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - JMX support (neo4j-jmx), version: 2.0.2; revision: 2.0.2:2.0-maint:1007/47f4314f1f50098884c1c1f4e1c3b79d5ce46db1
+2014-12-26 12:40:34.309+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Graph Matching (neo4j-graph-matching), version: 2.0.2; revision: 2.0.2:2.0-maint:1007/47f4314f1f50098884c1c1f4e1c3b79d5ce46db1
+2014-12-26 12:40:34.309+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j Server API (server-api), version: 2.0.2; revision: 2.0.2:2.0-maint:1007/47f4314f1f50098884c1c1f4e1c3b79d5ce46db1
+2014-12-26 12:40:34.309+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Graph Database Kernel (neo4j-kernel), version: 2.0.2; revision: 2.0.2:2.0-maint:1007/47f4314f1f50098884c1c1f4e1c3b79d5ce46db1
+2014-12-26 12:40:34.309+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher (neo4j-cypher), version: 2.0.2; revision: 2.0.2:2.0-maint:1007/47f4314f1f50098884c1c1f4e1c3b79d5ce46db1
+2014-12-26 12:40:34.309+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j Server (neo4j-server), version: 2.0.2; revision: 2.0.2:2.0-maint:1007/47f4314f1f50098884c1c1f4e1c3b79d5ce46db1
+2014-12-26 12:40:34.309+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Graph Algorithms (neo4j-graph-algo), version: 2.0.2; revision: 2.0.2:2.0-maint:1007/47f4314f1f50098884c1c1f4e1c3b79d5ce46db1
+2014-12-26 12:40:34.309+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher Compiler 2.0 (neo4j-cypher-compiler-2.0), version: 2.0.2; revision: 2.0.2:2.0-maint:1007/47f4314f1f50098884c1c1f4e1c3b79d5ce46db1
+2014-12-26 12:40:34.309+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Generic shell (neo4j-shell), version: 2.0.2; revision: 2.0.2:2.0-maint:1007/47f4314f1f50098884c1c1f4e1c3b79d5ce46db1
+2014-12-26 12:40:34.309+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher Compiler 1.9 (neo4j-cypher-compiler-1.9), version: 2.0.2; revision: 2.0.2:2.0-maint:1007/47f4314f1f50098884c1c1f4e1c3b79d5ce46db1
+2014-12-26 12:40:34.309+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neo4j-udc, version: 2.0.2; revision: 2.0.2:2.0-maint:1007/47f4314f1f50098884c1c1f4e1c3b79d5ce46db1
+2014-12-26 12:40:34.309+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher Commons (neo4j-cypher-commons), version: 2.0.2; revision: 2.0.2:2.0-maint:1007/47f4314f1f50098884c1c1f4e1c3b79d5ce46db1
+2014-12-26 12:40:34.309+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2014-12-26 12:40:34.314+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2014-12-26 12:40:34.314+0000 INFO  [o.n.k.i.DiagnosticsManager]: Store versions:
+2014-12-26 12:40:34.314+0000 INFO  [o.n.k.i.DiagnosticsManager]: Store versions:
+2014-12-26 12:40:34.314+0000 INFO  [o.n.k.i.DiagnosticsManager]:   NeoStore v0.A.1
+2014-12-26 12:40:34.314+0000 INFO  [o.n.k.i.DiagnosticsManager]:   SchemaStore v0.A.1
+2014-12-26 12:40:34.314+0000 INFO  [o.n.k.i.DiagnosticsManager]:   NodeStore v0.A.1
+2014-12-26 12:40:34.314+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipStore v0.A.1
+2014-12-26 12:40:34.314+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipTypeStore v0.A.1
+2014-12-26 12:40:34.314+0000 INFO  [o.n.k.i.DiagnosticsManager]:   LabelTokenStore v0.A.1
+2014-12-26 12:40:34.314+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyStore v0.A.1
+2014-12-26 12:40:34.315+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyIndexStore v0.A.1
+2014-12-26 12:40:34.315+0000 INFO  [o.n.k.i.DiagnosticsManager]:   StringPropertyStore v0.A.1
+2014-12-26 12:40:34.315+0000 INFO  [o.n.k.i.DiagnosticsManager]:   ArrayPropertyStore v0.A.1
+2014-12-26 12:40:34.315+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2014-12-26 12:40:34.315+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2014-12-26 12:40:34.315+0000 INFO  [o.n.k.i.DiagnosticsManager]: Id usage:
+2014-12-26 12:40:34.315+0000 INFO  [o.n.k.i.DiagnosticsManager]: Id usage:
+2014-12-26 12:40:34.315+0000 INFO  [o.n.k.i.DiagnosticsManager]:   SchemaStore: used=42 high=41
+2014-12-26 12:40:34.315+0000 INFO  [o.n.k.i.DiagnosticsManager]:   NodeStore: used=18808 high=26127
+2014-12-26 12:40:34.315+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipStore: used=41601 high=61033
+2014-12-26 12:40:34.315+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipTypeStore: used=25 high=24
+2014-12-26 12:40:34.315+0000 INFO  [o.n.k.i.DiagnosticsManager]:   LabelTokenStore: used=13 high=12
+2014-12-26 12:40:34.316+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyStore: used=90038 high=90037
+2014-12-26 12:40:34.316+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyIndexStore: used=64 high=63
+2014-12-26 12:40:34.316+0000 INFO  [o.n.k.i.DiagnosticsManager]:   StringPropertyStore: used=5735 high=5734
+2014-12-26 12:40:34.316+0000 INFO  [o.n.k.i.DiagnosticsManager]:   ArrayPropertyStore: used=1 high=0
+2014-12-26 12:40:34.316+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2014-12-26 12:40:34.316+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS START ---
+2014-12-26 12:40:34.316+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS END ---
+2014-12-26 12:40:34.316+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2014-12-26 12:40:34.317+0000 INFO  [o.n.k.i.DiagnosticsManager]: Disk space on partition (Total / Free / Free %): 1111826382848 / 666521886720 / 59
+Storage files: (filename : modification date - size)
+2014-12-26 12:40:34.317+0000 INFO  [o.n.k.i.DiagnosticsManager]:   .DS_Store: 2014-12-22T14:23:15+0100 - 15,00 kB
+2014-12-26 12:40:34.317+0000 INFO  [o.n.k.i.DiagnosticsManager]:   active_tx_log: 2014-12-25T21:54:58+0100 - 11,00 B
+2014-12-26 12:40:34.317+0000 INFO  [o.n.k.i.DiagnosticsManager]:   index:
+2014-12-26 12:40:34.318+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene-store.db: 2014-12-25T23:39:00+0100 - 40,00 B
+2014-12-26 12:40:34.318+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.1: 2014-12-26T13:40:34+0100 - 16,00 B
+2014-12-26 12:40:34.318+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.active: 2014-12-26T13:40:34+0100 - 4,00 B
+2014-12-26 12:40:34.318+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v0: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-26 12:40:34.319+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v1: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-26 12:40:34.319+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v10: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-26 12:40:34.319+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v11: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-26 12:40:34.319+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v12: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-26 12:40:34.319+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v13: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-26 12:40:34.320+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v14: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-26 12:40:34.320+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v15: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-26 12:40:34.320+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v16: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-26 12:40:34.320+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v17: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-26 12:40:34.320+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v18: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-26 12:40:34.321+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v19: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-26 12:40:34.321+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v2: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-26 12:40:34.321+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v20: 2014-12-22T14:27:51+0100 - 16,00 B
+2014-12-26 12:40:34.321+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v21: 2014-12-23T00:06:43+0100 - 16,00 B
+2014-12-26 12:40:34.322+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v22: 2014-12-24T01:24:16+0100 - 16,00 B
+2014-12-26 12:40:34.322+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v23: 2014-12-24T22:28:29+0100 - 16,00 B
+2014-12-26 12:40:34.322+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v24: 2014-12-25T23:39:00+0100 - 16,00 B
+2014-12-26 12:40:34.322+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v3: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-26 12:40:34.323+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v4: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-26 12:40:34.323+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v5: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-26 12:40:34.323+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v6: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-26 12:40:34.323+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v7: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-26 12:40:34.323+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v8: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-26 12:40:34.324+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v9: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-26 12:40:34.324+0000 INFO  [o.n.k.i.DiagnosticsManager]:   - Total: 2014-12-26T13:40:34+0100 - 460,00 B
+2014-12-26 12:40:34.324+0000 INFO  [o.n.k.i.DiagnosticsManager]:   lock: 2014-12-26T13:40:33+0100 - 0,00 B
+2014-12-26 12:40:34.324+0000 INFO  [o.n.k.i.DiagnosticsManager]:   messages.log: 2014-12-26T13:40:34+0100 - 2,54 MB
+2014-12-26 12:40:34.325+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore: 2014-12-26T13:40:33+0100 - 63,00 B
+2014-12-26 12:40:34.325+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.id: 2014-12-26T13:40:33+0100 - 9,00 B
+2014-12-26 12:40:34.325+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db: 2014-12-26T13:40:33+0100 - 65,00 B
+2014-12-26 12:40:34.325+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db.id: 2014-12-26T13:40:33+0100 - 9,00 B
+2014-12-26 12:40:34.326+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db.names: 2014-12-26T13:40:33+0100 - 532,00 B
+2014-12-26 12:40:34.326+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db.names.id: 2014-12-26T13:40:33+0100 - 9,00 B
+2014-12-26 12:40:34.326+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db: 2014-12-26T13:40:33+0100 - 357,22 kB
+2014-12-26 12:40:34.326+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db.id: 2014-12-26T13:40:33+0100 - 65,20 kB
+2014-12-26 12:40:34.326+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db.labels: 2014-12-26T13:40:33+0100 - 68,00 B
+2014-12-26 12:40:34.327+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db.labels.id: 2014-12-26T13:40:33+0100 - 9,00 B
+2014-12-26 12:40:34.327+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db: 2014-12-26T13:40:33+0100 - 3,52 MB
+2014-12-26 12:40:34.327+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.arrays: 2014-12-26T13:40:33+0100 - 128,00 B
+2014-12-26 12:40:34.327+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.arrays.id: 2014-12-26T13:40:33+0100 - 9,00 B
+2014-12-26 12:40:34.328+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.id: 2014-12-26T13:40:33+0100 - 1,11 kB
+2014-12-26 12:40:34.328+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index: 2014-12-26T13:40:33+0100 - 576,00 B
+2014-12-26 12:40:34.328+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index.id: 2014-12-26T13:40:33+0100 - 9,00 B
+2014-12-26 12:40:34.328+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index.keys: 2014-12-26T13:40:33+0100 - 2,41 kB
+2014-12-26 12:40:34.328+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index.keys.id: 2014-12-26T13:40:33+0100 - 9,00 B
+2014-12-26 12:40:34.329+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.strings: 2014-12-26T13:40:33+0100 - 716,88 kB
+2014-12-26 12:40:34.329+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.strings.id: 2014-12-26T13:40:33+0100 - 9,00 B
+2014-12-26 12:40:34.329+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipstore.db: 2014-12-26T13:40:33+0100 - 1,92 MB
+2014-12-26 12:40:34.329+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipstore.db.id: 2014-12-26T13:40:33+0100 - 159,83 kB
+2014-12-26 12:40:34.330+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db: 2014-12-26T13:40:33+0100 - 125,00 B
+2014-12-26 12:40:34.330+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db.id: 2014-12-26T13:40:33+0100 - 9,00 B
+2014-12-26 12:40:34.330+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db.names: 2014-12-26T13:40:33+0100 - 988,00 B
+2014-12-26 12:40:34.330+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db.names.id: 2014-12-26T13:40:33+0100 - 9,00 B
+2014-12-26 12:40:34.330+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.schemastore.db: 2014-12-26T13:40:33+0100 - 2,63 kB
+2014-12-26 12:40:34.331+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.schemastore.db.id: 2014-12-26T13:40:33+0100 - 9,00 B
+2014-12-26 12:40:34.331+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.1: 2014-12-26T13:40:34+0100 - 16,00 B
+2014-12-26 12:40:34.331+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.active: 2014-12-26T13:40:34+0100 - 4,00 B
+2014-12-26 12:40:34.331+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v0: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-26 12:40:34.332+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v1: 2014-12-22T14:23:15+0100 - 4,27 kB
+2014-12-26 12:40:34.332+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v10: 2014-12-22T14:23:15+0100 - 2,12 MB
+2014-12-26 12:40:34.332+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v11: 2014-12-22T14:23:15+0100 - 806,42 kB
+2014-12-26 12:40:34.332+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v12: 2014-12-22T14:23:15+0100 - 696,91 kB
+2014-12-26 12:40:34.332+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v13: 2014-12-22T14:23:15+0100 - 1,06 MB
+2014-12-26 12:40:34.333+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v14: 2014-12-22T14:23:15+0100 - 13,40 MB
+2014-12-26 12:40:34.333+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v15: 2014-12-22T14:23:15+0100 - 6,73 MB
+2014-12-26 12:40:34.333+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v16: 2014-12-22T14:23:15+0100 - 1,55 MB
+2014-12-26 12:40:34.333+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v17: 2014-12-22T14:23:15+0100 - 3,67 MB
+2014-12-26 12:40:34.333+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v18: 2014-12-22T14:23:15+0100 - 906,16 kB
+2014-12-26 12:40:34.334+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v19: 2014-12-22T14:23:15+0100 - 1,95 MB
+2014-12-26 12:40:34.334+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v2: 2014-12-22T14:23:15+0100 - 170,57 kB
+2014-12-26 12:40:34.334+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v20: 2014-12-22T14:27:51+0100 - 3,20 MB
+2014-12-26 12:40:34.334+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v21: 2014-12-22T14:27:51+0100 - 16,00 B
+2014-12-26 12:40:34.335+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v22: 2014-12-23T00:06:43+0100 - 5,60 MB
+2014-12-26 12:40:34.335+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v23: 2014-12-23T16:06:10+0100 - 25,00 MB
+2014-12-26 12:40:34.335+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v24: 2014-12-24T01:24:16+0100 - 1,83 MB
+2014-12-26 12:40:34.335+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v25: 2014-12-24T22:28:29+0100 - 655,08 kB
+2014-12-26 12:40:34.335+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v26: 2014-12-25T23:39:00+0100 - 371,88 kB
+2014-12-26 12:40:34.336+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v3: 2014-12-22T14:23:15+0100 - 1,62 MB
+2014-12-26 12:40:34.336+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v4: 2014-12-22T14:23:15+0100 - 5,89 MB
+2014-12-26 12:40:34.336+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v5: 2014-12-22T14:23:15+0100 - 99,40 kB
+2014-12-26 12:40:34.336+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v6: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-26 12:40:34.336+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v7: 2014-12-22T14:23:15+0100 - 5,09 kB
+2014-12-26 12:40:34.337+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v8: 2014-12-22T14:23:15+0100 - 241,00 B
+2014-12-26 12:40:34.337+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v9: 2014-12-22T14:23:15+0100 - 3,53 MB
+2014-12-26 12:40:34.337+0000 INFO  [o.n.k.i.DiagnosticsManager]:   schema:
+2014-12-26 12:40:34.337+0000 INFO  [o.n.k.i.DiagnosticsManager]:     .DS_Store: 2014-12-22T14:23:15+0100 - 6,00 kB
+2014-12-26 12:40:34.337+0000 INFO  [o.n.k.i.DiagnosticsManager]:     index:
+2014-12-26 12:40:34.337+0000 INFO  [o.n.k.i.DiagnosticsManager]:       .DS_Store: 2014-12-22T14:23:15+0100 - 6,00 kB
+2014-12-26 12:40:34.337+0000 INFO  [o.n.k.i.DiagnosticsManager]:       lucene:
+2014-12-26 12:40:34.338+0000 INFO  [o.n.k.i.DiagnosticsManager]:         .DS_Store: 2014-12-22T14:23:15+0100 - 6,00 kB
+2014-12-26 12:40:34.338+0000 INFO  [o.n.k.i.DiagnosticsManager]:         1:
+2014-12-26 12:40:34.338+0000 INFO  [o.n.k.i.DiagnosticsManager]:           .DS_Store: 2014-12-22T14:23:15+0100 - 6,00 kB
+2014-12-26 12:40:34.338+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2e5.fdt: 2014-12-22T14:23:15+0100 - 4,30 kB
+2014-12-26 12:40:34.339+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2e5.fdx: 2014-12-22T14:23:15+0100 - 4,30 kB
+2014-12-26 12:40:34.339+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2e5.fnm: 2014-12-22T14:23:15+0100 - 18,00 B
+2014-12-26 12:40:34.339+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2e5.frq: 2014-12-22T14:23:15+0100 - 1,90 kB
+2014-12-26 12:40:34.339+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2e5.tii: 2014-12-22T14:23:15+0100 - 2,04 kB
+2014-12-26 12:40:34.339+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2e5.tis: 2014-12-22T14:23:15+0100 - 25,52 kB
+2014-12-26 12:40:34.340+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2e5_1.del: 2014-12-22T14:27:51+0100 - 99,00 B
+2014-12-26 12:40:34.340+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2e6.cfs: 2014-12-22T14:23:15+0100 - 256,00 B
+2014-12-26 12:40:34.340+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2e7.cfs: 2014-12-22T14:23:15+0100 - 256,00 B
+2014-12-26 12:40:34.340+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2ea.cfs: 2014-12-22T14:23:15+0100 - 256,00 B
+2014-12-26 12:40:34.341+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2ee.fdt: 2014-12-22T14:27:50+0100 - 3,44 kB
+2014-12-26 12:40:34.341+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2ee.fdx: 2014-12-22T14:27:50+0100 - 3,44 kB
+2014-12-26 12:40:34.341+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2ee.fnm: 2014-12-22T14:27:50+0100 - 18,00 B
+2014-12-26 12:40:34.341+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2ee.frq: 2014-12-22T14:27:50+0100 - 1,47 kB
+2014-12-26 12:40:34.342+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2ee.nrm: 2014-12-22T14:27:50+0100 - 4,00 B
+2014-12-26 12:40:34.342+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2ee.tii: 2014-12-22T14:27:50+0100 - 1,63 kB
+2014-12-26 12:40:34.342+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2ee.tis: 2014-12-22T14:27:50+0100 - 20,48 kB
+2014-12-26 12:40:34.342+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2ee_1.del: 2014-12-23T16:06:10+0100 - 85,00 B
+2014-12-26 12:40:34.342+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2ef.cfs: 2014-12-23T18:29:44+0100 - 258,00 B
+2014-12-26 12:40:34.343+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2eg.cfs: 2014-12-25T17:00:04+0100 - 256,00 B
+2014-12-26 12:40:34.343+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2014-12-22T14:23:15+0100 - 16,00 kB
+2014-12-26 12:40:34.343+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2014-12-25T23:39:00+0100 - 20,00 B
+2014-12-26 12:40:34.343+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_e: 2014-12-25T23:39:00+0100 - 1,54 kB
+2014-12-26 12:40:34.344+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2014-12-26T13:40:33+0100 - 0,00 B
+2014-12-26 12:40:34.344+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2014-12-26T13:40:33+0100 - 93,56 kB
+2014-12-26 12:40:34.344+0000 INFO  [o.n.k.i.DiagnosticsManager]:         11:
+2014-12-26 12:40:34.344+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _15.fdt: 2014-12-22T14:23:15+0100 - 11,00 B
+2014-12-26 12:40:34.344+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _15.fdx: 2014-12-22T14:23:15+0100 - 12,00 B
+2014-12-26 12:40:34.345+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _15.fnm: 2014-12-22T14:23:15+0100 - 18,00 B
+2014-12-26 12:40:34.345+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _15.frq: 2014-12-22T14:23:15+0100 - 2,00 B
+2014-12-26 12:40:34.345+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _15.nrm: 2014-12-22T14:23:15+0100 - 4,00 B
+2014-12-26 12:40:34.345+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _15.tii: 2014-12-22T14:23:15+0100 - 35,00 B
+2014-12-26 12:40:34.345+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _15.tis: 2014-12-22T14:23:15+0100 - 75,00 B
+2014-12-26 12:40:34.346+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _16.fdt: 2014-12-22T14:23:15+0100 - 11,00 B
+2014-12-26 12:40:34.346+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _16.fdx: 2014-12-22T14:23:15+0100 - 12,00 B
+2014-12-26 12:40:34.346+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _16.fnm: 2014-12-22T14:23:15+0100 - 18,00 B
+2014-12-26 12:40:34.346+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _16.frq: 2014-12-22T14:23:15+0100 - 2,00 B
+2014-12-26 12:40:34.346+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _16.nrm: 2014-12-22T14:23:15+0100 - 4,00 B
+2014-12-26 12:40:34.347+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _16.tii: 2014-12-22T14:23:15+0100 - 35,00 B
+2014-12-26 12:40:34.347+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _16.tis: 2014-12-22T14:23:15+0100 - 75,00 B
+2014-12-26 12:40:34.347+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _17.fdt: 2014-12-22T14:23:15+0100 - 11,00 B
+2014-12-26 12:40:34.347+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _17.fdx: 2014-12-22T14:23:15+0100 - 12,00 B
+2014-12-26 12:40:34.347+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _17.fnm: 2014-12-22T14:23:15+0100 - 18,00 B
+2014-12-26 12:40:34.348+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _17.frq: 2014-12-22T14:23:15+0100 - 2,00 B
+2014-12-26 12:40:34.348+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _17.nrm: 2014-12-22T14:23:15+0100 - 4,00 B
+2014-12-26 12:40:34.348+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _17.tii: 2014-12-22T14:23:15+0100 - 35,00 B
+2014-12-26 12:40:34.348+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _17.tis: 2014-12-22T14:23:15+0100 - 75,00 B
+2014-12-26 12:40:34.348+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _18.fdt: 2014-12-22T14:23:15+0100 - 11,00 B
+2014-12-26 12:40:34.349+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _18.fdx: 2014-12-22T14:23:15+0100 - 12,00 B
+2014-12-26 12:40:34.349+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _18.fnm: 2014-12-22T14:23:15+0100 - 18,00 B
+2014-12-26 12:40:34.349+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _18.frq: 2014-12-22T14:23:15+0100 - 2,00 B
+2014-12-26 12:40:34.349+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _18.nrm: 2014-12-22T14:23:15+0100 - 4,00 B
+2014-12-26 12:40:34.350+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _18.tii: 2014-12-22T14:23:15+0100 - 35,00 B
+2014-12-26 12:40:34.350+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _18.tis: 2014-12-22T14:23:15+0100 - 75,00 B
+2014-12-26 12:40:34.350+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _19.fdt: 2014-12-22T14:23:15+0100 - 11,00 B
+2014-12-26 12:40:34.350+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _19.fdx: 2014-12-22T14:23:15+0100 - 12,00 B
+2014-12-26 12:40:34.350+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _19.fnm: 2014-12-22T14:23:15+0100 - 18,00 B
+2014-12-26 12:40:34.351+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _19.frq: 2014-12-22T14:23:15+0100 - 2,00 B
+2014-12-26 12:40:34.351+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _19.nrm: 2014-12-22T14:23:15+0100 - 4,00 B
+2014-12-26 12:40:34.351+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _19.tii: 2014-12-22T14:23:15+0100 - 35,00 B
+2014-12-26 12:40:34.351+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _19.tis: 2014-12-22T14:23:15+0100 - 75,00 B
+2014-12-26 12:40:34.351+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1a.fdt: 2014-12-22T14:23:15+0100 - 11,00 B
+2014-12-26 12:40:34.352+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1a.fdx: 2014-12-22T14:23:15+0100 - 12,00 B
+2014-12-26 12:40:34.352+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1a.fnm: 2014-12-22T14:23:15+0100 - 18,00 B
+2014-12-26 12:40:34.352+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1a.frq: 2014-12-22T14:23:15+0100 - 2,00 B
+2014-12-26 12:40:34.352+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1a.nrm: 2014-12-22T14:23:15+0100 - 4,00 B
+2014-12-26 12:40:34.352+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1a.tii: 2014-12-22T14:23:15+0100 - 35,00 B
+2014-12-26 12:40:34.353+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1a.tis: 2014-12-22T14:23:15+0100 - 75,00 B
+2014-12-26 12:40:34.353+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2014-12-22T14:23:15+0100 - 16,00 kB
+2014-12-26 12:40:34.353+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2014-12-22T14:23:15+0100 - 20,00 B
+2014-12-26 12:40:34.353+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_2: 2014-12-22T14:23:15+0100 - 1,29 kB
+2014-12-26 12:40:34.354+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2014-12-26T13:40:34+0100 - 0,00 B
+2014-12-26 12:40:34.354+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2014-12-26T13:40:34+0100 - 18,23 kB
+2014-12-26 12:40:34.354+0000 INFO  [o.n.k.i.DiagnosticsManager]:         13:
+2014-12-26 12:40:34.354+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2014-12-22T14:23:15+0100 - 16,00 kB
+2014-12-26 12:40:34.354+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2014-12-22T14:23:15+0100 - 20,00 B
+2014-12-26 12:40:34.355+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_2: 2014-12-22T14:23:15+0100 - 46,00 B
+2014-12-26 12:40:34.355+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2014-12-26T13:40:34+0100 - 0,00 B
+2014-12-26 12:40:34.355+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2014-12-26T13:40:34+0100 - 16,06 kB
+2014-12-26 12:40:34.355+0000 INFO  [o.n.k.i.DiagnosticsManager]:         15:
+2014-12-26 12:40:34.355+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.fdt: 2014-12-22T14:23:15+0100 - 12,00 B
+2014-12-26 12:40:34.356+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.fdx: 2014-12-22T14:23:15+0100 - 12,00 B
+2014-12-26 12:40:34.356+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.fnm: 2014-12-22T14:23:15+0100 - 18,00 B
+2014-12-26 12:40:34.356+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.frq: 2014-12-22T14:23:15+0100 - 2,00 B
+2014-12-26 12:40:34.356+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.nrm: 2014-12-22T14:23:15+0100 - 4,00 B
+2014-12-26 12:40:34.356+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.tii: 2014-12-22T14:23:15+0100 - 35,00 B
+2014-12-26 12:40:34.356+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.tis: 2014-12-22T14:23:15+0100 - 75,00 B
+2014-12-26 12:40:34.357+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2014-12-22T14:23:15+0100 - 16,00 kB
+2014-12-26 12:40:34.357+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2014-12-22T14:23:15+0100 - 20,00 B
+2014-12-26 12:40:34.357+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_2: 2014-12-22T14:23:15+0100 - 256,00 B
+2014-12-26 12:40:34.357+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2014-12-26T13:40:34+0100 - 0,00 B
+2014-12-26 12:40:34.357+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2014-12-26T13:40:34+0100 - 16,42 kB
+2014-12-26 12:40:34.357+0000 INFO  [o.n.k.i.DiagnosticsManager]:         17:
+2014-12-26 12:40:34.358+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2014-12-22T14:23:15+0100 - 16,00 kB
+2014-12-26 12:40:34.358+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2014-12-22T14:23:15+0100 - 20,00 B
+2014-12-26 12:40:34.358+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_1: 2014-12-22T14:23:15+0100 - 46,00 B
+2014-12-26 12:40:34.358+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2014-12-26T13:40:34+0100 - 0,00 B
+2014-12-26 12:40:34.359+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2014-12-26T13:40:34+0100 - 16,06 kB
+2014-12-26 12:40:34.359+0000 INFO  [o.n.k.i.DiagnosticsManager]:         18:
+2014-12-26 12:40:34.359+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.fdt: 2014-12-22T14:23:15+0100 - 12,00 B
+2014-12-26 12:40:34.359+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.fdx: 2014-12-22T14:23:15+0100 - 12,00 B
+2014-12-26 12:40:34.359+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.fnm: 2014-12-22T14:23:15+0100 - 18,00 B
+2014-12-26 12:40:34.359+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.frq: 2014-12-22T14:23:15+0100 - 2,00 B
+2014-12-26 12:40:34.360+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.nrm: 2014-12-22T14:23:15+0100 - 4,00 B
+2014-12-26 12:40:34.360+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.tii: 2014-12-22T14:23:15+0100 - 35,00 B
+2014-12-26 12:40:34.360+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.tis: 2014-12-22T14:23:15+0100 - 67,00 B
+2014-12-26 12:40:34.360+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2014-12-22T14:23:15+0100 - 16,00 kB
+2014-12-26 12:40:34.360+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2014-12-22T14:23:15+0100 - 20,00 B
+2014-12-26 12:40:34.361+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_2: 2014-12-22T14:23:15+0100 - 256,00 B
+2014-12-26 12:40:34.361+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2014-12-26T13:40:34+0100 - 0,00 B
+2014-12-26 12:40:34.361+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2014-12-26T13:40:34+0100 - 16,42 kB
+2014-12-26 12:40:34.361+0000 INFO  [o.n.k.i.DiagnosticsManager]:         19:
+2014-12-26 12:40:34.361+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2014-12-22T14:23:15+0100 - 16,00 kB
+2014-12-26 12:40:34.362+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2014-12-22T14:23:15+0100 - 20,00 B
+2014-12-26 12:40:34.362+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_1: 2014-12-22T14:23:15+0100 - 46,00 B
+2014-12-26 12:40:34.362+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2014-12-26T13:40:34+0100 - 0,00 B
+2014-12-26 12:40:34.362+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2014-12-26T13:40:34+0100 - 16,06 kB
+2014-12-26 12:40:34.362+0000 INFO  [o.n.k.i.DiagnosticsManager]:         20:
+2014-12-26 12:40:34.362+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2014-12-22T14:23:15+0100 - 16,00 kB
+2014-12-26 12:40:34.363+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2014-12-22T14:23:15+0100 - 20,00 B
+2014-12-26 12:40:34.363+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_1: 2014-12-22T14:23:15+0100 - 46,00 B
+2014-12-26 12:40:34.363+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2014-12-26T13:40:34+0100 - 0,00 B
+2014-12-26 12:40:34.363+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2014-12-26T13:40:34+0100 - 16,06 kB
+2014-12-26 12:40:34.363+0000 INFO  [o.n.k.i.DiagnosticsManager]:         21:
+2014-12-26 12:40:34.364+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2014-12-22T14:23:15+0100 - 16,00 kB
+2014-12-26 12:40:34.364+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2014-12-22T14:23:15+0100 - 20,00 B
+2014-12-26 12:40:34.364+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_1: 2014-12-22T14:23:15+0100 - 46,00 B
+2014-12-26 12:40:34.364+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2014-12-26T13:40:34+0100 - 0,00 B
+2014-12-26 12:40:34.364+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2014-12-26T13:40:34+0100 - 16,06 kB
+2014-12-26 12:40:34.364+0000 INFO  [o.n.k.i.DiagnosticsManager]:         22:
+2014-12-26 12:40:34.365+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.fdt: 2014-12-22T14:23:15+0100 - 12,00 B
+2014-12-26 12:40:34.365+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.fdx: 2014-12-22T14:23:15+0100 - 12,00 B
+2014-12-26 12:40:34.365+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.fnm: 2014-12-22T14:23:15+0100 - 18,00 B
+2014-12-26 12:40:34.365+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.frq: 2014-12-22T14:23:15+0100 - 2,00 B
+2014-12-26 12:40:34.366+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.nrm: 2014-12-22T14:23:15+0100 - 4,00 B
+2014-12-26 12:40:34.366+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.tii: 2014-12-22T14:23:15+0100 - 35,00 B
+2014-12-26 12:40:34.366+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.tis: 2014-12-22T14:23:15+0100 - 76,00 B
+2014-12-26 12:40:34.366+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2014-12-22T14:23:15+0100 - 16,00 kB
+2014-12-26 12:40:34.366+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2014-12-22T14:23:15+0100 - 20,00 B
+2014-12-26 12:40:34.367+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_2: 2014-12-22T14:23:15+0100 - 256,00 B
+2014-12-26 12:40:34.367+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2014-12-26T13:40:34+0100 - 0,00 B
+2014-12-26 12:40:34.367+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2014-12-26T13:40:34+0100 - 16,42 kB
+2014-12-26 12:40:34.367+0000 INFO  [o.n.k.i.DiagnosticsManager]:         23:
+2014-12-26 12:40:34.367+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _0.fdt: 2014-12-22T14:23:15+0100 - 12,00 B
+2014-12-26 12:40:34.368+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _0.fdx: 2014-12-22T14:23:15+0100 - 12,00 B
+2014-12-26 12:40:34.368+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _0.fnm: 2014-12-22T14:23:15+0100 - 18,00 B
+2014-12-26 12:40:34.368+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _0.frq: 2014-12-22T14:23:15+0100 - 2,00 B
+2014-12-26 12:40:34.368+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _0.nrm: 2014-12-22T14:23:15+0100 - 4,00 B
+2014-12-26 12:40:34.368+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _0.tii: 2014-12-22T14:23:15+0100 - 35,00 B
+2014-12-26 12:40:34.369+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _0.tis: 2014-12-22T14:23:15+0100 - 104,00 B
+2014-12-26 12:40:34.369+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2014-12-22T14:23:15+0100 - 16,00 kB
+2014-12-26 12:40:34.369+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2014-12-22T14:23:15+0100 - 20,00 B
+2014-12-26 12:40:34.369+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_2: 2014-12-22T14:23:15+0100 - 256,00 B
+2014-12-26 12:40:34.369+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2014-12-26T13:40:34+0100 - 0,00 B
+2014-12-26 12:40:34.370+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2014-12-26T13:40:34+0100 - 16,45 kB
+2014-12-26 12:40:34.370+0000 INFO  [o.n.k.i.DiagnosticsManager]:         24:
+2014-12-26 12:40:34.370+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2014-12-22T14:23:15+0100 - 16,00 kB
+2014-12-26 12:40:34.370+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2014-12-22T14:23:15+0100 - 20,00 B
+2014-12-26 12:40:34.370+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_1: 2014-12-22T14:23:15+0100 - 46,00 B
+2014-12-26 12:40:34.370+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2014-12-26T13:40:34+0100 - 0,00 B
+2014-12-26 12:40:34.371+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2014-12-26T13:40:34+0100 - 16,06 kB
+2014-12-26 12:40:34.371+0000 INFO  [o.n.k.i.DiagnosticsManager]:         3:
+2014-12-26 12:40:34.371+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _4t.fdt: 2014-12-22T14:27:51+0100 - 214,00 B
+2014-12-26 12:40:34.371+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _4t.fdx: 2014-12-22T14:27:51+0100 - 244,00 B
+2014-12-26 12:40:34.371+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _4t.fnm: 2014-12-22T14:27:51+0100 - 18,00 B
+2014-12-26 12:40:34.372+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _4t.frq: 2014-12-22T14:27:51+0100 - 60,00 B
+2014-12-26 12:40:34.372+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _4t.nrm: 2014-12-22T14:27:51+0100 - 4,00 B
+2014-12-26 12:40:34.372+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _4t.tii: 2014-12-22T14:27:51+0100 - 143,00 B
+2014-12-26 12:40:34.372+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _4t.tis: 2014-12-22T14:27:51+0100 - 1,45 kB
+2014-12-26 12:40:34.372+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2014-12-22T14:23:15+0100 - 16,00 kB
+2014-12-26 12:40:34.373+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2014-12-22T14:27:51+0100 - 20,00 B
+2014-12-26 12:40:34.373+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_5: 2014-12-22T14:27:51+0100 - 259,00 B
+2014-12-26 12:40:34.373+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2014-12-26T13:40:33+0100 - 0,00 B
+2014-12-26 12:40:34.373+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2014-12-26T13:40:33+0100 - 18,38 kB
+2014-12-26 12:40:34.373+0000 INFO  [o.n.k.i.DiagnosticsManager]:         36:
+2014-12-26 12:40:34.373+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _a.fdt: 2014-12-22T14:23:15+0100 - 11,00 B
+2014-12-26 12:40:34.374+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _a.fdx: 2014-12-22T14:23:15+0100 - 12,00 B
+2014-12-26 12:40:34.374+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _a.fnm: 2014-12-22T14:23:15+0100 - 18,00 B
+2014-12-26 12:40:34.374+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _a.frq: 2014-12-22T14:23:15+0100 - 2,00 B
+2014-12-26 12:40:34.374+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _a.nrm: 2014-12-22T14:23:15+0100 - 4,00 B
+2014-12-26 12:40:34.374+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _a.tii: 2014-12-22T14:23:15+0100 - 35,00 B
+2014-12-26 12:40:34.374+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _a.tis: 2014-12-22T14:23:15+0100 - 75,00 B
+2014-12-26 12:40:34.375+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2014-12-22T14:23:15+0100 - 16,00 kB
+2014-12-26 12:40:34.375+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2014-12-22T14:23:15+0100 - 20,00 B
+2014-12-26 12:40:34.375+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_2: 2014-12-22T14:23:15+0100 - 257,00 B
+2014-12-26 12:40:34.375+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2014-12-26T13:40:34+0100 - 0,00 B
+2014-12-26 12:40:34.375+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2014-12-26T13:40:34+0100 - 16,42 kB
+2014-12-26 12:40:34.375+0000 INFO  [o.n.k.i.DiagnosticsManager]:         38:
+2014-12-26 12:40:34.376+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _h.fdt: 2014-12-22T14:23:15+0100 - 11,00 B
+2014-12-26 12:40:34.376+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _h.fdx: 2014-12-22T14:23:15+0100 - 12,00 B
+2014-12-26 12:40:34.376+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _h.fnm: 2014-12-22T14:23:15+0100 - 18,00 B
+2014-12-26 12:40:34.376+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _h.frq: 2014-12-22T14:23:15+0100 - 2,00 B
+2014-12-26 12:40:34.376+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _h.nrm: 2014-12-22T14:23:15+0100 - 4,00 B
+2014-12-26 12:40:34.377+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _h.tii: 2014-12-22T14:23:15+0100 - 35,00 B
+2014-12-26 12:40:34.377+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _h.tis: 2014-12-22T14:23:15+0100 - 75,00 B
+2014-12-26 12:40:34.377+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _i.fdt: 2014-12-22T14:23:15+0100 - 11,00 B
+2014-12-26 12:40:34.377+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _i.fdx: 2014-12-22T14:23:15+0100 - 12,00 B
+2014-12-26 12:40:34.377+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _i.fnm: 2014-12-22T14:23:15+0100 - 18,00 B
+2014-12-26 12:40:34.378+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _i.frq: 2014-12-22T14:23:15+0100 - 2,00 B
+2014-12-26 12:40:34.378+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _i.nrm: 2014-12-22T14:23:15+0100 - 4,00 B
+2014-12-26 12:40:34.378+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _i.tii: 2014-12-22T14:23:15+0100 - 35,00 B
+2014-12-26 12:40:34.378+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _i.tis: 2014-12-22T14:23:15+0100 - 75,00 B
+2014-12-26 12:40:34.378+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2014-12-22T14:23:15+0100 - 16,00 kB
+2014-12-26 12:40:34.379+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2014-12-22T14:23:15+0100 - 20,00 B
+2014-12-26 12:40:34.379+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_2: 2014-12-22T14:23:15+0100 - 468,00 B
+2014-12-26 12:40:34.379+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2014-12-26T13:40:34+0100 - 0,00 B
+2014-12-26 12:40:34.379+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2014-12-26T13:40:34+0100 - 16,78 kB
+2014-12-26 12:40:34.379+0000 INFO  [o.n.k.i.DiagnosticsManager]:         40:
+2014-12-26 12:40:34.380+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _3.fdt: 2014-12-22T14:23:15+0100 - 12,00 B
+2014-12-26 12:40:34.380+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _3.fdx: 2014-12-22T14:23:15+0100 - 12,00 B
+2014-12-26 12:40:34.380+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _3.fnm: 2014-12-22T14:23:15+0100 - 18,00 B
+2014-12-26 12:40:34.380+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _3.frq: 2014-12-22T14:23:15+0100 - 2,00 B
+2014-12-26 12:40:34.380+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _3.nrm: 2014-12-22T14:23:15+0100 - 4,00 B
+2014-12-26 12:40:34.381+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _3.tii: 2014-12-22T14:23:15+0100 - 35,00 B
+2014-12-26 12:40:34.381+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _3.tis: 2014-12-22T14:23:15+0100 - 76,00 B
+2014-12-26 12:40:34.381+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2014-12-22T14:23:15+0100 - 16,00 kB
+2014-12-26 12:40:34.381+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2014-12-22T14:23:15+0100 - 20,00 B
+2014-12-26 12:40:34.381+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_3: 2014-12-22T14:23:15+0100 - 256,00 B
+2014-12-26 12:40:34.381+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2014-12-26T13:40:34+0100 - 0,00 B
+2014-12-26 12:40:34.382+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2014-12-26T13:40:34+0100 - 16,42 kB
+2014-12-26 12:40:34.382+0000 INFO  [o.n.k.i.DiagnosticsManager]:         5:
+2014-12-26 12:40:34.382+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _12z.fdt: 2014-12-22T14:23:15+0100 - 9,22 kB
+2014-12-26 12:40:34.382+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _12z.fdx: 2014-12-22T14:23:15+0100 - 9,57 kB
+2014-12-26 12:40:34.382+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _12z.fnm: 2014-12-22T14:23:15+0100 - 18,00 B
+2014-12-26 12:40:34.383+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _12z.frq: 2014-12-22T14:23:15+0100 - 4,54 kB
+2014-12-26 12:40:34.383+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _12z.tii: 2014-12-22T14:23:15+0100 - 4,47 kB
+2014-12-26 12:40:34.383+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _12z.tis: 2014-12-22T14:23:15+0100 - 56,33 kB
+2014-12-26 12:40:34.383+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _12z_1.del: 2014-12-22T14:27:51+0100 - 184,00 B
+2014-12-26 12:40:34.383+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _130.cfs: 2014-12-22T14:23:15+0100 - 256,00 B
+2014-12-26 12:40:34.384+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _131.cfs: 2014-12-22T14:23:15+0100 - 256,00 B
+2014-12-26 12:40:34.384+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _132.cfs: 2014-12-22T14:23:15+0100 - 256,00 B
+2014-12-26 12:40:34.384+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _133.cfs: 2014-12-22T14:23:15+0100 - 256,00 B
+2014-12-26 12:40:34.384+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _134.cfs: 2014-12-22T14:23:15+0100 - 255,00 B
+2014-12-26 12:40:34.384+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _135.cfs: 2014-12-22T14:27:51+0100 - 2,17 kB
+2014-12-26 12:40:34.385+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2014-12-22T14:23:15+0100 - 16,00 kB
+2014-12-26 12:40:34.385+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2014-12-22T14:27:51+0100 - 20,00 B
+2014-12-26 12:40:34.385+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_5: 2014-12-22T14:27:51+0100 - 1,54 kB
+2014-12-26 12:40:34.385+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2014-12-26T13:40:33+0100 - 0,00 B
+2014-12-26 12:40:34.385+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2014-12-26T13:40:33+0100 - 105,31 kB
+2014-12-26 12:40:34.385+0000 INFO  [o.n.k.i.DiagnosticsManager]:         7:
+2014-12-26 12:40:34.386+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _68j.fdt: 2014-12-24T17:13:05+0100 - 63,44 kB
+2014-12-26 12:40:34.386+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _68j.fdx: 2014-12-24T17:13:05+0100 - 56,65 kB
+2014-12-26 12:40:34.386+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _68j.fnm: 2014-12-24T17:13:05+0100 - 18,00 B
+2014-12-26 12:40:34.386+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _68j.frq: 2014-12-24T17:13:05+0100 - 28,07 kB
+2014-12-26 12:40:34.386+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _68j.tii: 2014-12-24T17:13:05+0100 - 26,17 kB
+2014-12-26 12:40:34.386+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _68j.tis: 2014-12-24T17:13:05+0100 - 329,73 kB
+2014-12-26 12:40:34.387+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _68j_1.del: 2014-12-24T22:28:29+0100 - 43,00 B
+2014-12-26 12:40:34.387+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _68k.cfs: 2014-12-24T17:13:08+0100 - 1,58 kB
+2014-12-26 12:40:34.387+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _68l.cfs: 2014-12-24T17:13:10+0100 - 1,58 kB
+2014-12-26 12:40:34.387+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _68m.cfs: 2014-12-24T17:13:14+0100 - 1,52 kB
+2014-12-26 12:40:34.387+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _68n.cfs: 2014-12-24T17:13:17+0100 - 1,75 kB
+2014-12-26 12:40:34.388+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2014-12-22T14:23:15+0100 - 16,00 kB
+2014-12-26 12:40:34.388+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2014-12-24T22:28:29+0100 - 20,00 B
+2014-12-26 12:40:34.388+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_h: 2014-12-24T22:28:29+0100 - 1,13 kB
+2014-12-26 12:40:34.388+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2014-12-26T13:40:34+0100 - 0,00 B
+2014-12-26 12:40:34.388+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2014-12-26T13:40:34+0100 - 527,71 kB
+2014-12-26 12:40:34.388+0000 INFO  [o.n.k.i.DiagnosticsManager]:         9:
+2014-12-26 12:40:34.389+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.fdt: 2014-12-22T14:23:15+0100 - 12,00 B
+2014-12-26 12:40:34.389+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.fdx: 2014-12-22T14:23:15+0100 - 12,00 B
+2014-12-26 12:40:34.389+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.fnm: 2014-12-22T14:23:15+0100 - 18,00 B
+2014-12-26 12:40:34.389+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.frq: 2014-12-22T14:23:15+0100 - 2,00 B
+2014-12-26 12:40:34.389+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.nrm: 2014-12-22T14:23:15+0100 - 4,00 B
+2014-12-26 12:40:34.389+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.tii: 2014-12-22T14:23:15+0100 - 35,00 B
+2014-12-26 12:40:34.390+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.tis: 2014-12-22T14:23:15+0100 - 76,00 B
+2014-12-26 12:40:34.390+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2014-12-22T14:23:15+0100 - 16,00 kB
+2014-12-26 12:40:34.390+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2014-12-22T14:23:15+0100 - 20,00 B
+2014-12-26 12:40:34.390+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_4: 2014-12-22T14:23:15+0100 - 256,00 B
+2014-12-26 12:40:34.390+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2014-12-26T13:40:34+0100 - 0,00 B
+2014-12-26 12:40:34.390+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2014-12-26T13:40:34+0100 - 16,42 kB
+2014-12-26 12:40:34.391+0000 INFO  [o.n.k.i.DiagnosticsManager]:       - Total: 2014-12-22T14:23:15+0100 - 997,35 kB
+2014-12-26 12:40:34.391+0000 INFO  [o.n.k.i.DiagnosticsManager]:     - Total: 2014-12-22T14:23:15+0100 - 1003,36 kB
+2014-12-26 12:40:34.391+0000 INFO  [o.n.k.i.DiagnosticsManager]:     label:
+2014-12-26 12:40:34.391+0000 INFO  [o.n.k.i.DiagnosticsManager]:       lucene:
+2014-12-26 12:40:34.391+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _94u.fdt: 2014-12-24T17:12:44+0100 - 3,82 kB
+2014-12-26 12:40:34.391+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _94u.fdx: 2014-12-24T17:12:44+0100 - 2,36 kB
+2014-12-26 12:40:34.392+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _94u.fnm: 2014-12-24T17:12:44+0100 - 58,00 B
+2014-12-26 12:40:34.392+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _94u.frq: 2014-12-24T17:12:44+0100 - 842,00 B
+2014-12-26 12:40:34.392+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _94u.tii: 2014-12-24T17:12:44+0100 - 236,00 B
+2014-12-26 12:40:34.392+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _94u.tis: 2014-12-24T17:12:44+0100 - 2,18 kB
+2014-12-26 12:40:34.392+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _94u_1.del: 2014-12-24T22:28:29+0100 - 68,00 B
+2014-12-26 12:40:34.392+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _94v.cfs: 2014-12-24T17:12:47+0100 - 292,00 B
+2014-12-26 12:40:34.393+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _94v_1.del: 2014-12-24T22:28:29+0100 - 31,00 B
+2014-12-26 12:40:34.393+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _94w.cfs: 2014-12-24T17:12:50+0100 - 334,00 B
+2014-12-26 12:40:34.393+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _94w_1.del: 2014-12-24T22:28:29+0100 - 31,00 B
+2014-12-26 12:40:34.393+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _94x.cfs: 2014-12-24T17:13:05+0100 - 334,00 B
+2014-12-26 12:40:34.393+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _94x_1.del: 2014-12-24T22:28:29+0100 - 31,00 B
+2014-12-26 12:40:34.394+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _94z.cfs: 2014-12-24T17:13:10+0100 - 292,00 B
+2014-12-26 12:40:34.394+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _951.cfs: 2014-12-24T17:13:17+0100 - 292,00 B
+2014-12-26 12:40:34.394+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _951_1.del: 2014-12-24T22:28:29+0100 - 31,00 B
+2014-12-26 12:40:34.394+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _952.cfs: 2014-12-24T18:32:09+0100 - 309,00 B
+2014-12-26 12:40:34.394+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _954.cfs: 2014-12-24T18:35:14+0100 - 263,00 B
+2014-12-26 12:40:34.395+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _955.cfs: 2014-12-25T17:00:04+0100 - 263,00 B
+2014-12-26 12:40:34.395+0000 INFO  [o.n.k.i.DiagnosticsManager]:         segments.gen: 2014-12-25T23:39:00+0100 - 20,00 B
+2014-12-26 12:40:34.395+0000 INFO  [o.n.k.i.DiagnosticsManager]:         segments_n: 2014-12-25T23:39:00+0100 - 1,95 kB
+2014-12-26 12:40:34.395+0000 INFO  [o.n.k.i.DiagnosticsManager]:         write.lock: 2014-12-26T13:40:33+0100 - 0,00 B
+2014-12-26 12:40:34.395+0000 INFO  [o.n.k.i.DiagnosticsManager]:       - Total: 2014-12-26T13:40:33+0100 - 13,94 kB
+2014-12-26 12:40:34.396+0000 INFO  [o.n.k.i.DiagnosticsManager]:     - Total: 2014-12-22T14:23:15+0100 - 13,94 kB
+2014-12-26 12:40:34.396+0000 INFO  [o.n.k.i.DiagnosticsManager]:   - Total: 2014-12-22T14:23:15+0100 - 1023,30 kB
+2014-12-26 12:40:34.396+0000 INFO  [o.n.k.i.DiagnosticsManager]:   store_lock: 2014-12-22T14:23:15+0100 - 0,00 B
+2014-12-26 12:40:34.396+0000 INFO  [o.n.k.i.DiagnosticsManager]:   tm_tx_log.1: 2014-12-25T21:54:58+0100 - 32,59 kB
+2014-12-26 12:40:34.396+0000 INFO  [o.n.k.i.DiagnosticsManager]:   tm_tx_log.2: 2014-12-26T13:40:34+0100 - 0,00 B
+2014-12-26 12:40:34.397+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
+2014-12-26 12:40:34.425+0000 INFO  [o.n.k.EmbeddedGraphDatabase]: GC Monitor started. 
+2014-12-26 12:40:34.442+0000 INFO  [o.n.k.EmbeddedGraphDatabase]: Database is now ready
+2014-12-26 12:40:34.442+0000 INFO  [o.n.s.d.CommunityDatabase]: Successfully started database
+2014-12-26 12:40:34.442+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- SERVER STARTED START ---
+2014-12-26 12:40:34.745+0000 INFO  [o.n.s.CommunityNeoServer]: Starting HTTP on port :7474 with 40 threads available
+2014-12-26 12:40:34.952+0000 INFO  [o.n.s.CommunityNeoServer]: Enabling HTTPS on port :7473
+2014-12-26 12:40:35.095+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for org.neo4j.server.configuration.Configurator START ---
+2014-12-26 12:40:35.096+0000 INFO  [o.n.k.i.DiagnosticsManager]: Server configuration:
+2014-12-26 12:40:35.097+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.database.location = data/graph.db
+2014-12-26 12:40:35.097+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webserver.port = 7474
+2014-12-26 12:40:35.097+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webserver.https.enabled = true
+2014-12-26 12:40:35.097+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webserver.https.port = 7473
+2014-12-26 12:40:35.097+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webserver.https.cert.location = conf/ssl/snakeoil.cert
+2014-12-26 12:40:35.097+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webserver.https.key.location = conf/ssl/snakeoil.key
+2014-12-26 12:40:35.097+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webserver.https.keystore.location = data/keystore
+2014-12-26 12:40:35.097+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webadmin.rrdb.location = data/rrd
+2014-12-26 12:40:35.097+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.db.tuning.properties = conf/neo4j.properties
+2014-12-26 12:40:35.097+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.manage.console_engines = shell
+2014-12-26 12:40:35.097+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.http.log.enabled = false
+2014-12-26 12:40:35.097+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.http.log.config = conf/neo4j-http-logging.xml
+2014-12-26 12:40:35.097+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webadmin.management.uri = /db/manage/
+2014-12-26 12:40:35.097+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webadmin.data.uri = /db/data/
+2014-12-26 12:40:35.097+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for org.neo4j.server.configuration.Configurator END ---
+2014-12-26 12:40:35.102+0000 INFO  [o.n.s.m.DiscoveryModule]: Mounted discovery module at [/]
+2014-12-26 12:40:35.110+0000 INFO  [o.n.s.m.RESTApiModule]: Mounted REST API at [/db/data/]
+2014-12-26 12:40:35.113+0000 INFO  [o.n.s.m.ManagementApiModule]: Mounted management API at [/db/manage/]
+2014-12-26 12:40:35.113+0000 INFO  [o.n.s.m.WebAdminModule]: Mounted webadmin at [/webadmin]
+2014-12-26 12:40:35.113+0000 INFO  [o.n.s.m.Neo4jBrowserModule]: Mounted Neo4j Browser at [/browser]
+2014-12-26 12:40:35.189+0000 INFO  [o.n.s.w.Jetty9WebServer]: Mounting static content at [/webadmin] from [webadmin-html]
+2014-12-26 12:40:35.252+0000 INFO  [o.n.s.w.Jetty9WebServer]: Mounting static content at [/browser] from [browser]
+2014-12-26 12:40:36.639+0000 INFO  [o.n.s.CommunityNeoServer]: Remote interface ready and available at [http://localhost:7474/]
+2014-12-26 12:40:36.639+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- SERVER STARTED END ---
+2014-12-26 13:22:30.533+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 158ms [total block time: 0.158s]
+2014-12-26 19:31:07.347+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population started: [:NodeBase(uuid) [provider: {key=lucene, version=1.0}]]
+2014-12-26 19:31:07.622+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population completed. Index is now online: [:NodeBase(uuid) [provider: {key=lucene, version=1.0}]]
+2014-12-27 00:01:11.147+0000 INFO  [o.n.s.CommunityBootstrapper]: Neo4j Server shutdown initiated by request
+2014-12-27 00:01:11.166+0000 INFO  [o.n.s.CommunityNeoServer]: Successfully shutdown Neo4j Server.
+2014-12-27 00:01:11.166+0000 INFO  [o.n.k.EmbeddedGraphDatabase]: Shutdown started
+2014-12-27 00:01:11.166+0000 INFO  [o.n.k.EmbeddedGraphDatabase]: Database is now unavailable
+2014-12-27 00:01:11.167+0000 INFO  [o.n.k.EmbeddedGraphDatabase]: GC Monitor stopped. 
+2014-12-27 00:01:11.171+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: Closed log data/graph.db/index/lucene.log
+2014-12-27 00:01:11.172+0000 INFO  [o.n.k.i.t.TxManager]: TM shutting down
+2014-12-27 00:01:11.186+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: Closed log data/graph.db/nioneo_logical.log
+2014-12-27 00:01:11.196+0000 INFO  [o.n.k.i.n.s.StoreFactory]: data/graph.db/neostore.relationshiptypestore.db.names hit=0 miss=50 switches=0 ooe=0
+2014-12-27 00:01:11.197+0000 INFO  [o.n.k.i.n.s.StoreFactory]: data/graph.db/neostore.relationshiptypestore.db hit=0 miss=25 switches=0 ooe=0
+2014-12-27 00:01:11.197+0000 INFO  [o.n.k.i.n.s.StoreFactory]: data/graph.db/neostore.labeltokenstore.db.names hit=0 miss=27 switches=0 ooe=0
+2014-12-27 00:01:11.198+0000 INFO  [o.n.k.i.n.s.StoreFactory]: data/graph.db/neostore.labeltokenstore.db hit=0 miss=14 switches=0 ooe=0
+2014-12-27 00:01:11.199+0000 INFO  [o.n.k.i.n.s.StoreFactory]: data/graph.db/neostore.propertystore.db.strings hit=2 miss=16 switches=0 ooe=0
+2014-12-27 00:01:11.202+0000 INFO  [o.n.k.i.n.s.StoreFactory]: data/graph.db/neostore.propertystore.db.index.keys hit=0 miss=128 switches=0 ooe=0
+2014-12-27 00:01:11.202+0000 INFO  [o.n.k.i.n.s.StoreFactory]: data/graph.db/neostore.propertystore.db.index hit=0 miss=64 switches=0 ooe=0
+2014-12-27 00:01:11.203+0000 INFO  [o.n.k.i.n.s.StoreFactory]: data/graph.db/neostore.propertystore.db.arrays hit=0 miss=0 switches=0 ooe=0
+2014-12-27 00:01:11.203+0000 INFO  [o.n.k.i.n.s.StoreFactory]: data/graph.db/neostore.propertystore.db hit=7599 miss=50000 switches=0 ooe=0
+2014-12-27 00:01:11.205+0000 INFO  [o.n.k.i.n.s.StoreFactory]: data/graph.db/neostore.relationshipstore.db hit=839 miss=206 switches=0 ooe=0
+2014-12-27 00:01:11.211+0000 INFO  [o.n.k.i.n.s.StoreFactory]: data/graph.db/neostore.nodestore.db.labels hit=0 miss=0 switches=0 ooe=0
+2014-12-27 00:01:11.212+0000 INFO  [o.n.k.i.n.s.StoreFactory]: data/graph.db/neostore.nodestore.db hit=24460 miss=19192 switches=0 ooe=0
+2014-12-27 00:01:11.219+0000 INFO  [o.n.k.i.n.s.StoreFactory]: data/graph.db/neostore.schemastore.db hit=0 miss=229 switches=0 ooe=0
+2014-12-27 00:01:11.219+0000 INFO  [o.n.k.i.n.s.StoreFactory]: data/graph.db/neostore hit=0 miss=21 switches=0 ooe=0
+2014-12-27 00:01:11.220+0000 INFO  [o.n.k.i.n.x.NeoStoreXaDataSource]: NeoStore closed
+2014-12-27 00:01:11.220+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STOPPING diagnostics START ---
+2014-12-27 00:01:11.220+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STOPPING diagnostics END ---
+2014-12-27 01:14:10.781+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- INITIALIZED diagnostics START ---
+2014-12-27 01:14:10.784+0000 INFO  [o.n.k.i.DiagnosticsManager]: Neo4j Kernel properties:
+2014-12-27 01:14:10.795+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.propertystore.db.mapped_memory=820M
+2014-12-27 01:14:10.795+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.nodestore.db.mapped_memory=227M
+2014-12-27 01:14:10.796+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.propertystore.db.strings.mapped_memory=697M
+2014-12-27 01:14:10.796+0000 INFO  [o.n.k.i.DiagnosticsManager]: neo4j.ext.udc.source=server
+2014-12-27 01:14:10.796+0000 INFO  [o.n.k.i.DiagnosticsManager]: store_dir=data/graph.db
+2014-12-27 01:14:10.796+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.relationshipstore.db.mapped_memory=1005M
+2014-12-27 01:14:10.796+0000 INFO  [o.n.k.i.DiagnosticsManager]: keep_logical_logs=true
+2014-12-27 01:14:10.796+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.propertystore.db.arrays.mapped_memory=790M
+2014-12-27 01:14:10.796+0000 INFO  [o.n.k.i.DiagnosticsManager]: remote_shell_enabled=true
+2014-12-27 01:14:10.796+0000 INFO  [o.n.k.i.DiagnosticsManager]: ephemeral=false
+2014-12-27 01:14:10.797+0000 INFO  [o.n.k.i.DiagnosticsManager]: Diagnostics providers:
+2014-12-27 01:14:10.797+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.kernel.configuration.Config
+2014-12-27 01:14:10.797+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.kernel.info.DiagnosticsManager
+2014-12-27 01:14:10.797+0000 INFO  [o.n.k.i.DiagnosticsManager]: SYSTEM_MEMORY
+2014-12-27 01:14:10.797+0000 INFO  [o.n.k.i.DiagnosticsManager]: JAVA_MEMORY
+2014-12-27 01:14:10.797+0000 INFO  [o.n.k.i.DiagnosticsManager]: OPERATING_SYSTEM
+2014-12-27 01:14:10.797+0000 INFO  [o.n.k.i.DiagnosticsManager]: JAVA_VIRTUAL_MACHINE
+2014-12-27 01:14:10.797+0000 INFO  [o.n.k.i.DiagnosticsManager]: CLASSPATH
+2014-12-27 01:14:10.797+0000 INFO  [o.n.k.i.DiagnosticsManager]: LIBRARY_PATH
+2014-12-27 01:14:10.797+0000 INFO  [o.n.k.i.DiagnosticsManager]: SYSTEM_PROPERTIES
+2014-12-27 01:14:10.797+0000 INFO  [o.n.k.i.DiagnosticsManager]: NETWORK
+2014-12-27 01:14:10.798+0000 INFO  [o.n.k.i.DiagnosticsManager]: System memory information:
+2014-12-27 01:14:10.803+0000 INFO  [o.n.k.i.DiagnosticsManager]: Total Physical memory: 8,00 GB
+2014-12-27 01:14:10.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Free Physical memory: 4,00 GB
+2014-12-27 01:14:10.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Committed virtual memory: 2,90 GB
+2014-12-27 01:14:10.805+0000 INFO  [o.n.k.i.DiagnosticsManager]: Total swap space: 0,00 B
+2014-12-27 01:14:10.805+0000 INFO  [o.n.k.i.DiagnosticsManager]: Free swap space: 0,00 B
+2014-12-27 01:14:10.805+0000 INFO  [o.n.k.i.DiagnosticsManager]: JVM memory information:
+2014-12-27 01:14:10.806+0000 INFO  [o.n.k.i.DiagnosticsManager]: Free  memory: 12,50 MB
+2014-12-27 01:14:10.806+0000 INFO  [o.n.k.i.DiagnosticsManager]: Total memory: 19,19 MB
+2014-12-27 01:14:10.806+0000 INFO  [o.n.k.i.DiagnosticsManager]: Max   memory: 307,50 MB
+2014-12-27 01:14:10.811+0000 INFO  [o.n.k.i.DiagnosticsManager]: Garbage Collector: ParNew: [Par Eden Space, Par Survivor Space]
+2014-12-27 01:14:10.811+0000 INFO  [o.n.k.i.DiagnosticsManager]: Garbage Collector: ConcurrentMarkSweep: [Par Eden Space, Par Survivor Space, CMS Old Gen, CMS Perm Gen]
+2014-12-27 01:14:10.813+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: Code Cache (Non-heap memory): committed=2,44 MB, used=689,81 kB, max=48,00 MB, threshold=0,00 B
+2014-12-27 01:14:10.813+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: Par Eden Space (Heap memory): committed=5,31 MB, used=403,90 kB, max=84,31 MB, threshold=?
+2014-12-27 01:14:10.813+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: Par Survivor Space (Heap memory): committed=640,00 kB, used=583,48 kB, max=10,50 MB, threshold=?
+2014-12-27 01:14:10.814+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: CMS Old Gen (Heap memory): committed=13,25 MB, used=5,72 MB, max=212,69 MB, threshold=0,00 B
+2014-12-27 01:14:10.814+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: CMS Perm Gen (Non-heap memory): committed=20,75 MB, used=12,88 MB, max=82,00 MB, threshold=0,00 B
+2014-12-27 01:14:10.815+0000 INFO  [o.n.k.i.DiagnosticsManager]: Operating system information:
+2014-12-27 01:14:10.815+0000 INFO  [o.n.k.i.DiagnosticsManager]: Operating System: Mac OS X; version: 10.10.1; arch: x86_64; cpus: 4
+2014-12-27 01:14:10.816+0000 INFO  [o.n.k.i.DiagnosticsManager]: Max number of file descriptors: 10240
+2014-12-27 01:14:10.816+0000 INFO  [o.n.k.i.DiagnosticsManager]: Number of open file descriptors: 83
+2014-12-27 01:14:10.816+0000 INFO  [o.n.k.i.DiagnosticsManager]: Process id: 1429@PropositionJoe.local
+2014-12-27 01:14:10.817+0000 INFO  [o.n.k.i.DiagnosticsManager]: Byte order: LITTLE_ENDIAN
+2014-12-27 01:14:10.817+0000 INFO  [o.n.k.i.DiagnosticsManager]: Local timezone: Europe/Madrid
+2014-12-27 01:14:10.817+0000 INFO  [o.n.k.i.DiagnosticsManager]: JVM information:
+2014-12-27 01:14:10.817+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Name: Java HotSpot(TM) 64-Bit Server VM
+2014-12-27 01:14:10.817+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Vendor: Oracle Corporation
+2014-12-27 01:14:10.817+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Version: 23.6-b04
+2014-12-27 01:14:10.817+0000 INFO  [o.n.k.i.DiagnosticsManager]: JIT compiler: HotSpot 64-Bit Tiered Compilers
+2014-12-27 01:14:10.818+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Arguments: [-XX:+DisableExplicitGC, -Dorg.neo4j.server.properties=conf/neo4j-server.properties, -Djava.util.logging.config.file=conf/logging.properties, -Dlog4j.configuration=file:conf/log4j.properties, -XX:+UseConcMarkSweepGC, -XX:+CMSClassUnloadingEnabled, -Dneo4j.home=/Users/Sergio/GitHub/Ballin/api/db/neo4j/development, -Dneo4j.instance=/Users/Sergio/GitHub/Ballin/api/db/neo4j/development, -Dfile.encoding=UTF-8]
+2014-12-27 01:14:10.818+0000 INFO  [o.n.k.i.DiagnosticsManager]: Java classpath:
+2014-12-27 01:14:10.820+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/dns_sd.jar
+2014-12-27 01:14:10.820+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/jersey-server-1.9.jar
+2014-12-27 01:14:10.820+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/commons-io-1.4.jar
+2014-12-27 01:14:10.820+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/lib/neo4j-jmx-2.0.2.jar
+2014-12-27 01:14:10.820+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/janino-2.6.1.jar
+2014-12-27 01:14:10.820+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/MRJToolkit.jar
+2014-12-27 01:14:10.820+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_11.jdk/Contents/Home/jre/lib/rt.jar
+2014-12-27 01:14:10.820+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/vecmath.jar
+2014-12-27 01:14:10.820+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/libmlib_jai.jnilib
+2014-12-27 01:14:10.820+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/jetty-io-9.0.5.v20130815.jar
+2014-12-27 01:14:10.820+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/neo4j-browser-2.0.2.jar
+2014-12-27 01:14:10.820+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/lib/parboiled-scala_2.10-1.1.6.jar
+2014-12-27 01:14:10.820+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/jsr311-api-1.1.2.r612.jar
+2014-12-27 01:14:10.820+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/lib/parboiled-core-1.1.6.jar
+2014-12-27 01:14:10.821+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/jackson-mapper-asl-1.9.7.jar
+2014-12-27 01:14:10.821+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/lib/neo4j-graph-algo-2.0.2.jar
+2014-12-27 01:14:10.821+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/lib/server-api-2.0.2.jar
+2014-12-27 01:14:10.821+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/lib/neo4j-cypher-commons-2.0.2.jar
+2014-12-27 01:14:10.821+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/lib/neo4j-cypher-compiler-2.0-2.0.2.jar
+2014-12-27 01:14:10.821+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/libJ3D.jnilib
+2014-12-27 01:14:10.821+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/bcprov-jdk16-140.jar
+2014-12-27 01:14:10.821+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/conf/
+2014-12-27 01:14:10.821+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/mimepull-1.6.jar
+2014-12-27 01:14:10.821+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/mlibwrapper_jai.jar
+2014-12-27 01:14:10.821+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/commons-collections-3.2.1.jar
+2014-12-27 01:14:10.821+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/jersey-core-1.9.jar
+2014-12-27 01:14:10.821+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_11.jdk/Contents/Home/jre/classes
+2014-12-27 01:14:10.821+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/jackson-jaxrs-1.9.7.jar
+2014-12-27 01:14:10.821+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/jackson-core-asl-1.9.7.jar
+2014-12-27 01:14:10.821+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_11.jdk/Contents/Home/jre/lib/ext/localedata.jar
+2014-12-27 01:14:10.821+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/logback-core-1.0.9.jar
+2014-12-27 01:14:10.821+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/libJ3DAudio.jnilib
+2014-12-27 01:14:10.821+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/libAppleScriptEngine.jnilib
+2014-12-27 01:14:10.821+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/j3daudio.jar
+2014-12-27 01:14:10.821+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/libJ3DUtils.jnilib
+2014-12-27 01:14:10.821+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/commons-lang-2.4.jar
+2014-12-27 01:14:10.821+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/logback-classic-1.0.9.jar
+2014-12-27 01:14:10.821+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_11.jdk/Contents/Home/jre/lib/ext/dnsns.jar
+2014-12-27 01:14:10.821+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/j3dcore.jar
+2014-12-27 01:14:10.821+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_11.jdk/Contents/Home/jre/lib/resources.jar
+2014-12-27 01:14:10.822+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_11.jdk/Contents/Home/jre/lib/jsse.jar
+2014-12-27 01:14:10.822+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/usr/lib/java/libjdns_sd.jnilib
+2014-12-27 01:14:10.822+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/lib/neo4j-udc-2.0.2.jar
+2014-12-27 01:14:10.822+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_11.jdk/Contents/Home/jre/lib/ext/zipfs.jar
+2014-12-27 01:14:10.822+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_11.jdk/Contents/Home/jre/lib/jfr.jar
+2014-12-27 01:14:10.822+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/slf4j-api-1.6.2.jar
+2014-12-27 01:14:10.822+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/commons-digester-1.8.1.jar
+2014-12-27 01:14:10.822+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/lib/neo4j-graph-matching-2.0.2.jar
+2014-12-27 01:14:10.822+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/j3dutils.jar
+2014-12-27 01:14:10.822+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_11.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar
+2014-12-27 01:14:10.822+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/rhino-1.7R4.jar
+2014-12-27 01:14:10.822+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_11.jdk/Contents/Home/jre/lib/JObjC.jar
+2014-12-27 01:14:10.822+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/logback-access-1.0.9.jar
+2014-12-27 01:14:10.822+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/jai_core.jar
+2014-12-27 01:14:10.822+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/jersey-multipart-1.9.jar
+2014-12-27 01:14:10.822+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/lib/org.apache.servicemix.bundles.jline-0.9.94_1.jar
+2014-12-27 01:14:10.822+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/lib/neo4j-lucene-index-2.0.2.jar
+2014-12-27 01:14:10.822+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/lib/neo4j-cypher-compiler-1.9-2.0.2.jar
+2014-12-27 01:14:10.822+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/jetty-servlet-9.0.5.v20130815.jar
+2014-12-27 01:14:10.822+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/jai_codec.jar
+2014-12-27 01:14:10.822+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_11.jdk/Contents/Home/jre/lib/ext/sunec.jar
+2014-12-27 01:14:10.822+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/lib/lucene-core-3.6.2.jar
+2014-12-27 01:14:10.822+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_11.jdk/Contents/Home/jre/lib/charsets.jar
+2014-12-27 01:14:10.822+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/opencsv-2.0.jar
+2014-12-27 01:14:10.822+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/jetty-server-9.0.5.v20130815.jar
+2014-12-27 01:14:10.822+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/jcl-over-slf4j-1.6.1.jar
+2014-12-27 01:14:10.823+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/javax.servlet-3.0.0.v201112011016.jar
+2014-12-27 01:14:10.823+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/neo4j-server-2.0.2-static-web.jar
+2014-12-27 01:14:10.823+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/asm-3.1.jar
+2014-12-27 01:14:10.823+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/jetty-xml-9.0.5.v20130815.jar
+2014-12-27 01:14:10.823+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/lib/concurrentlinkedhashmap-lru-1.3.1.jar
+2014-12-27 01:14:10.823+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/rrd4j-2.0.7.jar
+2014-12-27 01:14:10.823+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_11.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar
+2014-12-27 01:14:10.823+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/jetty-http-9.0.5.v20130815.jar
+2014-12-27 01:14:10.823+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/lib/scala-library-2.10.3.jar
+2014-12-27 01:14:10.823+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/neo4j-server-2.0.2.jar
+2014-12-27 01:14:10.823+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_11.jdk/Contents/Home/jre/lib/sunrsasign.jar
+2014-12-27 01:14:10.823+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/commons-beanutils-core-1.8.0.jar
+2014-12-27 01:14:10.823+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/jetty-webapp-9.0.5.v20130815.jar
+2014-12-27 01:14:10.823+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/commons-compiler-2.6.1.jar
+2014-12-27 01:14:10.823+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/commons-configuration-1.6.jar
+2014-12-27 01:14:10.823+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/lib/geronimo-jta_1.1_spec-1.1.1.jar
+2014-12-27 01:14:10.823+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/lib/neo4j-kernel-2.0.2.jar
+2014-12-27 01:14:10.823+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/commons-beanutils-1.8.0.jar
+2014-12-27 01:14:10.823+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/lib/neo4j-cypher-2.0.2.jar
+2014-12-27 01:14:10.823+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/AppleScriptEngine.jar
+2014-12-27 01:14:10.823+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_11.jdk/Contents/Home/jre/lib/jce.jar
+2014-12-27 01:14:10.823+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/lib/neo4j-shell-2.0.2.jar
+2014-12-27 01:14:10.823+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/commons-logging-1.1.1.jar
+2014-12-27 01:14:10.823+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/jetty-util-9.0.5.v20130815.jar
+2014-12-27 01:14:10.823+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/Sergio/GitHub/Ballin/api/db/neo4j/development/system/lib/jetty-security-9.0.5.v20130815.jar
+2014-12-27 01:14:10.824+0000 INFO  [o.n.k.i.DiagnosticsManager]: Library path:
+2014-12-27 01:14:10.824+0000 INFO  [o.n.k.i.DiagnosticsManager]: /Users/Sergio/Library/Java/Extensions
+2014-12-27 01:14:10.824+0000 INFO  [o.n.k.i.DiagnosticsManager]: /Library/Java/Extensions
+2014-12-27 01:14:10.824+0000 INFO  [o.n.k.i.DiagnosticsManager]: /Network/Library/Java/Extensions
+2014-12-27 01:14:10.824+0000 INFO  [o.n.k.i.DiagnosticsManager]: /System/Library/Java/Extensions
+2014-12-27 01:14:10.824+0000 INFO  [o.n.k.i.DiagnosticsManager]: /usr/lib/java
+2014-12-27 01:14:10.824+0000 INFO  [o.n.k.i.DiagnosticsManager]: /Users/Sergio/GitHub/Ballin/api/db/neo4j/development
+2014-12-27 01:14:10.824+0000 INFO  [o.n.k.i.DiagnosticsManager]: System.properties:
+2014-12-27 01:14:10.825+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk1.7.0_11.jdk/Contents/Home/jre/lib
+2014-12-27 01:14:10.825+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.properties = conf/neo4j-server.properties
+2014-12-27 01:14:10.825+0000 INFO  [o.n.k.i.DiagnosticsManager]: gopherProxySet = false
+2014-12-27 01:14:10.825+0000 INFO  [o.n.k.i.DiagnosticsManager]: path.separator = :
+2014-12-27 01:14:10.825+0000 INFO  [o.n.k.i.DiagnosticsManager]: file.encoding.pkg = sun.io
+2014-12-27 01:14:10.825+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.country = ES
+2014-12-27 01:14:10.825+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.java.launcher = SUN_STANDARD
+2014-12-27 01:14:10.825+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.os.patch.level = unknown
+2014-12-27 01:14:10.825+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.dir = /Users/Sergio/GitHub/Ballin/api/db/neo4j/development
+2014-12-27 01:14:10.825+0000 INFO  [o.n.k.i.DiagnosticsManager]: log4j.configuration = file:conf/log4j.properties
+2014-12-27 01:14:10.825+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.jnu.encoding = UTF-8
+2014-12-27 01:14:10.825+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+2014-12-27 01:14:10.825+0000 INFO  [o.n.k.i.DiagnosticsManager]: http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+2014-12-27 01:14:10.825+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.home = /Users/Sergio
+2014-12-27 01:14:10.825+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.timezone = Europe/Madrid
+2014-12-27 01:14:10.825+0000 INFO  [o.n.k.i.DiagnosticsManager]: file.encoding = UTF-8
+2014-12-27 01:14:10.825+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.name = Sergio
+2014-12-27 01:14:10.825+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.java.command = org.neo4j.server.Bootstrapper
+2014-12-27 01:14:10.825+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.arch.data.model = 64
+2014-12-27 01:14:10.826+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.language = es
+2014-12-27 01:14:10.826+0000 INFO  [o.n.k.i.DiagnosticsManager]: awt.toolkit = sun.lwawt.macosx.LWCToolkit
+2014-12-27 01:14:10.826+0000 INFO  [o.n.k.i.DiagnosticsManager]: file.separator = /
+2014-12-27 01:14:10.826+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.io.unicode.encoding = UnicodeBig
+2014-12-27 01:14:10.826+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.cpu.endian = little
+2014-12-27 01:14:10.826+0000 INFO  [o.n.k.i.DiagnosticsManager]: socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+2014-12-27 01:14:10.826+0000 INFO  [o.n.k.i.DiagnosticsManager]: neo4j.instance = /Users/Sergio/GitHub/Ballin/api/db/neo4j/development
+2014-12-27 01:14:10.826+0000 INFO  [o.n.k.i.DiagnosticsManager]: ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+2014-12-27 01:14:10.826+0000 INFO  [o.n.k.i.DiagnosticsManager]: neo4j.home = /Users/Sergio/GitHub/Ballin/api/db/neo4j/development
+2014-12-27 01:14:10.826+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.cpu.isalist = 
+2014-12-27 01:14:10.826+0000 INFO  [o.n.k.i.DiagnosticsManager]: Network information:
+2014-12-27 01:14:10.828+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface awdl0:
+2014-12-27 01:14:10.829+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:4816:81ff:feb7:5fa1%10
+2014-12-27 01:14:10.829+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface en1:
+2014-12-27 01:14:10.829+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:8e2d:aaff:fe48:7eb9%5
+2014-12-27 01:14:10.829+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 192.168.1.102
+2014-12-27 01:14:10.829+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface lo0:
+2014-12-27 01:14:10.829+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:0:0:0:1%1
+2014-12-27 01:14:10.829+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 0:0:0:0:0:0:0:1
+2014-12-27 01:14:10.829+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 127.0.0.1
+2014-12-27 01:14:10.829+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- INITIALIZED diagnostics END ---
+2014-12-27 01:14:11.040+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [data/graph.db/neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=988b)
+2014-12-27 01:14:11.042+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [data/graph.db/neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=125b)
+2014-12-27 01:14:11.043+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [data/graph.db/neostore.labeltokenstore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=570b)
+2014-12-27 01:14:11.044+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [data/graph.db/neostore.labeltokenstore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=70b)
+2014-12-27 01:14:11.045+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [data/graph.db/neostore.propertystore.db.strings] brickCount=1 brickSize=730752b mappedMem=730857472b (storeSize=734080b)
+2014-12-27 01:14:11.046+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [data/graph.db/neostore.propertystore.db.index.keys] brickCount=0 brickSize=0b mappedMem=0b (storeSize=2470b)
+2014-12-27 01:14:11.047+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [data/graph.db/neostore.propertystore.db.index] brickCount=0 brickSize=0b mappedMem=0b (storeSize=576b)
+2014-12-27 01:14:11.048+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [data/graph.db/neostore.propertystore.db.arrays] brickCount=0 brickSize=828288b mappedMem=828375040b (storeSize=128b)
+2014-12-27 01:14:11.051+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [data/graph.db/neostore.propertystore.db] brickCount=4 brickSize=859811b mappedMem=859832320b (storeSize=3691558b)
+2014-12-27 01:14:11.056+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [data/graph.db/neostore.relationshipstore.db] brickCount=1 brickSize=1053789b mappedMem=1053818880b (storeSize=2014122b)
+2014-12-27 01:14:11.057+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [data/graph.db/neostore.nodestore.db.labels] brickCount=0 brickSize=0b mappedMem=0b (storeSize=68b)
+2014-12-27 01:14:11.083+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [data/graph.db/neostore.nodestore.db] brickCount=1 brickSize=238014b mappedMem=238026752b (storeSize=365792b)
+2014-12-27 01:14:11.102+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [data/graph.db/neostore.schemastore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=2816b)
+2014-12-27 01:14:11.103+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [data/graph.db/neostore] brickCount=0 brickSize=0b mappedMem=0b (storeSize=63b)
+2014-12-27 01:14:11.421+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[0](property[0]) is ONLINE
+2014-12-27 01:14:11.444+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[1](property[0]) is ONLINE
+2014-12-27 01:14:11.460+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[2](property[0]) is ONLINE
+2014-12-27 01:14:11.497+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[3](property[0]) is ONLINE
+2014-12-27 01:14:11.518+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[4](property[0]) is ONLINE
+2014-12-27 01:14:11.536+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[5](property[0]) is ONLINE
+2014-12-27 01:14:11.547+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[6](property[0]) is ONLINE
+2014-12-27 01:14:11.552+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[10](property[0]) is ONLINE
+2014-12-27 01:14:11.558+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[10](property[52]) is ONLINE
+2014-12-27 01:14:11.564+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[10](property[53]) is ONLINE
+2014-12-27 01:14:11.568+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[10](property[54]) is ONLINE
+2014-12-27 01:14:11.572+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[10](property[55]) is ONLINE
+2014-12-27 01:14:11.575+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[10](property[57]) is ONLINE
+2014-12-27 01:14:11.581+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[11](property[0]) is ONLINE
+2014-12-27 01:14:11.587+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[10](property[56]) is ONLINE
+2014-12-27 01:14:11.592+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[12](property[0]) is ONLINE
+2014-12-27 01:14:11.599+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[7](property[0]) is ONLINE
+2014-12-27 01:14:11.628+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[8](property[0]) is ONLINE
+2014-12-27 01:14:11.635+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[9](property[0]) is ONLINE
+2014-12-27 01:14:11.639+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[13](property[0]) is ONLINE
+2014-12-27 01:14:11.645+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: Opened logical log [data/graph.db/nioneo_logical.log.1] version=28, lastTxId=105830 (clean)
+2014-12-27 01:14:11.659+0000 INFO  [o.n.k.i.t.TxManager]: TM opening log: data/graph.db/tm_tx_log.2
+2014-12-27 01:14:11.667+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[0](property[0]) is ONLINE
+2014-12-27 01:14:11.668+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[1](property[0]) is ONLINE
+2014-12-27 01:14:11.668+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[8](property[0]) is ONLINE
+2014-12-27 01:14:11.668+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[2](property[0]) is ONLINE
+2014-12-27 01:14:11.668+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[7](property[0]) is ONLINE
+2014-12-27 01:14:11.669+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[3](property[0]) is ONLINE
+2014-12-27 01:14:11.669+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[13](property[0]) is ONLINE
+2014-12-27 01:14:11.669+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[4](property[0]) is ONLINE
+2014-12-27 01:14:11.669+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[9](property[0]) is ONLINE
+2014-12-27 01:14:11.670+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[5](property[0]) is ONLINE
+2014-12-27 01:14:11.670+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[6](property[0]) is ONLINE
+2014-12-27 01:14:11.670+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[10](property[0]) is ONLINE
+2014-12-27 01:14:11.670+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[10](property[52]) is ONLINE
+2014-12-27 01:14:11.670+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[10](property[54]) is ONLINE
+2014-12-27 01:14:11.671+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[10](property[53]) is ONLINE
+2014-12-27 01:14:11.671+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[10](property[57]) is ONLINE
+2014-12-27 01:14:11.671+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[10](property[55]) is ONLINE
+2014-12-27 01:14:11.671+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[10](property[56]) is ONLINE
+2014-12-27 01:14:11.672+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[11](property[0]) is ONLINE
+2014-12-27 01:14:11.672+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[12](property[0]) is ONLINE
+2014-12-27 01:14:11.672+0000 INFO  [o.n.k.i.t.KernelHealth]: Kernel health set to OK
+2014-12-27 01:14:11.818+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: Opened logical log [data/graph.db/index/lucene.log.1] version=26, lastTxId=1 (clean)
+2014-12-27 01:14:11.822+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2014-12-27 01:14:11.822+0000 INFO  [o.n.k.i.DiagnosticsManager]: Graph Database: org.neo4j.kernel.EmbeddedGraphDatabase StoreId[time:1412713834912, id:8508636841629548285, store version: 13843131341501958]
+2014-12-27 01:14:11.822+0000 INFO  [o.n.k.i.DiagnosticsManager]: Kernel version: Neo4j - Graph Database Kernel (neo4j-kernel), version: 2.0.2
+2014-12-27 01:14:11.822+0000 INFO  [o.n.k.i.DiagnosticsManager]: Neo4j component versions:
+2014-12-27 01:14:11.827+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Lucene Index (neo4j-lucene-index), version: 2.0.2; revision: 2.0.2:2.0-maint:1007/47f4314f1f50098884c1c1f4e1c3b79d5ce46db1
+2014-12-27 01:14:11.827+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - JMX support (neo4j-jmx), version: 2.0.2; revision: 2.0.2:2.0-maint:1007/47f4314f1f50098884c1c1f4e1c3b79d5ce46db1
+2014-12-27 01:14:11.827+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Graph Matching (neo4j-graph-matching), version: 2.0.2; revision: 2.0.2:2.0-maint:1007/47f4314f1f50098884c1c1f4e1c3b79d5ce46db1
+2014-12-27 01:14:11.827+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j Server API (server-api), version: 2.0.2; revision: 2.0.2:2.0-maint:1007/47f4314f1f50098884c1c1f4e1c3b79d5ce46db1
+2014-12-27 01:14:11.827+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Graph Database Kernel (neo4j-kernel), version: 2.0.2; revision: 2.0.2:2.0-maint:1007/47f4314f1f50098884c1c1f4e1c3b79d5ce46db1
+2014-12-27 01:14:11.827+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher (neo4j-cypher), version: 2.0.2; revision: 2.0.2:2.0-maint:1007/47f4314f1f50098884c1c1f4e1c3b79d5ce46db1
+2014-12-27 01:14:11.827+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j Server (neo4j-server), version: 2.0.2; revision: 2.0.2:2.0-maint:1007/47f4314f1f50098884c1c1f4e1c3b79d5ce46db1
+2014-12-27 01:14:11.827+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Graph Algorithms (neo4j-graph-algo), version: 2.0.2; revision: 2.0.2:2.0-maint:1007/47f4314f1f50098884c1c1f4e1c3b79d5ce46db1
+2014-12-27 01:14:11.827+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher Compiler 2.0 (neo4j-cypher-compiler-2.0), version: 2.0.2; revision: 2.0.2:2.0-maint:1007/47f4314f1f50098884c1c1f4e1c3b79d5ce46db1
+2014-12-27 01:14:11.827+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Generic shell (neo4j-shell), version: 2.0.2; revision: 2.0.2:2.0-maint:1007/47f4314f1f50098884c1c1f4e1c3b79d5ce46db1
+2014-12-27 01:14:11.827+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher Compiler 1.9 (neo4j-cypher-compiler-1.9), version: 2.0.2; revision: 2.0.2:2.0-maint:1007/47f4314f1f50098884c1c1f4e1c3b79d5ce46db1
+2014-12-27 01:14:11.827+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neo4j-udc, version: 2.0.2; revision: 2.0.2:2.0-maint:1007/47f4314f1f50098884c1c1f4e1c3b79d5ce46db1
+2014-12-27 01:14:11.827+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher Commons (neo4j-cypher-commons), version: 2.0.2; revision: 2.0.2:2.0-maint:1007/47f4314f1f50098884c1c1f4e1c3b79d5ce46db1
+2014-12-27 01:14:11.827+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2014-12-27 01:14:11.829+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2014-12-27 01:14:11.830+0000 INFO  [o.n.k.i.DiagnosticsManager]: Store versions:
+2014-12-27 01:14:11.830+0000 INFO  [o.n.k.i.DiagnosticsManager]: Store versions:
+2014-12-27 01:14:11.830+0000 INFO  [o.n.k.i.DiagnosticsManager]:   NeoStore v0.A.1
+2014-12-27 01:14:11.830+0000 INFO  [o.n.k.i.DiagnosticsManager]:   SchemaStore v0.A.1
+2014-12-27 01:14:11.830+0000 INFO  [o.n.k.i.DiagnosticsManager]:   NodeStore v0.A.1
+2014-12-27 01:14:11.830+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipStore v0.A.1
+2014-12-27 01:14:11.830+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipTypeStore v0.A.1
+2014-12-27 01:14:11.830+0000 INFO  [o.n.k.i.DiagnosticsManager]:   LabelTokenStore v0.A.1
+2014-12-27 01:14:11.830+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyStore v0.A.1
+2014-12-27 01:14:11.830+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyIndexStore v0.A.1
+2014-12-27 01:14:11.830+0000 INFO  [o.n.k.i.DiagnosticsManager]:   StringPropertyStore v0.A.1
+2014-12-27 01:14:11.830+0000 INFO  [o.n.k.i.DiagnosticsManager]:   ArrayPropertyStore v0.A.1
+2014-12-27 01:14:11.830+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2014-12-27 01:14:11.830+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2014-12-27 01:14:11.830+0000 INFO  [o.n.k.i.DiagnosticsManager]: Id usage:
+2014-12-27 01:14:11.830+0000 INFO  [o.n.k.i.DiagnosticsManager]: Id usage:
+2014-12-27 01:14:11.831+0000 INFO  [o.n.k.i.DiagnosticsManager]:   SchemaStore: used=44 high=43
+2014-12-27 01:14:11.831+0000 INFO  [o.n.k.i.DiagnosticsManager]:   NodeStore: used=18808 high=26127
+2014-12-27 01:14:11.831+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipStore: used=41601 high=61033
+2014-12-27 01:14:11.831+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipTypeStore: used=25 high=24
+2014-12-27 01:14:11.831+0000 INFO  [o.n.k.i.DiagnosticsManager]:   LabelTokenStore: used=14 high=13
+2014-12-27 01:14:11.831+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyStore: used=90038 high=90037
+2014-12-27 01:14:11.831+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyIndexStore: used=64 high=63
+2014-12-27 01:14:11.831+0000 INFO  [o.n.k.i.DiagnosticsManager]:   StringPropertyStore: used=5735 high=5734
+2014-12-27 01:14:11.832+0000 INFO  [o.n.k.i.DiagnosticsManager]:   ArrayPropertyStore: used=1 high=0
+2014-12-27 01:14:11.832+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2014-12-27 01:14:11.832+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS START ---
+2014-12-27 01:14:11.832+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS END ---
+2014-12-27 01:14:11.832+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2014-12-27 01:14:11.832+0000 INFO  [o.n.k.i.DiagnosticsManager]: Disk space on partition (Total / Free / Free %): 1111826382848 / 666341494784 / 59
+Storage files: (filename : modification date - size)
+2014-12-27 01:14:11.833+0000 INFO  [o.n.k.i.DiagnosticsManager]:   .DS_Store: 2014-12-22T14:23:15+0100 - 15,00 kB
+2014-12-27 01:14:11.833+0000 INFO  [o.n.k.i.DiagnosticsManager]:   active_tx_log: 2014-12-26T21:04:25+0100 - 11,00 B
+2014-12-27 01:14:11.833+0000 INFO  [o.n.k.i.DiagnosticsManager]:   index:
+2014-12-27 01:14:11.834+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene-store.db: 2014-12-27T01:01:11+0100 - 40,00 B
+2014-12-27 01:14:11.834+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.1: 2014-12-27T02:14:11+0100 - 16,00 B
+2014-12-27 01:14:11.834+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.active: 2014-12-27T02:14:11+0100 - 4,00 B
+2014-12-27 01:14:11.834+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v0: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-27 01:14:11.834+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v1: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-27 01:14:11.835+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v10: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-27 01:14:11.835+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v11: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-27 01:14:11.835+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v12: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-27 01:14:11.835+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v13: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-27 01:14:11.836+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v14: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-27 01:14:11.836+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v15: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-27 01:14:11.836+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v16: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-27 01:14:11.836+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v17: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-27 01:14:11.837+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v18: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-27 01:14:11.837+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v19: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-27 01:14:11.837+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v2: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-27 01:14:11.837+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v20: 2014-12-22T14:27:51+0100 - 16,00 B
+2014-12-27 01:14:11.837+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v21: 2014-12-23T00:06:43+0100 - 16,00 B
+2014-12-27 01:14:11.838+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v22: 2014-12-24T01:24:16+0100 - 16,00 B
+2014-12-27 01:14:11.838+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v23: 2014-12-24T22:28:29+0100 - 16,00 B
+2014-12-27 01:14:11.838+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v24: 2014-12-25T23:39:00+0100 - 16,00 B
+2014-12-27 01:14:11.838+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v25: 2014-12-27T01:01:11+0100 - 16,00 B
+2014-12-27 01:14:11.839+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v3: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-27 01:14:11.839+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v4: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-27 01:14:11.839+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v5: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-27 01:14:11.839+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v6: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-27 01:14:11.840+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v7: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-27 01:14:11.840+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v8: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-27 01:14:11.840+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v9: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-27 01:14:11.840+0000 INFO  [o.n.k.i.DiagnosticsManager]:   - Total: 2014-12-27T02:14:11+0100 - 476,00 B
+2014-12-27 01:14:11.840+0000 INFO  [o.n.k.i.DiagnosticsManager]:   lock: 2014-12-27T02:14:11+0100 - 0,00 B
+2014-12-27 01:14:11.841+0000 INFO  [o.n.k.i.DiagnosticsManager]:   messages.log: 2014-12-27T02:14:11+0100 - 2,63 MB
+2014-12-27 01:14:11.841+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore: 2014-12-27T02:14:11+0100 - 63,00 B
+2014-12-27 01:14:11.841+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.id: 2014-12-27T02:14:11+0100 - 9,00 B
+2014-12-27 01:14:11.841+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db: 2014-12-27T02:14:11+0100 - 70,00 B
+2014-12-27 01:14:11.842+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db.id: 2014-12-27T02:14:11+0100 - 9,00 B
+2014-12-27 01:14:11.842+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db.names: 2014-12-27T02:14:11+0100 - 570,00 B
+2014-12-27 01:14:11.842+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db.names.id: 2014-12-27T02:14:11+0100 - 9,00 B
+2014-12-27 01:14:11.842+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db: 2014-12-27T02:14:11+0100 - 357,22 kB
+2014-12-27 01:14:11.842+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db.id: 2014-12-27T02:14:11+0100 - 65,20 kB
+2014-12-27 01:14:11.843+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db.labels: 2014-12-27T02:14:11+0100 - 68,00 B
+2014-12-27 01:14:11.843+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db.labels.id: 2014-12-27T02:14:11+0100 - 9,00 B
+2014-12-27 01:14:11.843+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db: 2014-12-27T02:14:11+0100 - 3,52 MB
+2014-12-27 01:14:11.843+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.arrays: 2014-12-27T02:14:11+0100 - 128,00 B
+2014-12-27 01:14:11.843+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.arrays.id: 2014-12-27T02:14:11+0100 - 9,00 B
+2014-12-27 01:14:11.844+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.id: 2014-12-27T02:14:11+0100 - 1,11 kB
+2014-12-27 01:14:11.844+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index: 2014-12-27T02:14:11+0100 - 576,00 B
+2014-12-27 01:14:11.844+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index.id: 2014-12-27T02:14:11+0100 - 9,00 B
+2014-12-27 01:14:11.844+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index.keys: 2014-12-27T02:14:11+0100 - 2,41 kB
+2014-12-27 01:14:11.845+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index.keys.id: 2014-12-27T02:14:11+0100 - 9,00 B
+2014-12-27 01:14:11.845+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.strings: 2014-12-27T02:14:11+0100 - 716,88 kB
+2014-12-27 01:14:11.845+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.strings.id: 2014-12-27T02:14:11+0100 - 9,00 B
+2014-12-27 01:14:11.845+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipstore.db: 2014-12-27T02:14:11+0100 - 1,92 MB
+2014-12-27 01:14:11.845+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipstore.db.id: 2014-12-27T02:14:11+0100 - 159,83 kB
+2014-12-27 01:14:11.846+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db: 2014-12-27T02:14:11+0100 - 125,00 B
+2014-12-27 01:14:11.846+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db.id: 2014-12-27T02:14:11+0100 - 9,00 B
+2014-12-27 01:14:11.846+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db.names: 2014-12-27T02:14:11+0100 - 988,00 B
+2014-12-27 01:14:11.846+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db.names.id: 2014-12-27T02:14:11+0100 - 9,00 B
+2014-12-27 01:14:11.847+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.schemastore.db: 2014-12-27T02:14:11+0100 - 2,75 kB
+2014-12-27 01:14:11.847+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.schemastore.db.id: 2014-12-27T02:14:11+0100 - 9,00 B
+2014-12-27 01:14:11.847+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.1: 2014-12-27T02:14:11+0100 - 16,00 B
+2014-12-27 01:14:11.847+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.active: 2014-12-27T02:14:11+0100 - 4,00 B
+2014-12-27 01:14:11.847+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v0: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-27 01:14:11.848+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v1: 2014-12-22T14:23:15+0100 - 4,27 kB
+2014-12-27 01:14:11.848+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v10: 2014-12-22T14:23:15+0100 - 2,12 MB
+2014-12-27 01:14:11.848+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v11: 2014-12-22T14:23:15+0100 - 806,42 kB
+2014-12-27 01:14:11.848+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v12: 2014-12-22T14:23:15+0100 - 696,91 kB
+2014-12-27 01:14:11.849+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v13: 2014-12-22T14:23:15+0100 - 1,06 MB
+2014-12-27 01:14:11.849+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v14: 2014-12-22T14:23:15+0100 - 13,40 MB
+2014-12-27 01:14:11.849+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v15: 2014-12-22T14:23:15+0100 - 6,73 MB
+2014-12-27 01:14:11.849+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v16: 2014-12-22T14:23:15+0100 - 1,55 MB
+2014-12-27 01:14:11.850+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v17: 2014-12-22T14:23:15+0100 - 3,67 MB
+2014-12-27 01:14:11.850+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v18: 2014-12-22T14:23:15+0100 - 906,16 kB
+2014-12-27 01:14:11.850+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v19: 2014-12-22T14:23:15+0100 - 1,95 MB
+2014-12-27 01:14:11.850+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v2: 2014-12-22T14:23:15+0100 - 170,57 kB
+2014-12-27 01:14:11.850+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v20: 2014-12-22T14:27:51+0100 - 3,20 MB
+2014-12-27 01:14:11.851+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v21: 2014-12-22T14:27:51+0100 - 16,00 B
+2014-12-27 01:14:11.851+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v22: 2014-12-23T00:06:43+0100 - 5,60 MB
+2014-12-27 01:14:11.851+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v23: 2014-12-23T16:06:10+0100 - 25,00 MB
+2014-12-27 01:14:11.851+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v24: 2014-12-24T01:24:16+0100 - 1,83 MB
+2014-12-27 01:14:11.852+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v25: 2014-12-24T22:28:29+0100 - 655,08 kB
+2014-12-27 01:14:11.852+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v26: 2014-12-25T23:39:00+0100 - 371,88 kB
+2014-12-27 01:14:11.852+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v27: 2014-12-27T01:01:11+0100 - 779,00 B
+2014-12-27 01:14:11.852+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v3: 2014-12-22T14:23:15+0100 - 1,62 MB
+2014-12-27 01:14:11.853+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v4: 2014-12-22T14:23:15+0100 - 5,89 MB
+2014-12-27 01:14:11.853+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v5: 2014-12-22T14:23:15+0100 - 99,40 kB
+2014-12-27 01:14:11.853+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v6: 2014-12-22T14:23:15+0100 - 16,00 B
+2014-12-27 01:14:11.853+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v7: 2014-12-22T14:23:15+0100 - 5,09 kB
+2014-12-27 01:14:11.854+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v8: 2014-12-22T14:23:15+0100 - 241,00 B
+2014-12-27 01:14:11.854+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v9: 2014-12-22T14:23:15+0100 - 3,53 MB
+2014-12-27 01:14:11.854+0000 INFO  [o.n.k.i.DiagnosticsManager]:   schema:
+2014-12-27 01:14:11.854+0000 INFO  [o.n.k.i.DiagnosticsManager]:     .DS_Store: 2014-12-22T14:23:15+0100 - 6,00 kB
+2014-12-27 01:14:11.854+0000 INFO  [o.n.k.i.DiagnosticsManager]:     index:
+2014-12-27 01:14:11.855+0000 INFO  [o.n.k.i.DiagnosticsManager]:       .DS_Store: 2014-12-22T14:23:15+0100 - 6,00 kB
+2014-12-27 01:14:11.855+0000 INFO  [o.n.k.i.DiagnosticsManager]:       lucene:
+2014-12-27 01:14:11.855+0000 INFO  [o.n.k.i.DiagnosticsManager]:         .DS_Store: 2014-12-22T14:23:15+0100 - 6,00 kB
+2014-12-27 01:14:11.855+0000 INFO  [o.n.k.i.DiagnosticsManager]:         1:
+2014-12-27 01:14:11.855+0000 INFO  [o.n.k.i.DiagnosticsManager]:           .DS_Store: 2014-12-22T14:23:15+0100 - 6,00 kB
+2014-12-27 01:14:11.855+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2e5.fdt: 2014-12-22T14:23:15+0100 - 4,30 kB
+2014-12-27 01:14:11.856+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2e5.fdx: 2014-12-22T14:23:15+0100 - 4,30 kB
+2014-12-27 01:14:11.856+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2e5.fnm: 2014-12-22T14:23:15+0100 - 18,00 B
+2014-12-27 01:14:11.856+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2e5.frq: 2014-12-22T14:23:15+0100 - 1,90 kB
+2014-12-27 01:14:11.856+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2e5.tii: 2014-12-22T14:23:15+0100 - 2,04 kB
+2014-12-27 01:14:11.857+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2e5.tis: 2014-12-22T14:23:15+0100 - 25,52 kB
+2014-12-27 01:14:11.857+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2e5_1.del: 2014-12-22T14:27:51+0100 - 99,00 B
+2014-12-27 01:14:11.857+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2e6.cfs: 2014-12-22T14:23:15+0100 - 256,00 B
+2014-12-27 01:14:11.857+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2e7.cfs: 2014-12-22T14:23:15+0100 - 256,00 B
+2014-12-27 01:14:11.857+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2ea.cfs: 2014-12-22T14:23:15+0100 - 256,00 B
+2014-12-27 01:14:11.858+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2ee.fdt: 2014-12-22T14:27:50+0100 - 3,44 kB
+2014-12-27 01:14:11.858+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2ee.fdx: 2014-12-22T14:27:50+0100 - 3,44 kB
+2014-12-27 01:14:11.858+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2ee.fnm: 2014-12-22T14:27:50+0100 - 18,00 B
+2014-12-27 01:14:11.858+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2ee.frq: 2014-12-22T14:27:50+0100 - 1,47 kB
+2014-12-27 01:14:11.859+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2ee.nrm: 2014-12-22T14:27:50+0100 - 4,00 B
+2014-12-27 01:14:11.859+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2ee.tii: 2014-12-22T14:27:50+0100 - 1,63 kB
+2014-12-27 01:14:11.859+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2ee.tis: 2014-12-22T14:27:50+0100 - 20,48 kB
+2014-12-27 01:14:11.859+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2ee_1.del: 2014-12-23T16:06:10+0100 - 85,00 B
+2014-12-27 01:14:11.860+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2ef.cfs: 2014-12-23T18:29:44+0100 - 258,00 B
+2014-12-27 01:14:11.860+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _2eg.cfs: 2014-12-25T17:00:04+0100 - 256,00 B
+2014-12-27 01:14:11.860+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2014-12-22T14:23:15+0100 - 16,00 kB
+2014-12-27 01:14:11.860+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2014-12-25T23:39:00+0100 - 20,00 B
+2014-12-27 01:14:11.860+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_e: 2014-12-25T23:39:00+0100 - 1,54 kB
+2014-12-27 01:14:11.861+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2014-12-27T02:14:11+0100 - 0,00 B
+2014-12-27 01:14:11.861+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2014-12-27T02:14:11+0100 - 93,56 kB
+2014-12-27 01:14:11.861+0000 INFO  [o.n.k.i.DiagnosticsManager]:         11:
+2014-12-27 01:14:11.861+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _15.fdt: 2014-12-22T14:23:15+0100 - 11,00 B
+2014-12-27 01:14:11.862+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _15.fdx: 2014-12-22T14:23:15+0100 - 12,00 B
+2014-12-27 01:14:11.862+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _15.fnm: 2014-12-22T14:23:15+0100 - 18,00 B
+2014-12-27 01:14:11.862+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _15.frq: 2014-12-22T14:23:15+0100 - 2,00 B
+2014-12-27 01:14:11.862+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _15.nrm: 2014-12-22T14:23:15+0100 - 4,00 B
+2014-12-27 01:14:11.862+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _15.tii: 2014-12-22T14:23:15+0100 - 35,00 B
+2014-12-27 01:14:11.863+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _15.tis: 2014-12-22T14:23:15+0100 - 75,00 B
+2014-12-27 01:14:11.863+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _16.fdt: 2014-12-22T14:23:15+0100 - 11,00 B
+2014-12-27 01:14:11.863+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _16.fdx: 2014-12-22T14:23:15+0100 - 12,00 B
+2014-12-27 01:14:11.863+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _16.fnm: 2014-12-22T14:23:15+0100 - 18,00 B
+2014-12-27 01:14:11.864+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _16.frq: 2014-12-22T14:23:15+0100 - 2,00 B
+2014-12-27 01:14:11.864+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _16.nrm: 2014-12-22T14:23:15+0100 - 4,00 B
+2014-12-27 01:14:11.864+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _16.tii: 2014-12-22T14:23:15+0100 - 35,00 B
+2014-12-27 01:14:11.864+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _16.tis: 2014-12-22T14:23:15+0100 - 75,00 B
+2014-12-27 01:14:11.864+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _17.fdt: 2014-12-22T14:23:15+0100 - 11,00 B
+2014-12-27 01:14:11.865+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _17.fdx: 2014-12-22T14:23:15+0100 - 12,00 B
+2014-12-27 01:14:11.865+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _17.fnm: 2014-12-22T14:23:15+0100 - 18,00 B
+2014-12-27 01:14:11.865+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _17.frq: 2014-12-22T14:23:15+0100 - 2,00 B
+2014-12-27 01:14:11.865+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _17.nrm: 2014-12-22T14:23:15+0100 - 4,00 B
+2014-12-27 01:14:11.865+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _17.tii: 2014-12-22T14:23:15+0100 - 35,00 B
+2014-12-27 01:14:11.866+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _17.tis: 2014-12-22T14:23:15+0100 - 75,00 B
+2014-12-27 01:14:11.866+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _18.fdt: 2014-12-22T14:23:15+0100 - 11,00 B
+2014-12-27 01:14:11.866+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _18.fdx: 2014-12-22T14:23:15+0100 - 12,00 B
+2014-12-27 01:14:11.866+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _18.fnm: 2014-12-22T14:23:15+0100 - 18,00 B
+2014-12-27 01:14:11.866+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _18.frq: 2014-12-22T14:23:15+0100 - 2,00 B
+2014-12-27 01:14:11.867+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _18.nrm: 2014-12-22T14:23:15+0100 - 4,00 B
+2014-12-27 01:14:11.867+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _18.tii: 2014-12-22T14:23:15+0100 - 35,00 B
+2014-12-27 01:14:11.867+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _18.tis: 2014-12-22T14:23:15+0100 - 75,00 B
+2014-12-27 01:14:11.867+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _19.fdt: 2014-12-22T14:23:15+0100 - 11,00 B
+2014-12-27 01:14:11.868+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _19.fdx: 2014-12-22T14:23:15+0100 - 12,00 B
+2014-12-27 01:14:11.868+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _19.fnm: 2014-12-22T14:23:15+0100 - 18,00 B
+2014-12-27 01:14:11.868+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _19.frq: 2014-12-22T14:23:15+0100 - 2,00 B
+2014-12-27 01:14:11.868+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _19.nrm: 2014-12-22T14:23:15+0100 - 4,00 B
+2014-12-27 01:14:11.868+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _19.tii: 2014-12-22T14:23:15+0100 - 35,00 B
+2014-12-27 01:14:11.869+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _19.tis: 2014-12-22T14:23:15+0100 - 75,00 B
+2014-12-27 01:14:11.869+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1a.fdt: 2014-12-22T14:23:15+0100 - 11,00 B
+2014-12-27 01:14:11.869+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1a.fdx: 2014-12-22T14:23:15+0100 - 12,00 B
+2014-12-27 01:14:11.869+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1a.fnm: 2014-12-22T14:23:15+0100 - 18,00 B
+2014-12-27 01:14:11.870+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1a.frq: 2014-12-22T14:23:15+0100 - 2,00 B
+2014-12-27 01:14:11.870+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1a.nrm: 2014-12-22T14:23:15+0100 - 4,00 B
+2014-12-27 01:14:11.870+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1a.tii: 2014-12-22T14:23:15+0100 - 35,00 B
+2014-12-27 01:14:11.870+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1a.tis: 2014-12-22T14:23:15+0100 - 75,00 B
+2014-12-27 01:14:11.871+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2014-12-22T14:23:15+0100 - 16,00 kB
+2014-12-27 01:14:11.871+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2014-12-22T14:23:15+0100 - 20,00 B
+2014-12-27 01:14:11.871+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_2: 2014-12-22T14:23:15+0100 - 1,29 kB
+2014-12-27 01:14:11.871+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2014-12-27T02:14:11+0100 - 0,00 B
+2014-12-27 01:14:11.871+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2014-12-27T02:14:11+0100 - 18,23 kB
+2014-12-27 01:14:11.872+0000 INFO  [o.n.k.i.DiagnosticsManager]:         13:
+2014-12-27 01:14:11.872+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2014-12-22T14:23:15+0100 - 16,00 kB
+2014-12-27 01:14:11.872+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2014-12-22T14:23:15+0100 - 20,00 B
+2014-12-27 01:14:11.872+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_2: 2014-12-22T14:23:15+0100 - 46,00 B
+2014-12-27 01:14:11.873+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2014-12-27T02:14:11+0100 - 0,00 B
+2014-12-27 01:14:11.873+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2014-12-27T02:14:11+0100 - 16,06 kB
+2014-12-27 01:14:11.873+0000 INFO  [o.n.k.i.DiagnosticsManager]:         15:
+2014-12-27 01:14:11.873+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.fdt: 2014-12-22T14:23:15+0100 - 12,00 B
+2014-12-27 01:14:11.873+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.fdx: 2014-12-22T14:23:15+0100 - 12,00 B
+2014-12-27 01:14:11.874+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.fnm: 2014-12-22T14:23:15+0100 - 18,00 B
+2014-12-27 01:14:11.874+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.frq: 2014-12-22T14:23:15+0100 - 2,00 B
+2014-12-27 01:14:11.874+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.nrm: 2014-12-22T14:23:15+0100 - 4,00 B
+2014-12-27 01:14:11.874+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.tii: 2014-12-22T14:23:15+0100 - 35,00 B
+2014-12-27 01:14:11.874+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.tis: 2014-12-22T14:23:15+0100 - 75,00 B
+2014-12-27 01:14:11.875+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2014-12-22T14:23:15+0100 - 16,00 kB
+2014-12-27 01:14:11.875+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2014-12-22T14:23:15+0100 - 20,00 B
+2014-12-27 01:14:11.875+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_2: 2014-12-22T14:23:15+0100 - 256,00 B
+2014-12-27 01:14:11.875+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2014-12-27T02:14:11+0100 - 0,00 B
+2014-12-27 01:14:11.875+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2014-12-27T02:14:11+0100 - 16,42 kB
+2014-12-27 01:14:11.875+0000 INFO  [o.n.k.i.DiagnosticsManager]:         17:
+2014-12-27 01:14:11.876+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2014-12-22T14:23:15+0100 - 16,00 kB
+2014-12-27 01:14:11.876+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2014-12-22T14:23:15+0100 - 20,00 B
+2014-12-27 01:14:11.876+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_1: 2014-12-22T14:23:15+0100 - 46,00 B
+2014-12-27 01:14:11.876+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2014-12-27T02:14:11+0100 - 0,00 B
+2014-12-27 01:14:11.876+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2014-12-27T02:14:11+0100 - 16,06 kB
+2014-12-27 01:14:11.877+0000 INFO  [o.n.k.i.DiagnosticsManager]:         18:
+2014-12-27 01:14:11.877+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.fdt: 2014-12-22T14:23:15+0100 - 12,00 B
+2014-12-27 01:14:11.877+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.fdx: 2014-12-22T14:23:15+0100 - 12,00 B
+2014-12-27 01:14:11.877+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.fnm: 2014-12-22T14:23:15+0100 - 18,00 B
+2014-12-27 01:14:11.877+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.frq: 2014-12-22T14:23:15+0100 - 2,00 B
+2014-12-27 01:14:11.878+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.nrm: 2014-12-22T14:23:15+0100 - 4,00 B
+2014-12-27 01:14:11.878+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.tii: 2014-12-22T14:23:15+0100 - 35,00 B
+2014-12-27 01:14:11.878+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.tis: 2014-12-22T14:23:15+0100 - 67,00 B
+2014-12-27 01:14:11.878+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2014-12-22T14:23:15+0100 - 16,00 kB
+2014-12-27 01:14:11.878+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2014-12-22T14:23:15+0100 - 20,00 B
+2014-12-27 01:14:11.879+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_2: 2014-12-22T14:23:15+0100 - 256,00 B
+2014-12-27 01:14:11.879+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2014-12-27T02:14:11+0100 - 0,00 B
+2014-12-27 01:14:11.879+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2014-12-27T02:14:11+0100 - 16,42 kB
+2014-12-27 01:14:11.879+0000 INFO  [o.n.k.i.DiagnosticsManager]:         19:
+2014-12-27 01:14:11.879+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2014-12-22T14:23:15+0100 - 16,00 kB
+2014-12-27 01:14:11.880+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2014-12-22T14:23:15+0100 - 20,00 B
+2014-12-27 01:14:11.880+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_1: 2014-12-22T14:23:15+0100 - 46,00 B
+2014-12-27 01:14:11.880+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2014-12-27T02:14:11+0100 - 0,00 B
+2014-12-27 01:14:11.880+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2014-12-27T02:14:11+0100 - 16,06 kB
+2014-12-27 01:14:11.880+0000 INFO  [o.n.k.i.DiagnosticsManager]:         20:
+2014-12-27 01:14:11.881+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2014-12-22T14:23:15+0100 - 16,00 kB
+2014-12-27 01:14:11.881+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2014-12-22T14:23:15+0100 - 20,00 B
+2014-12-27 01:14:11.881+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_1: 2014-12-22T14:23:15+0100 - 46,00 B
+2014-12-27 01:14:11.881+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2014-12-27T02:14:11+0100 - 0,00 B
+2014-12-27 01:14:11.881+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2014-12-27T02:14:11+0100 - 16,06 kB
+2014-12-27 01:14:11.881+0000 INFO  [o.n.k.i.DiagnosticsManager]:         21:
+2014-12-27 01:14:11.882+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2014-12-22T14:23:15+0100 - 16,00 kB
+2014-12-27 01:14:11.882+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2014-12-22T14:23:15+0100 - 20,00 B
+2014-12-27 01:14:11.882+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_1: 2014-12-22T14:23:15+0100 - 46,00 B
+2014-12-27 01:14:11.882+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2014-12-27T02:14:11+0100 - 0,00 B
+2014-12-27 01:14:11.883+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2014-12-27T02:14:11+0100 - 16,06 kB
+2014-12-27 01:14:11.883+0000 INFO  [o.n.k.i.DiagnosticsManager]:         22:
+2014-12-27 01:14:11.883+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.fdt: 2014-12-22T14:23:15+0100 - 12,00 B
+2014-12-27 01:14:11.883+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.fdx: 2014-12-22T14:23:15+0100 - 12,00 B
+2014-12-27 01:14:11.883+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.fnm: 2014-12-22T14:23:15+0100 - 18,00 B
+2014-12-27 01:14:11.883+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.frq: 2014-12-22T14:23:15+0100 - 2,00 B
+2014-12-27 01:14:11.884+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.nrm: 2014-12-22T14:23:15+0100 - 4,00 B
+2014-12-27 01:14:11.884+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.tii: 2014-12-22T14:23:15+0100 - 35,00 B
+2014-12-27 01:14:11.884+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.tis: 2014-12-22T14:23:15+0100 - 76,00 B
+2014-12-27 01:14:11.885+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2014-12-22T14:23:15+0100 - 16,00 kB
+2014-12-27 01:14:11.885+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2014-12-22T14:23:15+0100 - 20,00 B
+2014-12-27 01:14:11.885+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_2: 2014-12-22T14:23:15+0100 - 256,00 B
+2014-12-27 01:14:11.885+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2014-12-27T02:14:11+0100 - 0,00 B
+2014-12-27 01:14:11.885+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2014-12-27T02:14:11+0100 - 16,42 kB
+2014-12-27 01:14:11.885+0000 INFO  [o.n.k.i.DiagnosticsManager]:         23:
+2014-12-27 01:14:11.886+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _0.fdt: 2014-12-22T14:23:15+0100 - 12,00 B
+2014-12-27 01:14:11.886+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _0.fdx: 2014-12-22T14:23:15+0100 - 12,00 B
+2014-12-27 01:14:11.886+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _0.fnm: 2014-12-22T14:23:15+0100 - 18,00 B
+2014-12-27 01:14:11.886+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _0.frq: 2014-12-22T14:23:15+0100 - 2,00 B
+2014-12-27 01:14:11.887+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _0.nrm: 2014-12-22T14:23:15+0100 - 4,00 B
+2014-12-27 01:14:11.887+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _0.tii: 2014-12-22T14:23:15+0100 - 35,00 B
+2014-12-27 01:14:11.887+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _0.tis: 2014-12-22T14:23:15+0100 - 104,00 B
+2014-12-27 01:14:11.887+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2014-12-22T14:23:15+0100 - 16,00 kB
+2014-12-27 01:14:11.887+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2014-12-22T14:23:15+0100 - 20,00 B
+2014-12-27 01:14:11.888+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_2: 2014-12-22T14:23:15+0100 - 256,00 B
+2014-12-27 01:14:11.888+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2014-12-27T02:14:11+0100 - 0,00 B
+2014-12-27 01:14:11.888+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2014-12-27T02:14:11+0100 - 16,45 kB
+2014-12-27 01:14:11.888+0000 INFO  [o.n.k.i.DiagnosticsManager]:         24:
+2014-12-27 01:14:11.888+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2014-12-22T14:23:15+0100 - 16,00 kB
+2014-12-27 01:14:11.889+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2014-12-22T14:23:15+0100 - 20,00 B
+2014-12-27 01:14:11.889+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_1: 2014-12-22T14:23:15+0100 - 46,00 B
+2014-12-27 01:14:11.889+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2014-12-27T02:14:11+0100 - 0,00 B
+2014-12-27 01:14:11.889+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2014-12-27T02:14:11+0100 - 16,06 kB
+2014-12-27 01:14:11.889+0000 INFO  [o.n.k.i.DiagnosticsManager]:         3:
+2014-12-27 01:14:11.890+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _4t.fdt: 2014-12-22T14:27:51+0100 - 214,00 B
+2014-12-27 01:14:11.890+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _4t.fdx: 2014-12-22T14:27:51+0100 - 244,00 B
+2014-12-27 01:14:11.890+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _4t.fnm: 2014-12-22T14:27:51+0100 - 18,00 B
+2014-12-27 01:14:11.890+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _4t.frq: 2014-12-22T14:27:51+0100 - 60,00 B
+2014-12-27 01:14:11.890+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _4t.nrm: 2014-12-22T14:27:51+0100 - 4,00 B
+2014-12-27 01:14:11.890+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _4t.tii: 2014-12-22T14:27:51+0100 - 143,00 B
+2014-12-27 01:14:11.891+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _4t.tis: 2014-12-22T14:27:51+0100 - 1,45 kB
+2014-12-27 01:14:11.891+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2014-12-22T14:23:15+0100 - 16,00 kB
+2014-12-27 01:14:11.891+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2014-12-22T14:27:51+0100 - 20,00 B
+2014-12-27 01:14:11.891+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_5: 2014-12-22T14:27:51+0100 - 259,00 B
+2014-12-27 01:14:11.891+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2014-12-27T02:14:11+0100 - 0,00 B
+2014-12-27 01:14:11.892+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2014-12-27T02:14:11+0100 - 18,38 kB
+2014-12-27 01:14:11.892+0000 INFO  [o.n.k.i.DiagnosticsManager]:         36:
+2014-12-27 01:14:11.892+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _a.fdt: 2014-12-22T14:23:15+0100 - 11,00 B
+2014-12-27 01:14:11.892+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _a.fdx: 2014-12-22T14:23:15+0100 - 12,00 B
+2014-12-27 01:14:11.892+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _a.fnm: 2014-12-22T14:23:15+0100 - 18,00 B
+2014-12-27 01:14:11.893+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _a.frq: 2014-12-22T14:23:15+0100 - 2,00 B
+2014-12-27 01:14:11.893+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _a.nrm: 2014-12-22T14:23:15+0100 - 4,00 B
+2014-12-27 01:14:11.893+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _a.tii: 2014-12-22T14:23:15+0100 - 35,00 B
+2014-12-27 01:14:11.893+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _a.tis: 2014-12-22T14:23:15+0100 - 75,00 B
+2014-12-27 01:14:11.893+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2014-12-22T14:23:15+0100 - 16,00 kB
+2014-12-27 01:14:11.894+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2014-12-22T14:23:15+0100 - 20,00 B
+2014-12-27 01:14:11.894+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_2: 2014-12-22T14:23:15+0100 - 257,00 B
+2014-12-27 01:14:11.894+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2014-12-27T02:14:11+0100 - 0,00 B
+2014-12-27 01:14:11.894+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2014-12-27T02:14:11+0100 - 16,42 kB
+2014-12-27 01:14:11.894+0000 INFO  [o.n.k.i.DiagnosticsManager]:         38:
+2014-12-27 01:14:11.894+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _h.fdt: 2014-12-22T14:23:15+0100 - 11,00 B
+2014-12-27 01:14:11.895+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _h.fdx: 2014-12-22T14:23:15+0100 - 12,00 B
+2014-12-27 01:14:11.895+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _h.fnm: 2014-12-22T14:23:15+0100 - 18,00 B
+2014-12-27 01:14:11.895+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _h.frq: 2014-12-22T14:23:15+0100 - 2,00 B
+2014-12-27 01:14:11.895+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _h.nrm: 2014-12-22T14:23:15+0100 - 4,00 B
+2014-12-27 01:14:11.895+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _h.tii: 2014-12-22T14:23:15+0100 - 35,00 B
+2014-12-27 01:14:11.896+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _h.tis: 2014-12-22T14:23:15+0100 - 75,00 B
+2014-12-27 01:14:11.896+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _i.fdt: 2014-12-22T14:23:15+0100 - 11,00 B
+2014-12-27 01:14:11.896+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _i.fdx: 2014-12-22T14:23:15+0100 - 12,00 B
+2014-12-27 01:14:11.896+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _i.fnm: 2014-12-22T14:23:15+0100 - 18,00 B
+2014-12-27 01:14:11.896+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _i.frq: 2014-12-22T14:23:15+0100 - 2,00 B
+2014-12-27 01:14:11.897+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _i.nrm: 2014-12-22T14:23:15+0100 - 4,00 B
+2014-12-27 01:14:11.897+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _i.tii: 2014-12-22T14:23:15+0100 - 35,00 B
+2014-12-27 01:14:11.897+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _i.tis: 2014-12-22T14:23:15+0100 - 75,00 B
+2014-12-27 01:14:11.897+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2014-12-22T14:23:15+0100 - 16,00 kB
+2014-12-27 01:14:11.897+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2014-12-22T14:23:15+0100 - 20,00 B
+2014-12-27 01:14:11.898+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_2: 2014-12-22T14:23:15+0100 - 468,00 B
+2014-12-27 01:14:11.898+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2014-12-27T02:14:11+0100 - 0,00 B
+2014-12-27 01:14:11.898+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2014-12-27T02:14:11+0100 - 16,78 kB
+2014-12-27 01:14:11.898+0000 INFO  [o.n.k.i.DiagnosticsManager]:         40:
+2014-12-27 01:14:11.898+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _3.fdt: 2014-12-22T14:23:15+0100 - 12,00 B
+2014-12-27 01:14:11.898+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _3.fdx: 2014-12-22T14:23:15+0100 - 12,00 B
+2014-12-27 01:14:11.899+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _3.fnm: 2014-12-22T14:23:15+0100 - 18,00 B
+2014-12-27 01:14:11.899+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _3.frq: 2014-12-22T14:23:15+0100 - 2,00 B
+2014-12-27 01:14:11.899+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _3.nrm: 2014-12-22T14:23:15+0100 - 4,00 B
+2014-12-27 01:14:11.899+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _3.tii: 2014-12-22T14:23:15+0100 - 35,00 B
+2014-12-27 01:14:11.899+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _3.tis: 2014-12-22T14:23:15+0100 - 76,00 B
+2014-12-27 01:14:11.900+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2014-12-22T14:23:15+0100 - 16,00 kB
+2014-12-27 01:14:11.900+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2014-12-22T14:23:15+0100 - 20,00 B
+2014-12-27 01:14:11.900+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_3: 2014-12-22T14:23:15+0100 - 256,00 B
+2014-12-27 01:14:11.900+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2014-12-27T02:14:11+0100 - 0,00 B
+2014-12-27 01:14:11.900+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2014-12-27T02:14:11+0100 - 16,42 kB
+2014-12-27 01:14:11.900+0000 INFO  [o.n.k.i.DiagnosticsManager]:         42:
+2014-12-27 01:14:11.901+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2014-12-26T20:31:07+0100 - 16,00 kB
+2014-12-27 01:14:11.901+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2014-12-26T20:31:07+0100 - 20,00 B
+2014-12-27 01:14:11.901+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_1: 2014-12-26T20:31:07+0100 - 46,00 B
+2014-12-27 01:14:11.901+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2014-12-27T02:14:11+0100 - 0,00 B
+2014-12-27 01:14:11.901+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2014-12-27T02:14:11+0100 - 16,06 kB
+2014-12-27 01:14:11.902+0000 INFO  [o.n.k.i.DiagnosticsManager]:         5:
+2014-12-27 01:14:11.902+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _12z.fdt: 2014-12-22T14:23:15+0100 - 9,22 kB
+2014-12-27 01:14:11.902+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _12z.fdx: 2014-12-22T14:23:15+0100 - 9,57 kB
+2014-12-27 01:14:11.902+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _12z.fnm: 2014-12-22T14:23:15+0100 - 18,00 B
+2014-12-27 01:14:11.902+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _12z.frq: 2014-12-22T14:23:15+0100 - 4,54 kB
+2014-12-27 01:14:11.903+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _12z.tii: 2014-12-22T14:23:15+0100 - 4,47 kB
+2014-12-27 01:14:11.903+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _12z.tis: 2014-12-22T14:23:15+0100 - 56,33 kB
+2014-12-27 01:14:11.903+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _12z_1.del: 2014-12-22T14:27:51+0100 - 184,00 B
+2014-12-27 01:14:11.903+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _130.cfs: 2014-12-22T14:23:15+0100 - 256,00 B
+2014-12-27 01:14:11.903+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _131.cfs: 2014-12-22T14:23:15+0100 - 256,00 B
+2014-12-27 01:14:11.904+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _132.cfs: 2014-12-22T14:23:15+0100 - 256,00 B
+2014-12-27 01:14:11.904+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _133.cfs: 2014-12-22T14:23:15+0100 - 256,00 B
+2014-12-27 01:14:11.904+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _134.cfs: 2014-12-22T14:23:15+0100 - 255,00 B
+2014-12-27 01:14:11.904+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _135.cfs: 2014-12-22T14:27:51+0100 - 2,17 kB
+2014-12-27 01:14:11.904+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2014-12-22T14:23:15+0100 - 16,00 kB
+2014-12-27 01:14:11.905+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2014-12-22T14:27:51+0100 - 20,00 B
+2014-12-27 01:14:11.905+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_5: 2014-12-22T14:27:51+0100 - 1,54 kB
+2014-12-27 01:14:11.905+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2014-12-27T02:14:11+0100 - 0,00 B
+2014-12-27 01:14:11.905+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2014-12-27T02:14:11+0100 - 105,31 kB
+2014-12-27 01:14:11.905+0000 INFO  [o.n.k.i.DiagnosticsManager]:         7:
+2014-12-27 01:14:11.906+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _68j.fdt: 2014-12-24T17:13:05+0100 - 63,44 kB
+2014-12-27 01:14:11.906+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _68j.fdx: 2014-12-24T17:13:05+0100 - 56,65 kB
+2014-12-27 01:14:11.906+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _68j.fnm: 2014-12-24T17:13:05+0100 - 18,00 B
+2014-12-27 01:14:11.906+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _68j.frq: 2014-12-24T17:13:05+0100 - 28,07 kB
+2014-12-27 01:14:11.906+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _68j.tii: 2014-12-24T17:13:05+0100 - 26,17 kB
+2014-12-27 01:14:11.907+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _68j.tis: 2014-12-24T17:13:05+0100 - 329,73 kB
+2014-12-27 01:14:11.907+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _68j_1.del: 2014-12-24T22:28:29+0100 - 43,00 B
+2014-12-27 01:14:11.907+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _68k.cfs: 2014-12-24T17:13:08+0100 - 1,58 kB
+2014-12-27 01:14:11.907+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _68l.cfs: 2014-12-24T17:13:10+0100 - 1,58 kB
+2014-12-27 01:14:11.907+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _68m.cfs: 2014-12-24T17:13:14+0100 - 1,52 kB
+2014-12-27 01:14:11.908+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _68n.cfs: 2014-12-24T17:13:17+0100 - 1,75 kB
+2014-12-27 01:14:11.908+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2014-12-22T14:23:15+0100 - 16,00 kB
+2014-12-27 01:14:11.908+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2014-12-24T22:28:29+0100 - 20,00 B
+2014-12-27 01:14:11.908+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_h: 2014-12-24T22:28:29+0100 - 1,13 kB
+2014-12-27 01:14:11.908+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2014-12-27T02:14:11+0100 - 0,00 B
+2014-12-27 01:14:11.909+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2014-12-27T02:14:11+0100 - 527,71 kB
+2014-12-27 01:14:11.909+0000 INFO  [o.n.k.i.DiagnosticsManager]:         9:
+2014-12-27 01:14:11.909+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.fdt: 2014-12-22T14:23:15+0100 - 12,00 B
+2014-12-27 01:14:11.909+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.fdx: 2014-12-22T14:23:15+0100 - 12,00 B
+2014-12-27 01:14:11.909+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.fnm: 2014-12-22T14:23:15+0100 - 18,00 B
+2014-12-27 01:14:11.910+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.frq: 2014-12-22T14:23:15+0100 - 2,00 B
+2014-12-27 01:14:11.910+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.nrm: 2014-12-22T14:23:15+0100 - 4,00 B
+2014-12-27 01:14:11.910+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.tii: 2014-12-22T14:23:15+0100 - 35,00 B
+2014-12-27 01:14:11.910+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _1.tis: 2014-12-22T14:23:15+0100 - 76,00 B
+2014-12-27 01:14:11.910+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2014-12-22T14:23:15+0100 - 16,00 kB
+2014-12-27 01:14:11.911+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2014-12-22T14:23:15+0100 - 20,00 B
+2014-12-27 01:14:11.911+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_4: 2014-12-22T14:23:15+0100 - 256,00 B
+2014-12-27 01:14:11.911+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2014-12-27T02:14:11+0100 - 0,00 B
+2014-12-27 01:14:11.911+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2014-12-27T02:14:11+0100 - 16,42 kB
+2014-12-27 01:14:11.911+0000 INFO  [o.n.k.i.DiagnosticsManager]:       - Total: 2014-12-26T20:31:07+0100 - 1013,42 kB
+2014-12-27 01:14:11.912+0000 INFO  [o.n.k.i.DiagnosticsManager]:     - Total: 2014-12-22T14:23:15+0100 - 1019,42 kB
+2014-12-27 01:14:11.912+0000 INFO  [o.n.k.i.DiagnosticsManager]:     label:
+2014-12-27 01:14:11.912+0000 INFO  [o.n.k.i.DiagnosticsManager]:       lucene:
+2014-12-27 01:14:11.912+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _94u.fdt: 2014-12-24T17:12:44+0100 - 3,82 kB
+2014-12-27 01:14:11.912+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _94u.fdx: 2014-12-24T17:12:44+0100 - 2,36 kB
+2014-12-27 01:14:11.912+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _94u.fnm: 2014-12-24T17:12:44+0100 - 58,00 B
+2014-12-27 01:14:11.913+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _94u.frq: 2014-12-24T17:12:44+0100 - 842,00 B
+2014-12-27 01:14:11.913+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _94u.tii: 2014-12-24T17:12:44+0100 - 236,00 B
+2014-12-27 01:14:11.913+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _94u.tis: 2014-12-24T17:12:44+0100 - 2,18 kB
+2014-12-27 01:14:11.913+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _94u_1.del: 2014-12-24T22:28:29+0100 - 68,00 B
+2014-12-27 01:14:11.913+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _94v.cfs: 2014-12-24T17:12:47+0100 - 292,00 B
+2014-12-27 01:14:11.914+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _94v_1.del: 2014-12-24T22:28:29+0100 - 31,00 B
+2014-12-27 01:14:11.914+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _94w.cfs: 2014-12-24T17:12:50+0100 - 334,00 B
+2014-12-27 01:14:11.914+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _94w_1.del: 2014-12-24T22:28:29+0100 - 31,00 B
+2014-12-27 01:14:11.914+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _94x.cfs: 2014-12-24T17:13:05+0100 - 334,00 B
+2014-12-27 01:14:11.914+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _94x_1.del: 2014-12-24T22:28:29+0100 - 31,00 B
+2014-12-27 01:14:11.915+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _94z.cfs: 2014-12-24T17:13:10+0100 - 292,00 B
+2014-12-27 01:14:11.915+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _951.cfs: 2014-12-24T17:13:17+0100 - 292,00 B
+2014-12-27 01:14:11.915+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _951_1.del: 2014-12-24T22:28:29+0100 - 31,00 B
+2014-12-27 01:14:11.915+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _952.cfs: 2014-12-24T18:32:09+0100 - 309,00 B
+2014-12-27 01:14:11.915+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _954.cfs: 2014-12-24T18:35:14+0100 - 263,00 B
+2014-12-27 01:14:11.916+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _955.cfs: 2014-12-25T17:00:04+0100 - 263,00 B
+2014-12-27 01:14:11.916+0000 INFO  [o.n.k.i.DiagnosticsManager]:         segments.gen: 2014-12-25T23:39:00+0100 - 20,00 B
+2014-12-27 01:14:11.916+0000 INFO  [o.n.k.i.DiagnosticsManager]:         segments_n: 2014-12-25T23:39:00+0100 - 1,95 kB
+2014-12-27 01:14:11.916+0000 INFO  [o.n.k.i.DiagnosticsManager]:         write.lock: 2014-12-27T02:14:11+0100 - 0,00 B
+2014-12-27 01:14:11.916+0000 INFO  [o.n.k.i.DiagnosticsManager]:       - Total: 2014-12-27T02:14:11+0100 - 13,94 kB
+2014-12-27 01:14:11.917+0000 INFO  [o.n.k.i.DiagnosticsManager]:     - Total: 2014-12-22T14:23:15+0100 - 13,94 kB
+2014-12-27 01:14:11.917+0000 INFO  [o.n.k.i.DiagnosticsManager]:   - Total: 2014-12-22T14:23:15+0100 - 1,02 MB
+2014-12-27 01:14:11.917+0000 INFO  [o.n.k.i.DiagnosticsManager]:   store_lock: 2014-12-22T14:23:15+0100 - 0,00 B
+2014-12-27 01:14:11.917+0000 INFO  [o.n.k.i.DiagnosticsManager]:   tm_tx_log.1: 2014-12-26T21:04:25+0100 - 32,59 kB
+2014-12-27 01:14:11.917+0000 INFO  [o.n.k.i.DiagnosticsManager]:   tm_tx_log.2: 2014-12-27T02:14:11+0100 - 0,00 B
+2014-12-27 01:14:11.917+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
+2014-12-27 01:14:11.948+0000 INFO  [o.n.k.EmbeddedGraphDatabase]: GC Monitor started. 
+2014-12-27 01:14:11.964+0000 INFO  [o.n.k.EmbeddedGraphDatabase]: Database is now ready
+2014-12-27 01:14:11.964+0000 INFO  [o.n.s.d.CommunityDatabase]: Successfully started database
+2014-12-27 01:14:11.964+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- SERVER STARTED START ---
+2014-12-27 01:14:12.265+0000 INFO  [o.n.s.CommunityNeoServer]: Starting HTTP on port :7474 with 40 threads available
+2014-12-27 01:14:12.490+0000 INFO  [o.n.s.CommunityNeoServer]: Enabling HTTPS on port :7473
+2014-12-27 01:14:12.605+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for org.neo4j.server.configuration.Configurator START ---
+2014-12-27 01:14:12.609+0000 INFO  [o.n.k.i.DiagnosticsManager]: Server configuration:
+2014-12-27 01:14:12.609+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.database.location = data/graph.db
+2014-12-27 01:14:12.609+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webserver.port = 7474
+2014-12-27 01:14:12.609+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webserver.https.enabled = true
+2014-12-27 01:14:12.609+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webserver.https.port = 7473
+2014-12-27 01:14:12.609+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webserver.https.cert.location = conf/ssl/snakeoil.cert
+2014-12-27 01:14:12.609+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webserver.https.key.location = conf/ssl/snakeoil.key
+2014-12-27 01:14:12.609+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webserver.https.keystore.location = data/keystore
+2014-12-27 01:14:12.609+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webadmin.rrdb.location = data/rrd
+2014-12-27 01:14:12.609+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.db.tuning.properties = conf/neo4j.properties
+2014-12-27 01:14:12.609+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.manage.console_engines = shell
+2014-12-27 01:14:12.609+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.http.log.enabled = false
+2014-12-27 01:14:12.609+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.http.log.config = conf/neo4j-http-logging.xml
+2014-12-27 01:14:12.609+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webadmin.management.uri = /db/manage/
+2014-12-27 01:14:12.609+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webadmin.data.uri = /db/data/
+2014-12-27 01:14:12.609+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for org.neo4j.server.configuration.Configurator END ---
+2014-12-27 01:14:12.614+0000 INFO  [o.n.s.m.DiscoveryModule]: Mounted discovery module at [/]
+2014-12-27 01:14:12.621+0000 INFO  [o.n.s.m.RESTApiModule]: Mounted REST API at [/db/data/]
+2014-12-27 01:14:12.624+0000 INFO  [o.n.s.m.ManagementApiModule]: Mounted management API at [/db/manage/]
+2014-12-27 01:14:12.624+0000 INFO  [o.n.s.m.WebAdminModule]: Mounted webadmin at [/webadmin]
+2014-12-27 01:14:12.625+0000 INFO  [o.n.s.m.Neo4jBrowserModule]: Mounted Neo4j Browser at [/browser]
+2014-12-27 01:14:12.700+0000 INFO  [o.n.s.w.Jetty9WebServer]: Mounting static content at [/webadmin] from [webadmin-html]
+2014-12-27 01:14:12.754+0000 INFO  [o.n.s.w.Jetty9WebServer]: Mounting static content at [/browser] from [browser]
+2014-12-27 01:14:14.174+0000 INFO  [o.n.s.CommunityNeoServer]: Remote interface ready and available at [http://localhost:7474/]
+2014-12-27 01:14:14.175+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- SERVER STARTED END ---
