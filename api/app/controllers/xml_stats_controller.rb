@@ -81,8 +81,7 @@ class XmlStatsController
       tx = Neo4j::Transaction.new
       game.status = 'completed' 
       boxscores = fetch_boxscores(game)
-      game.away_boxscores << boxscores[:away_boxscores]
-      game.home_boxscores <<  boxscores[:home_boxscores]
+      game.boxscores = boxscores[:boxscores]
       game.away_score = boxscores[:away_score]
       game.home_score = boxscores[:home_score]
       game.save
@@ -102,8 +101,7 @@ class XmlStatsController
     response = perform_query("/nba/boxscore/#{game.game_id}.json")
     stadistics[:away_score] = response['away_totals']['points']
     stadistics[:home_score] = response['home_totals']['points']
-    stadistics[:away_boxscores] = []
-    stadistics[:home_boxscores] = []
+    stadistics[:boxscores] = []
 
     create_stadistics_of('away', response, stadistics, game)
     create_stadistics_of('home', response, stadistics, game)
@@ -117,7 +115,9 @@ class XmlStatsController
       player = find_player_by_name_for(stat)
       raise_search_error(stat, game) unless player
       boxscore = create_boxscore(stat, player)
-      stadistics["#{side}_boxscores".to_sym] << boxscore
+      boxscore.type = side
+      boxscore.save
+      stadistics[:boxscores] << boxscore
       add_score(player, boxscore) unless player.fantastic_teams.empty?
     end
   end
@@ -183,7 +183,7 @@ class XmlStatsController
     response = get(path)
     return response if response.code == 200
     puts "#{path}: #{response.code}"
-    sleep 5
+    sleep 11
     perform_query(path)
   end
 

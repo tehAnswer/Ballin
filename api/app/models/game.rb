@@ -14,8 +14,10 @@ class Game
 
   has_one :out, :away_team, model_class: NbaTeam
   has_one :out, :home_team, model_class: NbaTeam
-  has_many :out, :away_boxscores, model_class: BoxScore
-  has_many :out, :home_boxscores, model_class: BoxScore
+
+  has_many :out, :boxscores, model_class: BoxScore
+  #has_many :out, :away_boxscores, model_class: BoxScore
+  #has_many :out, :home_boxscores, model_class: BoxScore
 
 
   def self.yesterday
@@ -26,9 +28,18 @@ class Game
     Game.where(date_formatted: day.strftime('%Y%m%d'))
   end
 
-  def boxscores
-    away_boxscores.to_a + home_boxscores.to_a
+  def home_boxscores
+    filtered_score('home')
   end
+   
+  def away_boxscores
+    filtered_score('away')
+  end
+   
+  private
 
+  def filtered_score(side)
+    self.boxscores.where(type: side)
+  end
 
 end
