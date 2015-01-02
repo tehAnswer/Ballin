@@ -9,13 +9,12 @@ class Api::PlayersController < ApplicationController
   # GET /players
   # GET /players.json
   def index
-    @page = request[:page] || 1
-    @players = Player.all
-    @meta = paginate(@page, @players)
-    puts @meta
-    @players= @players.paginate(page: @page, per_page: BallinAPI::ITEMS_PER_PAGE )
-    render json: @players
-    #@players = Player.all.drop(page*BallinAPI::ITEMS_PER_PAGE).take(BallinAPI::ITEMS_PER_PAGE
+    page = request[:page] || 1
+    players = Player.all
+    meta = paginate(page, players)
+    players = players.paginate(page: page, per_page: BallinAPI::ITEMS_PER_PAGE )
+    respond_with players, meta: meta
+    
   end
 
   # GET /players/1

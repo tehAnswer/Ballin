@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  namespace :api do
+  namespace :api, :defaults => {:format => :json } do
     resources :players, only: :index
     resources :box_scores, only: :index
     resources :leagues, only: [:index, :show, :create] do
