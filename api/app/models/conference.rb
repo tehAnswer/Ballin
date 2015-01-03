@@ -22,4 +22,8 @@ class Conference
     division_one.number_of_teams + division_two.number_of_teams + division_three.number_of_teams
   end
 
+  def division_ids
+    [division_one.neo_id, division_two.neo_id, division_three.neo_id]
+  end
+
 end

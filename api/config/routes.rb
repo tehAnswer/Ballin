@@ -7,5 +7,6 @@ Rails.application.routes.draw do
         resources :fantastic_teams, only: :create
       end
     end
+    devise_for :users
   end
 end

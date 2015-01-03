@@ -1,7 +1,6 @@
 require 'neo4j-will_paginate_redux'
 
 class Api::PlayersController < ApplicationController
-  include PaginationHelper
 
   before_action :set_player, only: [:show]
   respond_to :json

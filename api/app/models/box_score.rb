@@ -46,12 +46,6 @@ class BoxScore
     (bonus - penalty).round(2)
   end
 
-  #def game
-     #rel = rels(type: '#home_boxscores').first || rels(type: '#away_boxscores').first
-     #return nil if rel.nil?
-     #rel.start_node
-  #end
-
   def home?
     self.type == 'home'
   end
@@ -62,6 +56,10 @@ class BoxScore
 
   def player_id
     player.neo_id
+  end
+
+  def game_id
+    game.neo_id
   end
 
 

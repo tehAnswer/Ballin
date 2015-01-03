@@ -4,7 +4,11 @@ class Api::LeaguesController < ApplicationController
 
   # GET /leagues
   def index
-    @leagues = League.all
+    page = request[:page] || 1
+    leagues = League.all
+    meta = paginate(page, leagues)
+    leagues = leagues.paginate(page: page, per_page: BallinAPI::ITEMS_PER_PAGE )
+    respond_with leagues, meta: meta
   end
 
   # GET /leagues/1
@@ -30,6 +34,6 @@ class Api::LeaguesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def league_params
-      params.require(:league).permit(:name)
+      params.require(:league).permit(:name, :page)
     end
 end

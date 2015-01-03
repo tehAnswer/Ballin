@@ -29,4 +29,13 @@ class League
     eastern_conference.number_of_teams + western_conference.number_of_teams
   end
 
+  def eastern_conference_id
+    eastern_conference.neo_id
+  end
+
+  def western_conference_id
+    western_conference.neo_id
+  end
+
+
 end

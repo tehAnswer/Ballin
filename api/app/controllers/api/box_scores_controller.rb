@@ -3,12 +3,12 @@ class Api::BoxScoresController < ApplicationController
 
   # GET /boxscores?ids=...
   def index
-    @box_scores = []
+    box_scores = []
     params[:ids].each do |id|
       box_score = BoxScore.find_by(neo_id: id)
       @box_scores << box_score if box_score
-    end
-    render json: @box_scores
+    end if params[:ids]
+    render json: box_scores
   end
 
 end

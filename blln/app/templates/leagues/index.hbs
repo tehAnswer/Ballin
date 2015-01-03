@@ -1,3 +1,5 @@
+<h1>Leagues</h1>
+
 <table class="table table-stripped">
   <thead>
     <tr>
@@ -9,7 +11,7 @@
     {{#each league in model}}
       <tr>
         <td> {{#link-to 'leagues.show' league.id}} {{league.name}} {{/link-to}} </td>
-        <td> -1 </td>
+        <td> {{league.numberOfTeams}} </td>
       </tr>
     {{/each}}
   </tbody>
