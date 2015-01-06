@@ -2,7 +2,7 @@ class Api::LeaguesController < ApplicationController
   before_action :set_league, only: [:show]
   respond_to :json
 
-  # GET /leagues
+  # GET /api/leagues
   def index
     page = request[:page] || 1
     leagues = League.all
@@ -11,11 +11,11 @@ class Api::LeaguesController < ApplicationController
     respond_with leagues, meta: meta
   end
 
-  # GET /leagues/1
+  # GET /api/leagues/1
   def show
   end
 
-  # POST /leagues
+  # POST /api/leagues
   def create
     @league = LeagueCreation.create(league_params)
     if @league.persisted?

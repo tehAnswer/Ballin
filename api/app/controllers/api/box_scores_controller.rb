@@ -1,7 +1,7 @@
 class Api::BoxScoresController < ApplicationController
   respond_to :json
 
-  # GET /boxscores?ids=...
+  # GET /api/boxscores?ids=...
   def index
     box_scores = []
     params[:ids].each do |id|

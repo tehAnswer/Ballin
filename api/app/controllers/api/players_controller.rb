@@ -5,8 +5,8 @@ class Api::PlayersController < ApplicationController
   before_action :set_player, only: [:show]
   respond_to :json
 
-  # GET /players
-  # GET /players.json
+  # GET /api/players
+  # GET /api/players.json
   def index
     page = request[:page] || 1
     players = Player.all
@@ -16,7 +16,7 @@ class Api::PlayersController < ApplicationController
     
   end
 
-  # GET /players/1
+  # GET /api/players/1
   def show
   end
 

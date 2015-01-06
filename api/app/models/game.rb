@@ -21,7 +21,7 @@ class Game
 
 
   def self.yesterday
-    on_date 1.day.ago.strftime('%Y%m%d')
+    on_date 1.day.ago
   end
 
   def self.on_date(day)
