@@ -16,8 +16,6 @@ class Game
   has_one :out, :home_team, model_class: NbaTeam
 
   has_many :out, :boxscores, model_class: BoxScore
-  #has_many :out, :away_boxscores, model_class: BoxScore
-  #has_many :out, :home_boxscores, model_class: BoxScore
 
 
   def self.yesterday

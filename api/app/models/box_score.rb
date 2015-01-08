@@ -1,7 +1,7 @@
 class BoxScore 
   include Neo4j::ActiveNode
 
-  property :type
+  property :side
   property :minutes, type: Integer, default: 0
   property :points, type: Integer, default: 0
   property :assists, type: Integer, default: 0
@@ -47,11 +47,11 @@ class BoxScore
   end
 
   def home?
-    self.type == 'home'
+    self.side == 'home'
   end
    
   def away?
-    self.type == 'away'
+    self.side == 'away'
   end
 
   def player_id

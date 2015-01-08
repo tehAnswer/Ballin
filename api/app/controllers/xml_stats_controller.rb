@@ -115,7 +115,7 @@ class XmlStatsController
       player = find_player_by_name_for(stat)
       raise_search_error(stat, game) unless player
       boxscore = create_boxscore(stat, player)
-      boxscore.type = side
+      boxscore.side = side
       boxscore.save
       stadistics[:boxscores] << boxscore
       add_score(player, boxscore) unless player.fantastic_teams.empty?
@@ -181,9 +181,9 @@ class XmlStatsController
 
   def perform_query(path)
     response = get(path)
-    return response if response.code == 200
-    puts "#{path}: #{response.code}"
     sleep 11
+    return response if response.code == 200
+    return [] if response.code == 404
     perform_query(path)
   end
 
