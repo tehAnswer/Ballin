@@ -1,5 +1,6 @@
 class BoxScore 
   include Neo4j::ActiveNode
+  include BoxScoreHelper
 
   property :side
   property :minutes, type: Integer, default: 0
@@ -18,6 +19,7 @@ class BoxScore
   property :turnovers, type: Integer, default: 0
   property :final_score, type: Float, default: 0
   property :is_starter, type: Boolean, default: false
+  #property :is_local, type: Boolean, default: false
   property :faults, type: Integer, default: 0
 
   validates :minutes, :points, :assists, :steals, :defr, :ofr, :blocks,
@@ -31,7 +33,7 @@ class BoxScore
   has_one :in, :player, model_class: Player, origin: :boxscores
 
   before_create do
-    self.final_score = puntuation_calculator
+    self.final_score = _final_score
   end
 
  
@@ -39,20 +41,6 @@ class BoxScore
     ftm + 2 * (fgm - lsm) + 3 * lsm
   end
 
-  def puntuation_calculator
-    bonus = points + 1.25 * assists + 1.25 * defr + 1.5 * ofr 
-      + 2.5 * steals + 2 * blocks
-    penalty = (fta - ftm)/10 + (fga - lsa - fgm)/5 + (lsa - lsm)/3 + 3 * turnovers
-    (bonus - penalty).round(2)
-  end
-
-  def home?
-    self.side == 'home'
-  end
-   
-  def away?
-    self.side == 'away'
-  end
 
   def player_id
     player.neo_id

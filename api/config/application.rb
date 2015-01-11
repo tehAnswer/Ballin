@@ -16,6 +16,53 @@ Bundler.require(*Rails.groups)
 
 module BallinAPI
     ITEMS_PER_PAGE = 15
+
+    ASSIST_BONUS = 1.75
+    DEFR_BONUS = 1.25
+    OFR_BONUS = 1.5
+    STEAL_BONUS = 2.75
+    BLOCK_BONUS = 2
+
+    FT_PENALTY = 3
+    FG_PENALTY = 2
+    LS_PENALTY = 2.5
+    TURNOVER_PENALTY = 3
+
+    POINTS_REVULSIVE = 19
+    MINUTES_REVULSIVE = 21
+    REVULSIVE = 15
+
+    SPLASH_ATTEMPTS = 7 
+    SPLASH = 20
+
+    RIM_PROTECTOR_BLOCKS = 3
+    RIM_PROTECTOR_DEFR = 9
+    RIM_PROTECTOR = 10
+
+    NO_MISS_FGA = 7
+    NO_MISS = 20
+
+    UNSELFISH_ASSISTS = 7
+    UNSELFISH_FGA = 10
+    UNSELFISH = 10
+
+    HUSTLER_STEALS = 4
+    HUSTLER_BLOCKS = 4
+    HUSTLER = 15
+
+    FIVE_BY_FIVE = 100
+
+    POSSESIONS_FREEAWAY_TURNOVERS = 5
+    POSSESIONS_FREEAWAY = 20
+
+    HACKED_FTM_RATIO = 40
+    HACKED_FTA = 10
+    HACKED = 20
+
+    NIGHTMARE_FGM_RATIO = 30 
+    NIGHTMARE_FGA = 9
+    NIGHTMARE = 30
+
   class Application < Rails::Application
     
     config.generators do |g|
