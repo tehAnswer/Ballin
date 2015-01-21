@@ -70,7 +70,7 @@ module BoxScoreHelper
   end
 
   def splash?
-  	(lsa - lsm) == 0 && lsa > BallinAPI::SPLASH_ATTEMPTS
+  	lsa > BallinAPI::SPLASH_ATTEMPTS && (lsm).fdiv(lsa) * 100 > BallinAPI::SPLASH_RATIO
   end
 
   def rim_protector?
