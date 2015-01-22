@@ -9,8 +9,7 @@ class FantasticTeam
   validates :name, :abbreviation, uniqueness: true
   validates :name, :abbreviation, :hood, presence: true
   
-  has_one :in, :division, model_class: Division,
-    origin: :team_one || :team_two || :team_three || :team_four || :team_five
+  has_one :in, :division, model_class: Division
   has_many :in, :contracts, model_class: Contract, origin: :team
   
   has_one :out, :rotation, model_class: Rotation

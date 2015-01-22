@@ -1,5 +1,5 @@
 class PointGuardSlot < RosterSlot
-  type '#point_guard'
+  type 'POINT_GUARD'
   validate :is_point_guard
 
   def is_point_guard

@@ -1,5 +1,5 @@
 class CenterSlot < RosterSlot
-  type '#center'
+	type 'CENTER'
   validate :is_center
 
   def is_center

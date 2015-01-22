@@ -2,7 +2,6 @@ class BoxScore
   include Neo4j::ActiveNode
   include BoxScoreHelper
 
-  property :side
   property :minutes, type: Integer, default: 0
   property :points, type: Integer, default: 0
   property :assists, type: Integer, default: 0
@@ -19,7 +18,7 @@ class BoxScore
   property :turnovers, type: Integer, default: 0
   property :final_score, type: Float, default: 0
   property :is_starter, type: Boolean, default: false
-  #property :is_local, type: Boolean, default: false
+  property :is_local, type: Boolean, default: false
   property :faults, type: Integer, default: 0
 
   validates :minutes, :points, :assists, :steals, :defr, :ofr, :blocks,

@@ -1,5 +1,5 @@
 class ShootingGuardSlot < RosterSlot
-  type '#shooting_guard'
+  type 'SHOOTING_GUARD'
   validate :is_shooting_guard
 
   def is_shooting_guard

@@ -3,7 +3,7 @@ require 'logger'
 
 class XmlStatsController
   include HTTParty
-  base_uri 'https://www.erikberg.com'
+  base_uri 'https://erikberg.com'
 
 
   def fetch_games(date)
@@ -25,7 +25,7 @@ class XmlStatsController
   end
 
   def get_scheduled_games(start_date, end_date)
-    range_operation(start_date, end_date) { fetch_games(date) }
+    range_operation(start_date, end_date) { |date| fetch_games(date) }
   end
 
   def get_boxscores_since(start_date, end_date=1.day.ago)
@@ -34,7 +34,7 @@ class XmlStatsController
 
   def range_operation(start_date, end_date)
     range_dates = (start_date.to_date..end_date.to_date)
-    range_dates.each { |date | yield(date) }
+    range_dates.each { |date| yield(date) }
   end
 
   def update_rosters
@@ -94,8 +94,6 @@ class XmlStatsController
     end
   end
 
-
-
   def fetch_boxscores(game)
     stadistics = Hash.new
     response = perform_query("/nba/boxscore/#{game.game_id}.json")
@@ -115,7 +113,7 @@ class XmlStatsController
       player = find_player_by_name_for(stat)
       raise_search_error(stat, game) unless player
       boxscore = create_boxscore(stat, player)
-      boxscore.side = side
+      boxscore.is_local = side == 'home'
       boxscore.save
       stadistics[:boxscores] << boxscore
       add_score(player, boxscore) unless player.fantastic_teams.empty?
@@ -165,8 +163,12 @@ class XmlStatsController
 
   def find_or_create(params)
     Player.find_by(name: params['display_name'], 
-      birthplace: params['birthplace']) ||
-    Player.create!({
+      birthplace: params['birthplace']) || register_player(params)
+   
+  end
+
+  def register_player (params)
+     Player.create!({
         name: params['display_name'],
         height_cm: params['height_cm'],
         height_formatted: params['height_formatted'],
@@ -181,17 +183,26 @@ class XmlStatsController
 
   def perform_query(path)
     response = get(path)
-    sleep 11
     return response if response.code == 200
     return [] if response.code == 404
+    if response.code == 429
+      dif = response.headers['xmlstats-api-reset'].to_i - Time.now.strftime('%s').to_i
+      Rails.logger.error "Sleeping for #{dif}"
+      sleep dif
+    end
+    raise "Access token has expired" if response.code == 403
     perform_query(path)
   end
 
   def get(path)
-    self.class.get(path, headers: {
+    self.class.get(path, headers: headers)
+  end
+
+  def headers
+    {
       'User-Agent' => Rails.application.secrets.name_robot,
       'Authorization' => 'Bearer '+ Rails.application.secrets.api_key
-      })
+    }
   end
 
 end

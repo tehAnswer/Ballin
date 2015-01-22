@@ -8,7 +8,7 @@ class GameTest < ActiveSupport::TestCase
     game.status = 'Completed'
     game.season_type= 'Regular'
     game.start_date_time = Date.new.to_s
-    assert true, game.valid?
+    assert_equal true, game.valid?
     
   end
 end
