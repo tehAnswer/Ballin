@@ -12,7 +12,6 @@ class Conference
 
   validates :name, presence: true
 
-
   def standings_per_division
     hash = Hash.new
     divisions.each do |division|

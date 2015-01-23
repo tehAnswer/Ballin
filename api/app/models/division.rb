@@ -8,7 +8,7 @@ class Division
   #has_one :out, :team_four, model_class: FantasticTeam
   #has_one :out, :team_five, model_class: FantasticTeam
 
-  has_many :out, :teams, model_class: FantasticTeam
+  has_many :out, :teams, model_class: FantasticTeam, rel_class: HasTeam
   has_one :in, :conference, model_class: Conference
   #has_one :in, :conference, model_class: Conference, origin: :division_one || :division_two || :division_three
 

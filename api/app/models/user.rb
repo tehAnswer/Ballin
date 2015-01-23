@@ -8,6 +8,7 @@ class User
     # uncomment the property definitions for those modules. Otherwise, the unused property definitions can be deleted.
     #
 
+    property :auth_code
     has_one :out, :team, model_class: FantasticTeam
 
     property :username, :type =>   String
@@ -33,7 +34,7 @@ class User
      ## Recoverable
     property :reset_password_token
     index :reset_password_token
-    property :reset_password_sent_at, :type =>   DateTime
+    property :reset_password_sent_at, :type => DateTime
 
      ## Trackable
     property :sign_in_count, :type => Integer, :default => 0
@@ -62,6 +63,13 @@ class User
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable, :confirmable, :lockable
   validates :username, uniqueness: true
+
+  def update_auth_code
+    self.auth_code = TokenGenerator.create
+    self.save
+  end
+
+
 
 
 end

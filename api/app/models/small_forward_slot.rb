@@ -1,5 +1,5 @@
 class SmallForwardSlot < RosterSlot
-  type 'SMALL_FORWARD'
+  type '#small_forward'
   validate :is_forward
 
   def is_foward

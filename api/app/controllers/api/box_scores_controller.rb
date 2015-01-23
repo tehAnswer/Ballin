@@ -6,7 +6,7 @@ class Api::BoxScoresController < ApplicationController
     box_scores = []
     params[:ids].each do |id|
       box_score = BoxScore.find_by(neo_id: id)
-      @box_scores << box_score if box_score
+      box_scores << box_score if box_score
     end if params[:ids]
     render json: box_scores
   end

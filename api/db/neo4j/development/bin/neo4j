@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 ### BEGIN REDHAT INFO
 # chkconfig: 2345 99 20
 # description: The Neo4J graph database server. See http://neo4j.org
@@ -163,6 +163,8 @@ startit() {
 	     echo "Another server-process is running with [$newpid], cannot start a new one. Exiting."
 	     exit 2;
   fi
+
+  echo "Using additional JVM arguments: " $JAVA_OPTS
 
   if [ $DIST_OS = "macosx" ] ; then
     getlaunchdpid
@@ -386,7 +388,7 @@ case "${!OPTIND}" in
     exit 1
     ;;
   *)
-    echo "Usage: neo4j { console | start | start-no-wait | stop | restart | status | info }"
+    echo "Usage: neo4j { console | start | start-no-wait | stop | restart | status | info | install | remove }"
     exit 0;;
 
 esac

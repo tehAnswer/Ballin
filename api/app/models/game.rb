@@ -37,7 +37,7 @@ class Game
   private
 
   def filtered_score(side)
-    self.boxscores.where(type: side)
+    boxscores.where(side: side)
   end
 
 end

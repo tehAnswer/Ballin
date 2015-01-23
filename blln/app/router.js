@@ -13,6 +13,9 @@ Router.map(function() {
     	this.resource('box-scores', function() { });
     });
    });
+  this.resource('sessions', function() {
+    this.route('new');
+  });
   this.resource('leagues', function() {
     this.route('show', { path: '/:league_id' });
   });

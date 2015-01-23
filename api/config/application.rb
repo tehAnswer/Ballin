@@ -71,6 +71,7 @@ module BallinAPI
     end
 
     config.neo4j.id_property = :id
+    config.neo4j.transform_rel_type = :legacy
 
     # Configure where the embedded neo4j database should exist
     # Notice embedded db is only available for JRuby
