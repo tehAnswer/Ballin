@@ -21,7 +21,11 @@ export default Ember.Controller.extend({
       });
       request.then(function(response) {
         that.reset();
-        that.set('token', response.token);
+        that.get('cookie').setCookie('token', response.token)
+          .then(function() {
+            alert('Cookie stored');
+          });
+        //that.store.set('token', response.token);
       }, function(error) {
         that.reset();
         that.set("loginFailed", true);
