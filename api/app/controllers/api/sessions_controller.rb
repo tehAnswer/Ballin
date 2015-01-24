@@ -2,7 +2,7 @@ class Api::SessionsController < Devise::SessionsController
 
   # POST /api/users/sign_in
   def create
-    user = User.find_for_database_authentication(email: params[:email])
+    user = User.find_for_database_authentication(email: params[:email_or_username]) || User.find_for_database_authentication(username: params[:email_or_username])
     password = params[:password]
     unless user && password
       render json: "Missing data.", status: 401

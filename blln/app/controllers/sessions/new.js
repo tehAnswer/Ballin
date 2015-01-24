@@ -16,7 +16,7 @@ export default Ember.Controller.extend({
       this.set("timeout", setTimeout(this.slowConnection.bind(this), 5000));
 
       var request = $.post("/api/users/sign_in", {
-        email: this.get("email"),
+        email_or_username: this.get("email_or_username"),
         password: this.get("password")
       });
       request.then(function(response) {

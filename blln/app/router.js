@@ -8,14 +8,21 @@ var Router = Ember.Router.extend({
 Router.map(function() {
   this.resource('players', function() {
     this.route('show', { path: '/:player_id' }, function() {
-
-    	//this.route('box-scores');
     	this.resource('box-scores', function() { });
     });
    });
   this.resource('sessions', function() {
     this.route('new');
   });
+
+  this.route('dashboard');
+
+  this.resource('users', function () {
+    this.route('sign_up');
+    this.route('show', { path: '/:user_id' });
+
+  });
+
   this.resource('leagues', function() {
     this.route('show', { path: '/:league_id' });
   });

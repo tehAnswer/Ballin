@@ -113,7 +113,7 @@ class XmlStatsController
       player = find_player_by_name_for(stat)
       raise_search_error(stat, game) unless player
       boxscore = create_boxscore(stat, player)
-      boxscore.is_local = side == 'home'
+      boxscore.side = side
       boxscore.save
       stadistics[:boxscores] << boxscore
       add_score(player, boxscore) unless player.fantastic_teams.empty?

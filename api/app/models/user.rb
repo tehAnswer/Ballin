@@ -11,7 +11,7 @@ class User
     property :auth_code
     has_one :out, :team, model_class: FantasticTeam
 
-    property :username, :type =>   String
+    property :username, :type => String
     property :facebook_token, :type => String
     index :facebook_token
 
@@ -60,9 +60,11 @@ class User
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
-  devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable, :confirmable, :lockable
-  validates :username, uniqueness: true
+  devise :database_authenticatable, :registerable
+        # :recoverable, :rememberable, :trackable, :validatable, :confirmable, :lockable
+  validates :username, :email, uniqueness: true
+  validates :username, presence: true
+  validates :email, email: true
 
   def update_auth_code
     self.auth_code = TokenGenerator.create

@@ -1,0 +1,27 @@
+<h1>Sign up!</h1>
+
+<div class= "col-xs-6">
+  <form class="form-horizontal" {{action "signUp" on="submit"}}>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      {{input value=model.email type="text" class="form-control" placeholder="Type your email!"}}
+    </div>
+
+    <div class="form-group">
+      <label for="username">Username</label>
+      {{input value=model.username type="text" class="form-control" placeholder="Type your nickname!"}}
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      {{input value=model.password type="password" class="form-control" placeholder="Type your secret password!"}}
+    </div>
+
+    <div class="form-group">
+      <label for="repassword">Repeat your password</label>
+      {{input value=model.repassword type="password" class="form-control" placeholder="Type your secret password!"}}
+    </div>  
+
+    <button type="submit" class="btn btn-default">Register</button>
+</form>
