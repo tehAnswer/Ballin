@@ -71,6 +71,11 @@ class User
     self.save
   end
 
+  def team_id
+    return -1 if team.nil?
+    team.neo_id
+  end
+
 
 
 

@@ -17,7 +17,7 @@ class Division
   end
 
   def number_of_teams
-    teams.count
+    teams.count.to_i
   end
 
   def conference_id

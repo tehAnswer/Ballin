@@ -38,15 +38,11 @@ class League
   end
 
   def number_of_teams
-    eastern_conference.number_of_teams + western_conference.number_of_teams
+    conferences.map { |conference| conference.number_of_teams }.reduce(:+)
   end
 
-  def eastern_conference_id
-    eastern_conference.neo_id
-  end
-
-  def western_conference_id
-    western_conference.neo_id
+  def conferences_id
+    conferences.map { |conference| conference.neo_id }
   end
 
 

@@ -19,13 +19,13 @@ export default Ember.Controller.extend({
         email_or_username: this.get("email_or_username"),
         password: this.get("password")
       });
+
       request.then(function(response) {
         that.reset();
-        that.get('cookie').setCookie('token', response.token)
+        that.get('cookie').setCookie('token', response.user.token)
           .then(function() {
-            alert('Cookie stored');
+            that.transitionTo('dashboard')
           });
-        //that.store.set('token', response.token);
       }, function(error) {
         that.reset();
         that.set("loginFailed", true);

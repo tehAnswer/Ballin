@@ -12,8 +12,7 @@ class Api::PlayersController < ApplicationController
     players = Player.all
     meta = paginate(page, players)
     players = players.paginate(page: page, per_page: BallinAPI::ITEMS_PER_PAGE )
-    respond_with players, meta: meta
-    
+    respond_with players, meta: meta 
   end
 
   # GET /api/players/1

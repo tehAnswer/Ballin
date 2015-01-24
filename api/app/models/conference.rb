@@ -21,11 +21,10 @@ class Conference
   end
 
   def number_of_teams
-    divisions.inject { |sum, division| sum + division.number_of_teams }
+    divisions.map{ |division| division.number_of_teams }.reduce(:+)
   end
 
   def division_ids
-    #[division_one.neo_id, division_two.neo_id, division_three.neo_id]
     divisions.map { |division| division.neo_id }
   end
 

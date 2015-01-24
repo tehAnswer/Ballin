@@ -3,6 +3,7 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
 	actions: {
 		signUp: function () {
+			alert(this.get('isValid'));
 			if(this.get('isValid')) {
 				var that = this;
 				var request = $.post("/api/users", {
@@ -14,13 +15,16 @@ export default Ember.Controller.extend({
 				});
 
 				request.then(function(response) {
-					var user = response;
-					this.application.set('user', user)
+					alert(response.user);
+					that.store.createRecord('user', response.user);
 					that.transitionTo('dashboard');
 				},
 				function(error) {
 					that.set('errorMessage', error);
 				});
+			}
+			else {
+				that.set('errorMessage', "Fill the form correctly, please.");
 			}
 		}
 	},

@@ -8,10 +8,9 @@ class Api::SessionsController < Devise::SessionsController
       render json: "Missing data.", status: 401
       return
     end
-
-    puts user.valid_password? password
+    
     if user.valid_password? password
-      render json: { token: user.auth_code }, status: 201
+      render json: user, status: 201
       return
     else
       render json: "Bad combination.", status: 401

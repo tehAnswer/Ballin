@@ -1,4 +1,5 @@
 class Api::RegistrationsController < Devise::SessionsController
+	respond_to :json
 
 	# POST /api/users
 	# POST /api/users.json
@@ -10,9 +11,9 @@ class Api::RegistrationsController < Devise::SessionsController
 		if user.valid?
 			user.update_auth_code
 			user.save
-			render json: { token: user.auth_code }, status: 201
+			respond_with user, status: 201
 		else
-			render json: user.errors, status: 422
+			respond_with user.errors, status: 422
 		end
 	end
 
