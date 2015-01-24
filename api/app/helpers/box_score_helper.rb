@@ -2,7 +2,7 @@ module BoxScoreHelper
 
   def _final_score
   	bonus = __base_bonus + __extra_bonus_points
-  	bonus += n_double.pred * 10 * bonus if n_double >= 2
+  	bonus += n_double.pred * 0.1 * bonus if n_double >= 2
   	penalty = __base_penalty + __extra_penalty_points
   	(bonus - penalty).round(2)
   end
