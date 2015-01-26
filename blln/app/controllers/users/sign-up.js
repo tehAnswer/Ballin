@@ -3,7 +3,6 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
 	actions: {
 		signUp: function () {
-			alert(this.get('isValid'));
 			if(this.get('isValid')) {
 				var that = this;
 				var request = $.post("/api/users", {
@@ -15,9 +14,11 @@ export default Ember.Controller.extend({
 				});
 
 				request.then(function(response) {
-					alert(response.user);
 					that.store.createRecord('user', response.user);
-					that.transitionTo('dashboard');
+					that.get('cookie').setCookie('token', response.user.auth_code)
+          .then(function() {
+            that.transitionToRoute('dashboard')
+          });
 				},
 				function(error) {
 					that.set('errorMessage', error);

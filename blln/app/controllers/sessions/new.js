@@ -22,9 +22,10 @@ export default Ember.Controller.extend({
 
       request.then(function(response) {
         that.reset();
-        that.get('cookie').setCookie('token', response.user.token)
-          .then(function() {
-            that.transitionTo('dashboard')
+        that.store.createRecord('user', response.user);
+        that.get('cookie').setCookie('token', response.user.auth_code)
+         .then(function() {
+            that.transitionToRoute('dashboard');
           });
       }, function(error) {
         that.reset();
