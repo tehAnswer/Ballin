@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class PlayerTest < ActionDispatch::IntegrationTest
+class PlayersTest < ActionDispatch::IntegrationTest
 
   test 'get players' do
     token = User.first.auth_code
