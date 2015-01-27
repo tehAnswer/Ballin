@@ -10,7 +10,7 @@ class BoxScoreTest < ActiveSupport::TestCase
     boxscore.msm = 4
     boxscore.turnovers = 3
 
-    assert true, boxscore.valid?
+    assert_equal true, boxscore.valid?
   end
 
   test 'incoherent data' do

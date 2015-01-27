@@ -3,6 +3,12 @@ require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
 
 class ActiveSupport::TestCase
+
+
+  def parse(body)
+    JSON.parse(body, symbolize_names: true)
+  end
+  
   def add_teams
 		[ NbaTeam.create!({team_id: 'philadephia-76-ers',
         abbreviation: 'PHI',
