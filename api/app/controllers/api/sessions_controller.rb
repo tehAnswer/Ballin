@@ -10,6 +10,7 @@ class Api::SessionsController < Devise::SessionsController
     end
     
     if user.valid_password? password
+      user.update_auth_code
       render json: user, status: 201
       return
     else
