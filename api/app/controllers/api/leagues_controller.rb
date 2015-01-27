@@ -13,6 +13,11 @@ class Api::LeaguesController < ApplicationController
 
   # GET /api/leagues/1
   def show
+    if !@league.nil?
+      respond_with @league
+    else
+      render json: { error: "Not such league" }, status: 404
+    end
   end
 
   # POST /api/leagues
@@ -29,7 +34,7 @@ class Api::LeaguesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_league
-      @league = League.find(params[:id])
+      @league = League.find_by(neo_id: params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

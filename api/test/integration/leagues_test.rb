@@ -13,6 +13,17 @@ class LeaguesTest < ActionDispatch::IntegrationTest
       assert_equal 422, response.status
     end
 
+    test 'individual league' do
+      league = League.first
+      get "api/leagues/#{league.neo_id}", { },  { dagger: User.first.auth_code }
+      assert_equal 200, response.status
+      hash = parse(response.body)
+      assert_equal league.name, hash[:league][:name]
+      assert_equal 2, hash[:league][:conference_ids].count
+      get 'api/leagues/181818181881', { },  { dagger: User.first.auth_code }
+      assert_equal 404, response.status
+    end
+
     test 'get leagues' do
       get 'api/leagues', { }, { dagger: User.first.auth_code }
       assert_equal 200, response.status
