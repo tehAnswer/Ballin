@@ -2,6 +2,15 @@ require 'test_helper'
 
 class LeaguesTest < ActionDispatch::IntegrationTest
     test 'league creation' do
+      league = {
+        name: "UniqueLeagueName"
+      }
+      post 'api/leagues', { league }, { dagger: User.admin.first.auth_code }
+      assert_equal 201, response.status
+      post 'api/leagues', { league }, { dagger: User.first.auth_code }
+      assert_equal 401, response.status
+      post 'api/leagues', { league }, { dagger: User.admin.first.auth_code }
+      assert_equal 422, response.status
     end
 
     test 'get leagues' do
