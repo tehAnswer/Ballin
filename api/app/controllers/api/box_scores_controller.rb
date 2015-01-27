@@ -11,4 +11,8 @@ class Api::BoxScoresController < ApplicationController
     render json: box_scores
   end
 
+  # GET /api/boxscores/1
+  def show
+  end
+
 end
