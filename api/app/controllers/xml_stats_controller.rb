@@ -51,6 +51,7 @@ class XmlStatsController
   end
 
   def fetch_teams
+    return nil if NbaTeam.count > 0
     response = perform_query('/nba/teams.json')
     response.each do |team|
       NbaTeam.create!({
@@ -110,22 +111,24 @@ class XmlStatsController
 
   def create_stadistics_of (side, response, stadistics, game)
      response["#{side}_stats"].each do |stat|
-      player = find_player_by_name_for(stat)
+      player = find_player_by_name_for(stat, game.game_id)
       raise_search_error(stat, game) unless player
       boxscore = create_boxscore(stat, player)
-      boxscore.side = side
+      boxscore.is_local = side == 'home'
       boxscore.save
       stadistics[:boxscores] << boxscore
       add_score(player, boxscore) unless player.fantastic_teams.empty?
     end
   end
 
-  def find_player_by_name_for(stat)
+  def find_player_by_name_for(stat, game_id)
     nodeset = Player.as(:p).where(name: stat['display_name'])
     return nodeset.first if nodeset.count == 1
     nodeset = nodeset.real_team.where(abbreviation: stat['team_abbreviation']).pluck(:p)
     return nodeset.first if nodeset.count == 1
-    return false
+    scrapper = XmlStatsScrapper.new
+    Logger.error("Scrappin' for #{stat[display_name]}")
+    return scrapper.fetch_player_from_game(stat['display_name'], game_id)
   end
 
   def add_score(player, boxscore)

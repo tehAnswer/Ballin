@@ -11,7 +11,8 @@ class XmlStatsScrapper
 	
  
 	def fetch_player_from_game(player_name, game_id)
-		link = get_player_link(player_name, game_id) || return nil
+		link = get_player_link(player_name, game_id)
+		return nil if link.nil?
 		data = extract(link)
 		create_player(data)
 	end
@@ -39,7 +40,7 @@ class XmlStatsScrapper
 	end
  
 	def create_player(data)
-		Player.create({
+		Player.create!({
 			name: data[1].join(" "),
 			birthdate: Date.strptime(data[3][0], "%m/%d/%y"),
 			birthplace: data[2].join(" "),

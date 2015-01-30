@@ -1,5 +1,5 @@
 class PowerForwardSlot < RosterSlot
-  type '#power_forward'
+  type 'POWER_FORWARD'
   validate :is_forward
 
   def is_forward

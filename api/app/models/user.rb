@@ -64,7 +64,6 @@ class User
         # :recoverable, :rememberable, :trackable, :validatable, :confirmable, :lockable
   validates :username, :email, uniqueness: true
   validates :username, presence: true
-  validates :email, email: true
 
   def update_auth_code
     self.auth_code = TokenGenerator.create

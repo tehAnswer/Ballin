@@ -2,7 +2,6 @@ class BoxScore
   include Neo4j::ActiveNode
   include BoxScoreHelper
 
-  property :side
   property :minutes, type: Integer, default: 0
   property :points, type: Integer, default: 0
   property :assists, type: Integer, default: 0
@@ -19,6 +18,7 @@ class BoxScore
   property :turnovers, type: Integer, default: 0
   property :final_score, type: Float, default: 0
   property :is_starter, type: Boolean, default: false
+  property :is_local, type: Boolean
   property :faults, type: Integer, default: 0
 
   validates :minutes, :points, :assists, :steals, :defr, :ofr, :blocks,
@@ -47,6 +47,10 @@ class BoxScore
 
   def game_id
     game.neo_id
+  end
+
+  def team
+    is_local ? game.home_team : game.away_team
   end
 
 

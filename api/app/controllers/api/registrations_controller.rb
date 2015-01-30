@@ -10,7 +10,6 @@ class Api::RegistrationsController < Devise::SessionsController
 		user.password = registrations_params[:password]
 		if user.valid?
 			user.update_auth_code
-			user.save
 			respond_with user, status: 201
 		else
 			respond_with user.errors, status: 422
