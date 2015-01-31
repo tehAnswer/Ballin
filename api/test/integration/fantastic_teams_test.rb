@@ -32,7 +32,7 @@ class FantasticTeamsTest < ActionDispatch:IntegrationTest
       login: {
         username: "unpicked",
         password: "p00rp00r",
-        email: "unpicked@unpick.com"
+        email: "unpicked@unpick.com",
       }
     }
 
@@ -46,7 +46,8 @@ class FantasticTeamsTest < ActionDispatch:IntegrationTest
         name: "America",
         abbreviation: "AME",
         hood: "Mexico",
-        headline: "Andale, andale."
+        headline: "Andale, andale.",
+        division_id: Division.first.neo_id
       }
     }
 
