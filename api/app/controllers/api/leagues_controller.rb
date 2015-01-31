@@ -22,11 +22,15 @@ class Api::LeaguesController < ApplicationController
 
   # POST /api/leagues
   def create
+    unless @user.is_admin
+      render json: { error: "Onyly admins can create leagues." }, status: 403
+      return
+    end
     @league = LeagueCreation.create(league_params)
     if @league.persisted?
-      respond_with(@league)
+      respond_with @league, location: "api/leagues/#{@league.neo_id}"
     else
-      respond_with(@league.errors, status: :unprocessable_entity)
+      render json: { errors: @league.errors }, status: :unprocessable_entity
     end
   end
 

@@ -3,7 +3,6 @@ class TeamCreation
   def self.create(division, team_data, user)
     begin
       tx = Neo4j::Transaction.new
-      debugger
       raise "#{division.name} division of #{division.league.name} has already five teams." unless division.number_of_teams < 5
       team = FantasticTeam.new(team_data.except(:division_id))
       if team.valid?

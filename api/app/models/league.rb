@@ -41,7 +41,7 @@ class League
     conferences.map { |conference| conference.number_of_teams }.reduce(:+)
   end
 
-  def conferences_id
+  def conference_ids
     conferences.map { |conference| conference.neo_id }
   end
 

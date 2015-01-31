@@ -5,7 +5,7 @@ namespace :test do
     Neo4j::Session.query("match (n) delete n")
 
     User.create!({username: "Adolfo", email:"adolfo@dolf.com", password:"adolfoadolfo"})
-    User.create!({username: "Second", email:"s@dolf.com", password:"secondsecond"})
+    User.create!({username: "Second", email:"s@dolf.com", password:"secondsecond", is_admin: true})
     Player.create!({
       name: 'Kobe Bryant',
       height_cm: 200,

@@ -5,11 +5,11 @@ class LeaguesTest < ActionDispatch::IntegrationTest
       league = {
         name: "UniqueLeagueName"
       }
-      post 'api/leagues', { league: league }, { dagger: User.admin.first.auth_code }
+      post 'api/leagues', { league: league }, { dagger: User.administrator.first.auth_code }
       assert_equal 201, response.status
       post 'api/leagues', { league: league }, { dagger: User.first.auth_code }
-      assert_equal 401, response.status
-      post 'api/leagues', { league: league }, { dagger: User.admin.first.auth_code }
+      assert_equal 403, response.status
+      post 'api/leagues', { league: league }, { dagger: User.administrator.first.auth_code }
       assert_equal 422, response.status
     end
 
@@ -29,9 +29,9 @@ class LeaguesTest < ActionDispatch::IntegrationTest
       assert_equal 200, response.status
       hash = parse(response.body)
       assert_equal 1, hash[:leagues].count
-      assert_equal 1, hash[:meta][:pages]
+      assert_equal 1, hash[:meta][:page]
       assert_equal 1, hash[:meta][:total_pages]
-      assert_equal Ballin::PER_PAGE, hash[:meta][:per_page]
+      assert_equal BallinAPI::ITEMS_PER_PAGE, hash[:meta][:per_page]
 
       get 'api/leagues', { page: 9999 }, { dagger: User.first.auth_code }
       assert 200, response.status
