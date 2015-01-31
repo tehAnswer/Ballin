@@ -39,6 +39,6 @@ class Api::LeaguesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def league_params
-      params.require(:league).permit(:name, :page)
+      params.require(:league).permit(:name)
     end
 end

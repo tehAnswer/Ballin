@@ -10,7 +10,7 @@ class PlayersTest < ActionDispatch::IntegrationTest
     assert_equal Ballin::PER_PAGE, hash[:players].count
     assert_equal 1, hash[:meta][:page]
 
-    get 'api/players', { page: 2 }, { dagger: .auth_code }
+    get 'api/players', { page: 2 }, { dagger: token }
     assert_equal 200, response.status
     hash = parse(response.body)
     assert Ballin::PER_PAGE >= hash[:players].count

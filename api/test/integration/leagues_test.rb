@@ -5,11 +5,11 @@ class LeaguesTest < ActionDispatch::IntegrationTest
       league = {
         name: "UniqueLeagueName"
       }
-      post 'api/leagues', { league }, { dagger: User.admin.first.auth_code }
+      post 'api/leagues', { league: league }, { dagger: User.admin.first.auth_code }
       assert_equal 201, response.status
-      post 'api/leagues', { league }, { dagger: User.first.auth_code }
+      post 'api/leagues', { league: league }, { dagger: User.first.auth_code }
       assert_equal 401, response.status
-      post 'api/leagues', { league }, { dagger: User.admin.first.auth_code }
+      post 'api/leagues', { league: league }, { dagger: User.admin.first.auth_code }
       assert_equal 422, response.status
     end
 

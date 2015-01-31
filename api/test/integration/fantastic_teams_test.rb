@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class FantasticTeamsTest < ActionDispatch:IntegrationTest
+class FantasticTeamsTest < ActionDispatch::IntegrationTest
   test "get all fantastic teams" do
     token = User.first.auth_code
     get 'api/fantastic_teams', { }, { dagger: token }

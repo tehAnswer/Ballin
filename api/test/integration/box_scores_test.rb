@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class BoxScoresTest < ActionDispatch:IntegrationTest
+class BoxScoresTest < ActionDispatch::IntegrationTest
   test 'get all boxscores' do
     token = User.first.auth_code
     get 'api/box_scores', { }, { dagger: token }
