@@ -18,7 +18,7 @@ class BoxScore
   property :turnovers, type: Integer, default: 0
   property :final_score, type: Float, default: 0
   property :is_starter, type: Boolean, default: false
-  property :is_local, type: Boolean
+  property :is_local, type: Boolean, default: false
   property :faults, type: Integer, default: 0
 
   validates :minutes, :points, :assists, :steals, :defr, :ofr, :blocks,
@@ -42,11 +42,11 @@ class BoxScore
 
 
   def player_id
-    player.neo_id
+    player.nil? ? -1 : player.neo_id
   end
 
   def game_id
-    game.neo_id
+    game.nil? ? -1 : game.game_id
   end
 
   def team

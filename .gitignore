@@ -6,13 +6,14 @@
 
 # Ignore bundler config.
 /.bundle
-.DS_Store
-.DS_Store?
+*.DS_Store
+*.DS_Store?
+*.gitkeep
 
 # Ignore db
 /api/db/*
 
 # Ignore all logfiles and tempfiles.
-/log/*.log
-/tmp
-/config/secrets.yml
+/log/
+**/tmp
+/api/config/secrets.yml

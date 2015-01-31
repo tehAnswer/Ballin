@@ -26,6 +26,8 @@ namespace :test do
         site_name: 'Wells Fargo',
         city: 'Philadelphia',
         state: 'Pennsylvannia'})
+
+    BoxScore.create!
     
   end
 

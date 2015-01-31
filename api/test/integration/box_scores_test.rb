@@ -4,7 +4,7 @@ class BoxScoresTest < ActionDispatch::IntegrationTest
   test 'get all boxscores' do
     token = User.first.auth_code
     get 'api/box_scores', { }, { dagger: token }
-    assert_equal 422, response.status
+    assert_equal 200, response.status
 
     get 'api/box_scores', { ids: [BoxScore.first.neo_id] }, { dagger: token }
     assert_equal 200, response.status
@@ -17,7 +17,7 @@ class BoxScoresTest < ActionDispatch::IntegrationTest
 
   test 'get one boxscore' do
     token = User.first.auth_code
-    boxscore = BoxScore.first.auth_code
+    boxscore = BoxScore.first
 
     get "api/box_scores/#{boxscore.neo_id}", { }, { dagger: token }
     assert_equal 200, response.status

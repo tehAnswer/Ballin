@@ -12,8 +12,8 @@ class ApplicationController < ActionController::Base
   end
 
   def authenticate_user
-    @user = User.find_by(token: request.headers[:dagger])
-    render json: { error: "Invalid auth token" }, status: 422 unless @user
+    @user = User.find_by(auth_code: request.headers[:dagger])
+    render json: { error: "Invalid auth token" }, status: 401 unless @user
   end
 
 end
