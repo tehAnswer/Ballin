@@ -26,6 +26,7 @@ class LeagueCreation
 
       league.conferences << eastern_conference
       league.conferences << western_conference
+      league.save!
       return league
   rescue StandardError => e
     Rails.logger.error e.message

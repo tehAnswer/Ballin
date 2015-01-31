@@ -11,7 +11,7 @@ class ContractCreation
       return contract
     rescue StandardError => e
       tx.failure
-      puts e
+      Rails.logger.error e.message
       return false
     ensure
       tx.close

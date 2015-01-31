@@ -16,7 +16,7 @@ class Conference
   end
 
   def number_of_teams
-    divisions.map{ |division| division.number_of_teams }.reduce(:+)
+    divisions.map { |division| division.number_of_teams }.reduce(:+)
   end
 
   def division_ids

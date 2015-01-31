@@ -4,8 +4,8 @@ namespace :test do
     Neo4j::Session.query("match (n)-[r]-(d) delete r,n,d")
     Neo4j::Session.query("match (n) delete n")
 
-    user = User.create!({username: "Adolfo", email:"adolfo@dolf.com", password:"adolfoadolfo"})
-    user.update_auth_code
+    User.create!({username: "Adolfo", email:"adolfo@dolf.com", password:"adolfoadolfo"})
+    User.create!({username: "Second", email:"s@dolf.com", password:"secondsecond"})
     Player.create!({
       name: 'Kobe Bryant',
       height_cm: 200,
@@ -28,6 +28,14 @@ namespace :test do
         state: 'Pennsylvannia'})
 
     BoxScore.create!
+    FantasticTeam.create!({
+      name: "firsttt",
+      abbreviation: "FST",
+      hood: "São Paulo",
+      headline: "Vrasssil"
+      })
+    LeagueCreation.create({name: "AllStarsTestingContest"})
+    Rake::Task["test:integration"].invoke
     
   end
 

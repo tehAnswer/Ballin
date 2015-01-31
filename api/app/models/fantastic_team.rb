@@ -22,5 +22,9 @@ class FantasticTeam
   def league
     conference.league
   end
+
+  def user_id
+    user.nil? ? -1 : user.neo_id
+  end
   
 end

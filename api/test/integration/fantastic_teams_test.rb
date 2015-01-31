@@ -6,7 +6,7 @@ class FantasticTeamsTest < ActionDispatch::IntegrationTest
     get 'api/fantastic_teams', { }, { dagger: token }
     assert_equal 200, response.status
     hash = parse(response.body)
-    assert_equal 1, hash[:meta][:page]
+    assert_equal 0, hash[:fantastic_teams].count
 
     get 'api/fantastic_teams', { }, { }
     assert_equal 401, response.status
@@ -27,20 +27,7 @@ class FantasticTeamsTest < ActionDispatch::IntegrationTest
   end
 
   test "create a fantastic team" do
-
-    user = {
-      login: {
-        username: "unpicked",
-        password: "p00rp00r",
-        email: "unpicked@unpick.com",
-      }
-    }
-
-    post '/api/users', user, { }
-    assert_equal 201, response.status
-    hash = parse(response.body)
-    user = hash[:user]
-
+    user = User.find_by(username: "Second")
     ft = {
       fantastic_team: {
         name: "America",
@@ -51,19 +38,20 @@ class FantasticTeamsTest < ActionDispatch::IntegrationTest
       }
     }
 
-    post 'api/fantastic_teams', ft, { dagger: user.auth_code }
+    post "api/fantastic_teams", ft, { dagger: user.auth_code }
     assert_equal 201, response.status
     hash = parse(response.body)
     assert_equal ft[:fantastic_team][:name], hash[:fantastic_team][:name]
     assert_equal user.neo_id, hash[:fantastic_team][:user_id]
 
-    post 'api/fantastic_teams', ft, { dagger: User.first.auth_code }
+
+    post "api/fantastic_teams", ft, { dagger: User.first.auth_code }
     assert_equal 422, response.status
 
     # Change name and abbreviation to make the ft unique
     ft[:fantastic_team][:name] = "Fasfafsfafsfafs"
     ft[:fantastic_team][:abbreviation] = "Fasfas"
-    post 'api/fantastic_teams', ft, { dagger: user.auth_code }
+    post "api/fantastic_teams", ft, { dagger: user.auth_code }
     assert_equal 422, response.status
   end
 
