@@ -80,6 +80,7 @@ class XmlStatsController
   def update_stats_of(game)
     begin
       tx = Neo4j::Transaction.new
+      return if game.status == 'postponed'
       game.status = 'completed' 
       boxscores = fetch_boxscores(game)
       game.boxscores = boxscores[:boxscores]
