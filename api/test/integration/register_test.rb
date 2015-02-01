@@ -39,7 +39,6 @@ class RegisterTest < ActionDispatch::IntegrationTest
         email: "questionmarkquestionmark@"
       }
     }
-
     post '/api/users', user, { }
     assert_equal 422, response.status
   end

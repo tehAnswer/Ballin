@@ -23,7 +23,7 @@ class Api::LeaguesController < ApplicationController
   # POST /api/leagues
   def create
     unless @user.is_admin
-      render json: { error: "Onyly admins can create leagues." }, status: 403
+      render json: { error: "Only admins can create leagues." }, status: 403
       return
     end
     @league = LeagueCreation.create(league_params)
@@ -39,6 +39,7 @@ class Api::LeaguesController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_league
       @league = League.find_by(neo_id: params[:id])
+      render json: { error: "Not such league"}, status: 404 unless @league
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

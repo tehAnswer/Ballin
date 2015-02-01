@@ -58,6 +58,8 @@ GEM
       orm_adapter (~> 0.5.0)
       railties (>= 3.1)
       warden (~> 1.2.1)
+    email_validator (1.5.0)
+      activemodel
     erubis (2.7.0)
     execjs (2.2.2)
     faraday (0.9.1)
@@ -163,6 +165,7 @@ DEPENDENCIES
   debugger
   devise
   devise-neo4j
+  email_validator
   humanize
   neo4j (~> 4.1.1)
   neo4j-will_paginate_redux

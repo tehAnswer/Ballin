@@ -5,16 +5,16 @@ class Api::SessionsController < Devise::SessionsController
     user = User.find_for_database_authentication(email: params[:email_or_username]) || User.find_for_database_authentication(username: params[:email_or_username])
     password = params[:password]
     unless user && password
-      render json: "Missing data.", status: 401
+      render json: { error: "Missing login data." }, status: 401
       return
     end
     
-    if user.valid_password? password
+    if user.valid_password?(password)
       user.update_auth_code
       render json: user, status: 201
       return
     else
-      render json: "Bad combination.", status: 401
+      render json: { error: "Bad combination." }, status: 401
     end
   end
 
