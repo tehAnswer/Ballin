@@ -7,7 +7,7 @@ class LeaguesTest < ActionDispatch::IntegrationTest
       }
       post 'api/leagues', { league: league }, { dagger: User.administrator.first.auth_code }
       assert_equal 201, response.status
-      post 'api/leagues', { league: league }, { dagger: User.first.auth_code }
+      post 'api/leagues', { league: league }, { dagger: User.where(is_admin: false).first.auth_code }
       assert_equal 403, response.status
       post 'api/leagues', { league: league }, { dagger: User.administrator.first.auth_code }
       assert_equal 422, response.status

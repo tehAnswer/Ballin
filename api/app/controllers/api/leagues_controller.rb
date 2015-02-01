@@ -39,7 +39,7 @@ class Api::LeaguesController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_league
       @league = League.find_by(neo_id: params[:id])
-      render json: { error: "Not such league"}, status: 404 unless @league
+      render json: { error: "Not such league" }, status: 404 unless @league
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

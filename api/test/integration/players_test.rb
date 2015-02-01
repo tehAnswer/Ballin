@@ -7,14 +7,14 @@ class PlayersTest < ActionDispatch::IntegrationTest
     get 'api/players', { }, { dagger: token }
     assert_equal 200, response.status
     hash = parse(response.body)
-    assert_equal Ballin::PER_PAGE, hash[:players].count
+    assert BallinAPI::ITEMS_PER_PAGE >= hash[:players].count
     assert_equal 1, hash[:meta][:page]
 
     get 'api/players', { page: 2 }, { dagger: token }
     assert_equal 200, response.status
     hash = parse(response.body)
-    assert Ballin::PER_PAGE >= hash[:players].count
-    assert_equal 2, hash[:meta][:page]
+    assert BallinAPI::ITEMS_PER_PAGE >= hash[:players].count
+    assert_equal 2, hash[:meta][:page].to_i
 
 
     get 'api/players', { page: 2000 }, { dagger: token }
@@ -23,7 +23,7 @@ class PlayersTest < ActionDispatch::IntegrationTest
     assert_equal 0, hash[:players].count
 
     get 'api/players', { }, { }
-    response 401, response.status
+    assert_equal 401, response.status
   end
 
   test 'get individual player' do

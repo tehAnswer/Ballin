@@ -1,7 +1,4 @@
-require 'neo4j-will_paginate_redux'
-
 class Api::PlayersController < ApplicationController
-
   before_action :set_player, only: [:show]
   respond_to :json
 
@@ -23,7 +20,7 @@ class Api::PlayersController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_player
-      @player = Player.find_by(id: params[:id])
-      render json: { error: "Not such player"}, status: 404 unless @player
+      @player = Player.find_by(neo_id: params[:id])
+      render json: { error: "Not such player" }, status: 404 unless @player
     end
 end

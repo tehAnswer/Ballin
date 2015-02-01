@@ -38,7 +38,7 @@ class Api::FantasticTeamsController < ApplicationController
 
     def set_fantastic_team
       @fantastic_team = FantasticTeam.find_by(neo_id: params[:id])
-      render json: { error: "Not such fantastic team"}, status: 404 unless @fantastic_team
+      render json: { error: "Not such fantastic team" }, status: 404 unless @fantastic_team
     end
 
     def fantastic_team_params
