@@ -2,13 +2,13 @@ require 'test_helper'
 
 class LoginTest < ActionDispatch::IntegrationTest
     test 'correct login' do
-      token = User.find_by(username: "Eric Cartman").auth_code
       post '/api/users/sign_in', { email_or_username: "Eric Cartman", password: "ihatekyle" }
       assert_equal 201, response.status
       post '/api/users/sign_in', { email_or_username: "ihatekyle@gmail.com", password: "ihatekyle" }
       assert_equal 201, response.status
       hash = parse(response.body)
-      assert_equal token, hash[:user][:auth_code]
+      user = User.find_by(username: "Eric Cartman")
+      assert_equal user.auth_code, hash[:user][:auth_code]
       assert_equal "Eric Cartman", hash[:user][:username]
       assert_equal nil, hash[:user][:password]
     end

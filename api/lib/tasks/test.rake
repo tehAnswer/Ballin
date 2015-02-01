@@ -6,6 +6,7 @@ namespace :test do
 
     User.create!({username: "Adolfo", email:"adolfo@dolf.com", password:"adolfoadolfo"})
     User.create!({username: "Second", email:"s@dolf.com", password:"secondsecond", is_admin: true})
+    User.create!({username: "Eric Cartman", email:"ihatekyle@gmail.com", password:"ihatekyle"})
     Player.create!({
       name: 'Kobe Bryant',
       height_cm: 200,

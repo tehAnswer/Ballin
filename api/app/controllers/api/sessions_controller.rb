@@ -1,4 +1,5 @@
 class Api::SessionsController < Devise::SessionsController
+  skip_before_action :authenticate_user, only: :create
 
   # POST /api/users/sign_in
   def create
