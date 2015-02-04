@@ -1,0 +1,10 @@
+ <div class="container">
+ 	{{#if cookie.token}}
+ 	  {{partial "navbar"}}
+ 	  {{outlet}}
+  {{else}}
+    {{navbar-landing}}
+    {{inner-cover}}
+    {{footer-landing}}
+  {{/if}}
+</div>

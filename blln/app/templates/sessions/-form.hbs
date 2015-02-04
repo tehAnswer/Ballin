@@ -1,0 +1,22 @@
+<form {{action "login" on="submit"}}>
+  {{#if loginFailed}}
+    <div class="alert alert-danger">Invalid username or password.</div>
+  {{/if}}
+
+  {{#if isSlowConnection}}
+    <div class="alert alert-info">The request seems to be taking more time than usual, please wait.</div>
+  {{/if}}
+
+  <div class="form-group">
+    <label for="email_or_username">Email/Nickname</label>
+    {{input value=email_or_username type="text" class="form-control" placeholder="Type your email or nickname!"}}
+  </div>
+
+  <div class="form-group">
+    <label for="password">Password</label>
+    {{input value=password type="password" class="form-control" placeholder="Type your secret password!"}}
+  </div>
+
+  <button type="submit" class="btn btn-success">Sign in</button>
+  <button type="submit" class="btn btn-default">Cancel</button>
+</form>
