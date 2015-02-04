@@ -16,7 +16,8 @@ Router.map(function() {
   });
 
   this.route('dashboard');
-
+  this.route('contact');
+  
   this.resource('users', function () {
     this.route('sign_up');
     this.route('show', { path: '/:user_id' });

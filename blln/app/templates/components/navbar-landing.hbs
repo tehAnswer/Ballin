@@ -1,10 +1,16 @@
 <div class="inner">
-  <h3 class="masthead-brand">Ballin'</h3>
+  <h3 class="masthead-brand">{{#link-to 'index'}}Ballin'{{/link-to}}</h3>
   <nav>
     <ul class="nav masthead-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li>{{#link-to 'sessions.new'}}Sign in{{/link-to}}</li>
-      <li><a href="#">Contact</a></li>
+      {{#link-to 'index' tagName='li'}} 
+        {{#link-to 'index'}}Home{{/link-to}}
+       {{/link-to}}
+       {{#link-to 'sessions.new' tagName='li'}} 
+        {{#link-to 'sessions.new'}}Sign up{{/link-to}}
+       {{/link-to}}
+       {{#link-to 'contact' tagName='li'}} 
+        {{#link-to 'contact'}}Contact{{/link-to}}
+       {{/link-to}}
     </ul>
   </nav>
 </div>
