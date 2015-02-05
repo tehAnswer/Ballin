@@ -23,7 +23,8 @@ export default Ember.Controller.extend(NewSessionMixin, {
 
       request.then(function(response) {
         that.reset();
-        newSession(response);
+        alert(that);
+        that.newSession(response);
       }, function(error) {
         that.reset();
         that.set("loginFailed", true);

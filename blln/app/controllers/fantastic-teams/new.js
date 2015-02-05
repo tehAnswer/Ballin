@@ -10,7 +10,7 @@ export default Ember.Controller.extend({
 				name: this.get("name"),
 				abbreviation: this.get("abbreviation"),
 				hood: this.get("hood"),
-				division: this.get("division")
+				division: this.get("division.id")
 			})
 		}
 	}

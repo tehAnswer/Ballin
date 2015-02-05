@@ -32,6 +32,7 @@ Router.map(function() {
   this.resource('leagues', function() {
     this.route('show', { path: '/:league_id' });
   });
+  this.route('fantastic-teams/new');
 });
 
 export default Router;

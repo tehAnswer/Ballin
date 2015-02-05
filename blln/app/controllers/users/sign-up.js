@@ -13,9 +13,8 @@ export default Ember.Controller.extend(NewSessionMixin, {
 						email: this.get('model.email')
 					}
 				});
-
 				request.then(function(response) {
-					newSession(response);
+					that.newSession(response);
 				},
 				function(error) {
 					that.set('errorMessage', error);

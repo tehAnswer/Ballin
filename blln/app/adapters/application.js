@@ -5,6 +5,6 @@ export default DS.ActiveModelAdapter.extend({
   coalesceFindRequests: true,
   headers: function() {
   	var token = this.get('cookie').getCookie('token') || "";
-  	return { "API-KEY": token };
+  	return { "dagger": token };
   }.property('cookie.token')
 });
