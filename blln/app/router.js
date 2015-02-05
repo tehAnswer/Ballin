@@ -11,13 +11,18 @@ Router.map(function() {
     	this.resource('box-scores', function() { });
     });
    });
+  
   this.resource('sessions', function() {
     this.route('new');
   });
 
   this.route('dashboard');
   this.route('contact');
-  
+  this.resource('fantastic_teams', function() {
+    this.route('show', { path: '/:fantastic_team' });
+    this.route('new');
+   });
+
   this.resource('users', function () {
     this.route('sign_up');
     this.route('show', { path: '/:user_id' });

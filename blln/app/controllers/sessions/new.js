@@ -1,6 +1,7 @@
 import Ember from 'ember';
+import NewSessionMixin from 'blln/mixins/new-session'
 
-export default Ember.Controller.extend({
+export default Ember.Controller.extend(NewSessionMixin, {
 	loginFailed: false,
   isProcessing: false,
   isSlowConnection: false,
@@ -22,11 +23,7 @@ export default Ember.Controller.extend({
 
       request.then(function(response) {
         that.reset();
-        that.store.createRecord('user', response.user);
-        that.get('cookie').setCookie('token', response.user.auth_code)
-         .then(function() {
-            that.transitionToRoute('dashboard');
-          });
+        newSession(response);
       }, function(error) {
         that.reset();
         that.set("loginFailed", true);

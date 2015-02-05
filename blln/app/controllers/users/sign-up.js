@@ -1,6 +1,7 @@
 import Ember from 'ember';
+import NewSessionMixin from 'blln/mixins/new-session'
 
-export default Ember.Controller.extend({
+export default Ember.Controller.extend(NewSessionMixin, {
 	actions: {
 		signUp: function () {
 			if(this.get('isValid')) {
@@ -14,11 +15,7 @@ export default Ember.Controller.extend({
 				});
 
 				request.then(function(response) {
-					that.store.createRecord('user', response.user);
-					that.get('cookie').setCookie('token', response.user.auth_code)
-          .then(function() {
-            that.transitionToRoute('dashboard')
-          });
+					newSession(response);
 				},
 				function(error) {
 					that.set('errorMessage', error);
