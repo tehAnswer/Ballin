@@ -1,6 +1,7 @@
 <h1>Create your team</h1>
 
 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+<div class="btn-group" data-toggle="buttons">
 {{#each league in model}}
   <div class="panel panel-warning">
     <div class="panel-heading" role="tab" {{bind-attr id=league.name}}>
@@ -13,12 +14,12 @@
    
    <div {{bind-attr id=league.id}} {{bind-attr aria-labelledby=league.name}} class="panel-collapse collapse in" role="tabpanel">
       <div class="panel-body">
-        <div class="btn-group" data-toggle="buttons">
+        
         {{#each conference in league.conferences}}
           <h5>{{conference.name}}</h5>
-           {{#each division in conference.division}}
+           {{#each division in conference.divisions}}
             <label class="btn btn-primary">
-              <input type="radio" name="options" {{bind-attr id=division.id}} autocomplete="off"> Radio 2
+              <input type="radio" name="options" {{bind-attr id=division.id}} autocomplete="off"> {{division.name}}
              </label>
            {{/each}}
         {{/each}}

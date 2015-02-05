@@ -6,7 +6,8 @@ Rails.application.routes.draw do
     resources :box_scores, only: [:index, :show]
     resources :leagues, only: [:index, :show, :create]
     resources :fantastic_teams, only: [:create, :show, :index]
-    resources :divisions
+    resources :conferences, only: [:index]
+    resources :divisions, only: [:index]
     devise_for :users
   end
 end
