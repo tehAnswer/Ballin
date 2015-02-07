@@ -120,6 +120,12 @@ body {
   font-weight: bold;
 }
 
+.btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
 
 /*
  * Footer
@@ -208,4 +214,43 @@ body {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+
+/*
+ * Team creation
+ */
+
+ #create-team-form {
+  float: left;
+  clear: left;
+  padding-top: 10px;
+  margin-left: 10%;
+ }
+
+#create-team-form .form-control {
+  margin-left: 20px;
+}
+
+#create-team-form h2 {
+  text-align: left;
+}
+
+ #create-team-leagues-panel {
+  margin-top: 20px;
+  float: right;
+  clear: right;
+  padding-top: 10px;
+  margin-right: 10%;
+     
+ }
+
+#create-team-leagues-panel .btn-group {
+  margin-top: 20px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+}
+
+
 

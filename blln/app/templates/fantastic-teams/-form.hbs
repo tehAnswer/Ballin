@@ -1,0 +1,10 @@
+<div class= "col-xs-6">
+  <form class="form-horizontal" {{action "createTeam" on="submit"}}>
+    <div class="form-group">
+      {{input value=name type="text" class="form-control" placeholder="Name"}}
+      {{input value=abbreviation type="text" class="form-control" placeholder="Abbreviation"}}
+      {{input value=hood type="text" class="form-control" placeholder="Hood"}}
+      {{input value=headline type="password" class="form-control" placeholder="Headline"}}
+    </div>
+      <button type="submit" class="btn btn-lg btn-success">Submit</button>
+</form>

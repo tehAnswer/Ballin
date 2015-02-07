@@ -1,33 +1,11 @@
 <h1>Create your team</h1>
 
-<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-<div data-toggle="buttons">
-{{#each league in model}}
-  <div class="panel panel-warning">
-    <div class="panel-heading" role="tab" {{bind-attr id=league.name}}>
-      <h4 class="panel-title">
-         <a data-toggle="collapse" data-parent="#accordion"  {{bind-attr href=league.sharpId}} aria-expanded="false" {{bind-attr aria-controls=league.id}}>
-           {{league.name}} ({{league.numberOfTeams}} players)
-         </a>
-      </h4>
-    </div>
-   
-   <div {{bind-attr id=league.id}} {{bind-attr aria-labelledby=league.name}} class="panel-collapse collapse in" role="tabpanel">
-      <div class="panel-body">
-        
-        {{#each conference in league.conferences}}
-          <h5>{{conference.name}}</h5>
-           {{#each division in conference.divisions}}
-            <label class="btn btn-primary">
-              <input type="radio" name="options" {{bind-attr id=division.id}} autocomplete="off"> {{division.name}} </input>
-             </label>
-           {{/each}}
-        {{/each}}
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
- {{/each}}
- </div>
-{{outlet}}
+<div class="col-md-4" id="create-team-form">
+  <h2>Details</h2>
+  {{partial "fantastic-teams/form"}}
+</div>
+</div>
+
+<div class="col.md-8" id="create-team-leagues-panel">
+  {{leagues-panel leagues=model}}
+</div>
