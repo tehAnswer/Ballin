@@ -13,7 +13,7 @@
         {{#each conference in league.conferences}}
             {{#each division in conference.divisions}}
               <label class="btn btn-info" {{bind-attr disabled=division.isFull}}>
-                <input type="radio" name="options" {{bind-attr id=division.id}} autocomplete="off"> {{division.name}}
+                {{radio-button value=division.id checked=divisionId}} {{division.name}}
               </label>
             {{/each}}
         {{/each}}

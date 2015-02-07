@@ -5,13 +5,44 @@ export default Ember.Controller.extend({
 	actions: {
 		createTeam: function () {
 			var that = this;
+			var request = $.ajax({
+				url:"/api/fantastic_teams",
+				type:"POST",
+				headers: { 
+					"Accept" : "application/json; charset=utf-8",
+					"dagger" : that.get('cookie').getCookie('token')
+				},
+				data: that.record(),
+				dataType:"json"
+			});
 
-			var request = $.post("/api/fantastic_teams", {
-				name: this.get("name"),
-				abbreviation: this.get("abbreviation"),
-				hood: this.get("hood"),
-				division: this.get("division.id")
-			})
+			request.then(function(response) {
+				that.transitionToRoute('dashboard');
+			}, function(error) {
+				alert("TODO. Something goes wrong.");
+			}); 
 		}
+	},
+
+	isValid: Ember.computed(
+		'name',
+		'abbreviation',
+		'hood',
+		'headline',
+		'divisionId', 
+		function() {
+			return !Ember.isEmpty(this.get('name')) && !Ember.isEmpty(this.get('abbreviation')) && !Ember.isEmpty(this.get('hood')) && !Ember.isEmpty(this.get('divisionId'));
+		}
+	),
+
+	record: function() {
+		return {
+			fantastic_team: {
+				"name": this.get('name'),
+				"abbreviation": this.get('abbreviation'),
+				"hood": this.get('hood'),
+				"division_id": this.get('divisionId')
+			}
+		};
 	}
 });

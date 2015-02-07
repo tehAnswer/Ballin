@@ -1,8 +1,9 @@
-
 <div class="btn-group" data-toggle="buttons">
   <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-    {{#each league in leagues}}
+    {{#each league in model}}
       {{partial "leagues/panel"}}
     {{/each}}
   </div>
 </div>
+
+{{page-numbers content=content}}
