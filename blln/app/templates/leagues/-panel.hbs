@@ -10,10 +10,9 @@
 
   <div {{bind-attr id=league.id}} {{bind-attr aria-labelledby=league.name}} class="panel-collapse collapse" role="tabpanel">
     <div class="panel-body">
-      
         {{#each conference in league.conferences}}
             {{#each division in conference.divisions}}
-              <label class="btn btn-warning" {{bind-attr disabled=division.isFull}} data-toggle="tooltip" data-container="body" title="west">
+              <label class="btn btn-info" {{bind-attr disabled=division.isFull}}>
                 <input type="radio" name="options" {{bind-attr id=division.id}} autocomplete="off"> {{division.name}}
               </label>
             {{/each}}

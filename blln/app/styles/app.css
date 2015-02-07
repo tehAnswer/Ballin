@@ -9,6 +9,13 @@ a:hover {
   color: #fff;
 }
 
+.panel-default {
+  background-image: url("images/background-transparent.png");
+  background-color: transparent;
+  border-color: transparent;
+}
+
+
 /* Custom default button */
 .btn-default,
 .btn-default:hover,
@@ -28,7 +35,7 @@ html,
 body {
   height: 100%;
   background-color: #333;
-  background-image: url("background.jpg");
+  background-image: url("images/background.jpg");
   background-size: 100%
 }
 body {
@@ -240,13 +247,18 @@ body {
   float: right;
   clear: right;
   padding-top: 10px;
-  margin-right: 10%;
-     
+  margin-right: 10%;   
  }
 
+
+
 #create-team-leagues-panel .btn-group {
-  margin-top: 20px;
+
   width: 100%;
+}
+
+#create-team-leagues-panel .btn-group .btn {
+  margin-bottom: 15px;
 }
 
 .form-control {
