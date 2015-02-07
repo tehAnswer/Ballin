@@ -1,5 +1,5 @@
 
-<div class="panel panel-warning">
+<div class="panel panel-default">
   <div class="panel-heading" role="tab" {{bind-attr id=league.name}}>
     <h4 class="panel-title">
       <a data-toggle="collapse" data-parent="#accordion" {{bind-attr href=league.sharpId}} aria-expanded="false" {{bind-attr aria-controls=league.id}}>
@@ -10,15 +10,14 @@
 
   <div {{bind-attr id=league.id}} {{bind-attr aria-labelledby=league.name}} class="panel-collapse collapse" role="tabpanel">
     <div class="panel-body">
-      <div class="btn-group" data-toggle="buttons">
+      
         {{#each conference in league.conferences}}
-          <h5>{{conference.name}}</h5>
             {{#each division in conference.divisions}}
-              <label class="btn btn-info">
+              <label class="btn btn-warning" {{bind-attr disabled=division.isFull}} data-toggle="tooltip" data-container="body" title="west">
                 <input type="radio" name="options" {{bind-attr id=division.id}} autocomplete="off"> {{division.name}}
               </label>
             {{/each}}
         {{/each}}
-      </div>
+      
     </div>
   </div>

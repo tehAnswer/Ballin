@@ -246,10 +246,27 @@ body {
 
 #create-team-leagues-panel .btn-group {
   margin-top: 20px;
+  width: 100%;
 }
 
 .form-control {
   margin-bottom: 10px;
+}
+
+.btn input[type="radio"] {
+  position: absolute;
+  clip: rect(0px, 0px, 0px, 0px);
+  pointer-events: none;
+}
+
+.btn-east {
+  background-color: #FF3300;
+  border-radius: 4px;
+}
+
+.btn-west {
+  background-color: #0000FF;
+  border-radius: 4px;
 }
 
 
