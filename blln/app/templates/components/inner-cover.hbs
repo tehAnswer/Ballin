@@ -1,8 +1,12 @@
 <div class="inner cover">
 	<h1 class="cover-heading">Ballin'</h1>
 	<p class="lead">A fantasy league you can trust.</p>
-  <p class="lead">
-  	<a href="#" class="btn btn-lg btn-success">Sign up</a>
-    <a href="#" class="btn btn-lg btn-default">Learn more</a>
-  </p>
+  
+  {{#link-to 'learn_more'}}
+    <button class="btn btn-lg btn-info">Learn more</button>
+  {{/link-to}}
+  
+  {{#link-to 'users.sign_up'}}
+    <button class="btn btn-lg btn-success">Sign up</button>
+  {{/link-to}}
 </div>
