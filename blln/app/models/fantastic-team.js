@@ -5,5 +5,6 @@ export default DS.Model.extend({
   abbreviation: DS.attr("string"),
   hood: DS.attr("string"),
   headline: DS.attr("string"),
-  user: DS.belongsTo("user", {async: true})
+  user: DS.belongsTo("user"),
+  division: DS.belongsTo("division")
 });

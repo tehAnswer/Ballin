@@ -10,7 +10,7 @@
 
   {{input value=email_or_username type="text" class="form-control" placeholder="Username or email"}}
   {{input value=password type="password" class="form-control" placeholder="Password"}}
-  <button type="submit" class="btn btn-lg btn-success">Sign in</button>
+  <button type="submit" class="btn btn-lg btn-success" {{bind-attr disabled=isInvalid}}>Sign in</button>
   <button type="submit" class="btn btn-lg btn-danger">Cancel</button>
 </form>
 

@@ -1,5 +1,6 @@
 import Ember from 'ember';
-import NewSessionMixin from 'blln/mixins/new-session'
+import NewSessionMixin from 'blln/mixins/new-session';
+
 
 export default Ember.Controller.extend(NewSessionMixin, {
 	loginFailed: false,
@@ -9,27 +10,17 @@ export default Ember.Controller.extend(NewSessionMixin, {
 
   actions: {
     login: function() {
-      this.setProperties({
-        loginFailed: false,
-        isProcessing: true
-      });
       var that = this;
-      this.set("timeout", setTimeout(this.slowConnection.bind(this), 5000));
+      that.beginLogin();
+      that.login();
+    }
+  },
 
-      var request = $.post("/api/users/sign_in", {
+  record: function() {
+    return {
         email_or_username: this.get("email_or_username"),
         password: this.get("password")
-      });
-
-      request.then(function(response) {
-        that.reset();
-        alert(that);
-        that.newSession(response);
-      }, function(error) {
-        that.reset();
-        that.set("loginFailed", true);
-      });
-    }
+      };
   },
 
   slowConnection: function() {
@@ -43,5 +34,19 @@ export default Ember.Controller.extend(NewSessionMixin, {
       isSlowConnection: false,
       password: ""
     });
-  }
+  },
+
+  beginLogin: function () {
+    this.setProperties({
+      loginFailed: false,
+      isProcessing: true
+    });
+    this.set("timeout", setTimeout(this.slowConnection.bind(this), 5000));
+  },
+
+  isValid: Ember.computed('email_or_username', 'password', function () {
+    return !Ember.isEmpty(this.get('email_or_username')) && !Ember.isEmpty(this.get('password'));
+  }),
+
+  isInvalid: Ember.computed.not('isValid')
 });

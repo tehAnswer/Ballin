@@ -1,0 +1,13 @@
+<form class="form-signin" {{action "signUp" on="submit"}}>
+
+  {{#if registerFailed}}
+    <div class="alert alert-danger">{{errorMessage}}</div>
+  {{/if}}
+
+  {{input value=model.username type="text" class="form-control" placeholder="Username"}}
+  {{input value=model.email type="text" class="form-control" placeholder="Email"}}
+  {{input value=model.password type="password" class="form-control" placeholder="Password"}}
+  {{input value=model.repassword type="password" class="form-control" placeholder="Repeat password"}}
+  <button type="submit" class="btn btn-lg btn-success" {{bind-attr disabled=isInvalid}}>Sign in</button>
+  <button type="submit" class="btn btn-lg btn-danger">Cancel</button>
+</form>

@@ -1,11 +1,12 @@
 import Ember from 'ember';
+import ajax from 'ic-ajax';
 
 export default Ember.Controller.extend({
 
 	actions: {
 		createTeam: function () {
 			var that = this;
-			var request = $.ajax({
+			var request = ajax.ajax({
 				url:"/api/fantastic_teams",
 				type:"POST",
 				headers: { 
@@ -17,6 +18,7 @@ export default Ember.Controller.extend({
 			});
 
 			request.then(function(response) {
+				that.store.createRecord("fantastic_team", response.fantastic_team);
 				that.transitionToRoute('dashboard');
 			}, function(error) {
 				alert("TODO. Something goes wrong.");
