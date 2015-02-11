@@ -4,6 +4,7 @@ class League
 
   has_many :out, :conferences, model_class: Conference
   has_many :in, :contracts, model_class: Contract, origin: :league
+  has_many :in, :auctions, model_class: Auction, origin: :league
 
   validates :name, presence: true
   validates :name, uniqueness: true
@@ -43,6 +44,10 @@ class League
 
   def conference_ids
     conferences.map { |conference| conference.neo_id }
+  end
+
+  def auction_ids
+    auctions.map { |auction| auction.neo_id }
   end
 
 
