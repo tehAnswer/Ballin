@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get 'secrets/show'
 
   namespace :api, :defaults => {:format => :json } do
     resources :players, only: [:index, :show]

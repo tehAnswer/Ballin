@@ -15,11 +15,13 @@ class User
   property :email, type: String, null: false, default: ""
   index :email
   property :encrypted_password
-
   devise :database_authenticatable, :registerable
+
   validates :username, :email, uniqueness: true
   validates :username, presence: true
   validates :email, email: true
+  validates :username,  length: { maximum: 23 }
+  validates :email, length: { maximum: 254 }
 
   def update_auth_code
     self.auth_code = TokenGenerator.create
