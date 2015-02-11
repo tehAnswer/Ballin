@@ -18,5 +18,11 @@ class Auction
   end
 
   def max_bid
+  	bids.order(salary: :desc).first
+  end
+
+  def max_bid_id
+  	bid = max_bid
+  	bid.nil? ? -1 : bid.neo_id
   end
 end

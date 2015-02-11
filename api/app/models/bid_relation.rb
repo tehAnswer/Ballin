@@ -6,7 +6,7 @@ class BidRelation
   validate :is_open_auction
 
   def is_open_auction
-    self.errors.add(:is_open_auction, "The auction ain't open.") unless to_node.end_date.past?
+    self.errors.add(:is_open_auction, "The auction ain't open.") if to_node.end_time.past?
   end
   
 

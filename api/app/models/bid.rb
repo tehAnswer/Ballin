@@ -8,5 +8,6 @@ class Bid
   validates :salary, numericality: { greater_than_or_equal_to: 500000 }
 
   has_one :out, :team, model_class: FantasticTeam
+  has_one :out, :auction, model_class: Auction, rel_class: BidRelation
 
 end
