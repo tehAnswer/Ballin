@@ -37,6 +37,7 @@ export default Ember.Controller.extend({
 		}
 	),
 
+	isInvalid: Ember.computed.not('isValid'),
 	record: function() {
 		return {
 			fantastic_team: {

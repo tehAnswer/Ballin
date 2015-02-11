@@ -1,6 +1,5 @@
 import Ember from 'ember';
 import NewSessionMixin from 'blln/mixins/new-session';
-import ajax from 'ic-ajax';
 
 export default Ember.Controller.extend(NewSessionMixin, {
 	actions: {

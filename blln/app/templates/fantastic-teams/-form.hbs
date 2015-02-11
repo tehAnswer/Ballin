@@ -9,7 +9,7 @@
           {{input value=hood type="text" class="form-control" placeholder="Hood"}}
           {{input value=headline type="text" class="form-control" placeholder="Headline"}}
         </div>
-        <button type="submit" class="btn btn-lg btn-success">Submit</button>
+        <button type="submit" class="btn btn-lg btn-success" {{bind-attr disabled=isInvalid}}>Submit</button>
       </form>
     </div>
   </div>
