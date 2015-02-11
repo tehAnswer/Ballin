@@ -36,7 +36,7 @@ namespace :test do
       headline: "Vrasssil"
       })
     LeagueCreation.create({name: "AllStarsTestingContest"})
-    Rake::Task["test:integration"].invoke
+    Rake::Task["test"].invoke
     
   end
 
