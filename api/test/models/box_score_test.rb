@@ -2,12 +2,14 @@ require 'test_helper'
 
 class BoxScoreTest < ActiveSupport::TestCase
   test 'coherent data' do
-    boxscore = BoxScore.create({points: 8})
+    boxscore = BoxScore.create(points: 8)
     boxscore.assists = 2
     boxscore.ofr = 1
     boxscore.steals = 3
-    boxscore.msa = 4
-    boxscore.msm = 4
+    boxscore.fga = 4
+    boxscore.fgm = 4
+    boxscore.lsa = 0
+    boxscore.lsm = 0
     boxscore.turnovers = 3
 
     assert_equal true, boxscore.valid?
