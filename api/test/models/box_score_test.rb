@@ -22,7 +22,7 @@ class BoxScoreTest < ActiveSupport::TestCase
     boxscore.ftm = 1
     assert_equal false, boxscore.valid?
     boxscore.fta = 1
-    boxscore.is_started = false
+    boxscore.is_starter = false
     boxscore.points = boxscore.points_made
     assert_equal true, boxscore.valid?
   end

@@ -2,7 +2,7 @@ require 'test_helper'
 
 class DivisionTest < ActiveSupport::TestCase
   test "division has not more than five teams" do
-     division = Division.create!({name: "Drake - Headlines" })
+     division = Division.create!(name: "Drake - Headlines" )
      assert_equal 0, division.teams.count
 
      team_one = FantasticTeam.create!({ name: 'AA', abbreviation: 'AA', hood:'AA'})

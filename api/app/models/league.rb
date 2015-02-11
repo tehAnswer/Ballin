@@ -6,6 +6,7 @@ class League
   has_many :in, :contracts, model_class: Contract, origin: :league
   has_many :in, :auctions, model_class: Auction, origin: :league
 
+  validates :name,  length: { minimum: 5, maximum: 23 }
   validates :name, presence: true
   validates :name, uniqueness: true
 

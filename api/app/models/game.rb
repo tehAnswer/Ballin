@@ -11,6 +11,7 @@ class Game
 
   validates :game_id, :season_type, :status, :start_date_time, :date_formatted, presence: true
   validates :game_id, uniqueness: true
+  validate :check_start_date_time_and_date_formatted_matches
 
   has_one :out, :away_team, model_class: NbaTeam
   has_one :out, :home_team, model_class: NbaTeam
@@ -32,6 +33,10 @@ class Game
    
   def away_boxscores
     filtered_score('away')
+  end
+
+  def check_start_date_time_and_date_formatted_matches
+    errors.add(:date_formatted, "date_formatted don't match with start_date_time") unless start_date_time.to_datetime.strftime('%Y%m%d') == date_formatted
   end
    
   private

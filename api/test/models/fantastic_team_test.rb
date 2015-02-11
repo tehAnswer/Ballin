@@ -4,9 +4,11 @@ class FantasticTeamTest < ActiveSupport::TestCase
   test 'missing data' do
     team = FantasticTeam.new
     assert_equal false, team.valid?
-    team.name = 'Does not exit in my graph'
+    team.name = 'One name'
+    assert_equal false, team.valid?
     team.abbreviation = 'DE'
-    team.hood= 'Piedras Blancas'
+    assert_equal false, team.valid?
+    team.hood = 'Piedras Blancas'
     assert_equal true, team.valid?
   end
 end

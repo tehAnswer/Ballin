@@ -2,7 +2,7 @@ require 'test_helper'
 
 class NbaTeamTest < ActiveSupport::TestCase
   test 'missing data' do
-     team = NbaTeam.new({name: 'Philadelphia 76ers' })
+     team = NbaTeam.new(name: 'Philadelphia 76ers')
 
      team.abbreviation = 'PHI'
      team.team_id ='76ers'
