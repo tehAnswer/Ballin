@@ -30,4 +30,8 @@ class BidTest < ActionDispatch::IntegrationTest
     get '/api/bids', { }, { }
     assert_equal 401, response.status
   end
+
+  test "bid on a close auction" do
+  end
+
 end
