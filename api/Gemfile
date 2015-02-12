@@ -26,7 +26,7 @@ gem 'spring',        group: :development
 # gem 'capistrano-rails', group: :development
 
 # Use debugger
-gem 'debugger', group: [:test]
+gem 'byebug', group: [:test]
 
 
 gem 'neo4j', '~> 4.1.1'
