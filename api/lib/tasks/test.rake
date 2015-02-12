@@ -7,8 +7,22 @@ namespace :test do
     User.create!({username: "Adolfo", email:"adolfo@dolf.com", password:"adolfoadolfo"})
     User.create!({username: "Second", email:"s@dolf.com", password:"secondsecond", is_admin: true})
     User.create!({username: "Eric Cartman", email:"ihatekyle@gmail.com", password:"ihatekyle"})
-    Player.create!({
+    user = User.create!({username: "UserWithTeam", email:"ihatekyle@gmail.com", password:"ihatekyle"})
+
+    kobe = Player.create!({
       name: 'Kobe Bryant',
+      height_cm: 200,
+      height_formatted: "6'1\"",
+      weight_lb: 100,
+      weight_kg: 50,
+      position: 'SG',
+      number: '24',
+      birthplace: 'Philly',
+      birthdate: Date.new,
+      })
+
+    Player.create!({
+      name: 'PlayerWithoutTeam',
       height_cm: 200,
       height_formatted: "6'1\"",
       weight_lb: 100,
@@ -35,7 +49,18 @@ namespace :test do
       hood: "São Paulo",
       headline: "Vrasssil"
       })
-    LeagueCreation.create({name: "AllStarsTestingContest"})
+
+    team_data = {
+      name: "TeamWithUser",
+      abbreviation: "TEAM",
+      hood: "São Paulo",
+      headline: "Vrasssil"
+      }
+
+    league = LeagueCreation.create({name: "AllStarsTestingContest"})
+    division = league.conferences.first.divisions.first
+    team = TeamCreation.create(division, team_data, user)
+    contract = ContractCreation.create(kobe, team)
     Rake::Task["test"].invoke
     
   end

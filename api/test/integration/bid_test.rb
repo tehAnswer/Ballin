@@ -32,6 +32,13 @@ class BidTest < ActionDispatch::IntegrationTest
   end
 
   test "bid on a close auction" do
+    auction = Auction.create!(end_time: 1.day.ago)
+    bid = {
+      salary: 500_000,
+      auction_id: auction.neo_id
+    }
+    post '/api/bids', { bid: bid }, { dagger: auth_code }
+    assert_equal 422, response.status
   end
 
 end

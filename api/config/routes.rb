@@ -7,6 +7,8 @@ Rails.application.routes.draw do
     resources :fantastic_teams, only: [:create, :show, :index]
     resources :conferences, only: [:index]
     resources :divisions, only: [:index]
+    resources :bids, only: [:index, :create]
+    resources :auctions, only: [:index, :create]
     devise_for :users
   end
 end
