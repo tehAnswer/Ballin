@@ -15,6 +15,10 @@ class ApplicationController < ActionController::Base
     end
   end
 
+  rescue_from(Neo4j::Session::CypherError) do
+    render json: "IDs are not negative, mmkay?", status: 422
+  end
+
   def set_access_control_headers
     headers['Access-Control-Allow-Origin'] = '*'
     headers['Access-Control-Request-Method'] = '*'
@@ -28,5 +32,4 @@ class ApplicationController < ActionController::Base
   def missing_data
     render json: { error: "Missing data" }, status: 422
   end
-
 end

@@ -1,16 +1,18 @@
 require 'test_helper'
 
-class BidTest < ActionDispatch::IntegrationTest
+class BidsTest < ActionDispatch::IntegrationTest
 
   test "new bid" do
     auth_code = User.first.auth_code
     bid = {
-      salary: 500_000,
+      salary: 100_000,
       auction_id: -1
     }
     post '/api/bids', { bid: bid }, { dagger: auth_code }
     assert_equal 422, response.status
-    bid[:auction_id] = Auction.first.neo_id
+    auction = Auction.create(end_time: 2.day.from_now)
+    bid[:auction_id] = auction.neo_id
+    bid[:salary] = 1_000_000
     post '/api/bids', { bid: bid }, { dagger: auth_code }
     assert_equal 201, response.status
   end
@@ -32,6 +34,7 @@ class BidTest < ActionDispatch::IntegrationTest
   end
 
   test "bid on a close auction" do
+    auth_code = User.first.auth_code
     auction = Auction.create!(end_time: 1.day.ago)
     bid = {
       salary: 500_000,

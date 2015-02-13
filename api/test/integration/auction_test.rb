@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class AuctionTest < ActionDispatch::IntegrationTest
+class AuctionsTest < ActionDispatch::IntegrationTest
 
   test "create auction" do
     user = User.find_by(username: "UserWithTeam")

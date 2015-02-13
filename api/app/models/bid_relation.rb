@@ -14,15 +14,15 @@ class BidRelation
   end
 
   def has_auction
-    self.errors.add(:nil_auction, "There is not auction.") if to_node.respond_to?(:end_time)
+    self.errors.add(:nil_auction, "There is not auction.") if to_node.neo_id.nil?
   end
 
   def has_bid
-    self.errors.add(:has_not_bid, "There is not bid") if from_node.respond_to?(:salary)
+    self.errors.add(:has_not_bid, "There is not bid") if from_node.neo_id.nil?
   end
 
   def over_max_bid
-    self.errors.add(:over_max_bid, "You need to increase the max bid in $1000.") if from_node.salary <= to_node.max_bid + 1000
+    self.errors.add(:over_max_bid, "You need to increase the max bid in $1000.") if from_node.salary <= to_node.max_bid.salary + 1000
   end
 
 
