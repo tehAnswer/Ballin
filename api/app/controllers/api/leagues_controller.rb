@@ -4,11 +4,7 @@ class Api::LeaguesController < ApplicationController
 
   # GET /api/leagues
   def index
-    page = request[:page] || 1
-    leagues = League.all
-    meta = paginate(page, leagues)
-    leagues = leagues.paginate(page: page, per_page: BallinAPI::ITEMS_PER_PAGE )
-    respond_with leagues, meta: meta
+    paginated_response(League.all)
   end
 
   # GET /api/leagues/1

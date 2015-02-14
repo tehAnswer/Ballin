@@ -19,6 +19,13 @@ class ApplicationController < ActionController::Base
     render json: "IDs are not negative, mmkay?", status: 422
   end
 
+  def paginated_response(collection)
+    page = request[:page] || 1
+    meta = paginate(page, collection)
+    collection = collection.paginate(page: page, per_page: BallinAPI::ITEMS_PER_PAGE )
+    respond_with collection, meta: meta 
+  end
+
   def set_access_control_headers
     headers['Access-Control-Allow-Origin'] = '*'
     headers['Access-Control-Request-Method'] = '*'

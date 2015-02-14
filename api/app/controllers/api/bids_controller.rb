@@ -2,6 +2,7 @@ class Api::BidsController < ApplicationController
 
   respond_to :json
 
+  # GET /api/bids?ids=...
   def index
     bids = []
     params[:ids].each do |id|
@@ -11,6 +12,7 @@ class Api::BidsController < ApplicationController
     render json: bids
   end
 
+  # POST /api/bids
   def create
     auction = Auction.find_by(neo_id: bid_params[:auction_id])
     bid_rel = BidCreation.create(auction, bid_params.except(:auction_id))

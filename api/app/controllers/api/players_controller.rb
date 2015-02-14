@@ -5,11 +5,7 @@ class Api::PlayersController < ApplicationController
   # GET /api/players
   # GET /api/players.json
   def index
-    page = request[:page] || 1
-    players = Player.all
-    meta = paginate(page, players)
-    players = players.paginate(page: page, per_page: BallinAPI::ITEMS_PER_PAGE )
-    respond_with players, meta: meta 
+    paginated_response(Player.all)
   end
 
   # GET /api/players/1
