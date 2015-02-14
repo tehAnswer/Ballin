@@ -13,11 +13,12 @@ class Api::FantasticTeamsController < ApplicationController
 
   def create
     if @user.team.nil?
-      fantastic_team = TeamCreation.create(@division, fantastic_team_params, @user)
-      if fantastic_team.persisted?
+      ft_creation = FantasticTeamCreation.new
+      fantastic_team = ft_creation.create(@division, fantastic_team_params, @user)
+      if fantastic_team && fantastic_team.persisted?
         respond_with fantastic_team, location: "api/fantastic_team/#{fantastic_team.neo_id}"
       else
-        render json: { errors: fantastic_team.errors }, status: 422
+        render json: { errors: ft_creation.errors }, status: 422
       end
     else
       render json: { error: "Users can only have one team."}, status: 422

@@ -33,6 +33,21 @@ namespace :test do
       birthdate: Date.new,
       })
 
+    20.times do |i|
+      Player.create!({
+      name: "JohnDoe#{i}",
+      height_cm: 200,
+      height_formatted: "6'1\"",
+      weight_lb: 100,
+      weight_kg: 50,
+      position: 'SG',
+      number: '24',
+      birthplace: 'Philly',
+      birthdate: Date.new,
+      })
+    end
+
+
     NbaTeam.create!({team_id: 'philadephia-76-ers',
         abbreviation: 'PHI',
         name: 'Philadelphia 76ers',
@@ -59,7 +74,7 @@ namespace :test do
 
     league = LeagueCreation.create({name: "AllStarsTestingContest"})
     division = league.conferences.first.divisions.first
-    team = TeamCreation.create(division, team_data, user)
+    team = FantasticTeamCreation.new.create(division, team_data, user)
     contract = ContractCreation.create(kobe, team)
     Rake::Task["test"].invoke
     

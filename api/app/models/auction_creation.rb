@@ -9,7 +9,7 @@ class AuctionCreation
       raise "There is not such player" unless player
       raise "You cant sell player that you don't own" unless team.has_contract_with?(player)
       raise "You cant sell players in other league" unless team.league == league
-      raise "You cant seel the same player twice" if league.has_auction?(player)
+      raise "You cant sell the same player twice" if league.has_auction?(player)
       auction.player = player
       auction.league = league
       return auction

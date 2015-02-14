@@ -37,5 +37,9 @@ class FantasticTeam
   def has_contract_with?(player)
     return players.where(neo_id: player.neo_id).count > 0
   end
+
+  def contract_ids
+    contracts.map { |c| c.neo_id }
+  end
   
 end

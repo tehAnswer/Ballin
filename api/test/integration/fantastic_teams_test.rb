@@ -43,6 +43,7 @@ class FantasticTeamsTest < ActionDispatch::IntegrationTest
     hash = parse(response.body)
     assert_equal ft[:fantastic_team][:name], hash[:fantastic_team][:name]
     assert_equal user.neo_id, hash[:fantastic_team][:user_id]
+    assert_equal 6, hash[:fantastic_team][:contract_ids].count
 
 
     post "api/fantastic_teams", ft, { dagger: User.first.auth_code }

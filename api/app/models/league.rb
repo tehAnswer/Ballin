@@ -10,12 +10,12 @@ class League
   validates :name, presence: true
   validates :name, uniqueness: true
 
-  def free_players
-    Player.all - players
+  def free_agents
+    Player.all.to_a - players
   end
 
   def players
-    contracts.map { |c| c.player }
+    contracts.player.to_a
   end
 
   def filter_conferences(name)

@@ -20,4 +20,8 @@ class Division
   def conference_id
     conference.neo_id
   end
+
+  def league
+    conference.league
+  end
 end
