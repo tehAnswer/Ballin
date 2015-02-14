@@ -38,8 +38,8 @@ class FantasticTeamCreation
   def create_team(team_data)
     self.team = FantasticTeam.create(team_data.except(:division_id))
     unless self.team.valid?
-      team.errors.each do |k, v|
-        errors << v
+      team.errors.each do |key, message|
+        errors << message
       end
       raise "Invalid team"
     end

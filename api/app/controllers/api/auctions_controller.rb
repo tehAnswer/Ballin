@@ -9,11 +9,12 @@ class Api::AuctionsController < ApplicationController
 
       # POST /api/leagues/:league_id/auctions
   def create
-    auction = AuctionCreation.create(auction_params, @league, @user)
+    creation = AuctionCreation.new
+    auction = creation.create(auction_params, @league, @user)
     if auction
       respond_with auction, location: "/api/leagues/#{@league.neo_id}/auctions/#{auction.neo_id}"
     else
-      render json: { error: "Invalid operation" }, status: 422
+      render json: creation.errors, status: 422
     end
   end
 
