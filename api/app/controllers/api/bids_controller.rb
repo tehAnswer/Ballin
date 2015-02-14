@@ -9,11 +9,13 @@ class Api::BidsController < ApplicationController
   # POST /api/bids
   def create
     auction = Auction.find_by(neo_id: bid_params[:auction_id])
-    bid_rel = BidCreation.create(auction, bid_params.except(:auction_id))
-    if bid_rel && bid_rel.valid?
+    creation = BidCreation.new
+    bid_rel = creation.create(auction, bid_params.except(:auction_id), @user)
+
+    if bid_rel && bid_rel.persisted?
       respond_with bid_rel.from_node, location: "api/bids/#{bid_rel.from_node.neo_id}"
     elsif bid_rel
-      render json: bid_rel.errors, status: 422
+      render json: creation.errors, status: 422
     else
       render json: { errorMessage: "Wrong data" }, status: 422
     end

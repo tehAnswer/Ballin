@@ -10,4 +10,12 @@ class Bid
   has_one :out, :team, model_class: FantasticTeam
   has_one :out, :auction, model_class: Auction, rel_class: BidRelation
 
+  def team_id
+    team.neo_id
+  end
+
+  def auction_id
+    auction.neo_id
+  end
+
 end

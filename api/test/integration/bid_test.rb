@@ -3,7 +3,7 @@ require 'test_helper'
 class BidsTest < ActionDispatch::IntegrationTest
 
   test "new bid" do
-    auth_code = User.first.auth_code
+    auth_code = User.find_by(username: "UserWithTeam").auth_code
     bid = {
       salary: 100_000,
       auction_id: -1

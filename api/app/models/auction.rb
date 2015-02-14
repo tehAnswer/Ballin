@@ -25,4 +25,8 @@ class Auction
   	bid = max_bid
   	bid.nil? ? -1 : bid.neo_id
   end
+
+  def bid_ids
+    bids.map { |b| b.neo_id }
+  end
 end
