@@ -3,7 +3,7 @@ class FantasticTeamCreation
   attr_accessor :errors, :team
 
   def initialize
-    errors = []
+    self.errors = []
   end
 
   def create(division, team_data, user)
@@ -37,7 +37,12 @@ class FantasticTeamCreation
 
   def create_team(team_data)
     self.team = FantasticTeam.create(team_data.except(:division_id))
-    raise "Invalid team" unless self.team.valid?
+    unless self.team.valid?
+      team.errors.each do |k, v|
+        errors << v
+      end
+      raise "Invalid team"
+    end
   end
 
   def set_up_default_contracts(league)
@@ -47,9 +52,9 @@ class FantasticTeamCreation
   def create_random_contract(league)
     loop do
       player = league.free_agents.sample
-      contract = ContractCreation.create(player, team, 5_000_000)
-      #contract_creation = ContractCreation.new
-      #contract = contract_creation.create(player, team, 5_000_000)
+      #contract = ContractCreation.create(player, team, 5_000_000)
+      contract_creation = ContractCreation.new
+      contract = contract_creation.create(player, team, 5_000_000)
       break contract if contract
     end
   end

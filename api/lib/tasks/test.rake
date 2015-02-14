@@ -47,7 +47,6 @@ namespace :test do
       })
     end
 
-
     NbaTeam.create!({team_id: 'philadephia-76-ers',
         abbreviation: 'PHI',
         name: 'Philadelphia 76ers',
@@ -75,7 +74,8 @@ namespace :test do
     league = LeagueCreation.create({name: "AllStarsTestingContest"})
     division = league.conferences.first.divisions.first
     team = FantasticTeamCreation.new.create(division, team_data, user)
-    contract = ContractCreation.create(kobe, team)
+    contract_creation = ContractCreation.new
+    contract_creation.create(kobe, team)
     Rake::Task["test"].invoke
     
   end

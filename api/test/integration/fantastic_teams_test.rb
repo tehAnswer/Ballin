@@ -46,7 +46,7 @@ class FantasticTeamsTest < ActionDispatch::IntegrationTest
     assert_equal 6, hash[:fantastic_team][:contract_ids].count
 
 
-    post "api/fantastic_teams", ft, { dagger: User.first.auth_code }
+    post "api/fantastic_teams", ft, { dagger: User.find_by(username: "Adolfo").auth_code }
     assert_equal 422, response.status
 
     # Change name and abbreviation to make the ft unique
