@@ -5,6 +5,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :null_session
   after_filter :set_access_control_headers
   before_action :authenticate_user
+  respond_to :json
   
   rescue_from(ActionController::ParameterMissing) do |parameter_missing_exception|
     error = {}

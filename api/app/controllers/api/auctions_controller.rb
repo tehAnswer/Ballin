@@ -1,12 +1,20 @@
 class Api::AuctionsController < ApplicationController
+  before_action :set_league, only: [:index, :create]
+  respond_to :json
 
   # GET /api/leagues/:league_id/auctions
   def index
     paginated_response(@league.auctions)
   end
 
-  # POST /api/leagues/:league_id/auctions
+      # POST /api/leagues/:league_id/auctions
   def create
+    auction = AuctionCreation.create(auction_params, @league, @user)
+    if auction
+      respond_with auction, location: "/api/leagues/#{@league.neo_id}/auctions/#{auction.neo_id}"
+    else
+      render json: { error: "Invalid operation" }, status: 422
+    end
   end
 
  private

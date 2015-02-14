@@ -51,5 +51,9 @@ class League
     auctions.map { |auction| auction.neo_id }
   end
 
+  def has_auction?(player)
+    return auctions.player.where(neo_id: player.neo_id).count > 0
+  end
+
 
 end

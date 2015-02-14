@@ -1,5 +1,4 @@
 class Api::BidsController < ApplicationController
-
   respond_to :json
 
   # GET /api/bids?ids=...

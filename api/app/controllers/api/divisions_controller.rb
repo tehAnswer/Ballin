@@ -1,5 +1,4 @@
 class Api::DivisionsController < ApplicationController
-  respond_to :json
   
   # GET /api/divisions?ids=...
   def index

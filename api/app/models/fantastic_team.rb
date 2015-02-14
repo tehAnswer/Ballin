@@ -29,5 +29,13 @@ class FantasticTeam
   def user_id
     user.nil? ? -1 : user.neo_id
   end
+
+  def players
+    contracts.player
+  end
+
+  def has_contract_with?(player)
+    return players.where(neo_id: player.neo_id).count > 0
+  end
   
 end
