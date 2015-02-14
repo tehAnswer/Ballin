@@ -4,12 +4,7 @@ class Api::FantasticTeamsController < ApplicationController
   before_action :set_fantastic_team, only: [:show]
 
   def index
-    fantastic_teams = []
-    params[:ids].each do |id|
-      fantastic_team = FantasticTeam.find_by(neo_id: id)
-      fantastic_teams << fantastic_team if fantastic_team
-    end if params[:ids]
-    render json: fantastic_teams
+    coalesce_find_requests_response(FantasticTeam)
   end
 
   def show

@@ -26,6 +26,16 @@ class ApplicationController < ActionController::Base
     respond_with collection, meta: meta 
   end
 
+  def coalesce_find_requests_response(klass)
+    variable_name = "@#{klass.name.pluralize.underscore}"
+    instance_variable_set(variable_name, [])
+    params[:ids].each do |id|
+      item = klass.find_by(neo_id: id)
+      instance_variable_get(variable_name) << item if item
+    end if params[:ids]
+    render json: instance_variable_get(variable_name)
+  end
+
   def set_access_control_headers
     headers['Access-Control-Allow-Origin'] = '*'
     headers['Access-Control-Request-Method'] = '*'

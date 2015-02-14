@@ -4,12 +4,7 @@ class Api::BidsController < ApplicationController
 
   # GET /api/bids?ids=...
   def index
-    bids = []
-    params[:ids].each do |id|
-      bid = Bid.find_by(neo_id: id)
-      bids << bid if bids
-    end if params[:ids]
-    render json: bids
+    coalesce_find_requests_response(Bid)
   end
 
   # POST /api/bids

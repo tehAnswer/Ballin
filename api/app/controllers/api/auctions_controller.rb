@@ -2,7 +2,7 @@ class Api::AuctionsController < ApplicationController
 
   # GET /api/leagues/:league_id/auctions
   def index
-    paginated_response @league.auctions
+    paginated_response(@league.auctions)
   end
 
   # POST /api/leagues/:league_id/auctions
