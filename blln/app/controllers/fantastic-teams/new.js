@@ -6,7 +6,7 @@ export default Ember.Controller.extend({
 	actions: {
 		createTeam: function () {
 			var that = this;
-			var request = ajax.ajax({
+			var request = ajax({
 				url:"/api/fantastic_teams",
 				type:"POST",
 				headers: { 
