@@ -1,0 +1,20 @@
+<div class="inner">
+  <h3 class="masthead-brand">{{#link-to 'index'}}Ballin'{{/link-to}}</h3>
+  <nav>
+    <ul class="nav masthead-nav">
+      {{#link-to 'dashboard' tagName='li'}} 
+        {{#link-to 'dashboard'}}Dashboard{{/link-to}}
+       {{/link-to}}
+       {{#link-to 'my_team' tagName='li'}} 
+        {{#link-to 'my_team'}}My Team{{/link-to}}
+       {{/link-to}}
+       {{#link-to 'league.market' tagName='li'}}
+         {{#link-to 'league.market'}}Market{{/link-to}}
+       {{/link-to}}
+
+       {{#link-to 'league.standings' tagName='li'}}
+         {{#link-to 'league.standings'}}Standings{{/link-to}}
+       {{/link-to}}
+    </ul>
+  </nav>
+</div>

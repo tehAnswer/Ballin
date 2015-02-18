@@ -4,7 +4,7 @@ export default DS.ActiveModelAdapter.extend({
   namespace: 'api', 
   coalesceFindRequests: true,
   headers: function() {
-  	var token = this.get('cookie').getCookie('token') || "";
+  	var token = this.get('cookie').getCookie('user').auth_code || "";
   	return { "dagger": token };
-  }.property('cookie.token')
+  }.property('cookie.user')
 });

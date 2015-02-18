@@ -19,6 +19,7 @@ Router.map(function() {
   this.route('dashboard');
   this.route('contact');
   this.route('learn_more');
+  this.route('my_team');
   
   this.resource('fantastic_teams', function() {
     this.route('show', { path: '/:fantastic_team' });
@@ -31,10 +32,11 @@ Router.map(function() {
 
   });
 
-  this.resource('leagues', function() {
-    this.route('show', { path: '/:league_id' });
+  this.resource('league', function() {
+    this.route('market');
+    this.route('standings');
   });
-  this.route('fantastic-teams/new');
+
 });
 
 export default Router;

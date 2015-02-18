@@ -12,4 +12,6 @@ Rails.application.routes.draw do
     resources :bids, only: [:index, :create]
     devise_for :users
   end
+
+  get '/me', to: 'me#whoiam'
 end

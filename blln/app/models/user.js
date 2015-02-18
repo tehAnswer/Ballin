@@ -5,6 +5,7 @@ export default DS.Model.extend({
   email: DS.attr("string"),
   password: DS.attr("string"),
   repassword: DS.attr("string"),
-  token: DS.attr("string"),
-  fantasticTeam: DS.belongsTo("fantastic-team", {async: true})
+  authCode: DS.attr("string"),
+  team: DS.belongsTo("fantastic-team", {async: true})
+
 });
