@@ -2,10 +2,18 @@
   {{navbar-user user=model}}
    <h1> {{model.team.name}} </h1>
 
-   <ul>
-   {{#each contract in model.team.contracts}}
-     <li> {{contract.player.name}} {{contract.salary}}</li>
-   {{/each}}
-   </ul>
+   <table class="table">
+     <thead>
+       <tr>
+         <th>Name</th>
+         <th>Position</th>
+         <th>Final score</th>
+         <th>Current position</th>
+      </tr>
+      {{#each contract in model.team.contracts}}
+        {{contracts/contract-row contract=contract save= "save" }}
+      {{/each}}
+    </table>
+
 
 </div>
