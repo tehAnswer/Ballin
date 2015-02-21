@@ -6,5 +6,6 @@ export default DS.Model.extend({
   conferences: DS.hasMany("conference", {async: true}),
   sharpId: function () {
   	return "#" + this.get('id');
-  }.property('sharpId')
+  }.property('sharpId'),
+  contracts: DS.hasMany("contracts", { async: true })
 });

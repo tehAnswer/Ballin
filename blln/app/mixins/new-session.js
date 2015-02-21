@@ -59,12 +59,14 @@ export default Ember.Mixin.create({
 		var that = this;
 		var token = this.get('cookie').getCookie('token');
 		var request = ajax({ url: "/me", type: "GET", headers: { dagger: token } });
-		return request.then(function(response) {
+		var user = request.then(function(response) {
 			that.store.pushPayload('user', response);
-			console.log(response);
-			return that.store.find('user', response.user.id);
+			var user = that.store.find('user', response.user.id);
+			return user;
 		}, function(error) {
 			return null;
-		})
+		});
+
+		return user;
 	}
 });

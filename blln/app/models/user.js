@@ -6,6 +6,6 @@ export default DS.Model.extend({
   password: DS.attr("string"),
   repassword: DS.attr("string"),
   authCode: DS.attr("string"),
-  team: DS.belongsTo("fantastic-team", {async: true})
-
+  team: DS.belongsTo("fantastic-team", {async: true}),
+  contracts: DS.hasMany("contracts", { async: true })
 });

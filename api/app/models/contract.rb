@@ -8,4 +8,16 @@ class Contract
 
   validates :salary, numericality: { greater_than_or_equal_to: 500000 }
 
+  def league_id
+    league.neo_id
+  end
+
+  def team_id
+    team.neo_id
+  end
+
+  def player_id
+    player.neo_id
+  end
+
 end

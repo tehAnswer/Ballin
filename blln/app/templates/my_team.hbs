@@ -1,0 +1,11 @@
+<div class="container">
+  {{navbar-user user=model}}
+   <h1> {{model.team.name}} </h1>
+
+   <ul>
+   {{#each contract in model.team.contracts}}
+     <li> {{contract.player.name}} </li>
+   {{/each}}
+   </ul>
+
+</div>

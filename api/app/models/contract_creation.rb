@@ -13,6 +13,7 @@ class ContractCreation
       league = team.league
       check_league(league)
       check_other_contract(league, player)
+      check_player(player)
       self.contract = Contract.create(salary: salary)
       make_rels(team, player)
       return contract
@@ -27,19 +28,19 @@ class ContractCreation
 
  private
 
+  def check_player(player)
+    add_error "The player is null" if player.nil?
+  end 
+
   def check_league(league)
     if league.nil?
-      message = "#{team.name} is not enrrolled in any league" 
-      errors << message
-      raise message
+      add_error "#{team.name} is not enrrolled in any league" 
     end
   end
 
   def check_other_contract(league, player)
     if league.players.include?(player)
-      message = "#{player.name} has already a contract @ #{league.name} league." 
-      errors << message
-      raise message
+      add_error "#{player.name} has already a contract @ #{league.name} league." 
     end
   end
 
@@ -47,6 +48,11 @@ class ContractCreation
     self.contract.team = team
     self.contract.player = player
     self.contract.league = team.league
+  end
+
+  def add_error(message)
+    self.errors << message
+    raise message
   end
 
 

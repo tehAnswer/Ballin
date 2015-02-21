@@ -1,15 +1,10 @@
 import Ember from 'ember';
 import NewSessionMixin from 'blln/mixins/new-session';
+import AuthenticatedRoute from 'blln/mixins/authenticated-route';
 
-export default Ember.Route.extend(NewSessionMixin, {
-
-  beforeModel: function() {
-    var token = this.get('cookie').getCookie('token');
-    if(token == null) {
-      this.transitionTo('sessions.new');
-    }  
-  },
+export default Ember.Route.extend(NewSessionMixin, AuthenticatedRoute, {
   model: function() {
-    return this.whoiam();
+    var user = this.whoiam();
+    return user;
   }
 });

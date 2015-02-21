@@ -6,5 +6,6 @@ export default DS.Model.extend({
   hood: DS.attr("string"),
   headline: DS.attr("string"),
   user: DS.belongsTo("user", { async: true }),
-  division: DS.belongsTo("division")
+  division: DS.belongsTo("division", { async: true }),
+  contracts: DS.hasMany("contracts", { async: true })
 });
