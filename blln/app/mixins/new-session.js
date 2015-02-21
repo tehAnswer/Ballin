@@ -8,9 +8,11 @@ export default Ember.Mixin.create({
 		var that = this;
 
 		that.store.pushPayload('user', response);
-
-		that.get('cookie').setCookie('token', response.user.auth_token).then(function() {
-			if (response.user.team_id !== -1) {
+		var user = response.user;
+		that.get('cookie').setCookie('token', user.authCode).then(function() {
+			alert(user.team);
+			alert(user.team.id);
+			if (user.team.id !== "-1") {
 				that.transitionToRoute('dashboard');
 			} else {
 				that.transitionToRoute('fantastic_teams.new');
@@ -34,8 +36,9 @@ export default Ember.Mixin.create({
 
 	loginHook: function(isLogin, that) {
 		return function(response) {
-				if(isLogin)
+				if(isLogin) {
 					that.reset();
+				}
 				that.newSession(response);
 			};
 	},

@@ -39,7 +39,7 @@ class FantasticTeamCreation
     self.team = FantasticTeam.create(team_data.except(:division_id))
     unless self.team.valid?
       team.errors.each do |key, message|
-        errors << message
+        self.errors << message
       end
       raise "Invalid team"
     end
@@ -52,6 +52,7 @@ class FantasticTeamCreation
   def create_random_contract(league)
     loop do
       player = league.free_agents.sample
+      debugger
       #contract = ContractCreation.create(player, team, 5_000_000)
       contract_creation = ContractCreation.new
       contract = contract_creation.create(player, team, 5_000_000)
@@ -61,7 +62,7 @@ class FantasticTeamCreation
 
   def check_five_teams(division)
     if division.number_of_teams == 5
-      errors << "#{division.name} division of #{division.league.name} has already five teams." 
+      self.errors << "#{division.name} division of #{division.league.name} has already five teams." 
       raise "#{division.name} division of #{division.league.name} has already five teams."
     end
   end

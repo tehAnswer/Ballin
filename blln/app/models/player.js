@@ -15,6 +15,6 @@ export default DS.Model.extend({
     return (this.get('stats.defr') + this.get('stats.ofr')).toFixed(2);
   }.property('stats'),
   boxScores: DS.hasMany("box-score", { async: true }),
-  contracts: DS.hasMany("contracts", { async: true })
+  contracts: DS.hasMany("contract", { async: true })
   
 });

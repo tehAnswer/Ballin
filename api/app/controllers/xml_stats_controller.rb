@@ -190,7 +190,7 @@ class XmlStatsController
     return response if response.code == 200
     return [] if response.code == 404
     if response.code == 429
-      dif = response.headers['xmlstats-api-reset'].to_i - Time.now.strftime('%s').to_i
+      dif = sleep_time
       Rails.logger.error "Sleeping for #{dif}"
       sleep dif
     end
@@ -207,6 +207,11 @@ class XmlStatsController
       'User-Agent' => Rails.application.secrets.name_robot,
       'Authorization' => 'Bearer '+ Rails.application.secrets.api_key
     }
+  end
+
+  def sleep_time(response)
+    dif = response.headers['xmlstats-api-reset'].to_i - Time.now.strftime('%s').to_i
+    return dif > 0 ? dif : 1
   end
 
 end

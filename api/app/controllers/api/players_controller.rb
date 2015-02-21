@@ -5,7 +5,11 @@ class Api::PlayersController < ApplicationController
   # GET /api/players
   # GET /api/players.json
   def index
-    paginated_response(Player.all)
+    if (params[:ids])
+      coalesce_find_requests_response(Player)
+    else
+      paginated_response(Player.all)
+    end
   end
 
   # GET /api/players/1
