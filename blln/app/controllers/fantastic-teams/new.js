@@ -18,9 +18,11 @@ export default Ember.Controller.extend({
 			});
 
 			request.then(function(response) {
+				that.set('isLoading', false);
 				that.store.createRecord("fantastic_team", response.fantastic_team);
 				that.transitionToRoute('dashboard');
 			}, function(error) {
+				that.set('isLoading', false);
 				alert("TODO. Something goes wrong.");
 			}); 
 		}
@@ -47,5 +49,7 @@ export default Ember.Controller.extend({
 				"division_id": this.get('divisionId')
 			}
 		};
-	}
+	},
+	isLoading: false,
+	isDisabled: Ember.computed.or('isInvalid', 'isLoading')
 });

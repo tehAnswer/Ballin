@@ -10,8 +10,6 @@ export default Ember.Mixin.create({
 		that.store.pushPayload('user', response);
 		var user = response.user;
 		that.get('cookie').setCookie('token', user.authCode).then(function() {
-			alert(user.team);
-			alert(user.team.id);
 			if (user.team.id !== "-1") {
 				that.transitionToRoute('dashboard');
 			} else {
