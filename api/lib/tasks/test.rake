@@ -21,6 +21,56 @@ namespace :test do
       birthdate: Date.new,
       })
 
+    iverson = Player.create!({
+      name: 'Allen Iverson',
+      height_cm: 200,
+      height_formatted: "6'1\"",
+      weight_lb: 100,
+      weight_kg: 50,
+      position: 'PG',
+      number: '3',
+      birthplace: 'Philly',
+      birthdate: Date.new,
+      })
+
+    shaq = Player.create!({
+      name: 'Shaq',
+      height_cm: 200,
+      height_formatted: "6'1\"",
+      weight_lb: 100,
+      weight_kg: 50,
+      position: 'C',
+      number: '24',
+      birthplace: 'Philly',
+      birthdate: Date.new,
+      })
+
+    durant = kobe = Player.create!({
+      name: 'Kevin Durant',
+      height_cm: 200,
+      height_formatted: "6'1\"",
+      weight_lb: 100,
+      weight_kg: 50,
+      position: 'SF',
+      number: '24',
+      birthplace: 'Philly',
+      birthdate: Date.new,
+      })
+
+    embiid = Player.create!({
+      name: 'Embiid',
+      height_cm: 200,
+      height_formatted: "6'1\"",
+      weight_lb: 100,
+      weight_kg: 50,
+      position: 'PF',
+      number: '24',
+      birthplace: 'Philly',
+      birthdate: Date.new,
+      })
+
+
+
     Player.create!({
       name: 'PlayerWithoutTeam',
       height_cm: 200,
@@ -76,6 +126,10 @@ namespace :test do
     team = FantasticTeamCreation.new.create(division, team_data, user)
     contract_creation = ContractCreation.new
     contract_creation.create(kobe, team)
+    contract_creation.create(embiid, team)
+    contract_creation.create(iverson, team)
+    contract_creation.create(shaq, team)
+    contract_creation.create(durant, team)
     Rake::Task["test"].invoke
     
   end
