@@ -11,6 +11,7 @@ Rails.application.routes.draw do
     resources :conferences, only: [:index]
     resources :divisions, only: [:index]
     resources :bids, only: [:index, :create]
+    resources :rotations, only: [:show, :update]
     devise_for :users
   end
 

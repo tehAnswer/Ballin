@@ -2,12 +2,8 @@ class ContractCreation
   include AbstractTransaction
   attr_accessor :contract
 
-  def initilize
-    self.errors = []
-  end
 
   def create(player, team, salary = 500000)
-    errors = []
     transaction do
       check_if(team.nil?, "The team is null")
       league = team.league

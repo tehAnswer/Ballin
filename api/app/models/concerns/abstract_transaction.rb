@@ -31,7 +31,7 @@ module AbstractTransaction
   end
 
   def valid?
-    return self.errors.empty?
+    return errors.empty?
   end
 
   alias_method :check_if, :check

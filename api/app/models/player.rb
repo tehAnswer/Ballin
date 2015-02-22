@@ -19,6 +19,7 @@ class Player
   has_one :out, :real_team, model_class: NbaTeam
   has_many :out, :boxscores, model_class: BoxScore
   has_many :in, :contracts, model_class: Contract, origin: :player
+  has_many :in, :rotations, model_class: Rotation, rel_class: RosterSlot
 
   def stats
     return empty_hash if boxscores.count == 0

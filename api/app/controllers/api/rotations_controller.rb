@@ -1,6 +1,5 @@
 class Api::RotationsController < ApplicationController
-  before_action :set_rotation, only: [:show, :update]
-  after_action :check_user_owns_team, only: [:set_rotation]
+  before_action :set_rotation, :check_user_owns_team, only: [:show, :update]
   respond_to :json
 
   def show
@@ -10,8 +9,8 @@ class Api::RotationsController < ApplicationController
   def update
     update = RotationUpdate.new(@rotation)
     rotation_updated = update.update(rotation_params)
-    if update
-      respond_with update, status: 200
+    if rotation_updated
+      respond_with rotation_updated, status: 204
     else 
       render json: update.errors, status: 422
     end
@@ -20,7 +19,7 @@ class Api::RotationsController < ApplicationController
  private
   def set_rotation
     @rotation = Rotation.find_by(neo_id: params[:id])
-    render json: { error: "There isnt such rotation"} unless @rotation, status: 422
+    render json: { error: "There isnt such rotation"}, status: 422 unless @rotation
   end
 
   def check_user_owns_team
