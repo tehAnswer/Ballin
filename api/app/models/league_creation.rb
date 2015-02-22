@@ -1,8 +1,8 @@
 class LeagueCreation
+  extend AbstractTransaction
 
   def self.create(params)
-   begin
-      tx = Neo4j::Transaction.new
+    self.transaction do
       league = League.new(params)
       return league unless league.save
 
@@ -28,11 +28,6 @@ class LeagueCreation
       league.conferences << western_conference
       league.save!
       return league
-  rescue StandardError => e
-    Rails.logger.error e.message
-    return false
-  ensure
-    tx.close
+    end
   end
- end
 end

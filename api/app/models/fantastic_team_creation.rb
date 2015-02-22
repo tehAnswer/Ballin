@@ -1,30 +1,14 @@
 class FantasticTeamCreation
-
-  attr_accessor :errors, :team
-
-  def initialize
-    self.errors = []
-  end
+  include AbstractTransaction
+  attr_accessor :team
 
   def create(division, team_data, user)
-    errors = []
-    begin
-      tx = Neo4j::Transaction.new
-      check_five_teams(division)
-      create_team(team_data)
+    transaction do
+      check_if(division.number_of_teams == 5, "#{division.name} division of #{division.league.name} has already five teams.")
+      create_team!(team_data)
       make_rels(division, user)
       return team
-    rescue StandardError => e
-      tx.failure
-      Rails.logger.error e.message
-      return false
-    ensure
-      tx.close
     end
-  end
-
-  def valid?
-    errors.empty?
   end
 
  private
@@ -35,7 +19,7 @@ class FantasticTeamCreation
     set_up_default_contracts(division.league)
   end
 
-  def create_team(team_data)
+  def create_team!(team_data)
     self.team = FantasticTeam.create(team_data.except(:division_id))
     unless self.team.valid?
       team.errors.each do |key, message|
@@ -54,16 +38,8 @@ class FantasticTeamCreation
       player = league.free_agents.sample
       contract_creation = ContractCreation.new
       contract = contract_creation.create(player, team, 5_000_000)
+      debugger unless contract
       break contract if contract
     end
-  end
-
-  def check_five_teams(division)
-    if division.number_of_teams == 5
-      self.errors << "#{division.name} division of #{division.league.name} has already five teams." 
-      raise "#{division.name} division of #{division.league.name} has already five teams."
-    end
-  end
-
-
+  end  
 end
