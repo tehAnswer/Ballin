@@ -1,19 +1,17 @@
-<div class="panel panel-default">
-  <div class="panel-heading" role="tab" {{bind-attr id=contract.sharpId}}>
-    <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#accordion" {{bind-attr href=contract.sharpId}} aria-expanded="false" {{bind-attr aria-controls=contract.id}}>
-        {{contract.player.name}} ({{contract.player.position}})
-      </a>
-    </h4>
-  </div>
-
-  <div {{bind-attr id=contract.id}} {{bind-attr aria-labelledby=contract.sharpId}} class="panel-collapse collapse" role="tabpanel">
-    <div class="panel-body">
-      <ul>
-        <li>Position: {{contract.player.positionLong}}</li>
-        <li>Salary: {{contract.salary}} </li>
-        <li>Score amount: {{contract.player.stats.final_score}}</li>
-        
-      </ul>
+<div class="col-sm-6 col-md-4">  
+  <div class="thumbnail">
+    <div class="caption">
+      <h3>{{contract.player.name}}</h3>
+      <p>
+        <b>Salary</b>: ${{contract.salary}}<br>
+        <b>Position</b>: {{contract.player.positionLong}}<br>
+        <b>Score</b>: {{contract.player.stats.final_score}}<br>
+        <b>Games count</b>: {{contract.player.stats.games_played}}
+      </p>
+      <p>
+        <a href="#" class="btn btn-primary" role="button">Button</a>
+        <a href="#" class="btn btn-default" role="button">Button</a>
+      </p>
     </div>
   </div>
+</div>

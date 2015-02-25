@@ -2,9 +2,9 @@
   {{navbar-user user=model}}
    <h1> {{model.team.name}} </h1>
 
-   <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-     {{#each contract in model.team.contracts}}
-        {{partial "contracts/panel"}}
-     {{/each}}
-   </div>
-</div>
+
+  <div class="row">
+    {{#each contract in model.team.contracts}}
+      {{partial "contracts/panel"}}
+    {{/each}}
+  </div>

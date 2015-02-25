@@ -273,15 +273,18 @@ body {
   pointer-events: none;
 }
 
-.btn-east {
-  background-color: #FF3300;
-  border-radius: 4px;
+.thumbnail {
+  background-color: transparent;
+  background-image: url("images/background-transparent.png");
+  border-color: transparent;
 }
 
-.btn-west {
-  background-color: #0000FF;
-  border-radius: 4px;
+.thumbnail .caption h3 {
+  color: #FFF;
 }
 
+.thumbnail .caption p {
+  color: #DDD;
+}
 
 
