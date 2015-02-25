@@ -1,7 +1,7 @@
-<div class="panel panel-info">
+<div class="panel panel-default">
   <div class="panel-heading" role="tab" {{bind-attr id=contract.sharpId}}>
     <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#accordion" {{bind-attr href=contract.player.sharpId}} aria-expanded="false" {{bind-attr aria-controls=contract.id}}>
+      <a data-toggle="collapse" data-parent="#accordion" {{bind-attr href=contract.sharpId}} aria-expanded="false" {{bind-attr aria-controls=contract.id}}>
         {{contract.player.name}} ({{contract.player.position}})
       </a>
     </h4>
@@ -13,6 +13,7 @@
         <li>Position: {{contract.player.positionLong}}</li>
         <li>Salary: {{contract.salary}} </li>
         <li>Score amount: {{contract.player.stats.final_score}}</li>
+        
       </ul>
     </div>
   </div>
