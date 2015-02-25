@@ -2,18 +2,9 @@
   {{navbar-user user=model}}
    <h1> {{model.team.name}} </h1>
 
-   <table class="table">
-     <thead>
-       <tr>
-         <th>Name</th>
-         <th>Position</th>
-         <th>Final score</th>
-         <th>Current position</th>
-      </tr>
-      {{#each contract in model.team.contracts}}
-        {{contracts/contract-row contract=contract save= "save" }}
-      {{/each}}
-    </table>
-
-
+   <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+     {{#each contract in model.team.contracts}}
+        {{partial "contracts/panel"}}
+     {{/each}}
+   </div>
 </div>

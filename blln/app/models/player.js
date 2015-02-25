@@ -18,6 +18,27 @@ export default DS.Model.extend({
   contracts: DS.hasMany("contract", { async: true }),
   positions: function () {
     return ["PG", "G"];
-  }.property('positions')
+  }.property('positions'),
+  sharpId: function () {
+    return "#" + this.get('id');
+  }.property('sharpId'),
+  positionLong: function() {
+    var position = this.get('position');
+    if (position == 'PG') {
+      return "Point Guard";
+    } else if (position == 'SG') {
+      return "Shooting Guard";
+    } else if (position == 'SF') {
+      return "Small Forward";
+    } else if (position == 'PF') {
+      return "Power Forward";
+    } else if (position == 'C') {
+      return "Center";
+    } else if (position == 'G') {
+      return "Guard";
+    } else {
+      return "Forward";
+    }
+  }.property('positionLong')
   
 });
