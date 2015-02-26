@@ -1,6 +1,7 @@
 import DS from 'ember-data';
+import PositionFormat from 'blln/mixins/positions'
 
-export default DS.Model.extend({
+export default DS.Model.extend(PositionFormat, {
   name: DS.attr('string'),
   heightFormatted: DS.attr('string'),
   heightCm: DS.attr('number'),
@@ -16,29 +17,11 @@ export default DS.Model.extend({
   }.property('stats'),
   boxScores: DS.hasMany("box-score", { async: true }),
   contracts: DS.hasMany("contract", { async: true }),
-  positions: function () {
-    return ["PG", "G"];
-  }.property('positions'),
   sharpId: function () {
     return "#" + this.get('id');
   }.property('sharpId'),
   positionLong: function() {
-    var position = this.get('position');
-    if (position == 'PG') {
-      return "Point Guard";
-    } else if (position == 'SG') {
-      return "Shooting Guard";
-    } else if (position == 'SF') {
-      return "Small Forward";
-    } else if (position == 'PF') {
-      return "Power Forward";
-    } else if (position == 'C') {
-      return "Center";
-    } else if (position == 'G') {
-      return "Guard";
-    } else {
-      return "Forward";
-    }
-  }.property('positionLong')
+   return this.positionToWord(this.get('position'));
+  }.property('position')
   
 });

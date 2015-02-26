@@ -1,12 +1,12 @@
 <div class="col-sm-6 col-md-4">  
   <div class="thumbnail">
     <div class="caption">
-      <h3>{{contract.player.name}}</h3>
+      <h3>{{contract.player.name}} <br>#{{contract.player.number}}</h3>
       <p>
         <b>Salary</b>: ${{contract.salary}}<br>
-        <b>Position</b>: {{contract.player.positionLong}}<br>
         <b>Score</b>: {{contract.player.stats.final_score}}<br>
-        <b>Games count</b>: {{contract.player.stats.games_played}}
+        <b>Games count</b>: {{contract.player.stats.games_played}}<br>
+        <b>Position</b>: {{contract.player.positionLong}}<br>
       </p>
       <p>
         <a href="#" class="btn btn-primary" role="button">Button</a>
