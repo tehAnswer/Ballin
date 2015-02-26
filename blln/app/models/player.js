@@ -12,7 +12,7 @@ export default DS.Model.extend(PositionFormat, {
   position: DS.attr('string'),
   number: DS.attr('string'),
   stats: DS.attr(),
-  avgRebounds: function() {
+  avgRebounds: function () {
     return (this.get('stats.defr') + this.get('stats.ofr')).toFixed(2);
   }.property('stats'),
   boxScores: DS.hasMany("box-score", { async: true }),
@@ -20,8 +20,11 @@ export default DS.Model.extend(PositionFormat, {
   sharpId: function () {
     return "#" + this.get('id');
   }.property('sharpId'),
-  positionLong: function() {
+  positionLong: function () {
    return this.positionToWord(this.get('position'));
+  }.property('position'),
+  canPlay: function () {
+    return this.positionsCanPlay(this.get('position'));
   }.property('position')
   
 });

@@ -80,7 +80,7 @@ var Position = function () {
 
 Position.prototype = {
   getStrategy: function(position) {
-    if (position == 'PG') {
+    if (position === 'PG') {
       return pointGuard;
     } else if (position === 'SG') {
       return shootingGuard;
@@ -108,7 +108,7 @@ Position.prototype = {
     return this.strategy.positionsCanPlay();
   },
 
-  namePosition : function(abbreviation) {
+  namePosition: function(abbreviation) {
     this.setStrategy(this.getStrategy(abbreviation));
     return this.strategy.namePosition(abbreviation);
   }
