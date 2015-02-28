@@ -56,18 +56,26 @@ export default Ember.Mixin.create({
 		this.submitAction(false, "/api/users");
 	},
 
-	whoiam: function () {
+	getRequest: function (path, entity) {
 		var that = this;
 		var token = this.get('cookie').getCookie('token');
-		var request = ajax({ url: "/me", type: "GET", headers: { dagger: token } });
+		var request = ajax({ url: path, type: "GET", headers: { dagger: token } });
 		var user = request.then(function(response) {
-			that.store.pushPayload('user', response);
-			var user = that.store.find('user', response.user.id);
+			that.store.pushPayload(entity, response);
+			var user = that.store.find(entity, response[entity].id);
 			return user;
 		}, function(error) {
 			return null;
 		});
 
 		return user;
+	},
+
+	whoiam: function () {
+		return this.getRequest('/me', 'user');
+	},
+
+	myTeam: function() {
+		return this.getRequest('/my_team', 'fantastic_team');
 	}
 });

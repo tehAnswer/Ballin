@@ -42,5 +42,9 @@ class FantasticTeam
   def contract_ids
     contracts.map { |c| c.neo_id }
   end
+
+  def rotation_id
+    rotation.neo_id
+  end
   
 end

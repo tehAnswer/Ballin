@@ -18,7 +18,6 @@ class FantasticTeamCreation
     user.team = self.team
     set_up_default_contracts(division.league)
     team.rotation = Rotation.create!
-    debugger if team.rotation.nil?
   end
 
   def create_team!(team_data)

@@ -16,4 +16,5 @@ Rails.application.routes.draw do
   end
 
   get '/me', to: 'me#whoiam'
+  get '/my_team', to: 'me#my_team'
 end

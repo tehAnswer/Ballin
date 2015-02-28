@@ -4,4 +4,8 @@ class MeController < ApplicationController
   def whoiam
     respond_with @user, status: 200
   end
+
+  def my_team
+    respond_with @user.team, status: 200
+  end
 end

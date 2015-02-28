@@ -287,4 +287,18 @@ body {
   color: #DDD;
 }
 
+.dropdown-menu  {
+  background-color: #337AB7;
+  border-color: #2E6DA4;
+}
+
+.dropdown-menu > li > a {
+  color: #FFF;
+  font-weight: bold;
+}
+
+.dropdown-menu > li:hover {
+  background-color: #337AB7;
+}
+
 
