@@ -2,7 +2,7 @@
   <div class="thumbnail">
     <div class="caption">
       <hr>
-        {{current-position contract=contract}}
+        {{current-position contract=contract lineup=contract.team.rotation}}
       <hr>
       <p>
         <b>Salary</b>: ${{contract.salary}}<br>
@@ -20,7 +20,7 @@
 
           <ul class="dropdown-menu primary" role="menu">
             {{#each POS in contract.player.canPlay}}
-              <li><a>{{POS}}</a></li>
+              <li><a {{action "setAs" POS contract.player}}>{{POS}}</a></li>
             {{/each}}
           </ul>
         </div>

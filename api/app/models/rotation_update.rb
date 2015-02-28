@@ -21,8 +21,10 @@ class RotationUpdate
     params.each do |key, value|
       klass_rel = get_class_rel(key)
       check_if(klass_rel.nil?, "There is not such position")
+      rotation.rels.each { |x| x.destroy if x.class == klass_rel }
       player = Player.find_by(neo_id: value)
       rel = klass_rel.create(from_node: rotation, to_node: player)
+
       add_errors_from(rel) unless rel.valid?
     end
   end
