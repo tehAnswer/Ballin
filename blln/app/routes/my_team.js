@@ -20,9 +20,9 @@ export default Ember.Route.extend(AuthenticatedRoute, NewSessionMixin, {
       var that = this;
       var record = { rotation : { } }
       record["rotation"][position] = player.get('id');
-      var rotationId = this.modelFor('my_team').get("rotation").get('id');
+      var rotation = this.modelFor('my_team').get("rotation");
       var request = ajax({
-        url: "/api/rotations/" + rotationId,
+        url: "/api/rotations/" + rotation.get('id'),
         type:"PATCH",
         headers: { 
           "Accept" : "application/json; charset=utf-8",
@@ -31,13 +31,12 @@ export default Ember.Route.extend(AuthenticatedRoute, NewSessionMixin, {
         data: record,
         dataType:"json"
       });
+
       request.then(function() {
-        var rotation = that.store.find('rotation', rotationId);
-        alert(rotation);
         var playersId = rotation.get('playersId');
         playersId[position] = player.get('id');
         rotation.set('playersId', playersId);
-        rotation.save();
+        that.refresh();
       }, function(error) {
         alert("TODO. Something goes wrong.");
       }); 
