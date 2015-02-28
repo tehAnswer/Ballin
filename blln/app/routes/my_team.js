@@ -5,8 +5,7 @@ import ajax from 'ic-ajax';
 
 export default Ember.Route.extend(AuthenticatedRoute, NewSessionMixin, {
   model: function() {
-    var user = this.modelFor('dashboard');
-    return user == null ? this.myTeam() : user.team;
+    return this.myTeam();
   },
 
   afterModel: function () {
