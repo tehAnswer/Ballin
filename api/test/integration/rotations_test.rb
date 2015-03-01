@@ -44,16 +44,18 @@ class RotationsTest < ActionDispatch::IntegrationTest
   end
 
   test "waive player" do
-    user = User.find_by(username: "Eric Cartman")
-    contract = user.team.contracts.first
+    eric = User.find_by(username: "Eric Cartman")
+    contract = Contract.first
+    user = contract.team.user
     contract_id = contract.neo_id
     player_id = contract.player_id
-    delete "/api/contracts/#{contract_id}", { }, { dagger: user.auth_code }
+
+    delete "/api/contracts/#{contract_id}", { }, { dagger: eric.auth_code }
     assert_equal 403, response.status 
-    delete "/api/contracts/#{contract.neo_id}", { }, { dagger: contract.team.user.auth_code }
-    assert_equal 204, response.status
-    assert_equal false, user.team.contracts_id.include?(contract_id)
-    assert_equal false, user.team.rotation.players_id.include?(player_id)
+    delete "/api/contracts/#{contract.neo_id}", { }, { dagger: user.auth_code }
+    assert_equal 200, response.status
+    assert_equal false, user.team.contract_ids.include?(contract_id)
+    assert_equal false, user.team.rotation.playersId.include?(player_id)
   end
 
 end

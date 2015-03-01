@@ -14,6 +14,15 @@ class Rotation
     [center, power_forward, small_forward, shooting_guard, point_guard, sixth_man]
   end
 
+  def position_of(player)
+    return "center" if center == player
+    return "power_forward" if power_forward == player
+    return "small_forward" if small_forward == player
+    return "shooting_guard" if shooting_guard == player
+    return "point_guard" if point_guard == player
+    return "sixth_man" if sixth_man == player
+  end
+
   def playersId
    {
     :C => center_id,

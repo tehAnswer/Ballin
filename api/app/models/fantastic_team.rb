@@ -44,7 +44,7 @@ class FantasticTeam
   end
 
   def rotation_id
-    rotation.neo_id
+    rotation.nil? ? -1 : rotation.neo_id
   end
   
 end
