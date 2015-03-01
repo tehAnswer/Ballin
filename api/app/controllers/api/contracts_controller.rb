@@ -9,7 +9,7 @@ class Api::ContractsController < ApplicationController
   def destroy
     waiv = ContractWaiv.new(@contract)
     if waiv.waiv
-      head :ok
+      render json: { message: "Okay!" }, status: 200
     else
       render json: waiv.errors, status: 422
     end

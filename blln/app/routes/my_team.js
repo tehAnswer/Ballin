@@ -1,44 +1,60 @@
 import Ember from 'ember';
 import AuthenticatedRoute from 'blln/mixins/authenticated-route';
 import NewSessionMixin from 'blln/mixins/new-session';
-import ajax from 'ic-ajax';
+import RequestMixin from 'blln/mixins/request';
 
-export default Ember.Route.extend(AuthenticatedRoute, NewSessionMixin, {
+
+export default Ember.Route.extend(AuthenticatedRoute, NewSessionMixin, RequestMixin, {
   model: function() {
     return this.myTeam();
   },
 
   afterModel: function () {
     var team = this.modelFor('my_team');
-    Ember.RSVP.hash({lineup: team.rotation}).then(function(values){
+    Ember.RSVP.hash({lineup: team.rotation}).then(function(values) {
       console.log("Fetched lineup");
     });
   },
+  
+  changeHook: function (rotation, position, player) {
+    var that = this;
+    return function () {
+      var playersId = rotation.get('playersId');
+      playersId[position] = player.get('id');
+      rotation.set('playersId', playersId);
+      that.refresh();
+    };
+  },
+
+  failureHook: function() {
+    return function () {
+      alert("Something goes wrong.");
+    };
+  },
+
+  record: function(position, player) {
+    var record = { rotation : { } }
+    record["rotation"][position] = player.get('id');
+    return record;
+  },
+
+  requestPath: function(path, item) {
+    return path + item.get('id');
+  },
+
   actions: {
     setAs: function(position, player) {
-      var that = this;
-      var record = { rotation : { } }
-      record["rotation"][position] = player.get('id');
       var rotation = this.modelFor('my_team').get("rotation");
-      var request = ajax({
-        url: "/api/rotations/" + rotation.get('id'),
-        type:"PATCH",
-        headers: { 
-          "Accept" : "application/json; charset=utf-8",
-          "dagger" : that.get('cookie').getCookie('token')
-        },
-        data: record,
-        dataType:"json"
-      });
+      var path = this.requestPath("/api/rotations/", rotation);
+      var record = this.record(position, player);
+      var successHook = this.changeHook(rotation, position, player);
+      var failureHook = this.failureHook();
 
-      request.then(function() {
-        var playersId = rotation.get('playersId');
-        playersId[position] = player.get('id');
-        rotation.set('playersId', playersId);
-        that.refresh();
-      }, function(error) {
-        alert("TODO. Something goes wrong.");
-      }); 
+      this.makeRequest(path, "PATCH", record, successHook, failureHook);
+    },
+
+    waive: function(contract) {
+      contract.destroyRecord();
     }
   }
 });
