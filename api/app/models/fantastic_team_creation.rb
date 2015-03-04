@@ -35,11 +35,11 @@ class FantasticTeamCreation
   end
 
   def create_random_contract(league)
+    free_agents = league.free_agents
+    contract_creation = ContractCreation.new
     loop do
-      player = league.free_agents.sample
-      contract_creation = ContractCreation.new
+      player = free_agents.sample
       contract = contract_creation.create(player, team, 5_000_000)
-      debugger unless contract
       break contract if contract
     end
   end  

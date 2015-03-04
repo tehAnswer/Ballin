@@ -6,5 +6,5 @@ export default DS.ActiveModelAdapter.extend({
   headers: function() {
   	var token = this.get('cookie').getCookie('token') || "";
   	return { "dagger": token };
-  }.property('cookie.token')
+  }.property().volatile()
 });
