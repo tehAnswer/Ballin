@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Route.extend({
 
   model: function(params) {
-    var user = this.store.filter('user', {})
-    return user;
+    var player = this.store.find('player', params.player_id)
+    return player;
   }
 });

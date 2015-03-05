@@ -1,6 +1,6 @@
 {{#if contract.player.isLoaded}}
   {{#if contract.team.rotation.isLoaded}}
-    {{#link-to "players.show" contract.player.name}}<h3>{{contract.player.name}} <br>#{{contract.player.number}}</h3>{{/link-to}}
+    {{#link-to "box-scores.index" contract.player}}<h3>{{contract.player.name}} <br>#{{contract.player.number}}</h3>{{/link-to}}
     <span {{bind-attr class=spanClass}}>{{currentPosition}}</span>
   {{/if}}
 {{else}}

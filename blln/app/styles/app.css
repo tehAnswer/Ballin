@@ -307,4 +307,27 @@ body {
   margin-top: 3%;
 }
 
+#nameTeamContainer {
+  margin-left: 1.5%;
+}
+
+#playerInfo {
+  text-align: left;
+  margin-top: 3%;
+  margin-left: -3%;
+}
+
+#playerInfo > h1 {
+  padding-left: 3%;
+}
+
+#playerInfo > ul {
+  list-style: none;
+  font-size: 19px;
+}
+
+#playerInfoContainer {
+  margin-left: -9%;
+  margin-top: 3%;
+}
 
