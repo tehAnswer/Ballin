@@ -1,6 +1,11 @@
 <div class="container">
   {{navbar-user user=model}}
-   <h1> {{model.name}} </h1>
+   
+   <div class="col-lg-12">  
+     <div class="thumbnail" id="nameTeam">
+       <h3>{{model.name}}</h3>
+     </div>
+  </div>
 
   <div class="row">
     {{#each contract in model.contracts}}
