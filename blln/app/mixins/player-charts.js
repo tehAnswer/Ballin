@@ -6,7 +6,7 @@ export default Ember.Mixin.create({
     var that = this;
 
     return {
-      labels: ['Points', 'Assits', 'Steals', 'Blocks', 'Offensive rebounds', 'Defensive rebounds'],
+      labels: ['Points', 'Assists', 'Steals', 'Blocks', 'Offensive rebounds', 'Defensive rebounds'],
       datasets: [
         {
           label: that.get('name') + " avarage points made per stat",
@@ -27,11 +27,11 @@ export default Ember.Mixin.create({
        scaleShowLine : true,
        angleShowLineOut : true,
        animation: false,
-       angleLineColor : "rgba(255,255,255,255)",
-       scaleLineColor: "rgba(255,255,255,255)",
+       angleLineColor : "rgba(255,255,255,1)",
+       scaleLineColor: "rgba(255,255,255,1)",
        scaleFontSize: 12,
        scaleFontStyle: "normal",
-       scaleFontColor: "rgba(255,255,255,255)",
+       scaleFontColor: "rgba(255,255,255,1)",
 
     };
   }.property('stats')

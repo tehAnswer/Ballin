@@ -1,33 +1,38 @@
-<table class="table table-stripped">
+<table class="table table-ballin">
   <thead>
     <tr>
-    	<th>MINS</th>
-      <th>PTS</th>
-      <th>AST</th>
-      <th>FTA-FTM</th>
-      <th>FGA-FGM</th>
-      <th>LSA-LSM</th>
-      <th>DEFR</th>
-      <th>OFR</th>
-      <th>BLK</th>
-      <th>STL</th>
-      <th>SCORE</th>
+      <th colspan="11" class="centered">
+        <h1>Last games </h1>
+      </th>
+    </tr>
+    <tr>
+    	<th class="centered">MINS</th>
+      <th class="centered">PTS</th>
+      <th class="centered">AST</th>
+      <th class="centered">FTA-FTM</th>
+      <th class="centered">FGA-FGM</th>
+      <th class="centered">LSA-LSM</th>
+      <th class="centered">DEFR</th>
+      <th class="centered">OFR</th>
+      <th class="centered">BLK</th>
+      <th class="centered">STL</th>
+      <th class="centered">SCORE</th>
     </tr>
   </thead>
   <tbody>
     {{#each boxscore in model}}
       <tr>
-        <td>{{boxscore.minutes}}</td>
-        <td>{{boxscore.points}}</td>
-        <td>{{boxscore.assists}}</td>
-        <td>{{boxscore.fta}}-{{boxscore.ftm}}</td>
-        <td>{{boxscore.fga}}-{{boxscore.fgm}}</td>
-        <td>{{boxscore.lsa}}-{{boxscore.lsm}}</td>
-        <td>{{boxscore.defr}}</td>
-        <td>{{boxscore.ofr}}</td>
-        <td>{{boxscore.blocks}}</td>
-        <td>{{boxscore.steals}}</td>
-        <td>{{boxscore.finalScore}}</td>
+        <td class="centered">{{boxscore.minutes}}</td>
+        <td class="centered">{{boxscore.points}}</td>
+        <td class="centered">{{boxscore.assists}}</td>
+        <td class="centered">{{boxscore.fta}}-{{boxscore.ftm}}</td>
+        <td class="centered">{{boxscore.fga}}-{{boxscore.fgm}}</td>
+        <td class="centered">{{boxscore.lsa}}-{{boxscore.lsm}}</td>
+        <td class="centered">{{boxscore.defr}}</td>
+        <td class="centered">{{boxscore.ofr}}</td>
+        <td class="centered">{{boxscore.blocks}}</td>
+        <td class="centered">{{boxscore.steals}}</td>
+        <td class="centered">{{boxscore.finalScore}}</td>
       </tr>
     {{/each}}
   </tbody>

@@ -347,3 +347,11 @@ body {
   margin-right: 9%;
 }
 
+.table-ballin {
+  background-color: rgba(0,0,0,0.6);
+}
+
+.centered {
+  text-align: center;
+}
+
