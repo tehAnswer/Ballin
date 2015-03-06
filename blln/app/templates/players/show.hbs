@@ -17,9 +17,12 @@
       </div>
     </div>
 
-    <div class="col-md-6" id="chart">  
+    <div class="col-md-6" id="chartContainer">
       <div class="thumbnail" id="chart">
-       {{ember-chart type='Radar' data=model.chartData width=200 height=200 legend=true}}
+        <hr>
+        <h1>Stats</h1>
+        <hr>
+        {{ember-chart type='radar' data=model.chartData options=model.chartPlayerOptions width=350 height=350 legend=false}}
       </div>
     </div>
 

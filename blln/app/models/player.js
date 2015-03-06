@@ -1,7 +1,8 @@
 import DS from 'ember-data';
-import PositionFormat from 'blln/mixins/positions'
+import PositionFormat from 'blln/mixins/positions';
+import PlayerCharts from 'blln/mixins/player-charts';
 
-export default DS.Model.extend(PositionFormat, {
+export default DS.Model.extend(PositionFormat, PlayerCharts, {
   name: DS.attr('string'),
   heightFormatted: DS.attr('string'),
   heightCm: DS.attr('number'),
@@ -25,25 +26,5 @@ export default DS.Model.extend(PositionFormat, {
   }.property('position'),
   canPlay: function () {
     return this.positionsCanPlay(this.get('position'));
-  }.property('position'),
-  chartData: function() {
-    var stats = this.get('stats');
-    var that = this;
-
-    return {
-      labels: ['Points', 'Assits', 'Steals', 'Blocks', 'Offensive rebounds', 'Defensive rebounds'],
-      datasets: [
-        {
-          label: that.get('name') + " avarage points made per stat",
-          fillColor: "rgba(220,220,220,0.2)",
-          strokeColor: "rgba(220,220,220,1)",
-          pointColor: "rgba(220,220,220,1)",
-          pointStrokeColor: "#fff",
-          pointHighlightFill: "#fff",
-          pointHighlightStroke: "rgba(220,220,220,1)",
-          data: [stats.points, stats.assits * 1.75, stats.steals * 3, stats.blocks * 2, stats.ofr * 1.5, stats.defr * 1.25]
-        }
-      ]
-    };
-  }.property('stats') 
+  }.property('position')
 });

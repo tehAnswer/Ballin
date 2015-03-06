@@ -323,12 +323,27 @@ body {
 
 #playerInfo > ul {
   list-style: none;
-  font-size: 19px;
+  font-size: 15px;
 }
 
 #playerInfoContainer {
   margin-left: -9%;
   margin-top: 3%;
   float: left;
+}
+
+#chartContainer {
+  margin-left: -9%;
+  float:right;
+  margin-top: 3%;
+}
+
+#chart > h1 {
+  text-align: left;
+  padding-left: 3%;
+}
+
+#chart > canvas {
+  margin-right: 9%;
 }
 
