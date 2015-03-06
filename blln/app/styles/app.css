@@ -329,5 +329,6 @@ body {
 #playerInfoContainer {
   margin-left: -9%;
   margin-top: 3%;
+  float: left;
 }
 

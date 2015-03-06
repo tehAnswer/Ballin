@@ -1,8 +1,6 @@
 <div class="container">
   {{navbar-user user=nil}}
 
-
-
   <div class="row">
     <div class="col-md-6" id="playerInfoContainer">  
       <div class="thumbnail" id="playerInfo">
@@ -18,6 +16,13 @@
         </ul>
       </div>
     </div>
+
+    <div class="col-md-6" id="chart">  
+      <div class="thumbnail" id="chart">
+       {{ember-chart type='Radar' data=model.chartData width=200 height=200 legend=true}}
+      </div>
+    </div>
+
   </div>
 
   {{outlet}}
