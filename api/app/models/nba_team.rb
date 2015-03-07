@@ -18,17 +18,21 @@ class NbaTeam
   has_many :in, :home_games, model_class: Game, origin: :home_team
 
 
-  def away_games_id
-    Neo4j::Session.current.query("MATCH (g:Game)-[r:AWAY_TEAM]-(t:NbaTeam) where ID(t) = #{neo_id} return ID(g)")
+  def away_game_ids
+    away_games.map { |x| x.neo_id }
   end
 
-  def home_games_id
-    Neo4j::Session.current.query("MATCH (g:Game)-[r:HOME_TEAM]-(t:NbaTeam) where ID(t) = #{neo_id} return ID(g)")
+  def home_game_ids
+    home_games.map { |x| x.neo_id }
   end
 
   def player_ids
-    Neo4j::Session.current.query("MATCH (p:Player)-[r]-(t:NbaTeam) where ID(t) = #{neo_id} return ID(p)")
+    players.map { |x| x.neo_id }
   end
 
+  def next_gameid
+   Neo4j::Session.current.query("MATCH (g:Game)-[r]-(t:NbaTeam) where g.status = \"scheduled\" and ID(t) = #{neo_id} 
+    return ID(g) order by g.date_formatted limit 1").first["ID(g)"]
+  end
 
 end

@@ -1,3 +1,4 @@
+import Ember from 'ember';
 import DS from 'ember-data';
 
 export default DS.Model.extend({
@@ -10,5 +11,9 @@ export default DS.Model.extend({
   division: DS.attr("string"),
   conference: DS.attr("string"),
   awayGames: DS.hasMany("game", { async: true, inverse: "awayTeam" }),
-  homeGames: DS.hasMany("game", { async: true, inverse: "homeTeam" })
+  homeGames: DS.hasMany("game", { async: true, inverse: "homeTeam" }),
+  nextGameid: DS.attr("number"),
+  nextGame : Ember.computed('nextGameid', function () {
+    return this.store.find('game', this.get("nextGameid"));
+  })
 });

@@ -18,5 +18,5 @@ export default DS.Model.extend({
   minutes: DS.attr("number"),
   faults: DS.attr("number"),
   finalScore: DS.attr("number"),
-  player: DS.belongsTo("player", {async: true})
+  player: DS.belongsTo("player", { async: true })
 });

@@ -23,7 +23,7 @@ class Player
 
   def stats
     return empty_hash if boxscores.count == 0
-    hash = Neo4j::Session.query("MATCH (p:Player)-[:`BOXSCORES`]->(b:BoxScore) where id(p) = #{neo_id} 
+    hash = Neo4j::Session.current.query("MATCH (p:Player)-[:`BOXSCORES`]->(b:BoxScore) where id(p) = #{neo_id} 
       return sum(b.final_score) as final_score,
       count(b) as games_played,
       avg(b.minutes) as minutes,
