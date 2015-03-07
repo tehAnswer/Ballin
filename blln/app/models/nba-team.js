@@ -9,5 +9,6 @@ export default DS.Model.extend({
   players: DS.hasMany("player", { async: true }),
   division: DS.attr("string"),
   conference: DS.attr("string"),
-  games: DS.hasMany("game", { async: true })
+  awayGames: DS.hasMany("game", { async: true, inverse: "awayTeam" }),
+  homeGames: DS.hasMany("game", { async: true, inverse: "homeTeam" })
 });

@@ -18,8 +18,12 @@ class NbaTeam
   has_many :in, :home_games, model_class: Game, origin: :home_team
 
 
-  def game_ids
-    Neo4j::Session.current.query("MATCH (g:Game)-[r]-(t:NbaTeam) where ID(t) = #{neo_id} return ID(g)")
+  def away_games_id
+    Neo4j::Session.current.query("MATCH (g:Game)-[r:AWAY_TEAM]-(t:NbaTeam) where ID(t) = #{neo_id} return ID(g)")
+  end
+
+  def home_games_id
+    Neo4j::Session.current.query("MATCH (g:Game)-[r:HOME_TEAM]-(t:NbaTeam) where ID(t) = #{neo_id} return ID(g)")
   end
 
   def player_ids

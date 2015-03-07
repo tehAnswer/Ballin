@@ -13,6 +13,7 @@ export default DS.Model.extend(PositionFormat, PlayerCharts, {
   position: DS.attr('string'),
   number: DS.attr('string'),
   stats: DS.attr(),
+  nbaTeam: DS.belongsTo('nba-team', { async: true }),
   avgRebounds: function () {
     return (this.get('stats.defr') + this.get('stats.ofr')).toFixed(2);
   }.property('stats'),
