@@ -70,6 +70,7 @@ class XmlStatsController
 
   def get_boxscores(day)
     games = Game.on_date(day)
+    debugger
     games.each do |game|
       return unless game.start_date_time.to_date.past?
       next if game.boxscores.count > 0
@@ -128,7 +129,7 @@ class XmlStatsController
     nodeset = nodeset.real_team.where(abbreviation: stat['team_abbreviation']).pluck(:p)
     return nodeset.first if nodeset.count == 1
     scrapper = XmlStatsScrapper.new
-    Logger.error("Scrappin' for #{stat[display_name]}")
+    Rails.logger.error("Scrappin' for #{stat['display_name']}")
     return scrapper.fetch_player_from_game(stat['display_name'], game_id)
   end
 

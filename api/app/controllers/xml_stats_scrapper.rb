@@ -40,14 +40,15 @@ class XmlStatsScrapper
 	end
  
 	def create_player(data)
+		debugger
 		Player.create!({
-			name: data[1].join(" "),
-			birthdate: Date.strptime(data[3][0], "%m/%d/%y"),
-			birthplace: data[2].join(" "),
-			height_cm: height_cm(data[4][0]),
-      height_formatted: data[4][0],
-      weight_lb: data[5][0].to_i,
-      weight_kg: (data[5][0].to_i*0.45).to_s,
+			name: data[0].join(" "),
+			birthdate: Date.strptime(data[2][0], "%m/%d/%y").strftime('%Y-%m-%d'),
+			birthplace: data[1].join(" "),
+			height_cm: height_cm(data[3][0]),
+      height_formatted: data[3][0],
+      weight_lb: data[4][0].to_i,
+      weight_kg: (data[4][0].to_i*0.45).to_s,
       position: position(data.last),
 			})
 	end
