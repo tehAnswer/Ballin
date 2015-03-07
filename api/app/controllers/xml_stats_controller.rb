@@ -190,7 +190,7 @@ class XmlStatsController
     return response if response.code == 200
     return [] if response.code == 404
     if response.code == 429
-      dif = sleep_time
+      dif = sleep_time(response)
       Rails.logger.error "Sleeping for #{dif}"
       sleep dif
     end
