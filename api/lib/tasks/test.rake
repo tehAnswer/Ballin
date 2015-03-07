@@ -45,6 +45,15 @@ namespace :test do
         city: 'Philadelphia',
         state: 'Pennsylvannia'})
 
+    NbaTeam.create!({team_id: 'fewfwefwe',
+        abbreviation: 'efwew',
+        name: 'ewfwewef fwe',
+        conference: 'fewfew',
+        division: 'wfe',
+        site_name: 'wfe few',
+        city: 'fwefew',
+        state: 'fwewe'})
+
     BoxScore.create!
     FantasticTeam.create!({
       name: "firsttt",
@@ -123,6 +132,16 @@ namespace :test do
       birthplace: 'Philly',
       birthdate: Date.new,
       })
+
+    Game.create!({
+      game_id: "fafssf",
+      status: "Completed",
+      season_type: "Regular",
+      start_date_time: DateTime.new.to_s,
+      date_formatted: DateTime.new.strftime('%Y%m%d')
+      })
+
+
 
     contract_creation = ContractCreation.new
     contract_creation.create(kobe, team)

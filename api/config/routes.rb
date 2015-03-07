@@ -12,6 +12,8 @@ Rails.application.routes.draw do
     resources :divisions, only: [:index]
     resources :bids, only: [:index, :create]
     resources :rotations, only: [:show, :update]
+    resources :games, only: [:index, :show]
+    resources :nba_teams, only: [:index, :show]
     devise_for :users
   end
 
