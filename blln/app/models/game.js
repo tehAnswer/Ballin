@@ -10,6 +10,6 @@ export default DS.Model.extend({
   awayBoxScores: DS.hasMany('box-score', { async: true }),
   homeBoxScores: DS.hasMany('box-score', { async: true }),
   seasonType: DS.attr("string"),
-  startDateTime: DS.attr(),
+  dateTime: DS.attr("string"),
   dateFormatted: DS.attr("string")
 });

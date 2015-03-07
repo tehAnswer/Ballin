@@ -54,7 +54,11 @@ class Game
   def home_team_id
     home_team.nil? ? -1 : home_team.neo_id
   end
-   
+
+  def date_time
+    start_date_time.to_datetime.strftime('%a %B %d, %H:%M')
+  end
+
  private
   def filtered_score(side)
     boxscores.where(side: side)

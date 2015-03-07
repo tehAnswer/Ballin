@@ -338,6 +338,25 @@ body {
   margin-top: 3%;
 }
 
+#nextGameContainer {
+  width:52%;
+  margin-left: -1%;
+  text-align: left;
+}
+
+#nextGame > h1 {
+  padding-left: 3%;
+}
+
+#nextGame > h4 {
+  padding-left: 6%;
+}
+
+#nextGame > ul {
+  list-style: none;
+  padding-left: 9%;
+}
+
 #chart > h1 {
   text-align: left;
   padding-left: 3%;
