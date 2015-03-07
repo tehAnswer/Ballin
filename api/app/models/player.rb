@@ -40,6 +40,10 @@ class Player
     Hash[hash.map { |key, value| [key, value.round(2)] }]
   end
 
+  def nba_team_id
+    real_team.nil? ? -1 : real_team.neo_id
+  end
+
   def fantastic_teams
     contracts.collect { |contract| contract.team }
   end
