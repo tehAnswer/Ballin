@@ -13,6 +13,7 @@
           <li><b>Birthdate:</b> {{model.birthdate}} ({{model.birthplace}})</li>
           <li><b>Position(s):</b> {{model.canPlay}}</li>
           <li><b>Score:</b> {{model.stats.final_score}}</li>
+          <li><b>Team:</b> {{model.nbaTeam.name}}</li>
         </ul>
       </div>
     </div>
@@ -23,6 +24,24 @@
         <h1>Stats</h1>
         <hr>
         {{ember-chart type='radar' data=model.chartData options=model.chartPlayerOptions width=350 height=350 legend=false}}
+      </div>
+    </div>
+
+    <div class="col-md-6" id="nextGameContainer">
+      <div class="thumbnail" id="nextGame">
+        <hr>
+        <h1>Next game</h1>
+        <hr>
+        {{#if model.nbaTeam.isLoaded}}
+          <h4>{{model.nbaTeam.nextGame.awayTeam.name}} @ {{model.nbaTeam.nextGame.homeTeam.name}}</h4>
+          <ul>
+            <li>{{model.nbaTeam.nextGame.homeTeam.siteName}}</li>
+            <li>{{model.nbaTeam.nextGame.startDateTime}}</li>
+            <li>{{model.nbaTeam.nextGame.seasonType}}</li>
+          </ul>
+        {{else}}
+          Loading...
+        {{/if}}
       </div>
     </div>
 

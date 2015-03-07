@@ -12,6 +12,7 @@ export default DS.Model.extend({
   conference: DS.attr("string"),
   awayGames: DS.hasMany("game", { async: true, inverse: "awayTeam" }),
   homeGames: DS.hasMany("game", { async: true, inverse: "homeTeam" }),
+  siteName: DS.attr("string"),
   nextGameid: DS.attr("number"),
   nextGame : Ember.computed('nextGameid', function () {
     return this.store.find('game', this.get("nextGameid"));
