@@ -6,7 +6,7 @@ export default Ember.Mixin.create({
     var that = this;
 
     return {
-      labels: ['Points', 'Assists', 'Steals', 'Blocks', 'Offensive rebounds', 'Defensive rebounds'],
+      labels: ['Points', 'Assists', 'Steals', 'Blocks', 'Of. rebounds', 'Def. rebounds'],
       datasets: [
         {
           label: that.get('name') + " avarage points made per stat",
