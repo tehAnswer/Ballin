@@ -55,8 +55,7 @@ class Game
     home_team.nil? ? -1 : home_team.neo_id
   end
    
-  private
-
+ private
   def filtered_score(side)
     boxscores.where(side: side)
   end
