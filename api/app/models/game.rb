@@ -38,6 +38,22 @@ class Game
   def check_start_date_time_and_date_formatted_matches
     errors.add(:date_formatted, "date_formatted don't match with start_date_time") unless start_date_time.to_datetime.strftime('%Y%m%d') == date_formatted
   end
+
+  def home_boxscore_ids
+    home_boxscores.map { |boxscore| boxscore.neo_id }
+  end
+
+  def away_boxscore_ids
+    away_boxscores.map { |boxscore| boxscore.neo_id }
+  end
+
+  def away_team_id
+    away_team.nil? ? -1 : away_team.neo_id
+  end
+
+  def home_team_id
+    home_team.nil? ? -1 : home_team.neo_id
+  end
    
   private
 
