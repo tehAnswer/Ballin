@@ -317,7 +317,7 @@ body {
   margin-left: -3%;
 }
 
-#playerInfo > h1 {
+#playerInfo > h1, h5 {
   padding-left: 3%;
 }
 
@@ -355,6 +355,7 @@ body {
 #nextGame > ul {
   list-style: none;
   padding-left: 9%;
+  text-transform: capitalize;
 }
 
 #chart > h1 {

@@ -6,15 +6,22 @@
       <div class="thumbnail" id="playerInfo">
         <hr>
         <h1>{{model.name}} <small>#{{model.number}}</small></h1>
+        <h5>
+          <span class="label label-primary">{{model.nbaTeam.abbreviation}}</span>
+          {{#each POS in model.canPlay}}
+            <span class="label label-success">{{POS}}</span>
+          {{/each}}
+
+        </h5>
+
         <hr>
         <ul>
           <li><b>Height:</b> {{model.heightFormatted}} ({{model.heightCm}} cm)</li>
           <li><b>Weight:</b> {{model.weightLb}} lb ({{model.weightKg}} kg)</li>
           <li><b>Birthdate:</b> {{model.birthdate}} ({{model.birthplace}})</li>
-          <li><b>Position(s):</b> {{model.canPlay}}</li>
+          </li>
           <li><b>Score:</b> {{model.stats.final_score}}</li>
           <li><b>Team:</b> {{model.nbaTeam.name}}</li>
-        </ul>
       </div>
     </div>
 
