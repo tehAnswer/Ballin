@@ -65,6 +65,7 @@ export default Ember.Mixin.create({
 			var user = that.store.find(entity, response[entity].id);
 			return user;
 		}, function(error) {
+			console.log(error);
 			return null;
 		});
 

@@ -23,6 +23,7 @@ export default Ember.Controller.extend({
 				that.transitionToRoute('dashboard');
 			}, function(error) {
 				that.set('isLoading', false);
+				console.log(error);
 				alert("TODO. Something goes wrong.");
 			}); 
 		}

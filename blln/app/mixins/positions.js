@@ -8,7 +8,7 @@ var center =  {
   namePosition: function() {
     return "Center";
   }
-}
+};
 
 var powerForward = {
   positionsCanPlay : function () {
@@ -17,7 +17,7 @@ var powerForward = {
   namePosition: function() {
     return "Power Forward";
   }
-}
+};
 
 var forward = {
   positionsCanPlay: function () {
@@ -26,7 +26,7 @@ var forward = {
   namePosition: function() {
     return "Forward";
   }
-}
+};
 
 var smallForward = {
   positionsCanPlay: function () {
@@ -35,7 +35,7 @@ var smallForward = {
   namePosition: function() {
     return "Small Forward";
   }
-}
+};
 
 var shootingGuard = {
   positionsCanPlay: function () {
@@ -44,7 +44,7 @@ var shootingGuard = {
   namePosition: function() {
     return "Shooting Guard";
   }
-}
+};
 
 var pointGuard = {
   positionsCanPlay: function () {
@@ -53,7 +53,7 @@ var pointGuard = {
   namePosition: function() {
     return "Point Guard";
   }  
-}
+};
 
 var guard = {
   positionsCanPlay: function () {
@@ -62,7 +62,7 @@ var guard = {
   namePosition: function() {
     return "Guard";
   }  
-}
+};
 
 var defaultStrategy = {
   positionsCanPlay: function () {
@@ -71,12 +71,12 @@ var defaultStrategy = {
   namePosition: function() {
     return "";
   }  
-}
+};
 
 
 var Position = function () {
   this.abbreviation = "";
-}
+};
 
 Position.prototype = {
   getStrategy: function(position) {
@@ -112,7 +112,7 @@ Position.prototype = {
     this.setStrategy(this.getStrategy(abbreviation));
     return this.strategy.namePosition(abbreviation);
   }
-}
+};
 
 
 
