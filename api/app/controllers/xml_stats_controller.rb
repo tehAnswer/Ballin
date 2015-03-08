@@ -70,7 +70,6 @@ class XmlStatsController
 
   def get_boxscores(day)
     games = Game.on_date(day)
-    debugger
     games.each do |game|
       return unless game.start_date_time.to_date.past?
       next if game.boxscores.count > 0

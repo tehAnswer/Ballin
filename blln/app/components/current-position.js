@@ -11,14 +11,14 @@ export default Ember.Component.extend({
     var lineup = rotation.get('playersId');
     var ret = "BENCH";
     player.get('canPlay').forEach(function (position) {
-      if(lineup[position] == player.get('id')) {
+      if(lineup[position] === player.get('id')) {
         ret = position;
       }
     });
     return ret;
   }),
   spanClass: function() {
-    if (this.get('currentPosition') == "BENCH") {
+    if (this.get('currentPosition') === "BENCH") {
       return "label label-default";
     } else {
       return "label label-success";
