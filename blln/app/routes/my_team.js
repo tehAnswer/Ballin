@@ -12,7 +12,8 @@ export default Ember.Route.extend(AuthenticatedRoute, NewSessionMixin, RequestMi
   afterModel: function () {
     var team = this.modelFor('my_team');
     Ember.RSVP.hash({lineup: team.rotation}).then(function(values) {
-      console.log("Fetched lineup");
+      
+      console.log("Fetched lineup (" + values + ")");
     });
   },
   
@@ -33,7 +34,7 @@ export default Ember.Route.extend(AuthenticatedRoute, NewSessionMixin, RequestMi
   },
 
   record: function(position, player) {
-    var record = { rotation : { } }
+    var record = { rotation : { } };
     record["rotation"][position] = player.get('id');
     return record;
   },
