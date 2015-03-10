@@ -30,7 +30,12 @@ Router.map(function() {
   this.resource('users', function () {
     this.route('sign_up');
     this.route('show', { path: '/:user_id' });
+  });
 
+  this.resource('games', function () {
+    this.route('show', { path: '/:games_id' }, function () {
+      this.resource('box-scores', function() { });
+    });
   });
 
   this.resource('league', function() {
