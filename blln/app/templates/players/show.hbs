@@ -51,8 +51,13 @@
         {{/if}}
       </div>
     </div>
-
   </div>
+
+  {{#table-boxscores title="Last Games" columnName= "Game" boxscores=model.boxScores}}
+    {{#link-to 'games.show' boxscore.game}}
+       {{boxscore.game.awayTeam.abbreviation}} @ {{boxscore.game.homeTeam.abbreviation}}
+    {{/link-to}}
+  {{/table-boxscores}}
 
   {{outlet}}
 </div>

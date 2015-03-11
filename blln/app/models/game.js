@@ -7,8 +7,7 @@ export default DS.Model.extend({
   awayTeam: DS.belongsTo('nba-team', { async: true }),
   homeTeam: DS.belongsTo('nba-team', { async: true }),
   status: DS.attr("string"),
-  awayBoxScores: DS.hasMany('box-score', { async: true }),
-  homeBoxScores: DS.hasMany('box-score', { async: true }),
+  boxScores: DS.hasMany('box-score', { async: true }),
   seasonType: DS.attr("string"),
   dateTime: DS.attr("string"),
   dateFormatted: DS.attr("string")
