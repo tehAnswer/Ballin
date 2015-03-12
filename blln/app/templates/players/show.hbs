@@ -56,12 +56,12 @@
 <table class="table table-ballin">
   <thead>
     <tr>
-      <th colspan="11" class="centered">
+      <th colspan="12" class="centered">
         <h1>Last games</h1>
       </th>
     </tr>
     <tr>
-      <th class="centered">Game</th>
+      <th class="centered">GAME</th>
       <th class="centered">MINS</th>
       <th class="centered">PTS</th>
       <th class="centered">AST</th>
@@ -78,7 +78,7 @@
   <tbody>
     {{#each boxscore in model.boxScores}}
       <tr>
-        <td class="centered">{{#link-to 'games.show' boxscore.game}}Game{{/link-to}}</td>
+        <td class="centered">{{#link-to 'games.show' boxscore.game}}{{boxscore.game.title}}{{/link-to}}</td>
         <td class="centered">{{boxscore.minutes}}</td>
         <td class="centered">{{boxscore.points}}</td>
         <td class="centered">{{boxscore.assists}}</td>

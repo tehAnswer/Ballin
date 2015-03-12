@@ -63,6 +63,10 @@ class Game
     start_date_time.to_datetime.strftime('%a %B %d, %H:%M')
   end
 
+  def title
+    away_team.abbreviation + " @ " + home_team.abbreviation
+  end
+
  private
   def filtered_score(side)
     boxscores.where(side: side)
