@@ -1,4 +1,22 @@
 <div class="container">
   {{navbar-user user=nil}}
-  <h1>Game</h1>
+
+  <div class="col-md-6" id="nextGameContainer">
+    <div class="thumbnail" id="nextGame">
+      <hr>
+      <h1>Game</h1>
+      <hr>
+        {{#if model.awayTeam.isLoaded}}
+          <h4>{{model.awayTeam.name}} @ {{model.homeTeam.name}} ({{model.awayScore}} - {{model.homeScore}})</h4>
+          <ul>
+            <li>{{model.homeTeam.siteName}}</li>
+            <li>{{model.dateTime}}</li>
+            <li>{{model.seasonType}}</li>
+          </ul>
+        {{else}}
+          Loading...
+        {{/if}}
+      </div>
+    </div>
+  </div>
 </div>

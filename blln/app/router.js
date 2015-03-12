@@ -33,9 +33,7 @@ Router.map(function() {
   });
 
   this.resource('games', function () {
-    this.route('show', { path: '/:games_id' }, function () {
-      this.resource('box-scores', function() { });
-    });
+    this.route('show', { path: '/:game_id' });
   });
 
   this.resource('league', function() {
