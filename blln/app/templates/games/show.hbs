@@ -1,64 +1,32 @@
 <div class="container">
   {{navbar-user user=nil}}
+  <div class="row">
 
-  <div class="col-md-6" id="nextGameContainer">
-    <div class="thumbnail" id="nextGame">
-      <hr>
-      <h1>Game</h1>
-      <hr>
-        {{#if model.awayTeam.isLoaded}}
-          <h4>{{model.awayTeam.name}} @ {{model.homeTeam.name}} ({{model.awayScore}} - {{model.homeScore}})</h4>
-          <ul>
-            <li>{{model.homeTeam.siteName}}</li>
-            <li>{{model.dateTime}}</li>
-            <li>{{model.seasonType}}</li>
-          </ul>
-        {{else}}
-          Loading...
-        {{/if}}
+    <div class="col-md-6">
+      <div class="thumbnail" id="nextGame">
+        <hr>
+        <h1>Game</h1>
+        <hr>
+          {{#if model.awayTeam.isLoaded}}
+            <h4>{{model.awayTeam.name}} @ {{model.homeTeam.name}} ({{model.awayScore}} - {{model.homeScore}})</h4>
+            <ul>
+              <li>{{model.homeTeam.siteName}}</li>
+              <li>{{model.dateTime}}</li>
+              <li>{{model.seasonType}}</li>
+              <li>{{model.boxScores.lenght}}</li>
+            </ul>
+          {{else}}
+            Loading...
+          {{/if}}
+        </div>
       </div>
-    </div>
+
+      <div class="col-md-12">
+        {{table-boxscores-away title=model.awayTeam.name boxScores=model.boxScores}}
+      </div>
+
+      <div class="col-md-12">
+        {{table-boxscores-home title=model.homeTeam.name boxScores=model.boxScores}}
+      </div>
   </div>
 </div>
-
-  <table class="table table-ballin">
-    <thead>
-      <tr>
-        <th colspan="12" class="centered">
-          <h1>{{model.awayTeam.name}}</h1>
-        </th>
-      </tr>
-      <tr>
-        <th class="centered">GAME</th>
-        <th class="centered">MINS</th>
-        <th class="centered">PTS</th>
-        <th class="centered">AST</th>
-        <th class="centered">FTA-FTM</th>
-        <th class="centered">FGA-FGM</th>
-        <th class="centered">LSA-LSM</th>
-        <th class="centered">DEFR</th>
-        <th class="centered">OFR</th>
-        <th class="centered">BLK</th>
-        <th class="centered">STL</th>
-        <th class="centered">SCORE</th>
-      </tr>
-    </thead>
-    <tbody>
-      {{#each boxscore in model.boxScores}}
-        <tr>
-          <td class="centered">{{#link-to 'games.show' boxscore.game}}{{boxscore.game.title}}{{/link-to}}</td>
-          <td class="centered">{{boxscore.minutes}}</td>
-          <td class="centered">{{boxscore.points}}</td>
-          <td class="centered">{{boxscore.assists}}</td>
-          <td class="centered">{{boxscore.ftm}}-{{boxscore.fta}}</td>
-          <td class="centered">{{boxscore.fgm}}-{{boxscore.fga}}</td>
-          <td class="centered">{{boxscore.lsm}}-{{boxscore.lsa}}</td>
-          <td class="centered">{{boxscore.defr}}</td>
-          <td class="centered">{{boxscore.ofr}}</td>
-          <td class="centered">{{boxscore.blocks}}</td>
-          <td class="centered">{{boxscore.steals}}</td>
-          <td class="centered">{{boxscore.finalScore}}</td>
-        </tr>
-      {{/each}}
-    </tbody>
-   </table>

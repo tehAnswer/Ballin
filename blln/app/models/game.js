@@ -1,4 +1,5 @@
 import DS from 'ember-data';
+import Ember from 'ember';
 
 export default DS.Model.extend({
   title: DS.attr("string"),
@@ -11,10 +12,14 @@ export default DS.Model.extend({
   seasonType: DS.attr("string"),
   dateTime: DS.attr("string"),
   dateFormatted: DS.attr("string"),
-  homeBoxScores: Ember.computed.filter('boxScores', function (boxscore) {
-    return boxscore.isLocal;
+  homeBoxScoresNotStarters: Ember.computed.filter('boxScores', function (boxscore) {
+    return boxscore.get("isLocal") && !boxscore.get("isStarter");
   }),
-  awayBoxScores: Ember.computed.filter('boxScores', function (boxscore) {
-    return !boxscore.isLocal;
+  awayBoxScoresNotStarters: Ember.computed.filterBy('boxScores', 'isLocal', false),
+  homeBoxScoresStarters: Ember.computed.filter('boxScores', function (boxscore) {
+    return boxscore.get("isLocal") && boxscore.get("isStarter");
+  }),
+  awayBoxScoresStarters: Ember.computed.filter('boxScores', function (boxscore) {
+    return !boxscore.get("isLocal") && boxscore.get("isStarter");
   })
 });

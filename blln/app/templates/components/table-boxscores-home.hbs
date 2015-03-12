@@ -1,0 +1,69 @@
+    <table class="table table-ballin">
+      <thead>
+        <tr>
+          <th colspan="12" class="centered">
+            <h1>{{title}}</h1>
+          </th>
+        </tr>
+        <tr>
+          <th class="centered">GAME</th>
+          <th class="centered">MINS</th>
+          <th class="centered">PTS</th>
+          <th class="centered">AST</th>
+          <th class="centered">FTA-FTM</th>
+          <th class="centered">FGA-FGM</th>
+          <th class="centered">LSA-LSM</th>
+          <th class="centered">DEFR</th>
+          <th class="centered">OFR</th>
+          <th class="centered">BLK</th>
+          <th class="centered">STL</th>
+          <th class="centered">SCORE</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each boxscore in boxScores}}
+          {{#if boxscore.isLocal}}
+            {{#if boxscore.isStarter}}
+            <tr>
+              <td class="centered">{{boxscore.player.name}}</td>
+              <td class="centered">{{boxscore.minutes}}</td>
+              <td class="centered">{{boxscore.points}}</td>
+              <td class="centered">{{boxscore.assists}}</td>
+              <td class="centered">{{boxscore.ftm}}-{{boxscore.fta}}</td>
+              <td class="centered">{{boxscore.fgm}}-{{boxscore.fga}}</td>
+              <td class="centered">{{boxscore.lsm}}-{{boxscore.lsa}}</td>
+              <td class="centered">{{boxscore.defr}}</td>
+              <td class="centered">{{boxscore.ofr}}</td>
+              <td class="centered">{{boxscore.blocks}}</td>
+              <td class="centered">{{boxscore.steals}}</td>
+              <td class="centered">{{boxscore.finalScore}}</td>
+            </tr>
+            {{/if}}
+          {{/if}}
+        {{/each}}
+        <tr>
+          <td colspan="12"><b>Bench</b></td>
+        </tr>
+
+        {{#each boxscore in boxScores}}
+          {{#if boxscore.isLocal}}
+            {{#unless boxscore.isStarter}}
+            <tr>
+              <td class="centered">{{boxscore.player.name}}</td>
+              <td class="centered">{{boxscore.minutes}}</td>
+              <td class="centered">{{boxscore.points}}</td>
+              <td class="centered">{{boxscore.assists}}</td>
+              <td class="centered">{{boxscore.ftm}}-{{boxscore.fta}}</td>
+              <td class="centered">{{boxscore.fgm}}-{{boxscore.fga}}</td>
+              <td class="centered">{{boxscore.lsm}}-{{boxscore.lsa}}</td>
+              <td class="centered">{{boxscore.defr}}</td>
+              <td class="centered">{{boxscore.ofr}}</td>
+              <td class="centered">{{boxscore.blocks}}</td>
+              <td class="centered">{{boxscore.steals}}</td>
+              <td class="centered">{{boxscore.finalScore}}</td>
+            </tr>
+            {{/unless}}
+          {{/if}}
+        {{/each}}
+      </tbody>
+   </table>
