@@ -10,5 +10,11 @@ export default DS.Model.extend({
   boxScores: DS.hasMany('box-score', { async: true }),
   seasonType: DS.attr("string"),
   dateTime: DS.attr("string"),
-  dateFormatted: DS.attr("string")
+  dateFormatted: DS.attr("string"),
+  homeBoxScores: Ember.computed.filter('boxScores', function (boxscore) {
+    return boxscore.isLocal;
+  }),
+  awayBoxScores: Ember.computed.filter('boxScores', function (boxscore) {
+    return !boxscore.isLocal;
+  })
 });

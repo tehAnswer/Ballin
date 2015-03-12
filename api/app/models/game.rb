@@ -47,7 +47,7 @@ class Game
     away_boxscores.map { |boxscore| boxscore.neo_id }
   end
 
-  def boxscore_ids
+  def box_score_ids
     boxscores.map { |boxscore| boxscore.neo_id }
   end
 

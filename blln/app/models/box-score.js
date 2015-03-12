@@ -15,6 +15,7 @@ export default DS.Model.extend({
   ftm: DS.attr("number"),
   turnovers: DS.attr("number"),
   isStarter: DS.attr("boolean"),
+  isLocal: DS.attr("boolean"),
   minutes: DS.attr("number"),
   faults: DS.attr("number"),
   finalScore: DS.attr("number"),
