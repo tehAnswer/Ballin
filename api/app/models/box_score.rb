@@ -46,7 +46,7 @@ class BoxScore
   end
 
   def game_id
-    game.nil? ? -1 : game.game_id
+    game.nil? ? -1 : game.neo_id
   end
 
   def team

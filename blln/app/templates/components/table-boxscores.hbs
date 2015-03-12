@@ -23,7 +23,7 @@
   <tbody>
     {{#each boxscore in boxscores}}
       <tr>
-        <td class="centered">{{yield}}</td>
+        <td class="centered">{{yield boxscore}}</td>
         <td class="centered">{{boxscore.minutes}}</td>
         <td class="centered">{{boxscore.points}}</td>
         <td class="centered">{{boxscore.assists}}</td>
