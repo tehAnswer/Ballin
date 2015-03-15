@@ -25,7 +25,11 @@
           {{#unless boxscore.isLocal}}
             {{#if boxscore.isStarter}}
             <tr>
-              <td class="centered">{{boxscore.player.name}}</td>
+              <td class="centered">
+              {{#link-to 'players.show' boxscore.player}}
+                {{boxscore.player.name}}
+              {{/link-to}}
+              </td>
               <td class="centered">{{boxscore.minutes}}</td>
               <td class="centered">{{boxscore.points}}</td>
               <td class="centered">{{boxscore.assists}}</td>
@@ -49,7 +53,11 @@
           {{#unless boxscore.isLocal}}
             {{#unless boxscore.isStarter}}
             <tr>
-              <td class="centered">{{boxscore.player.name}}</td>
+              <td class="centered">
+                {{#link-to 'players.show' boxscore.player}}
+                  {{boxscore.player.name}}
+                {{/link-to}}
+              </td>
               <td class="centered">{{boxscore.minutes}}</td>
               <td class="centered">{{boxscore.points}}</td>
               <td class="centered">{{boxscore.assists}}</td>
