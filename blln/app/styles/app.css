@@ -344,15 +344,15 @@ body {
   text-align: left;
 }
 
-#nextGame > h1 {
+#nextGame > h1, #infoGame > h1 {
   padding-left: 3%;
 }
 
-#nextGame > h4 {
+#nextGame > h4, #infoGame > h4 {
   padding-left: 6%;
 }
 
-#nextGame > ul {
+#nextGame > ul, #infoGame > ul {
   list-style: none;
   padding-left: 9%;
   text-transform: capitalize;
@@ -374,4 +374,12 @@ body {
 .centered {
   text-align: center;
 }
+
+ #infoGameContainer {
+  clear: both;
+  float: left;
+  text-align: left;
+ }
+
+
 
