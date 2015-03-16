@@ -11,7 +11,7 @@ export default Ember.Component.extend({
     var lineup = rotation.get('playersId');
     var ret = "BENCH";
     player.get('canPlay').forEach(function (position) {
-      if(lineup[position] === player.get('id')) {
+      if(lineup[position] - player.get('id') === 0) {
         ret = position;
       }
     });
