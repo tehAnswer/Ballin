@@ -12,15 +12,27 @@ export default Ember.Route.extend(AuthenticatedRoute, NewSessionMixin, RequestMi
   afterModel: function () {
     var team = this.modelFor('my_team');
     Ember.RSVP.hash({lineup: team.rotation}).then(function(values) {
-      
       console.log("Fetched lineup (" + values + ")");
     });
+  },
+
+  getKeyForValue: function (obj, value) {
+    for (var name in obj) {
+      if (obj[name] - value === 0) {
+        return name;
+      }
+    }
+    return null;
   },
   
   changeHook: function (rotation, position, player) {
     var that = this;
     return function () {
       var playersId = rotation.get('playersId');
+      var previousPosition = that.getKeyForValue(playersId, player.get('id'));
+      if (previousPosition !== null) {
+        playersId[previousPosition] = -1;
+      }
       playersId[position] = player.get('id');
       rotation.set('playersId', playersId);
       that.refresh();
