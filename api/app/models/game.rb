@@ -64,7 +64,11 @@ class Game
   end
 
   def title
-    away_team.abbreviation + " @ " + home_team.abbreviation
+    away_team.abbreviation + " @ " + home_team.abbreviation if has_both_teams
+  end
+
+  def has_both_teams
+    away_team != nil && home_team != nil
   end
 
  private

@@ -31,8 +31,10 @@ class NbaTeam
   end
 
   def next_gameid
-   Neo4j::Session.current.query("MATCH (g:Game)-[r]-(t:NbaTeam) where g.status = \"scheduled\" and ID(t) = #{neo_id} 
-    return ID(g) order by g.date_formatted limit 1").first["ID(g)"]
+   result = Neo4j::Session.current.query("MATCH (g:Game)-[r]-(t:NbaTeam) where g.status = \"scheduled\" and ID(t) = #{neo_id} 
+    return ID(g) order by g.date_formatted limit 1").first
+   return result["ID(g)"] unless result.nil?
+   return nil
   end
 
 end
