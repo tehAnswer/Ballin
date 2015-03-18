@@ -6,7 +6,7 @@ class Division
   has_one :in, :conference, model_class: Conference
 
   def team_ids
-    teams.map { |team| team.neo_id }
+    standings.map { |team| team.neo_id }
   end
 
   def standings

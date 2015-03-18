@@ -8,4 +8,8 @@ class MeController < ApplicationController
   def my_team
     respond_with @user.team, status: 200
   end
+
+  def my_league
+    respond_with @user.team.league, status: 200
+  end
 end

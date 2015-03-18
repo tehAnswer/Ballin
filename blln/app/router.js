@@ -36,11 +36,8 @@ Router.map(function() {
     this.route('show', { path: '/:game_id' });
   });
 
-  this.resource('league', function() {
-    this.route('market');
-    this.route('standings');
-  });
-
+  this.route('my_league');
+  this.route('market');
 });
 
 export default Router;
