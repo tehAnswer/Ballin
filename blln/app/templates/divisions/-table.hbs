@@ -1,0 +1,18 @@
+<table class="table table-ballin">
+  <thead>
+    <tr>
+      <th colspan="3" class="centered">
+        <h1>{{division.name}}</h1>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each team in division.teams}}
+      <tr>
+        <td>{{_view.contentIndex}}</td>
+        <td>{{team.name}}</td>
+        <td>{{team.score}}</td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

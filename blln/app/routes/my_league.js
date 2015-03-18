@@ -4,8 +4,8 @@ import NewSessionMixin from 'blln/mixins/new-session';
 import RequestMixin from 'blln/mixins/request';
 
 
-export default Ember.Route.extend(AuthenticatedRoute, RequestMixin, {
+export default Ember.Route.extend(AuthenticatedRoute, NewSessionMixin, {
   model: function () {
-    return this.makeRequest('my_league', 'GET', null, null, null);
+    return this.myLeague();
   }
 });

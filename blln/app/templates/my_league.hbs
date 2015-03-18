@@ -1,0 +1,13 @@
+<div class="container">
+  {{navbar-user user=nil}}
+
+  <h1>League {{model.name}}</h1>
+
+  <div class="row">
+    {{#each conference in model.conferences}}
+      {{partial "conferences/table"}}
+    {{/each}}
+  </div>
+
+
+</div>

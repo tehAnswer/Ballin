@@ -78,5 +78,9 @@ export default Ember.Mixin.create({
 
 	myTeam: function() {
 		return this.getRequest('/my_team', 'fantastic_team');
+	},
+
+	myLeague: function() {
+		return this.getRequest('/my_league', 'league');
 	}
 });
