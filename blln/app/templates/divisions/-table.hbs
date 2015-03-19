@@ -10,7 +10,11 @@
     {{#each team in division.teams}}
       <tr>
         <td></td>
-        <td>{{team.name}}</td>
+        <td>
+          {{#link-to 'fantastic_teams.show' team.id}}
+            {{team.name}}
+          {{/link-to}}
+        </td>
         <td>{{team.score}}</td>
       </tr>
     {{/each}}
