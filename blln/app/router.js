@@ -23,7 +23,7 @@ Router.map(function() {
   this.route('logout');
   
   this.resource('fantastic_teams', function() {
-    this.route('show', { path: '/:fantastic_team' });
+    this.route('show', { path: '/:fantastic_team_id' });
     this.route('new');
    });
 

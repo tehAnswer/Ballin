@@ -1,0 +1,14 @@
+<div class="container">
+  {{navbar-user user=null}}
+   
+   <div class="col-lg-12" id="nameTeamContainer">  
+     <div class="thumbnail" id="nameTeam">
+       <h1>{{model.name}}</h1>
+     </div>
+  </div>
+
+  <div class="row">
+    {{#each contract in model.contracts}}
+      {{partial "contracts/panel_third"}}
+    {{/each}}
+  </div>

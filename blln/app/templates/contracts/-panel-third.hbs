@@ -1,0 +1,25 @@
+<div class="col-sm-6 col-md-4">  
+  <div class="thumbnail">
+    <div class="caption">
+      <hr>
+        {{current-position contract=contract lineup=contract.team.rotation}}
+      <hr>
+      {{#if contract.player.isLoaded}}
+        {{#if contract.team.rotation.isLoaded}}
+          <p>
+            <b>Salary</b>: ${{contract.salary}}<br>
+            <b>Score</b>: {{contract.player.stats.final_score}}<br>
+            <b>Games count</b>: {{contract.player.stats.games_played}}<br>
+            <b>Position</b>: {{contract.player.positionLong}} <br>
+          </p>
+        
+        {{else}}
+          We're close...
+        {{/if}}
+      {{else}}
+        Loading...
+      {{/if}}
+      
+    </div>
+  </div>
+</div>
