@@ -16,7 +16,8 @@ class FantasticTeamCreation
   def make_rels(division, user)
     HasTeam.create(from_node: division, to_node: self.team)
     user.team = self.team
-    set_up_default_contracts(division.league)
+    #set_up_default_contracts(division.league)
+    set_players(self.team, division.league)
     team.rotation = Rotation.create!
   end
 
@@ -30,17 +31,23 @@ class FantasticTeamCreation
     end
   end
 
-  def set_up_default_contracts(league)
-    6.times { create_random_contract(league) }
+  def set_players(team, league)
+    result = Neo4j::Session.current.query("
+      MATCH (p:Player),(c:Contract),(l:League),(ft:FantasticTeam)
+      where not (p)<-[:PLAYER]-(c)-[:LEAGUE]->(l) and id(l)=#{league.neo_id} and id(ft)=#{team.neo_id}
+      with p,c,l,ft,rand() as _number
+      order by _number limit 6
+      create (p)<-[:PLAYER]-(cn:Contract {salary: 5000000})-[:LEAGUE]->(l), (ft)<-[:TEAM]-(cn)
+      return id(p) as _id, count((p)<-[:PLAYER]-()-[:LEAGUE]->(l)) as number_contracts_league")
+    player_ids = result.map { |player| player["_id"] if player["number_contracts_league"].to_i > 1}.compact
+    return true if player_ids.empty?
+    remove_duplicate_players(team, league, player_ids)
   end
 
-  def create_random_contract(league)
-    free_agents = league.free_agents
-    contract_creation = ContractCreation.new
-    loop do
-      player = free_agents.sample
-      contract = contract_creation.create(player, team, 5_000_000)
-      break contract if contract
-    end
-  end  
+  def remove_duplicate_players(team, league, player_ids)
+    Neo4j::Session.current.query("
+      MATCH (p:Player)<-[r1:PLAYER]-(c:Contract)-[r2:LEAGUE]->(l:League), (c)-[r3:TEAM]->(ft:FantasticTeam)
+        where id(p) in #{player_ids} and id(l)= #{league.neo_id} and id(ft) = #{team.neo_id}
+        delete r3, r2, r1, c")
+  end
 end
