@@ -7,5 +7,6 @@ export default DS.Model.extend({
   sharpId: function () {
   	return "#" + this.get('id');
   }.property('sharpId'),
-  contracts: DS.hasMany("contract", { async: true })
+  contracts: DS.hasMany("contract", { async: true }),
+  auctions: DS.hasMany("auction", { async: true })
 });

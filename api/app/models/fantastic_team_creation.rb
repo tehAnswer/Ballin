@@ -32,13 +32,14 @@ class FantasticTeamCreation
   end
 
   def set_players(team, league)
+    params = { league_id: league.neo_id, team_id: team.neo_id }
     result = Neo4j::Session.current.query("
-      MATCH (p:Player),(c:Contract),(l:League),(ft:FantasticTeam)
-      where not (p)<-[:PLAYER]-(c)-[:LEAGUE]->(l) and id(l)=#{league.neo_id} and id(ft)=#{team.neo_id}
+      MATCH (p:Player),(c:Contract),(l),(ft)
+      where not (p)<-[:PLAYER]-(c)-[:LEAGUE]->(l) and id(l)={league_id} and id(ft)={team_id}
       with p,c,l,ft,rand() as _number
       order by _number limit 6
       create (p)<-[:PLAYER]-(cn:Contract {salary: 5000000})-[:LEAGUE]->(l), (ft)<-[:TEAM]-(cn)
-      return id(p) as _id, count((p)<-[:PLAYER]-()-[:LEAGUE]->(l)) as number_contracts_league")
+      return id(p) as _id, count((p)<-[:PLAYER]-()-[:LEAGUE]->(l)) as number_contracts_league", params)
     player_ids = result.map { |player| player["_id"] if player["number_contracts_league"].to_i > 1}.compact
     return true if player_ids.empty?
     remove_duplicate_players(team, league, player_ids)

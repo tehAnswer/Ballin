@@ -1,0 +1,24 @@
+<div class="container">
+  {{navbar-user}}
+  <table class="table table-ballin">
+    <thead>
+      <tr>
+        <th colspan="12" class="centered">
+          <h1>Auctions</h1>
+        </th>
+      </tr>
+      <tr>
+        <th class="centered">PLAYER</th>
+        <th class="centered">SALARY</th>
+        <th class="centered">END TIME</th>
+      </tr>
+    </thead>
+    {{#each auction in model.auctions}}
+      <tr>
+        <td class="centered">{{auction.player.name}}</td>
+        <td class="centered">{{auction.maxBid}}</td>
+        <td class="centered">{{auction.endTime}}</td>
+      </tr>
+    {{/each}}
+  </table>
+</div>
