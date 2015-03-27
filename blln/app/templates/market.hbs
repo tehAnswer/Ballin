@@ -8,14 +8,25 @@
         </th>
       </tr>
       <tr>
+        <th class="centered">POSITION</th>
         <th class="centered">PLAYER</th>
-        <th class="centered">SALARY</th>
-        <th class="centered">END TIME</th>
+        <th class="centered">SCORE</th>
+        <th class="centered">TEAM</th>
+        <th class="centered">MAX BID</th>
+        <th class="centered">ENDS IN</th>
       </tr>
     </thead>
+    <tbody>
     {{#each auction in model.auctions}}
       <tr>
+        <td class="centered">
+          {{#each POS in auction.player.canPlay}}
+            <span class="label label-success">{{POS}}</span>
+          {{/each}}
+        </td>
         <td class="centered">{{auction.player.name}}</td>
+        <td class="centered">{{auction.player.stats.final_score}}</td>
+        <td class="centered">{{auction.player.nbaTeam.name}}</td>
         <td class="centered"> 
         {{#if auction.hasBids}}
           {{auction.maxBid}}
@@ -26,5 +37,6 @@
         <td class="centered">{{auction.endTime}}</td>
       </tr>
     {{/each}}
+    </tbody>
   </table>
 </div>
