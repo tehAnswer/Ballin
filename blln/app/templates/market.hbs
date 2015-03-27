@@ -16,7 +16,13 @@
     {{#each auction in model.auctions}}
       <tr>
         <td class="centered">{{auction.player.name}}</td>
-        <td class="centered">{{auction.maxBid}}</td>
+        <td class="centered"> 
+        {{#if auction.hasBids}}
+          {{auction.maxBid}}
+        {{else}}
+          0
+        {{/if}}
+        </td>
         <td class="centered">{{auction.endTime}}</td>
       </tr>
     {{/each}}
