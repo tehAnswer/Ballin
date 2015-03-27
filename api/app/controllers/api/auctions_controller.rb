@@ -1,10 +1,10 @@
 class Api::AuctionsController < ApplicationController
-  before_action :set_league, only: [:index, :create]
+  before_action :set_league, only: [:create]
   respond_to :json
 
   # GET /api/leagues/:league_id/auctions
   def index
-    paginated_response(@league.auctions)
+    coalesce_find_requests_response(Auction)
   end
 
       # POST /api/leagues/:league_id/auctions

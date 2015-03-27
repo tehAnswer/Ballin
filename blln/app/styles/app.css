@@ -389,11 +389,11 @@ table {
     counter-reset: rowNumber;
 }
 
-table tbody tr {
+.table-ballin-count tbody tr {
     counter-increment: rowNumber;
 }
 
-table tr td:first-child::before {
+.table-ballin-count tr td:first-child::before {
     content: counter(rowNumber);
 }
 

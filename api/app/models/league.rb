@@ -11,7 +11,11 @@ class League
   validates :name, uniqueness: true
 
   def free_agents
-    Player.all.to_a - players
+    params = { league_id: self.neo_id }
+    Neo4j::Session.current.query("
+      MATCH (p:Player),(c:Contract),(l:League)
+      where not (p)<-[:PLAYER]-(c)-[:LEAGUE]->(l) and id(l)={league_id}
+      return distinct(p)", params)
   end
 
   def players

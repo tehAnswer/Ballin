@@ -20,6 +20,7 @@ class Player
   has_many :out, :boxscores, model_class: BoxScore
   has_many :in, :contracts, model_class: Contract, origin: :player
   has_many :in, :rotations, model_class: Rotation, rel_class: RosterSlot
+  has_many :in, :auctions, model_class: Auction, origin: :player
 
   def stats
     return empty_hash if boxscores.count == 0
