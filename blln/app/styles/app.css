@@ -397,4 +397,12 @@ table {
     content: counter(rowNumber);
 }
 
+.white {
+  color: #FFF;
+}
+
+.modal-content {
+  background-color: black;
+}
+
 

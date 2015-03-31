@@ -6,5 +6,10 @@ import NewSessionMixin from 'blln/mixins/new-session';
 export default Ember.Route.extend(AuthenticatedRoute, NewSessionMixin, {
   model: function () {
     return this.myLeague();
+  },
+  actions: {
+    setAuction: function(auction) {
+      this.set('auction', auction);
+    }
   }
 });
