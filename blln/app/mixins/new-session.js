@@ -68,7 +68,7 @@ export default Ember.Mixin.create({
 			console.log(error);
 			return null;
 		});
-
+		
 		return user;
 	},
 
