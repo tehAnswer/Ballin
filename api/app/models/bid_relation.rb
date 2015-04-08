@@ -7,7 +7,6 @@ class BidRelation
   validate :has_bid
   validate :is_open_auction
   validate :over_max_bid
-  
 
   def is_open_auction
     self.errors.add(:is_open_auction, "The auction ain't open.") if to_node.end_time.past?

@@ -39,6 +39,13 @@ export default Ember.Route.extend(AuthenticatedRoute, NewSessionMixin, RequestMi
     };
   },
 
+  auctionHook: function () {
+    var that = this;
+    return function () {
+      alert("Auction created!");
+    };
+  },
+
   failureHook: function() {
     return function () {
       alert("Something goes wrong.");
@@ -68,6 +75,16 @@ export default Ember.Route.extend(AuthenticatedRoute, NewSessionMixin, RequestMi
 
     waive: function(contract) {
       contract.destroyRecord();
+    },
+
+    createAuction: function(contract) {
+      var leagueId = contract.get("league.id");
+      var playerId = contract.get("player.id");
+      var path = "/api/leagues/" + leagueId + "/auctions";
+      var record = { auction : { } };
+      record["auction"]["player_id"] = playerId;
+
+      this.makeRequest(path, "POST", record, this.auctionHook(), this.failureHook());
     }
   }
 });

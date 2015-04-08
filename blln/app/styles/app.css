@@ -405,4 +405,9 @@ table {
   background-color: black;
 }
 
+.danger {
+  background-color: #D9534F;
+  border-color: #D9534F;
+}
+
 
