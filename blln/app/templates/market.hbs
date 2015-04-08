@@ -3,7 +3,7 @@
   <table class="table table-ballin">
     <thead>
       <tr>
-        <th colspan="13" class="centered">
+        <th colspan="12" class="centered">
           <h1>Auctions</h1>
         </th>
       </tr>
@@ -11,7 +11,6 @@
         <th class="centered">POSITION</th>
         <th class="centered">PLAYER</th>
         <th class="centered">SCORE</th>
-        <th class="centered">TEAM</th>
         <th class="centered">MAX BID</th>
         <th class="centered">ENDS IN</th>
         <th class="centered"></th>
@@ -27,12 +26,15 @@
         </td>
         <td class="centered">{{auction.player.name}}</td>
         <td class="centered">{{auction.player.stats.final_score}}</td>
-        <td class="centered">{{auction.player.nbaTeam.name}}</td>
         <td class="centered"> 
-        {{#if auction.hasBids}}
-          {{auction.maxBid}}
+        {{#if auction.bids.isFulfilled}}
+          {{#if auction.hasBids}}
+            {{auction.maxBid}}
+          {{else}}
+            0
+          {{/if}}
         {{else}}
-          0
+          Loading...
         {{/if}}
         </td>
         <td class="centered">{{auction.remainingTime}}</td>

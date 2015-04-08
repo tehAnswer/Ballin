@@ -7,7 +7,8 @@ export default DS.Model.extend({
   player: DS.belongsTo("player", { async: true }),
   bidSalaries: Ember.computed.mapBy("bids", "salary"),
   maxBid: Ember.computed.max("bidSalaries"),
-  hasBid: Ember.computed.empty('bidSalaries'),
+  hasNotBids: Ember.computed.empty('bidSalaries'),
+  hasBids: Ember.computed.not("hasNotBids"),
   remainingTime: Ember.computed('endTime', function () {
     return moment(this.get('endTime')).fromNow();
   })
