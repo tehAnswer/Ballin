@@ -29,8 +29,9 @@ export default Ember.Controller.extend(RequestMixin, NewSessionMixin, {
   }, 
   successHook: function(bid) {
     var that = this;
-    return function () {
-      that.refresh();
+    return function (response) {
+      that.store.pushPayload('bid', response);
+      alert('Created bid!');
     };
   },
   failureHook: function() {
