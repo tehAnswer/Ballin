@@ -5,6 +5,7 @@ class FantasticTeam
   property :hood, type: String
   property :headline, type: String
   property :score, type: Float, default: 0
+  property :budget, type: Float, default: 0
 
   validates :name, :abbreviation, uniqueness: true
   validates :name, :abbreviation, :hood, presence: true
