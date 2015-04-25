@@ -3,21 +3,21 @@
   <nav>
     <ul class="nav masthead-nav">
       {{#link-to 'dashboard' tagName='li'}} 
-        {{#link-to 'dashboard'}}Dashboard{{/link-to}}
+        {{#link-to 'dashboard'}}{{t 'navBar.dashboard'}}{{/link-to}}
        {{/link-to}}
        {{#link-to 'my_team' tagName='li'}} 
-        {{#link-to 'my_team'}}My Team{{/link-to}}
+        {{#link-to 'my_team'}}{{t 'navBar.myTeam'}}{{/link-to}}
        {{/link-to}}
        {{#link-to 'market' tagName='li'}}
-         {{#link-to 'market'}}Market{{/link-to}}
+         {{#link-to 'market'}}{{t 'navBar.market'}}{{/link-to}}
        {{/link-to}}
 
        {{#link-to 'my_league' tagName='li'}}
-         {{#link-to 'my_league'}}Standings{{/link-to}}
+         {{#link-to 'my_league'}}{{t 'navBar.standings'}}{{/link-to}}
        {{/link-to}}
 
        {{#link-to 'logout' tagName='li'}}
-         {{#link-to 'logout'}}Logout{{/link-to}}
+         {{#link-to 'logout'}}{{t 'actions.logout'}}{{/link-to}}
        {{/link-to}}
     </ul>
   </nav>

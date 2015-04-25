@@ -9,7 +9,8 @@ export default {
     makeBid: 'Make bid',
     signUp: 'Sign up',
     register: 'Register',
-    login: 'Login'
+    login: 'Login',
+    logout: 'Logout'
   },
   myLeague: {
     league: 'League'
@@ -29,5 +30,11 @@ export default {
   footer: {
     beforeLink: 'A',
     afterLink: 'masterpiece'
+  },
+  navBar: {
+    dashboard: 'Dashboard',
+    myTeam: 'My Team',
+    market: 'Market',
+    standings: 'Standings'
   }
 };
