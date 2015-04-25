@@ -1,7 +1,7 @@
 <div class="container">
   {{navbar-user user=nil}}
 
-  <h1>League {{model.name}}</h1>
+  <h1>{{t 'myLeague.leagueBefore'}} {{model.name}} {{t 'myLeague.leagueAfter'}}</h1>
 
   <div class="row">
     {{#each conference in model.conferences}}

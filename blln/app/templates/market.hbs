@@ -4,15 +4,15 @@
     <thead>
       <tr>
         <th colspan="12" class="centered">
-          <h1>Auctions</h1>
+          <h1>{{t 'market.auctions'}}</h1>
         </th>
       </tr>
       <tr>
-        <th class="centered">POSITION</th>
-        <th class="centered">PLAYER</th>
-        <th class="centered">SCORE</th>
-        <th class="centered">MAX BID</th>
-        <th class="centered">ENDS IN</th>
+        <th class="centered">{{t 'tableHeaders.position'}}</th>
+        <th class="centered">{{t 'tableHeaders.player'}}</th>
+        <th class="centered">{{t 'tableHeaders.score'}}</th>
+        <th class="centered">{{t 'tableHeaders.maxBid'}}</th>
+        <th class="centered">{{t 'tableHeaders.endsIn'}}</th>
         <th class="centered"></th>
       </tr>
     </thead>
@@ -34,13 +34,13 @@
             0
           {{/if}}
         {{else}}
-          Loading...
+          {{t 'actions.loading'}}...
         {{/if}}
         </td>
         <td class="centered">{{auction.remainingTime}}</td>
         <td class="centered">
           <button type="button" class="btn btn-warning btn-xs" data-toggle="modal" data-target="#modalBid" {{action 'setAuction' auction}}>
-            Make bid!
+            {{t 'actions.makeBid'}}!
           </button>
         </td>
       </tr>
@@ -53,14 +53,14 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close white" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="myModalLabel">Make your bid</h4>
+          <h4 class="modal-title" id="myModalLabel">{{t 'market.modalHeaderTitle'}}</h4>
         </div>
         <div class="modal-body">
-          {{input value=salary type="number" class="form-control" placeholder="Enter your offer"}}
+          {{input value=salary type="number" class="form-control" placeholder=i18n.current.market.placeholder}}
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" {{action 'createBid'}} {{bind-attr disabled=isInvalid}} data-dismiss="modal">Do it!</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">{{t 'actions.close'}}</button>
+          <button type="button" class="btn btn-primary" {{action 'createBid'}} {{bind-attr disabled=isInvalid}} data-dismiss="modal">{{t 'actions.submit'}}!</button>
         </div>
       </div>
     </div>

@@ -10,6 +10,7 @@ class Market
           process_auction(auction)
         end
       end
+      create_auctions(league)
       return true
     end
   end
@@ -31,5 +32,13 @@ class Market
     previous_contract.team.budget += bid.salary if previous_contract
     previous_contract.team.save if previous_contract
     raise "Error. Error" unless contract && contract.persisted?
+  end
+
+  def self.create_auctions(league)
+   # "MATCH (p:Player),(c:Contract),(l)
+   # where not (p)<-[:PLAYER]-(c)-[:LEAGUE]->(l) and id(l)=
+   # with p,c,l,rand() as _number
+   # order by _number limit 3
+   # create (p)<-[:PLAYER]-(ac:Auction {end_time: })-[:LEAGUE]->(l)"
   end
 end

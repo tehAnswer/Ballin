@@ -2,6 +2,8 @@ export default {
   learnMore: 'Learn More',
   headline: 'A fantasy league you can trust.',
   home: 'Home',
+  East: 'East',
+  West: 'West',
   actions: {
     loading: 'Loading',
     close: 'Close',
@@ -13,7 +15,8 @@ export default {
     logout: 'Logout'
   },
   myLeague: {
-    league: 'League'
+    leagueBefore: '',
+    leagueAfter: 'League'
   },
   market: {
     auctions: 'Auctions',
