@@ -3,16 +3,13 @@
   <nav>
     <ul class="nav masthead-nav">
       {{#link-to 'index' tagName='li'}} 
-        {{#link-to 'index'}}Home{{/link-to}}
-       {{/link-to}}
-       {{#link-to 'contact' tagName='li'}} 
-        {{#link-to 'contact'}}Contact{{/link-to}}
+        {{#link-to 'index'}}{{t 'home'}}{{/link-to}}
        {{/link-to}}
        {{#link-to 'sessions.new' tagName='li'}} 
-        {{#link-to 'sessions.new'}}Login{{/link-to}}
+        {{#link-to 'sessions.new'}}{{t 'actions.login'}}{{/link-to}}
        {{/link-to}}
        {{#link-to 'users.sign_up' tagName='li'}}
-         {{#link-to 'users.sign_up'}}Register!{{/link-to}}
+         {{#link-to 'users.sign_up'}}{{t 'actions.signUp'}}{{/link-to}}
        {{/link-to}}
     </ul>
   </nav>
