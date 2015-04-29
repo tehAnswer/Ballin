@@ -1,6 +1,6 @@
 <form class="form-signin" {{action "signUp" on="submit"}}>
 
-  {{#if registerFailed}}
+  {{#if failed}}
     <div class="alert alert-danger"><b>{{t 'error'}}</b>! {{ t 'errors.register'}}</div>
   {{/if}}
 

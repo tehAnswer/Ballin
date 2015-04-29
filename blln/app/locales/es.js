@@ -29,7 +29,21 @@ export default {
     player: 'JUGADOR',
     score: 'PUNTUACIÓN',
     maxBid: 'PRECIO',
-    endsIn: 'FIN'
+    endsIn: 'FIN',
+    game: 'PARTIDO',
+    mins: 'MINUTOS',
+    points: 'PUNTOS',
+    assists: 'AST',
+    ftm: 'TLA',
+    fta: 'TLI',
+    fgm: 'TCA',
+    fga: 'TCI',
+    lsm: '3PA',
+    lsa: '3PI',
+    ofr: 'ROF',
+    defr: 'RDEF',
+    blocks: 'TAP',
+    steals: 'ROB'
   },
   footer: {
     beforeLink: 'Una obra de arte de',
@@ -46,6 +60,7 @@ export default {
     login: 'Usario o contraseña incorrectos',
     register: 'Vuelve a introducir los campos de texto'
   },
-  details: 'Información'
+  details: 'Información',
+  bench: 'Suplentes'
 
 };

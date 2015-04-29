@@ -8,5 +8,6 @@ export default Ember.Route.extend({
   	if (model.get('isNew')) {
   		model.destroyRecord();
   	}
+    this.controllerFor('users/sign_up').set('failed', false);
   }
 });

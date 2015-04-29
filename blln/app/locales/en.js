@@ -29,7 +29,21 @@ export default {
     player: 'PLAYER',
     score: 'SCORE',
     maxBid: 'MAX BID',
-    endsIn: 'ENDS IN'
+    endsIn: 'ENDS IN',
+    game: 'GAME',
+    mins: 'MINS',
+    points: 'PTS',
+    assists: 'AST',
+    ftm: 'FTM',
+    fta: 'FTA',
+    fgm: 'FGM',
+    fga: 'FGA',
+    lsm: 'LSM',
+    lsa: 'LSA',
+    ofr: 'OFR',
+    defr: 'DEFR',
+    blocks: 'BLK',
+    steals: 'STL'
   },
   footer: {
     beforeLink: 'A',
@@ -46,5 +60,6 @@ export default {
     login: 'Invalid username and password combination.',
     register: 'Fill again the form fields.'
   },
-  details: 'Detalles'
+  details: 'Details',
+  bench: 'Bench'
 };
