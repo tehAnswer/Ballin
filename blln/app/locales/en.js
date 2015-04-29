@@ -39,5 +39,9 @@ export default {
     myTeam: 'My Team',
     market: 'Market',
     standings: 'Standings'
+  },
+  error: 'Error',
+  errors: {
+    login: 'Invalid username and password combination.'
   }
 };

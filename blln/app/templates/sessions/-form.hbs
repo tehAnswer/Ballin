@@ -1,11 +1,7 @@
 <form class="form-signin" {{action "login" on="submit"}}>
 
   {{#if loginFailed}}
-    <div class="alert alert-danger">Invalid username or password.</div>
-  {{/if}}
-
-  {{#if isSlowConnection}}
-    <div class="alert alert-info">The request seems to be taking more time than usual, please wait.</div>
+    <div class="alert alert-danger"><b>{{t 'error'}}</b>! {{t 'errors.login'}}.</div>
   {{/if}}
 
   {{input value=email_or_username type="text" class="form-control" placeholder="Username or email"}}
@@ -13,10 +9,3 @@
   <button type="submit" class="btn btn-lg btn-success" {{bind-attr disabled=isInvalid}}>Sign in</button>
   <button type="submit" class="btn btn-lg btn-danger">Cancel</button>
 </form>
-
-
-
-
-
-
-

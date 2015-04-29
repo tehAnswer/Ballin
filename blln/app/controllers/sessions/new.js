@@ -23,15 +23,10 @@ export default Ember.Controller.extend(NewSessionMixin, {
       };
   },
 
-  slowConnection: function() {
-    this.set("isSlowConnection", true);
-  },
-
   reset: function() {
     clearTimeout(this.get("timeout"));
     this.setProperties({
       isProcessing: false,
-      isSlowConnection: false,
       password: ""
     });
   },
@@ -41,7 +36,6 @@ export default Ember.Controller.extend(NewSessionMixin, {
       loginFailed: false,
       isProcessing: true
     });
-    this.set("timeout", setTimeout(this.slowConnection.bind(this), 5000));
   },
 
   isValid: Ember.computed('email_or_username', 'password', function () {

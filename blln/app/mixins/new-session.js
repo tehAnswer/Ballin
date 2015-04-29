@@ -43,8 +43,8 @@ export default Ember.Mixin.create({
 
 	failHook: function(that) {
 		return function(error) {
-				that.set('errorMessage', error);
-				that.set('failed', true);
+				//that.set('errorMessage', error);
+				that.set('loginFailed', true);
 			};
 	},
 
@@ -66,6 +66,7 @@ export default Ember.Mixin.create({
 			return user;
 		}, function(error) {
 			console.log(error);
+
 			return null;
 		});
 		
