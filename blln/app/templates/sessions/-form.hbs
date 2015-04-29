@@ -1,6 +1,6 @@
 <form class="form-signin" {{action "login" on="submit"}}>
 
-  {{#if loginFailed}}
+  {{#if failed}}
     <div class="alert alert-danger"><b>{{t 'error'}}</b>! {{t 'errors.login'}}.</div>
   {{/if}}
 

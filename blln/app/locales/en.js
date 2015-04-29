@@ -43,6 +43,8 @@ export default {
   },
   error: 'Error',
   errors: {
-    login: 'Invalid username and password combination.'
-  }
+    login: 'Invalid username and password combination.',
+    register: 'Fill again the form fields.'
+  },
+  details: 'Detalles'
 };

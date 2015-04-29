@@ -2,7 +2,6 @@ import Ember from 'ember';
  
 export default Ember.Component.extend({
   classNames: [''],
-  buttonText:"Save",
   isLoading: false,
   actions: {
     showLoading: function() {

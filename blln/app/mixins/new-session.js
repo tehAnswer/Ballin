@@ -43,8 +43,7 @@ export default Ember.Mixin.create({
 
 	failHook: function(that) {
 		return function(error) {
-				//that.set('errorMessage', error);
-				that.set('loginFailed', true);
+				that.set('failed', true);
 			};
 	},
 

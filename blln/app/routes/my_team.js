@@ -14,6 +14,8 @@ export default Ember.Route.extend(AuthenticatedRoute, NewSessionMixin, RequestMi
     Ember.RSVP.hash({lineup: team.rotation}).then(function(values) {
       console.log("Fetched lineup (" + values + ")");
     });
+    this.set('failed', false);
+    this.set('auctionCreated', false);
   },
 
   getKeyForValue: function (obj, value) {
@@ -42,13 +44,14 @@ export default Ember.Route.extend(AuthenticatedRoute, NewSessionMixin, RequestMi
   auctionHook: function () {
     var that = this;
     return function () {
-      alert("Auction created!");
+      that.set('auctionCreated', true)
     };
   },
 
   failureHook: function() {
+    var that = this;
     return function () {
-      alert("Something goes wrong.");
+      that.set('failed', true);
     };
   },
 
@@ -69,7 +72,6 @@ export default Ember.Route.extend(AuthenticatedRoute, NewSessionMixin, RequestMi
       var record = this.record(position, player);
       var successHook = this.changeHook(rotation, position, player);
       var failureHook = this.failureHook();
-
       this.makeRequest(path, "PATCH", record, successHook, failureHook);
     },
 

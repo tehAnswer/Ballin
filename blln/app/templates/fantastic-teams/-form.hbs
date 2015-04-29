@@ -1,5 +1,5 @@
 <div class="panel panel-default">
-  <div class="panel-heading"><h2>Details</h2></div>
+  <div class="panel-heading"><h2>{{t 'details'}}</h2></div>
   <div class="panel-body">
     <div class= "col-xs-10">
       <form class="form-horizontal" {{action "createTeam" on="submit"}}>
@@ -9,7 +9,7 @@
           {{input value=hood type="text" class="form-control" placeholder="Hood"}}
           {{input value=headline type="text" class="form-control" placeholder="Headline"}}
         </div>
-        {{spin-button id="button_save" isLoading=isLoading buttonText="Submit" action="createTeam" isInvalid=isDisabled}}
+        {{spin-button id="button_save" isLoading=isLoading action="createTeam" isInvalid=isDisabled}}
       </form>
     </div>
   </div>

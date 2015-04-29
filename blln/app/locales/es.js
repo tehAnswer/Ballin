@@ -28,8 +28,8 @@ export default {
     position: 'POSICIÓN',
     player: 'JUGADOR',
     score: 'PUNTUACIÓN',
-    maxBid: 'MAX BID',
-    endsIn: 'ENDS IN'
+    maxBid: 'PRECIO',
+    endsIn: 'FIN'
   },
   footer: {
     beforeLink: 'Una obra de arte de',
@@ -43,6 +43,9 @@ export default {
   },
   error: 'Error',
   errors: {
-    login: 'Usario o contraseña incorrectos'
-  }
+    login: 'Usario o contraseña incorrectos',
+    register: 'Vuelve a introducir los campos de texto'
+  },
+  details: 'Información'
+
 };
