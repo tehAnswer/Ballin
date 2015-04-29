@@ -61,6 +61,7 @@ export default {
     register: 'Vuelve a introducir los campos de texto'
   },
   details: 'Información',
-  bench: 'Suplentes'
-
+  bench: 'Suplentes',
+  users: 'usuarios',
+  createTeam: '¡Crea tu equipo!'
 };

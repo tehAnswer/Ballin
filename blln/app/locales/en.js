@@ -61,5 +61,7 @@ export default {
     register: 'Fill again the form fields.'
   },
   details: 'Details',
-  bench: 'Bench'
+  bench: 'Bench',
+  users: 'users',
+  createTeam: 'Create your team!'
 };
