@@ -12,7 +12,8 @@ export default {
     signUp: 'Sign up',
     register: 'Register',
     login: 'Login',
-    logout: 'Logout'
+    logout: 'Logout',
+    signIn: 'Sign in'
   },
   myLeague: {
     leagueBefore: '',

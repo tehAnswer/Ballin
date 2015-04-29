@@ -8,7 +8,7 @@ module.exports = function(environment) {
     locationType: 'auto',
     contentSecurityPolicy: {
       'default-src': "'none'",
-      'script-src': "'self' ",
+      'script-src': "'self' http://localhost:4200 http://localhost:35729 http://0.0.0.0:35729 'unsafe-eval'",
       'font-src': "'self'",
       'connect-src': "'self'",
       'img-src': "'self'",
