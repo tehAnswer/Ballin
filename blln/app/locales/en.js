@@ -63,5 +63,13 @@ export default {
   details: 'Details',
   bench: 'Bench',
   users: 'users',
-  createTeam: 'Create your team!'
+  createTeam: 'Create your team!',
+  salary: 'Salary',
+  score: 'Score',
+  gamesCount: 'Games count',
+  position: 'Position',
+  setAs: 'Set as',
+  createAuction: 'Create auction',
+  sell: 'Sell',
+  waive: 'Despedir'
 };

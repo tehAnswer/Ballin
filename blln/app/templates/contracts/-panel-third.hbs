@@ -7,17 +7,17 @@
       {{#if contract.player.isLoaded}}
         {{#if contract.team.rotation.isLoaded}}
           <p>
-            <b>Salary</b>: ${{contract.salary}}<br>
-            <b>Score</b>: {{contract.player.stats.final_score}}<br>
-            <b>Games count</b>: {{contract.player.stats.games_played}}<br>
-            <b>Position</b>: {{contract.player.positionLong}} <br>
+            <b>{{t 'salary'}}</b>: ${{contract.salary}}<br>
+            <b>{{t 'score'}}</b>: {{contract.player.stats.final_score}}<br>
+            <b>{{t 'gamesCount'}}</b>: {{contract.player.stats.games_played}}<br>
+            <b>{{t 'position'}}</b>: {{contract.player.positionLong}} <br>
           </p>
         
         {{else}}
-          We're close...
+          {{t 'actions.loading'}}...
         {{/if}}
       {{else}}
-        Loading...
+        {{t 'actions.loading'}}...
       {{/if}}
       
     </div>

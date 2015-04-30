@@ -3,11 +3,9 @@
 
   <h1>{{t 'myLeague.leagueBefore'}} {{model.name}} {{t 'myLeague.leagueAfter'}}</h1>
 
-  <div class="row">
     {{#each conference in model.conferences}}
       {{partial "conferences/table"}}
     {{/each}}
-  </div>
 
 
 </div>

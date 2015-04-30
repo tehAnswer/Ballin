@@ -383,6 +383,7 @@ body {
 
 #tables-divisions {
   margin-left: 12%;
+  clear: both;
 }
 
 table {

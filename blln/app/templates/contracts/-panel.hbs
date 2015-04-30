@@ -7,14 +7,14 @@
       {{#if contract.player.isLoaded}}
         {{#if contract.team.rotation.isLoaded}}
           <p>
-            <b>Salary</b>: ${{contract.salary}}<br>
-            <b>Score</b>: {{contract.player.stats.final_score}}<br>
-            <b>Games count</b>: {{contract.player.stats.games_played}}<br>
-            <b>Position</b>: {{contract.player.positionLong}} <br>
+            <b>{{t 'salary'}}</b>: ${{contract.salary}}<br>
+            <b>{{t 'score'}}</b>: {{contract.player.stats.final_score}}<br>
+            <b>{{t 'gamesCount'}}</b>: {{contract.player.stats.games_played}}<br>
+            <b>{{t 'position'}}</b>: {{contract.player.positionLong}} <br>
           </p>
           <p>
             <div class="btn-group">
-              <button type="button" class="btn btn-primary">Set as...</button>
+              <button type="button" class="btn btn-primary">{{t 'setAs'}}...</button>
               <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                 <span class="caret"></span>
                 <span class="sr-only">Toggle Dropdown</span>
@@ -27,23 +27,23 @@
               </ul>
             </div>
             <div class="btn-group">
-              <button type="button" class="btn btn-danger">Sell</button>
+              <button type="button" class="btn btn-danger">{{t 'sell'}}</button>
               <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                 <span class="caret"></span>
                 <span class="sr-only">Toggle Dropdown</span>
               </button>
               <ul class="dropdown-menu danger" role="menu">
-                <li><a {{action 'createAuction' contract}}>Create auction</a></li>
-                <li><a {{action 'waive' contract}}>Waive contract</a></li>
+                <li><a {{action 'createAuction' contract}}>{{t 'createAuction'}}</a></li>
+                <li><a {{action 'waive' contract}}>{{t 'waive'}}</a></li>
               </ul>
             </div>
           </p>
 
         {{else}}
-          We're close...
+          {{t 'actions.loading'}}...
         {{/if}}
       {{else}}
-        Loading...
+        {{t 'actions.loading'}}...
       {{/if}}
       
     </div>

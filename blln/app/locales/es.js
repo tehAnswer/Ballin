@@ -63,5 +63,13 @@ export default {
   details: 'Información',
   bench: 'Suplentes',
   users: 'usuarios',
-  createTeam: '¡Crea tu equipo!'
+  createTeam: '¡Crea tu equipo!',
+  salary: 'Salario',
+  score: 'Puntuación',
+  gamesCount: 'Nº Partidos',
+  position: 'Posición',
+  setAs: 'Alinear',
+  createAuction: 'Poner en subasta',
+  sell: 'Vender',
+  waive: 'Despedir'
 };
