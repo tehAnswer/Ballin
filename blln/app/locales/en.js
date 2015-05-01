@@ -71,5 +71,5 @@ export default {
   setAs: 'Set as',
   createAuction: 'Create auction',
   sell: 'Sell',
-  waive: 'Despedir'
+  waive: 'Waive contract'
 };

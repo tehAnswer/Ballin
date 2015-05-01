@@ -1,4 +1,5 @@
 class Api::BidsController < ApplicationController
+  before_action :set_bid, only: [:show]
   respond_to :json
 
   # GET /api/bids?ids=...
@@ -20,8 +21,18 @@ class Api::BidsController < ApplicationController
     end
   end
 
+  # GET /api/box_scores/1
+  def show
+    respond_with @bid, status: 200
+  end
+
  private
   def bid_params
     params.require(:bid).permit(:salary, :auction_id)
-  end 
+  end
+
+  def set_bid
+    @bid = Bid.find_by(neo_id: params[:id])
+    render json: { error: "There's not such bid" }, status: 404 unless @bid
+  end
 end

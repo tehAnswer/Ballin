@@ -15,7 +15,7 @@ class Api::GamesController < ApplicationController
   end
 
   def show
-    respond_with @game
+    respond_with @game, status: 200
   end
 
  private

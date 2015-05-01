@@ -1,5 +1,6 @@
 class Api::AuctionsController < ApplicationController
   before_action :set_league, only: [:create]
+  before_action :set_auction, only: [:show]
   respond_to :json
 
   # GET /api/leagues/:league_id/auctions
@@ -23,6 +24,11 @@ class Api::AuctionsController < ApplicationController
   def set_league
     @league = League.find_by(neo_id: params[:league_id])
     render json: { error: "There's not such league" }, status: 404 unless @league
+  end
+
+  def set_auction
+    @auction = Auction.find_by(neo_id: params[:id])
+    render json: { error: "There's not such auction" }, status: 404 unless @auction
   end
 
   def auction_params
