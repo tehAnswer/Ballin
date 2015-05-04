@@ -5,7 +5,7 @@
     <div class="col-md-6" id="infoGameContainer">
       <div class="thumbnail" id="infoGame">
         <hr>
-        <h1>Game</h1>
+        <h1>{{t 'game'}}</h1>
         <hr>
           {{#if model.awayTeam.isLoaded}}
             <h4>{{model.awayTeam.name}} @ {{model.homeTeam.name}} ({{model.awayScore}} - {{model.homeScore}})</h4>
@@ -13,10 +13,9 @@
               <li>{{model.homeTeam.siteName}}</li>
               <li>{{model.dateTime}}</li>
               <li>{{model.seasonType}}</li>
-              <li>{{model.boxScores.lenght}}</li>
             </ul>
           {{else}}
-            Loading...
+            {{t 'actions.loading'}}...
           {{/if}}
         </div>
       </div>

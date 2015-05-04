@@ -58,7 +58,8 @@ export default {
   error: 'Error',
   errors: {
     login: 'Usario o contraseña incorrectos',
-    register: 'Vuelve a introducir los campos de texto'
+    register: 'Vuelve a introducir los campos de texto',
+    createAuction: 'El jugador ya está en subasta'
   },
   details: 'Información',
   bench: 'Suplentes',
@@ -71,5 +72,19 @@ export default {
   setAs: 'Alinear',
   createAuction: 'Poner en subasta',
   sell: 'Vender',
-  waive: 'Despedir'
+  waive: 'Despedir',
+  height: 'Altura',
+  weight: 'Peso',
+  birthdate: 'Nacimiento',
+  team: 'Equipo',
+  stats: 'Estadísticas',
+  nextGame: 'Siguiente partido',
+  lastGames: 'Últimos partidos',
+  createdAuction: 'Subasta creada',
+  success: '¡Hecho',
+  welcomeBack: 'Qué bueno volver a verte,',
+  league: 'Liga',
+  division: 'Division',
+  conference: 'Conference',
+  budget:'Presupuesto'
 };

@@ -16,19 +16,19 @@
 
         <hr>
         <ul>
-          <li><b>Height:</b> {{model.heightFormatted}} ({{model.heightCm}} cm)</li>
-          <li><b>Weight:</b> {{model.weightLb}} lb ({{model.weightKg}} kg)</li>
-          <li><b>Birthdate:</b> {{model.birthdate}} ({{model.birthplace}})</li>
+          <li><b>{{t 'height'}}:</b> {{model.heightFormatted}} ({{model.heightCm}} cm)</li>
+          <li><b>{{t 'weight'}}:</b> {{model.weightLb}} lb ({{model.weightKg}} kg)</li>
+          <li><b>{{t 'birthdate'}}:</b> {{model.birthdate}} ({{model.birthplace}})</li>
           </li>
-          <li><b>Score:</b> {{model.stats.final_score}}</li>
-          <li><b>Team:</b> {{model.nbaTeam.name}}</li>
+          <li><b>{{t 'score'}}:</b> {{model.stats.final_score}}</li>
+          <li><b>{{t 'team'}}:</b> {{model.nbaTeam.name}}</li>
       </div>
     </div>
 
     <div class="col-md-6" id="chartContainer">
       <div class="thumbnail" id="chart">
         <hr>
-        <h1>Stats</h1>
+        <h1>{{t 'stats'}}</h1>
         <hr>
         {{ember-chart type='radar' data=model.chartData options=model.chartPlayerOptions width=350 height=350 legend=false}}
       </div>
@@ -37,7 +37,7 @@
     <div class="col-md-6" id="nextGameContainer">
       <div class="thumbnail" id="nextGame">
         <hr>
-        <h1>Next game</h1>
+        <h1>{{t 'nextGame'}}</h1>
         <hr>
         {{#if model.nbaTeam.isLoaded}}
           <h4>{{model.nbaTeam.nextGame.awayTeam.name}} @ {{model.nbaTeam.nextGame.homeTeam.name}}</h4>
@@ -47,7 +47,7 @@
             <li>{{model.nbaTeam.nextGame.seasonType}}</li>
           </ul>
         {{else}}
-          Loading...
+          {{t 'actions.loading'}}...
         {{/if}}
       </div>
     </div>
@@ -57,22 +57,22 @@
   <thead>
     <tr>
       <th colspan="12" class="centered">
-        <h1>Last games</h1>
+        <h1>{{t 'lastGames'}}</h1>
       </th>
     </tr>
     <tr>
-      <th class="centered">GAME</th>
-      <th class="centered">MINS</th>
-      <th class="centered">PTS</th>
-      <th class="centered">AST</th>
-      <th class="centered">FTA-FTM</th>
-      <th class="centered">FGA-FGM</th>
-      <th class="centered">LSA-LSM</th>
-      <th class="centered">DEFR</th>
-      <th class="centered">OFR</th>
-      <th class="centered">BLK</th>
-      <th class="centered">STL</th>
-      <th class="centered">SCORE</th>
+      <th class="centered">{{t 'tableHeaders.game'}}</th>
+      <th class="centered">{{t 'tableHeaders.mins'}}</th>
+      <th class="centered">{{t 'tableHeaders.points'}}</th>
+      <th class="centered">{{t 'tableHeaders.assists'}}</th>
+      <th class="centered">{{t 'tableHeaders.ftm'}}-{{t 'tableHeaders.fta'}}</th>
+      <th class="centered">{{t 'tableHeaders.fgm'}}-{{t 'tableHeaders.fga'}}</th>
+      <th class="centered">{{t 'tableHeaders.lsm'}}-{{t 'tableHeaders.lsa'}}</th>
+      <th class="centered">{{t 'tableHeaders.defr'}}</th>
+      <th class="centered">{{t 'tableHeaders.ofr'}}</th>
+      <th class="centered">{{t 'tableHeaders.blocks'}}</th>
+      <th class="centered">{{t 'tableHeaders.steals'}}</th>
+      <th class="centered">{{t 'tableHeaders.score'}}</th>
     </tr>
   </thead>
   <tbody>

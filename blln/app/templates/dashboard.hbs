@@ -1,8 +1,13 @@
 <div class="container">
   {{navbar-user user=model}}
 
-  <h1>Dashboard</h1>
-  <p>Auth code: </p>
-  <p> {{model.authCode}}</p>
+  <div class="col-lg-12" id="nameTeamContainer">  
+     <div class="thumbnail" id="nameTeam">
+       <h1>{{t 'welcomeBack'}} {{model.username}}</h1>
+       <b>{{t 'team'}}:</b> {{model.team.name}} [{{model.team.abbreviation}}]<br>
+       <b>{{t 'budget'}}:</b> ${{model.team.budget}}</b><br>
+       <b>{{t 'score'}}:</b> {{model.team.score}}</b>
+     </div>
+  </div>
 </div>
 

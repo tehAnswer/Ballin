@@ -58,7 +58,8 @@ export default {
   error: 'Error',
   errors: {
     login: 'Invalid username and password combination.',
-    register: 'Fill again the form fields.'
+    register: 'Fill again the form fields.',
+    createAuction: 'The player is on sale already'
   },
   details: 'Details',
   bench: 'Bench',
@@ -71,5 +72,19 @@ export default {
   setAs: 'Set as',
   createAuction: 'Create auction',
   sell: 'Sell',
-  waive: 'Waive contract'
-};
+  waive: 'Waive contract',
+  height: 'Height',
+  weight: 'Weight',
+  birthdate: 'Birthdate',
+  team: 'Team',
+  stats: 'Stats',
+  nextGame: 'Next game',
+  lastGames: 'Last games',
+  success: 'Done',
+  createdAuction: 'The auction has been created',
+  welcomeBack: 'Great to see you! Welcome back',
+  league: 'League',
+  division: 'Division',
+  conference: 'Conference',
+  budget: 'budget'
+}
