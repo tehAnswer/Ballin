@@ -113,12 +113,12 @@ class XmlStatsController
   def create_stadistics_of (side, response, stadistics, game)
      response["#{side}_stats"].each do |stat|
       player = find_player_by_name_for(stat, game.game_id)
-      raise_search_error(stat, game) unless player
+      next unless player
       boxscore = create_boxscore(stat, player)
       boxscore.is_local = side == 'home'
       boxscore.save
       stadistics[:boxscores] << boxscore
-      add_score(player, boxscore) unless player.fantastic_teams.empty?
+      add_score(player, boxscore)
     end
   end
 
@@ -133,13 +133,15 @@ class XmlStatsController
   end
 
   def add_score(player, boxscore)
-    player.fantastic_teams.each do |team| 
-      team.score = team.score + boxscore.final_score
-    end 
+    params = { player_id: player.neo_id, final_score: boxscore.final_score }
+    Neo4j::Session.current.query("MATCH (p:Player)<--(r:Rotation)<-[:ROTATION]-(ft:FantasticTeam) 
+      WHERE id(p) = {player_id}
+      SET ft.score = ft.score + {final_score}", params)
   end
 
   def raise_search_error(stat, game)
-    raise "Player #{stat['display_name']} don't found for #{game.game_id}"
+    Rails.logger.error "Player #{stat['display_name']} don't found for #{game.game_id}"
+    false
   end
 
   def create_boxscore(stat, player)
