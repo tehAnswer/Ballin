@@ -8,5 +8,7 @@ export default DS.Model.extend({
   hasFreeSpace: Ember.computed('teams', function() {
   	return this.get('teams.length') < 5;
   }),
-  isFull: Ember.computed.not('hasFreeSpace')
+  isFull: Ember.computed.not('hasFreeSpace'),
+  sortedProperties: ['score:desc'],
+  sortedTeams: Ember.computed.sort('teams', 'sortedProperties')
 });
