@@ -21,7 +21,7 @@ class RotationsTest < ActionDispatch::IntegrationTest
     assert_equal 200, response.status
     token = User.find_by(username: "Eric Cartman").auth_code
     get "/api/rotations/#{rotation.neo_id}", { }, { dagger: token }   
-    assert_equal 403, response.status
+    assert_equal 200, response.status
   end
 
   test "incorrect lineup" do

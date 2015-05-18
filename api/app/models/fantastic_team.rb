@@ -47,5 +47,9 @@ class FantasticTeam
   def rotation_id
     rotation.nil? ? -1 : rotation.neo_id
   end
+
+  def division_id
+    division.nil? ? -1 : division.neo_id
+  end
   
 end

@@ -34,24 +34,6 @@
       </div>
     </div>
 
-    <div class="col-md-6" id="nextGameContainer">
-      <div class="thumbnail" id="nextGame">
-        <hr>
-        <h1>{{t 'nextGame'}}</h1>
-        <hr>
-        {{#if model.nbaTeam.isLoaded}}
-          <h4>{{model.nbaTeam.nextGame.awayTeam.name}} @ {{model.nbaTeam.nextGame.homeTeam.name}}</h4>
-          <ul>
-            <li>{{model.nbaTeam.nextGame.homeTeam.siteName}}</li>
-            <li>{{model.nbaTeam.nextGame.dateTime}}</li>
-            <li>{{model.nbaTeam.nextGame.seasonType}}</li>
-          </ul>
-        {{else}}
-          {{t 'actions.loading'}}...
-        {{/if}}
-      </div>
-    </div>
-  </div>
 
 <table class="table table-ballin">
   <thead>

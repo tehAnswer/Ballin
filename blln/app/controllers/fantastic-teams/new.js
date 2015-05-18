@@ -19,7 +19,6 @@ export default Ember.Controller.extend({
 
 			request.then(function(response) {
 				that.set('isLoading', false);
-				that.store.createRecord("fantastic_team", response.fantastic_team);
 				that.transitionToRoute('dashboard');
 			}, function(error) {
 				that.set('isLoading', false);

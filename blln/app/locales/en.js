@@ -86,5 +86,6 @@ export default {
   league: 'League',
   division: 'Division',
   conference: 'Conference',
-  budget: 'budget'
+  budget: 'budget',
+  game: 'Game'
 }

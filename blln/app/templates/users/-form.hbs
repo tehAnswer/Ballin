@@ -9,5 +9,7 @@
   {{input value=model.password type="password" class="form-control" placeholder="Password"}}
   {{input value=model.repassword type="password" class="form-control" placeholder="Repeat password"}}
   <button type="submit" class="btn btn-lg btn-success" {{bind-attr disabled=isInvalid}}>{{t 'actions.register'}}</button>
-  <button href="#" class="btn btn-lg btn-danger">{{t 'actions.close'}}</button>
+  {{#link-to 'index'}}
+    <button class="btn btn-lg btn-danger">{{t 'actions.close'}}</button>
+  {{/link-to}}
 </form>

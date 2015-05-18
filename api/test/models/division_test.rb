@@ -23,6 +23,5 @@ class DivisionTest < ActiveSupport::TestCase
      team_five.division = division
      assert_equal division, team_five.division
 
-
   end
 end

@@ -28,7 +28,6 @@ class Market
     previous_contract = result.nil? ? nil : result["c"]
     previous_contract.destroy if previous_contract
     contract = creation.create(auction.player, bid.team, bid.salary)
-    debugger
     previous_contract.team.budget += bid.salary if previous_contract
     previous_contract.team.save if previous_contract
     raise "Error. Error" unless contract && contract.persisted?

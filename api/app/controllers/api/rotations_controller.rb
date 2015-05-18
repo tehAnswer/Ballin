@@ -1,5 +1,6 @@
 class Api::RotationsController < ApplicationController
-  before_action :set_rotation, :check_user_owns_team, only: [:show, :update]
+  before_action :set_rotation, only: [:show, :update]
+  before_action :check_user_owns_team, only: [:update]
   respond_to :json
 
   def show

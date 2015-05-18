@@ -19,6 +19,10 @@ class Api::AuctionsController < ApplicationController
     end
   end
 
+  def show
+    respond_with @auction
+  end
+
  private
 
   def set_league
