@@ -1,9 +1,14 @@
 class Api::ContractsController < ApplicationController
   respond_to :json
-  before_action :set_contract, :check_user_owns_contract, only: [:destroy]
+  before_action :set_contract, only: [:destroy, :show]
+  before_action :check_user_owns_contract, only: [:destroy]
 
   def index
     coalesce_find_requests_response(Contract)
+  end
+
+  def show
+    respond_with @contract, status: 200
   end
 
   def destroy
