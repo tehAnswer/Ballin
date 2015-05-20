@@ -11,7 +11,7 @@ class FantasticTeam
   validates :name, :abbreviation, :hood, presence: true
   validates :name,  length: { maximum: 23 }
   validates :abbreviation, length: { maximum: 4 }
-  validates :headline, length: { maximum: 60 }
+  validates :hood, length: { maximum: 30 }
   
   has_one :in, :division, model_class: Division, rel_class: HasTeam
   has_many :in, :contracts, model_class: Contract, origin: :team
