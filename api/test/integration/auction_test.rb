@@ -34,10 +34,6 @@ class AuctionsTest < ActionDispatch::IntegrationTest
 
     get "/api/leagues/#{league.neo_id}/auctions", { }, { dagger: user.auth_code }
     assert_equal 200, response.status
-
-    hash = parse(response.body)
-    number_of_pages = [user.team.league.auctions.count.fdiv(BallinAPI::ITEMS_PER_PAGE).ceil, 1].max
-    assert_equal number_of_pages, hash[:meta][:total_pages]
     
     get "/api/leagues/#{league.neo_id}/auctions", { }, { }
     assert_equal 401, response.status

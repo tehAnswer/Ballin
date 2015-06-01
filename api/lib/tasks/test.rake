@@ -149,6 +149,8 @@ namespace :test do
     contract_creation.create(iverson, team)
     contract_creation.create(shaq, team)
     contract_creation.create(durant, team)
+    team.budget = 10000000000000000000
+    team.save
     Rake::Task["test"].invoke
     
   end

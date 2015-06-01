@@ -27,6 +27,8 @@ gem 'spring',        group: :development
 
 # Use debugger
 gem 'byebug'
+gem 'eventmachine'
+gem 'daemons'
 
 
 gem 'neo4j', '~> 4.1.1'

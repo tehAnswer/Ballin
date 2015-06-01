@@ -14,7 +14,7 @@ class BidsTest < ActionDispatch::IntegrationTest
     bid[:auction_id] = auction.neo_id
     bid[:salary] = 1_000_000
     post '/api/bids', { bid: bid }, { dagger: auth_code }
-    assert_equal 201, response.status
+    assert_equal 422, response.status
   end
 
   test "missing param" do
