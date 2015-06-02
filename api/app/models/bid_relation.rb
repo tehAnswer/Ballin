@@ -2,6 +2,7 @@ class BidRelation
   include Neo4j::ActiveRel
   from_class Bid
   to_class Auction
+  type 'AUCTION'
 
   validate :has_auction
   validate :has_bid
