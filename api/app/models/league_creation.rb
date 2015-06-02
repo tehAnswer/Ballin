@@ -16,13 +16,9 @@ class LeagueCreation
       pacific_division = Division.create!(name: 'Pacific')
       southwest_division = Division.create!(name: 'Southwest')
 
-      atlantic_division.conference = eastern_conference
-      central_division.conference = eastern_conference
-      southeast_division.conference = eastern_conference
-
-      northwest_division.conference = western_conference
-      pacific_division.conference = western_conference
-      southwest_division.conference = western_conference
+      eastern_conference.divisions << [atlantic_division, central_division, southeast_division]
+      western_conference.divisions << [northwest_division, pacific_division, southwest_division]
+      
 
       league.conferences << eastern_conference
       league.conferences << western_conference

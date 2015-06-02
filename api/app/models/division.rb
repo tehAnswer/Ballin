@@ -3,7 +3,7 @@ class Division
   property :name, type: String
 
   has_many :out, :teams, model_class: FantasticTeam, rel_class: HasTeam
-  has_one :in, :conference, model_class: Conference
+  has_one :in, :conference, model_class: Conference, origin: :divisions
 
   def team_ids
     standings.map { |team| team.neo_id }
