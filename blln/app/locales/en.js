@@ -59,7 +59,13 @@ export default {
   errors: {
     login: 'Invalid username and password combination.',
     register: 'Fill again the form fields.',
-    createAuction: 'The player is on sale already'
+    createAuction: 'The player is on sale already',
+    makeBid: {
+      text: "The bid couldn't be created due to some of the following reasons:",
+      budget: "Your team has not the enough budget.",
+      close: "The auction is closed.",
+      own: "You can't bid in your own auction."
+    }
   },
   details: 'Details',
   bench: 'Bench',
@@ -87,5 +93,6 @@ export default {
   division: 'Division',
   conference: 'Conference',
   budget: 'budget',
-  game: 'Game'
+  game: 'Game',
+  createdBid: 'The bid has been created'
 }

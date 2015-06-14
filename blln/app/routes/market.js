@@ -6,5 +6,8 @@ import NewSessionMixin from 'blln/mixins/new-session';
 export default Ember.Route.extend(AuthenticatedRoute, NewSessionMixin, {
   model: function () {
     return this.myLeague();
+  },
+  deactivate: function () {
+    this.controllerFor('market').reset();
   }
 });

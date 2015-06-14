@@ -31,13 +31,18 @@ export default Ember.Controller.extend(RequestMixin, NewSessionMixin, {
     var that = this;
     return function (response) {
       that.store.pushPayload('bid', response);
-      alert('Created bid!');
+      that.set('isSuccess', true);
     };
   },
   failureHook: function() {
+    var that = this;
     return function () {
-      alert("Something goes wrong.");
+      that.set('isFailed', true);
     };
+  },
+  reset: function() {
+    this.set('isFailed', false);
+    this.set('isSuccess', false);
   },
   actions: {
     setAuction: function(auction) {
@@ -45,6 +50,7 @@ export default Ember.Controller.extend(RequestMixin, NewSessionMixin, {
     },
     createBid: function() {
      var path = "/api/bids";
+     this.reset();
      var successHook = this.successHook();
      var failureHook = this.failureHook();
 

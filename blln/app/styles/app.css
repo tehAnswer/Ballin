@@ -10,6 +10,14 @@ a:hover {
   text-decoration: none;
 }
 
+nav {
+  padding-bottom: 4%;
+}
+
+#errorMarket {
+  text-align: left;
+}
+
 .panel-default {
   background-image: url("images/background-transparent.png");
   background-color: transparent;
@@ -368,6 +376,7 @@ body {
 }
 
 .table-ballin {
+  margin-top: 3%;
   background-color: rgba(0,0,0,0.6);
 }
 

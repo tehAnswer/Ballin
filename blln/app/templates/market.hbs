@@ -1,5 +1,22 @@
 <div class="container">
   {{navbar-user}}
+
+  {{#if isFailed}}
+     <div id="errorMarket" class="alert alert-danger"><b>{{t 'error'}}</b>! {{t 'errors.makeBid.text'}}<br>
+       <ul>
+         <li>{{t 'errors.makeBid.budget'}}</li>
+         <li>{{t 'errors.makeBid.close'}}</li>
+         <li>{{t 'errors.makeBid.own'}}</li>
+      </ul>
+     </div>
+  {{/if}}
+
+  {{#if isSuccess}}
+   <div class="alert alert-success"><b>{{t 'success'}}</b>! {{t 'createdBid'}}.</div>
+  {{/if}}
+
+
+
   <table class="table table-ballin">
     <thead>
       <tr>

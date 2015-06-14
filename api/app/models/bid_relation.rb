@@ -22,7 +22,7 @@ class BidRelation
   end
 
   def over_max_bid
-    self.errors.add(:over_max_bid, "You need to increase the max bid in $1000.") if from_node.salary <= to_node.max_bid.salary + 1000
+    self.errors.add(:over_max_bid, "You need to increase the max bid in $1000.") if from_node.salary <= to_node.max_bid.salary + 999.99
   end
 
 

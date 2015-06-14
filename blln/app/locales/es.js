@@ -59,7 +59,13 @@ export default {
   errors: {
     login: 'Usario o contraseña incorrectos',
     register: 'Vuelve a introducir los campos de texto',
-    createAuction: 'El jugador ya está en subasta'
+    createAuction: 'El jugador ya está en subasta',
+    makeBid: {
+      text: "La puja no se ha podido llevar a cabo. Puede ser por algún de los siguientes motivos:",
+      budget: "Tu equipo no tiene el suficiente presupuesto.",
+      close: "La subasta está cerrada.",
+      own: "Es tu propia subasta."
+    }
   },
   details: 'Información',
   bench: 'Suplentes',
@@ -87,5 +93,6 @@ export default {
   division: 'Division',
   conference: 'Conference',
   budget:'Presupuesto',
-  game: 'Partido'
+  game: 'Partido',
+  createdBid: 'Puja creada'
 };

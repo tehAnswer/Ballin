@@ -6,7 +6,7 @@ class Contract
   has_one :out, :team, model_class: FantasticTeam
   has_one :out, :player, model_class: Player
 
-  validates :salary, numericality: { greater_than_or_equal_to: 500000 }
+  validates :salary, numericality: { greater_than_or_equal_to: 1000 }
 
   def league_id
     league.neo_id
