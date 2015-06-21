@@ -42,8 +42,8 @@ export default Ember.Route.extend(AuthenticatedRoute, NewSessionMixin, RequestMi
   auctionHook: function () {
     var that = this;
     return function () {
-      that.controllerFor('my-team').set('errorMessage', false)
-      that.controllerFor('my-team').set('auctionCreated', true)
+      that.controllerFor('my-team').set('errorMessage', false);
+      that.controllerFor('my-team').set('auctionCreated', true);
     };
   },
 

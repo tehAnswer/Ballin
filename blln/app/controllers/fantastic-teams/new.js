@@ -17,7 +17,7 @@ export default Ember.Controller.extend({
 				dataType:"json"
 			});
 
-			request.then(function(response) {
+			request.then(function() {
 				that.set('isLoading', false);
 				that.transitionToRoute('dashboard');
 			}, function(error) {

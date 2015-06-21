@@ -10,5 +10,8 @@ export default DS.Model.extend({
   division: DS.belongsTo("division", { async: true }),
   contracts: DS.hasMany("contracts", { async: true }),
   rotation: DS.belongsTo("rotation", { async: true }),
-  budget: DS.attr()
+  budget: DS.attr(),
+  formattedScore: function () {
+    return parseFloat(this.get('score'), 10).toFixed(2);
+  }.property('score')
 });

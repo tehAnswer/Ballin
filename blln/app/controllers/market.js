@@ -27,7 +27,7 @@ export default Ember.Controller.extend(RequestMixin, NewSessionMixin, {
     record["bid"]["auction_id"] = this.get("auction.id");
     return record;
   }, 
-  successHook: function(bid) {
+  successHook: function() {
     var that = this;
     return function (response) {
       that.store.pushPayload('bid', response);

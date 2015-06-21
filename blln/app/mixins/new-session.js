@@ -43,6 +43,7 @@ export default Ember.Mixin.create({
 
 	failHook: function(that) {
 		return function(error) {
+			  console.log(error);
 				that.set('failed', true);
 			};
 	},

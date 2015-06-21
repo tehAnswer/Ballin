@@ -321,8 +321,6 @@ body {
 
 #playerInfo {
   text-align: left;
-  margin-top: 3%;
-  margin-left: -3%;
 }
 
 #playerInfo > h1, h5 {
@@ -335,20 +333,15 @@ body {
 }
 
 #playerInfoContainer {
-  margin-left: -9%;
-  margin-top: 3%;
   float: left;
 }
 
 #chartContainer {
-  margin-left: -9%;
   float:right;
-  margin-top: 3%;
 }
 
 #nextGameContainer {
   width:52%;
-  margin-left: -1%;
   text-align: left;
 }
 
@@ -391,7 +384,6 @@ body {
  }
 
 #tables-divisions {
-  margin-left: 12%;
   clear: both;
 }
 

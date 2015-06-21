@@ -95,4 +95,4 @@ export default {
   budget: 'budget',
   game: 'Game',
   createdBid: 'The bid has been created'
-}
+};
