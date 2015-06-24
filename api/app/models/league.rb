@@ -2,7 +2,7 @@ class League
   include Neo4j::ActiveNode
   property :name, type: String
 
-  has_many :out, :conferences, model_class: Conference
+  has_many :out, :conferences, model_class: Conference, type: 'CONFERENCES'
   has_many :in, :contracts, model_class: Contract, origin: :league
   has_many :in, :auctions, model_class: Auction, origin: :league
 

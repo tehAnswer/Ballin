@@ -13,10 +13,10 @@ class Game
   validates :game_id, uniqueness: true
   validate :check_start_date_time_and_date_formatted_matches
 
-  has_one :out, :away_team, model_class: NbaTeam
-  has_one :out, :home_team, model_class: NbaTeam
+  has_one :out, :away_team, model_class: NbaTeam, type: 'AWAY_TEAM'
+  has_one :out, :home_team, model_class: NbaTeam, type: 'HOME_TEAM'
 
-  has_many :out, :boxscores, model_class: BoxScore
+  has_many :out, :boxscores, model_class: BoxScore, type: 'BOXSCORE'
 
 
   def self.yesterday

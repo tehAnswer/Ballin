@@ -2,7 +2,6 @@ class RosterSlot
   include Neo4j::ActiveRel
   from_class Rotation
   to_class Player
-
   validate :has_contract, :has_been_already_selected
 
   

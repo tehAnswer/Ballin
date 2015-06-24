@@ -41,7 +41,11 @@
             <span class="label label-success">{{POS}}</span>
           {{/each}}
         </td>
-        <td class="centered">{{auction.player.name}}</td>
+        <td class="centered">
+          {{#link-to 'players.show' auction.player}}
+            {{auction.player.name}}
+           {{/link-to}}
+        </td>
         <td class="centered">{{auction.player.stats.final_score}}</td>
         <td class="centered"> 
         {{#if auction.bids.isFulfilled}}

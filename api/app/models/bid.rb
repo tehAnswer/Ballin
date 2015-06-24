@@ -7,8 +7,8 @@ class Bid
 
   validates :salary, numericality: { greater_than_or_equal_to: 1000 }
 
-  has_one :out, :team, model_class: FantasticTeam
-  has_one :out, :auction, model_class: Auction, rel_class: BidRelation
+  has_one :out, :team, model_class: FantasticTeam, type: 'TEAM'
+  has_one :in, :auction, model_class: Auction, rel_class: BidRelation
 
   def team_id
     team.neo_id

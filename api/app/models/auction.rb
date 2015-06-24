@@ -4,9 +4,9 @@ class Auction
   property :end_time, type: DateTime
   property :created_at
 
-  has_many :in, :bids, model_class: Bid, rel_class: BidRelation, dependent: :destroy
-  has_one :out, :player, model_class: Player
-  has_one :out, :league, model_class: League
+  has_many :out, :bids, model_class: Bid, rel_class: BidRelation, dependent: :destroy
+  has_one :out, :player, model_class: Player, type: 'PLAYER'
+  has_one :out, :league, model_class: League, type: 'LEAGUE'
 
 
   def player_id

@@ -8,7 +8,7 @@ class BidCreation
       check(user.team.budget < params[:salary].to_f, "You cant make a bid over your budget")
       check(user.team.league != auction.league, "You cant bid in other leagues auction")
       self.bid = Bid.create!(params)
-      bid_rel = BidRelation.create(from_node: self.bid, to_node: auction)
+      bid_rel = BidRelation.create(from_node: auction, to_node: self.bid)
       bid.team = user.team
       return bid_rel
     end

@@ -30,10 +30,10 @@ class Market
     query = "MATCH (l:League)<-[:LEAGUE]-(c:Contract)-[:PLAYER]->(p:Player) where id(l)={league_id} and id(p)={player_id} return c"
     result = Neo4j::Session.query(query, params).first
     previous_contract = result.nil? ? nil : result["c"]
-    previous_contract.destroy if previous_contract
     contract = creation.create(auction.player, bid.team, bid.salary)
     previous_contract.team.budget += bid.salary if previous_contract
     previous_contract.team.save if previous_contract
+    previous_contract.destroy if previous_contract
     # raise "Error. Error" unless contract && contract.persisted?
   end
 
@@ -46,5 +46,9 @@ class Market
    set ac.end_time={end_time}"
    params = { league_id: league.neo_id, end_time: 3.days.from_now }
    Neo4j::Session.query(query, params)
+  end
+
+  def self.daily_pay
+    Neo4j::Session.query("MATCH (ft:FantasticTeam) set ft.budget = ft.budget + {salary}", salary: 100_000);
   end
 end

@@ -5,14 +5,12 @@ require_relative './market_update'
 Dir["/app/models/**/*.rb"].each do |path|
   require path
 end
-
-EventMachine.add_periodic_timer(86400) do
+while(true)
   leagues = League.all
   leagues.each do |league|
     Market.update(league)
     Market.create(league)
   end
+  Market.daily_pay()
+  sleep(86400)
 end
-
-
-while(true); end;

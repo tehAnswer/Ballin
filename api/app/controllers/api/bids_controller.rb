@@ -10,6 +10,7 @@ class Api::BidsController < ApplicationController
   # POST /api/bids
   def create
     auction = Auction.find_by(neo_id: bid_params[:auction_id])
+    auction = patch_uuid(auction) if auction.uuid.nil?
     creation = BidCreation.new
     bid_rel = creation.create(auction, bid_params.except(:auction_id), @user)
     if bid_rel && bid_rel.persisted?
@@ -17,7 +18,7 @@ class Api::BidsController < ApplicationController
     elsif bid_rel
       render json: bid_rel.errors, status: 422
     else
-      render json: { errorMessage: "Wrong data" }, status: 422
+      render json: { errorMessage: creation.errors }, status: 422
     end
   end
 
@@ -34,5 +35,11 @@ class Api::BidsController < ApplicationController
   def set_bid
     @bid = Bid.find_by(neo_id: params[:id])
     render json: { error: "There's not such bid" }, status: 404 unless @bid
+  end
+
+  def patch_uuid(auction)
+    params = { auction_id: auction.neo_id, uuid: SecureRandom.uuid }
+    Neo4j::Session.query("MATCH (a:Auction) where id(a) = {auction_id} set a.uuid = {uuid}", params)
+    Auction.find_by(neo_id: bid_params[:auction_id])
   end
 end

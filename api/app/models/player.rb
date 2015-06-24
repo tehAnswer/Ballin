@@ -16,8 +16,8 @@ class Player
   validates :name, :height_cm, :height_formatted,
     :height_cm, :birthdate, :birthplace, presence: true
 
-  has_one :out, :real_team, model_class: NbaTeam
-  has_many :out, :boxscores, model_class: BoxScore
+  has_one :out, :real_team, model_class: NbaTeam, type: 'REAL_TEAM'
+  has_many :out, :boxscores, model_class: BoxScore, type: 'BOXSCORES'
   has_many :in, :contracts, model_class: Contract, origin: :player
   has_many :in, :rotations, model_class: Rotation, rel_class: RosterSlot
   has_many :in, :auctions, model_class: Auction, origin: :player

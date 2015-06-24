@@ -3,7 +3,7 @@ class User
   after_create :update_auth_code
 
   scope :administrator, -> { where(is_admin: true) }
-  has_one :out, :team, model_class: FantasticTeam
+  has_one :out, :team, model_class: FantasticTeam, type: 'TEAM'
   
   property :auth_code
   property :is_admin, type: Boolean, default: false

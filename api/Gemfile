@@ -31,7 +31,7 @@ gem 'eventmachine'
 gem 'daemons'
 
 
-gem 'neo4j', '~> 4.1.1'
+gem 'neo4j'
 gem 'humanize'
 gem 'devise'
 gem 'devise-neo4j'
