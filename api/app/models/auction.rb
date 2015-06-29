@@ -1,7 +1,7 @@
 class Auction
   include Neo4j::ActiveNode
 
-  property :end_time, type: DateTime
+  property :end_time, type: Time
   property :created_at
 
   has_many :out, :bids, model_class: Bid, rel_class: BidRelation, dependent: :destroy

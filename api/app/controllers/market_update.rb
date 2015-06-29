@@ -44,7 +44,7 @@ class Market
    order by _number limit 3
    create (p)<-[:PLAYER]-(ac:Auction)-[:LEAGUE]->(l)
    set ac.end_time={end_time}"
-   params = { league_id: league.neo_id, end_time: 3.days.from_now }
+   params = { league_id: league.neo_id, end_time: 3.days.from_now.to_i }
    Neo4j::Session.query(query, params)
   end
 
